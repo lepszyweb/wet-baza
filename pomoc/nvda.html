@@ -1,0 +1,403 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="pl" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl" dir="ltr">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Korzystanie z NVDA do oceny dostępności</title>
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="Zapewnia metodologię oceny, która pomaga w pomiarze zgodności z Wytycznymi dotyczącymi dostępności treści internetowych (WCAG) 2.1 Kryteria sukcesu Poziom A i AA.">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="./../LWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../LWeb/css/theme.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="demo/wamethod.min.css">
+    <!--[if lt IE 9]>
+  <link href="./../LWeb/assets/favicon.ico" rel="shortcut icon" />
+
+  <link rel="stylesheet" href="./../LWeb/css/ie8-theme.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="./../wet-boew/js/ie8-wet-boew.min.js"></script>
+  <![endif]-->
+    <!--[if lte IE 9]>
+
+
+  <![endif]-->
+    <noscript><link rel="stylesheet" href="./../wet-boew/css/noscript.min.css" /></noscript>
+  </head>
+ <body vocab="http://schema.org/" typeof="WebPage">
+    <nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-cont">Przejdź do treści głównej</a>
+        </li>
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-info">Przejdź do &bdquo;O tej stronie&rdquo;</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container">
+<!-- Sekcja Wybierz język -->
+<!-- Koniec sekcji Wybierz język -->
+
+        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+          <h2>Wyszukiwanie i menu</h2>
+          <ul class="pnl-btn list-inline text-right">
+            <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
+          </ul>
+          <div id="mb-pnl"></div>
+        </section>	 		
+
+
+
+        <div class="row">
+          <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="./../index.html" property="url"><img src="./../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
+            <meta property="areaServed" typeof="Country" content="Polska">
+            <link property="logo" href="./../LWeb/assets/lepszyweb-min.svg">
+          </div>
+          <section id="wb-srch" class="col-lg-8 text-right">
+            <h2>Szukaj</h2>
+            <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+              <div class="form-group">
+                <label for="wb-srch-q" class="wb-inv">Szukaj na LepszyWeb.pl</label>
+                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Szukaj na LepszyWeb.pl">
+                <datalist id="wb-srch-q-ac"> </datalist>
+              </div>
+              <div class="form-group submit">
+                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Szukaj</span></button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+	  
+      <nav role="navigation" id="wb-sm" data-ajax-replace="./../ajax/menu-audyt.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <div class="container nvbar">
+          <h2>Spis tematów</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a href="./index.html">O szkoleniu</a></li>
+              <li><a href="./przypadki/index.html">Przypadki</a></li>		  
+              <li><a href="./zgodne/index.html">Zgodne</a></li>
+              <li><a href="./niezgodne/index.html">Niezgodne</a></li>
+              <li><a href="./wzorce/index.html">Wzorce</a></li>
+              <li><a href="./szablony/index.html">Szablony</a></li>					  
+              <li><a href="./pomoc/index.html">Pomoc</a></li>		
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav role="navigation" id="wb-bc" property="breadcrumb">
+        <h2>Jesteś tutaj:</h2>
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>
+                <a href="./../index-en.html">Start</a>
+              </li>
+              <li>
+                <a href="./../demos/index-pl.html">Przykłady działania</a>
+              </li>
+              <li>Korzystanie z NVDA do oceny dostępności</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" property="mainContentOfPage" class="container">
+
+       <article id="maincontent">
+            <h1>Korzystanie z NVDA do oceny dostępności</h1>
+            <p id="breadcrumbs"><span class="hidden">Jesteś tutaj: </span><a href="./index.html">Strona główna</a> &gt; Korzystanie z NVDA do oceny dostępności</p>
+            <nav aria-labelledby="spisartykulu">
+                <h2 id="spisartykulu">Spis treści artykułu</h2>
+                <p>Poniższa lista to spis treści tej strony. Aby przejść do tej listy w NVDA, naciśnij przycisk <span class="keycap"> H </span>, aby przejść do następnej pozycji. Następnie naciśnij <span class="keycap"> L </span> (pierwsza litera słowa link),
+                    aby przejść do listy linków.</p>
+                <ol>
+                    <li><a href="#intro">Wprowadzenie</a></li>
+                    <li><a href="#getting">Pierwsze kroki</a></li>
+                    <li><a href="#reading">Czytanie</a></li>
+                    <li><a href="#navigation">Nawigacja</a>
+                        <ol>
+                            <li><a href="#quick">Skróty</a></li>
+                            <li><a href="#shortcuts">Inne skróty nawigacyjne</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#images">Obrazy</a></li>
+                    <li><a href="#tables">Tabele danych</a></li>
+                    <li><a href="#forms">Formularze</a>
+                        <ol>
+                            <li><a href="#formsmode">Tryb formularza</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#practice">Ćwiczenia</a></li>
+                </ol>
+            </nav>
+            <div class="section" id="intro">
+                <h3>Wprowadzenie</h3>
+                <p>Ten artykuł ma na celu pomóc nowym użytkownikom <a href="http://www.nvda-project.org/" lang="en">NonVisual Pulpit Access (NVDA)</a> poznać podstawowe elementy sterujące do testowania treści stron internetowych, a także służyć jako punkt odniesienia dla okazjonalnych użytkowników NVDA.</p>
+                <p><span lang="en">NonVisual Desktop Access</span> to darmowy i wolny czytnik ekranu dla systemu operacyjnego Microsoft Windows. Obsługuje ponad 40 języków i można go uruchomić na dowolnym komputerze w całości z pamięci USB bez instalacji. NVDA rozwijany jest przez organizację <span lang="en">NV Access</span> oraz społeczność użytkowników.</p>
+                <p>Ważne jest, aby oceniać dostępność treści internetowych z czytnikiem ekranu, ale ponieważ czytniki dla okazjonalnych użytkowników ekranu mogą być bardzo skomplikowanymi programami, wiele osób ich unika. Nie musi tak być w każdym przypadku. Chociaż czytniki ekranu są skomplikowane, możesz przetestować dostępność treści internetowych, nawet jeśli nie jesteś &bdquo;doświadczonym użytkownikiem&rdquo;.</p>
+                <p>Podczas czytania tego artykułu, pamiętaj o kilku rzeczach:</p>
+                <ul>
+                    <li>Ten artykuł nie zawiera pełnej listy skrótów NVDA. Dostarcza listę <em>podstawowych</em> komend, które nowi i początkujący użytkownicy NVDA powinni znać. Wyczerpujący wykaz poleceń znajdziesz na naszej liście <a href="nvda_skroty.html">skrótów klawiaturowych NVDA</a>. Na stronie <a href="http://community.nvda-project.org/wiki/Guides">Instrukcje NVDA</a> dostępna jest bogatsza dokumentacja.</li>
+                    <li>Jeśli jesteś nowym użytkownikiem czytnika ekranu, zaplanuj spędzenie większej ilości czasu (być może kilka godzin) na tej stronie i stronach przykładów, aby nabrać wprawy. Nie zniechęcaj się, jeśli rzeczy wydają się kłopotliwe po kilku minutach. Spowolnij prędkość odczytu i nie spiesz się.</li>
+                    <li>Zwykle łatwiej jest pracować z NVDA, używając standardowej klawiatury komputerowej. Jeśli wolisz używać klawiatury laptopa, jest ona również obsługiwana, ale to nie jest przedmiotem niniejszego artykułu.</li>
+                </ul>
+            </div>
+            <div class="section" id="getting">
+                <h2>Pierwsze kroki</h2>
+                <p>NVDA jest oprogramowaniem open-source dla Windows. Można <a href="http://www.nvda-project.org/wiki/Download">pobrać NVDA</a> za darmo. NVDA jest stosunkowo nowym projektem, niektóre z jego możliwości są nadal na poziomie podstawowym. Po pobraniu i zainstalowaniu NVDA, można rozpocząć korzystanie z programu, uruchamiając go równocześnie przytrzymanymi klawiszami <span class="keycap"> Ctrl </span> + <span class="keycap"> Alt </span> + <span class="keycap"> D </span>.</p>
+                <div class="note info">
+                    <div class="title">Uwaga</div>
+                    <p>Większość poleceń programu NVDA wymaga naciśnięcia w połączeniu z innymi klawiszami. specjalnego klawisza modyfikującego zwanego klawiszem <span class="keycap"> NVDA </span> </p>
+                    <p>Klawiszem <strong>NVDA</strong> ustawiono domyślnie klawisz <span class="keycap"> Insert </span>, ale podczas instalowania NVDA po raz pierwszy można zmienić to ustawienie na klawisz <span class="keycap"> CapsLock </span>. Jeśli później zechcesz zmienić swój preferowany klawisz NVDA, naciśnij <span class="keycap"> Ctrl </span> + <span class="keycap"> NVDA </span> + <span class="keycap"> K </span>.</p>
+                </div>
+                <p>Pracując w NVDA, należy pamiętać o następujących wskazówkach:</p>
+                <ul>
+                    <li>Chociaż NVDA ma wsparcie dla Windows i dostęp do wielu aplikacji Windows, skoncentrujemy się jedynie na dostępie do treści internetowych.</li>
+                    <li>Upewnij się, że klawisz NumLock jest wyłączony.</li>
+                    <li>Najlepiej testować NVDA w Firefoksie, nawet jeśli nie jest to Twoja podstawowa przeglądarka.</li>
+                    <li>Pamiętaj, że użytkownicy czytników ekranu zazwyczaj nie używają myszy. Jeśli chcesz komfortowo pracować z NVDA, spróbuj używać tylko klawiatury.</li>
+                    <li>Większość skrótów przeglądarki będzie działać przy użyciu klawisza NVDA.</li>
+                    <li>Strony <em>nie można</em> przewijać podczas czytania, ale treść, która jest niewidoczna na ekranie, można usłyszeć odczytywaną przez NVDA.</li>
+                </ul>
+            </div>
+            <div class="section" id="reading">
+                <h2>Czytanie</h2>
+                <p>Złożone dokumenty przeznaczone tylko do odczytywania, na przykład strony internetowe, przedstawiane są w NVDA w trybie czytania.</p>
+                <p>Istnieją dziesiątki skrótów klawiaturowych, które pozwalają odczytać treść przez wiersze, zdania, słowa, znaki itp. Poniżej znajduje się lista podstawowych skrótów do czytania. Za pomocą tych skrótów powinieneś być w stanie poruszać się po większości treści.</p>
+                <ul style="line-height:2">
+                    <li><strong>Numeryczny <span class="keycap"> + </span></strong>: Odczytuje wszystko od początku strony</li>
+                    <li><span class="keycap"> NVDA </span> + <span class="keycap" aria-label="Strzałka w dół"> ↓ </span>: Zacznij czytać od bieżącej pozycji</li>
+                    <li><span class="keycap"> Ctrl </span>: Zatrzymaj czytanie</li>
+                    <li><span class="keycap"> NVDA </span> + <span class="keycap" aria-label="Strzałka w górę"> ↑ </span> lub <strong>numeryczne <span class="keycap">8</span></strong>: Aktualny wiersz</li>
+                    <li><span class="keycap"> Ctrl </span> + <span class="keycap" aria-label="Strzałka w lewo"> ← </span> / <span class="keycap" aria-label="Strzałka w prawo"> → </span> lub <strong>numeryczne <span class="keycap">4</span></strong> / <strong>numeryczne <span class="keycap"> 6 </span></strong>:
+                        Poprzednie / następne słowo</li>
+                    <li><span class="keycap" aria-label="Strzałka w górę"> ↑ </span> lub <strong>numeryczne <span class="keycap">7</span></strong>: Poprzedni wiersz</li>
+                    <li><span class="keycap" aria-label="Strzałka w dół"> ↓ </span> lub <strong>numeryczne <span class="keycap">9</span></strong>: Następny wiersz</li>
+                    <li><span class="keycap" aria-label="Strzałka w lewo"> ← </span> / <span class="keycap" aria-label="Strzałka w prawo"> → </span> lub <strong>numeryczne <span class="keycap"> 1 </span></strong> / <strong>Numeryczne <span class="keycap"> 3 </span></strong>:
+                        Poprzedni / Następny znak</li>
+                    <li><span class="keycap"> F5 </span> / <span class="keycap"> Ctrl </span> + <span class="keycap"> F5 </span>: Wymusza odświeżenie aktualnej strony. Jeśli się zgubisz, to w ten sposób można zacząć od nowa.</li>
+                    <li><span class="keycap"> NVDA </span> + <span class="keycap"> Ctrl </span> + <span class="keycap" aria-label="Strzałka w górę"> ↑ </span> / <span class="keycap" aria-label="Strzałka w dół"> ↓ </span>: Zwiększa / Zmniejsza tempo mowy</li>
+                </ul>
+                <p>Możesz przećwiczyć czytanie treści tej strony z NVDA teraz. Zwróć uwagę, że na górze strony istnieje łącze, które prowadzi do głównej treści.</p>
+            </div>
+            <div class="section" id="navigation">
+                <h2>Nawigacja</h2>
+                <p>Widzący użytkownicy poruszają się wzrokiem po treści strony internetowej na kilka sposobów. Pogrubione nagłówki, listy, tabele itp. Większość z tych metod jest dostępna dla użytkowników czytników ekranu, jeśli strona ma poprawną strukturę i jest dobrze zorganizowana. Aby poruszać się do przodu i do tyłu między linkami i elementami formularzy, użyj klawiszy <span class="keycap"> Tab </span> i <span class="keycap"> Shift </span> + <span class="keycap"> Tab </span>. Inne
+                    skróty są wymienione poniżej.</p>
+                <div class="section" id="quick">
+                    <h3>Skróty</h3>
+                    <p>Poniższe skróty pomogą Ci poruszać między typowymi elementami strony.</p>
+                    <ul style="line-height:2">
+                        <li><span class="keycap"> H </span>: Nagłówki</li>
+                        <li><span class="keycap"> D </span>: Punkty orientacyjne</li>
+                        <li><span class="keycap"> 1 </span> - <span class="keycap"> 6 </span>: nagłówki poziomu odpowiednio od 1 do 6</li>
+                        <li><span class="keycap"> F </span>: Formularze</li>
+                        <li><span class="keycap"> T </span>: Tabele</li>
+                        <li><span class="keycap"> L </span>: Listy</li>
+                        <li><span class="keycap"> I </span>: Pozycje listy</li>
+                        <li><span class="keycap"> B </span>: Przyciski
+                            <ul>
+                                <li>Przycisk Szukaj jest często pierwszym przyciskiem na stronie. Często można przejść do formularza wyszukiwania, wybierając najpierw klawisz <span class="keycap"> B </span>, aby przejść do przycisku, a następnie kombinacji <span class="keycap"> Shift </span> + <span class="keycap"> Tab </span>, aby przejść do poprzedniego elementu formularza - pola wyszukiwania.
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <p><span class="keycap"> Shift </span> + <span class="keycap">klawisz skrótu</span> pozwoli na przemieszczanie się między elementami strony w odwrotnej kolejności (działa z większością skrótów klawiaturowych). Kilka innych skrótów znajdziesz na naszej liście <a href="nvda_skroty.html">skrótów klawiaturowych NVDA</a>.</p>
+                </div>
+                <div class="section" id="shortcuts">
+                    <h3>Inne skróty nawigacyjne</h3>
+                    <ul style="line-height:2">
+                        <li><span class="keycap"> NVDA </span> + <span class="keycap"> F7 </span>: Lista obiektów – linki, nagłówki, pola formularzy, przyciski i punkty orientacyjne</li>
+                        <li><span class="keycap"> Ctrl </span> + <span class="keycap"> Home </span>: Początek strony</li>
+                        <li><span class="keycap"> Ctrl </span> + <span class="keycap"> End </span>: Dół strony</li>
+                        <li><span class="keycap"> Alt </span> + <span class="keycap"> D </span> lub <span class="keycap"> F6 </span>: Pasek adresu przeglądarki</li>
+                    </ul>
+                </div>
+                <p>Aby przećwiczyć polecenia czytania i nawigacji, spróbuj odświeżyć stronę i przejść do tej części strony. Istnieje kilka sposobów, aby to zrobić - przejdź do spisu treści i aktywuj link do tej sekcji, a następnie rozpocznij czytanie lub nawigowanie po zdaniach, nagłówkach (<span class="keycap"> H </span>), listach (<span class="keycap"> L </span>), Znajdź lub odczytaj poprzednią/następną linię (<span class="keycap" aria-label="Strzałka w górę"> ↑ </span> / <span class="keycap" aria-label="Strzałka w dół"> ↓ </span>).</p>
+            </div>
+            <div class="section" id="images">
+                <h2>Obrazy</h2>
+                <p>Każdy obraz na stronie powinien posiadać <a href="http://webaim.org/techniques/alttext/">tekst alternatywny</a>. Jeśli obraz nie ma tekstu alternatywnego, czytnik ekranu zazwyczaj zignoruje go, ale zachowanie może się różnić w zależności od funkcji czytnika.</p>
+                <p><a href="NVDA_praktyka_images.html">Obrazki: Ćwiczenia NVDA</a></p>
+            </div>
+            <div class="section" id="tables">
+                <h2>Tabele danych</h2>
+                <p>Istnieją dwa główne zastosowania tabel na stronie: dla <a href="http://webaim.org/techniques/tables/">układu</a> i <a href="http://webaim.org/techniques/tables/data">organizowania danych</a>. W NVDA, aby przejść do następnej tabeli, naciśnij klawisz <span class="keycap"> T </span>. Aby poruszać się pomiędzy komórkami, przytrzymaj <span class="keycap"> Ctrl </span> + <span class="keycap"> Alt </span> i użyj klawiszy <span class="keycap" aria-label="Strzałka w górę"> ↑ </span> / <span class="keycap" aria-label="Strzałka w dół"> ↓ </span> / <span class="keycap" aria-label="Strzałka w lewo"> ← </span> / <span class="keycap" aria-label="Strzałka w prawo"> → </span>, aby przejść z komórki do komórki.</p>
+                <p><a href="NVDA_praktyka_tabela.html">Przykład tabeli - ćwiczenia</a></p>
+            </div>
+            <div class="section" id="forms">
+                <h2>Formularze</h2>
+                <p><a href="http://webaim.org/techniques/forms/">Formularze</a> są wykorzystywane do interakcji w internecie. Element <code>&lt;label&gt;</code> jest używany jednoznacznego identyfikowania kontrolek formularzy i ich opisu. NVDA będzie czytać etykietę elementu formularza, gdy ten element formularza jest poruszać się. Jeżeli kontrola formularza nie ma przypisaną etykietę, NVDA nie wskaże cel tego elementu formularza. Element <code>&lt;fieldset&gt;</code>służy do grupowania powiązanych elementów formularza. To jest zwykle używany do podać szczegóły dotyczące grup wyboru i przycisków radiowych. NVDA zwykle czyta legendę fieldset.</p>
+
+                <div class="section" id="formsmode">
+                    <h3>  Tryb formularza
+            </h3>
+                    <p>
+                        Ponieważ czytniki ekranu używają wielu skrótów klawiaturowych do szybkiej nawigacji, wypełnianie pól formularza mogłoby powodować problemy. Na przykład próba wpisania litery "h" w trybie przeglądania za pomocą programu NVDA wyprowadzi Cię z pola formularza
+                        i przeniesie do następnego nagłówka na stronie. Na szczęście czytniki ekranu mają wbudowaną poprawkę do tego problemu: tzw. tryb formularzy albo inaczej tryb edycji. W trybie formularzy większość standardowych klawiszy szybkiego dostępu do czytnika ekranowego jest wyłączona, dzięki czemu można wypełniać formularze bez przypadkowego uruchomienia skrótu.
+                    </p>
+                    <p>
+                        Tryb formularzy jest aktywowany w programie NVDA automatycznie po przejściu klawiszem <span class="keycap"> Tab </span> do kontrolek formularzy, takich jak pole tekstowe lub przycisk radiowy. Tryb formularzy dezaktywuje się, gdy
+                        opuścisz formularz, a także, gdy prześlesz formularz, naciskając <span class="keycap"> Enter </span> lub przycisk Wyślij. Po włączeniu trybu formularzy usłyszysz jeden dźwięk, podobnie jak dźwięk gongu, a nieco inny dźwięk po jego wyłączeniu.
+                    </p>
+                </div>
+                <p>Użyj następujących skrótów do poruszania się i interakcji z formularzem:</p>
+                <ul style="line-height:2">
+                    <li>Naciśnij <span class="keycap"> Enter </span> (jeśli fokus znajduje się w kontrolce) lub <span class="keycap"> NVDA </span> + <span class="keycap"> Spacja </span>, aby przejść do trybu edycji.</li>
+                    <li>Naciśnij <span class="keycap"> NVDA </span> + <span class="keycap"> Spacja </span>, aby wyjść z trybu edycji i powrócić do trybu przeglądania.</li>
+                    <li>Użyj <span class="keycap"> Tab </span> i <span class="keycap"> Shift </span> + <span class="keycap"> Tab </span>, aby poruszać się po kontrolkach formularza, gdy jesteś w trybie edycji.</li>
+                    <li>Użyj <span class="keycap"> Spacji </span>, aby zaznaczyć lub usunąć zaznaczenie pola wyboru.</li>
+                    <li>Użyj klawiszy strzałek w górę lub w dół (<span class="keycap" aria-label="Strzałka w górę"> ↑ </span> / <span class="keycap" aria-label="Strzałka w dół"> ↓ </span>), aby zaznaczyć opcję w grupie przycisków radiowych.</li>
+                    <li>Użyj klawiszy strzałek w górę lub w dół (<span class="keycap" aria-label="Strzałka w górę"> ↑ </span> / <span class="keycap" aria-label="Strzałka w dół"> ↓ </span>) lub lub pierwszej litery, aby wybrać element z listy w polu kombi.</li>
+                </ul>
+                <p><a href="NVDA_praktyka_formularz.html">Przykład formularza - ćwiczenia</a></p>
+            </div>
+            <div class="section" id="practice">
+                <h2>Ćwiczenia</h2>
+                <ul>
+                    <li>Przeglądaj tę stronę sekcja po sekcji. Na końcu każdej sekcji, powróć do góry i przejdź do nowej sekcji w różny sposób. Na przykład:
+                        <ul>
+                            <li>użyj spisu treści</li>
+                            <li>użyj <span class="keycap"> Ctrl </span> + <span class="keycap"> F </span>, aby otworzyć okno dialogowe Znajdowanie</li>
+                            <li>nawiguj według działów (albo <span class="keycap"> H </span> lub <span class="keycap"> 1 </span> - <span class="keycap"> 3 </span> )</li>
+                        </ul>
+                    </li>
+                    <li>Istnieje kilka elementów na tej stronie, które są wizualnie ukryte, ale które są dostarczane w celu lepszego zorientowania użytkowników czytników ekranu. Sprawdź, czy można je zidentyfikować (podpowiedź: jeden jest tuż przed sekcją głównej treści, a drugi w pasku po prawej stronie ekranu).</li>
+                    <li>Zapisz się do newslettera WebAIM bez użycia myszki.</li>
+                    <li>Wyłącz monitor i powtórz niektóre z tych zadań.</li>
+                </ul>
+            </div>
+        </article>
+
+ <!-- szczegóły strony -->
+   <div class="pagedetails">
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-4">
+          <details class="brdr-0">
+            <summary class="btn btn-default text-center">Zgłoś problem z tą stroną</summary>
+
+  <div class="well row">
+    <div class="gc-rprt-prblm">
+      <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+        <form action="#">
+          <fieldset>
+            <legend><span class="field-name">Zaznacz wszystko, czego dotyczy zgłoszenie: </span></legend>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f1">
+                <input type="checkbox" name="problem1" value="Tak" id="gc-rprt-prblm-f1">Łącze, przycisk lub wideo nie działa
+              </label>
+              <input name="problem1" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f2">
+                <input type="checkbox" name="problem2" value="Tak" id="gc-rprt-prblm-f2">Na stronie są błędy ortograficzne lub gramatyczne
+              </label>
+              <input name="problem2" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f3">
+                <input type="checkbox" name="problem3" value="Tak" id="gc-rprt-prblm-f3">Informacje są błędne
+              </label>
+              <input name="problem3" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f4">
+                <input type="checkbox" name="problem4" value="Tak" id="gc-rprt-prblm-f4">Informacje są nieaktualne
+              </label>
+              <input name="problem4" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f5">
+                <input type="checkbox" name="problem5" value="Tak" id="gc-rprt-prblm-f5">Nie mogę znaleźć, czego szukam
+              </label>
+              <input name="problem5" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f6">
+                <input type="checkbox" name="problem6" value="Tak" id="gc-rprt-prblm-f6">Inne, ktorych nie ma na tej liście
+              </label>
+              <input name="problem6" type="hidden" value="Nie">
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Wyślij</button>
+        </form>
+      </div>
+      <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+        <h3>Dziękujemy za Twoją pomoc!</h3>
+        <p>Nie otrzymasz odpowiedzi na tę wiadomość. Jeśli masz pytania, <a href="https://lepszyweb.pl/kontakt.html">napisz do nas</a>.</p>
+      </div>
+    </div>
+  </div>
+</details>
+
+
+        </div>
+        <div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+      </div>
+      <dl id="wb-dtmd">
+        <dt>Data modyfikacji:</dt>
+        <dd>
+          <time property="dateModified">2020-06-10</time>
+        </dd>
+      </dl>
+    </div>
+
+    </main>
+   <footer id="wb-info">
+      <div class="landscape">
+        <nav class="container wb-navcurr">
+          <h2 class="wb-inv">O usługach LepszyWeb.pl</h2>
+          <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+            <li><a href="./pages/lw/kontakt.html">Skontaktuj się z nami</a></li>
+            <li><a href="./pages/lw/uslugi.html">Szkolenia</a></li>
+            <li><a href="./pages/lw/audyty.html">Audyty</a></li>
+            <li><a href="./pages/lw/blog.html">Blog</a></li>
+            <li><a href="./pages/lw/pomoc.html">Pomoc</a></li>
+            <li><a href="./pages/lw/raporty.html">Raporty</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+
+            <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+              <h2 class="wb-inv">O tej stronie</h2>
+              <ul>
+                <li><a href="./pages/prawne/o-lepszyweb.html/wsieci.html">W Sieci</a></li>
+                <li><a href="./pages/prawne/o-lepszyweb.html">O LepszyWeb.pl</a></li>
+                <li><a href="./pages/prawne/regulamin.html">Regulamin</a></li>
+                <li><a href="./pages/prawne/prywatnosc.html">Prywatność</a></li>			  
+                <li><a href="./pages/prawne/dostepnosc.html">Dostępność</a></li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg"> 
+              <a href="#wb-cont">Góra strony <span class="glyphicon glyphicon-chevron-up"></span></a> 
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="./../LWeb/assets/lepszyweb-min.svg" alt="Logo Pracowni Dostępności Cyfrowej LepszyWeb.pl"> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="./../wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <script src="demo/wamethod.min.js"></script>		
+    <!--[if lt IE 9]>
+	<script src="./../wet-boew/js/ie8-wet-boew2.min.js"></script>
+	
+	<![endif]-->
+    <script src="./../LWeb/js/theme.min.js"></script>		
+  </body>
+</html>

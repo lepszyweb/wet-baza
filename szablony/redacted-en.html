@@ -1,0 +1,352 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="pl" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl" dir="ltr">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Redacted text - LepszyWeb.pl</title>
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="Guidance on how to code redacted text. Wskazówki dotyczące kodowania zredagowanego tekstu.">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="../LWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../LWeb/css/theme.css">
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+  <link href="../LWeb/assets/favicon.ico" rel="shortcut icon" />
+
+  <link rel="stylesheet" href="../LWeb/css/ie8-theme.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="../wet-boew/js/ie8-wet-boew.min.js"></script>
+  <![endif]-->
+    <!--[if lte IE 9]>
+
+
+  <![endif]-->
+    <noscript><link rel="stylesheet" href="../wet-boew/css/noscript.min.css" /></noscript>
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-cont">Przejdź do treści głównej</a>
+        </li>
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-info">Przejdź do &bdquo;O tej stronie&rdquo;</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container">
+        <section id="wb-lng" class="text-right">
+          <h2 class="wb-inv">Wybierz język</h2>
+          <ul class="list-inline margin-bottom-none">
+            <li><a lang="en" hreflang="en" href="redacted-en.html">Angielski</a></li>
+            <li><a lang="curr">Polski&#32;<span>(bieżący)</span></li>	
+          </ul>
+        </section>
+
+
+        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+          <h2>Wyszukiwanie i menu</h2>
+          <ul class="pnl-btn list-inline text-right">
+            <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
+          </ul>
+          <div id="mb-pnl"></div>
+        </section>				
+        <div class="row">
+          <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="../index.html" property="url"><img src="../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
+            <meta property="areaServed" typeof="Country" content="Polska">
+            <link property="logo" href="../LWeb/assets/lepszyweb-min.svg">
+          </div>
+          <section id="wb-srch" class="col-lg-8 text-right">
+            <h2>Szukaj</h2>
+            <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+              <div class="form-group">
+                <label for="wb-srch-q" class="wb-inv">Szukaj na LepszyWeb.pl</label>
+                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Szukaj na LepszyWeb.pl">
+                <datalist id="wb-srch-q-ac"> </datalist>
+              </div>
+              <div class="form-group submit">
+                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Szukaj</span></button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+      <nav role="navigation" id="wb-sm" data-ajax-replace="../ajax/menu-lw-pl.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <div class="container nvbar">
+          <h2>Spis tematów</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a href="../index.html">O witrynie</a></li>
+              <li><a href="../pages/zgodne/index.html">Zgodne</a></li>
+              <li><a href="../pages/niezogodne/">Niezgodne</a></li>
+              <li><a href="../pages/demo/index.html">Komponenty</a></li>
+              <li><a href="../pages/wzory/index.html">Szablony</a></li>
+              <li><a href="../pages/pomoc/index.html">Pomoc</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav role="navigation" id="wb-bc" property="breadcrumb">
+        <h2>Jesteś tutaj:</h2>
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>
+                <a href="../index-en.html">Start</a>
+              </li>
+              <li>
+                <a href="../demos/index-pl.html">Przykłady działania</a>
+              </li>
+              <li>Departments &amp; agencies</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+  
+<main property="mainContentOfPage" class="container" typeof="WebPageElement">
+<h1 property="name" id="wb-cont">Redacted text</h1>
+<div class="wb-prettify all-pre"></div>
+<p>Guidance on how to code redacted text.</p>
+<ul>
+<li><strong>Version:</strong> 1.0.1</li>
+<li><strong>Expert:</strong> @duboisp</li>
+<li><strong>Last updated:</strong> 2019-03-26</li>
+<li><strong>History:</strong>
+<ul>
+<li>(2019-03-26) Changed the redacted character for "Full block" (U+2588)</li>
+<li>(2018-12-13) Initial draft</li>
+</ul>
+</li>
+</ul>
+<h2>Background</h2>
+<p>Redacted text is a sub-section, often inline, of published content that are obfuscated and unreadable. For some case, the number of redacted character is included and visually represented.</p>
+<h2>Recommendation</h2>
+<p>Make the redacted text to be sementically understood as an image and apply text alternatives techniques to ensure conformance with the web accessibility standard.</p>
+<p>This technique leverage WAI-ARIA.</p>
+<h3>Technical specification</h3>
+<ul>
+<li>Use always the same character for obfuscation in your pages.</li>
+<li>
+<p>We recommend to use the <strong>Full block</strong> as your obfuscated character.</p>
+<ul>
+<li>Name: Full block</li>
+<li>Symbol: &#9608;</li>
+<li>HTML Entity: &amp;#9608;</li>
+<li>Unicode: U+2588</li>
+</ul>
+</li>
+<li>Make the redacted text need to be in its own container. like: <code>&lt;span&gt;&lt;/span&gt;</code></li>
+<li>Add the attribute <code>role="img"</code> to the redacted text container.</li>
+<li>Add the attribute <code>aria-label="Redacted text"</code> and modify the label accordingly to your context of use. Its content should be enough descriptive to conform at the text alternative WCAG success criteria (SC 1.1.1)</li>
+<li>Add CSS class <code>.redacted</code> for an inline redacted text.</li>
+</ul>
+<p>Notes:</p>
+<dl>
+<dt>Number of redacted character (Full block U+2528) repeated.</dt>
+<dd>There no such requirement because we transform the redacted content into an image. Usually the number of repeated full block character would be the same as the number of redacted character. In some cases it can makes sense to repeat the full block character to represent the width taken by latin character considering the width on one latin character is approximativly half the width of the full block character.</dd>
+<dt>Note: Text alternative (<code>aria-label</code>)</dt>
+<dd>The label can be fully adapted to your context. In the redacted text context, it can makes sense to include an indication the following is redacted content (<span lang="fr">contenu caviardé</span>) and in some situation to include the number of redacted characters or redacted paragraph.</dd>
+<dt>Redacted section (Multiple consecutive paragraph)</dt>
+<dd>The whole section should be made as one big image. The semantic need to be removed for all elements which provide some semantic, like paragraph (<code>&lt;p&gt;</code>) by setting their aria role to presentation (<code>role=presentation</code>)</dd>
+</dl>
+<h3>Example</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <span role="img" aria-label="20 redacted characters">████████████████████</span> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <span class="redacted" role="img" aria-label="455 redacted characters">███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████</span> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id<span role="img" aria-label="1 redacted character">█</span> est laborum.</p>
+<p class="redacted" role="img" aria-label="Redacted paragraph of 460 characters">████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████</p>
+<p><span class="redacted" role="img" aria-label="460 redacted characters">████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████</span></p>
+<div role="img" aria-label="Redacted section of 2 paragraphs">
+<p class="redacted" role="presentation">████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████</p>
+<p class="redacted" role="presentation">████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████</p>
+</div>
+<table class="table table-bordered">
+<tr>
+<th>Column 1</th>
+<th>Column 2</th>
+</tr>
+<tr>
+<td>
+<p>5. <span class="redacted" role="img" aria-label="460 redacted characters">████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████</span></p>
+</td>
+<td>Empty column 2</td>
+</tr>
+</table>
+<h4>Source Code</h4>
+<pre><code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation &lt;span role="img" aria-label="20 redacted characters"&gt;████████████████████&lt;/span&gt; ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat &lt;span class="redacted" role="img" aria-label="455 redacted characters"&gt;███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████&lt;/span&gt; cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id&lt;span role="img" aria-label="1 redacted character"&gt;█&lt;/span&gt; est laborum.&lt;/p&gt;
+
+&lt;p class="redacted" role="img" aria-label="Redacted paragraph of 460 characters"&gt;████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████&lt;/p&gt;
+
+&lt;p&gt;&lt;span class="redacted" role="img" aria-label="460 redacted characters"&gt;████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████&lt;/span&gt;&lt;/p&gt;
+
+&lt;div role="img" aria-label="Redacted section of 2 paragraphs"&gt;
+	&lt;p class="redacted" role="presentation"&gt;████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████&lt;/p&gt;
+
+	&lt;p class="redacted" role="presentation"&gt;████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;table class="table table-bordered"&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Column 1&lt;/th&gt;
+		&lt;th&gt;Column 2&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			&lt;p&gt;5. &lt;span class="redacted" role="img" aria-label="460 redacted characters"&gt;████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████&lt;/span&gt;&lt;/p&gt;
+		&lt;/td&gt;
+		&lt;td&gt;Empty column 2&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<h2>API</h2>
+<p>CSS Class</p>
+<dl class="dl-horizontal">
+<dt><code>redacted</code></dt>
+<dd>Style the consecutive obfuscated characters to don't overflow outside the container of the phrasing content and they start immediatly after the previous non-redacted character.</dd>
+</dl>
+<h2>References</h2>
+<ul>
+<li><a href="https://www.w3.org/TR/WCAG21/#text-alternatives">WCAG 2.1 Guideline 1.1 Text Alternatives</a></li>
+<li><a href="https://www.w3.org/TR/wai-aria-1.1/#img">WAI-ARIA 1.1 <code>img</code> (role)</a></li>
+<li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-label">WAI-ARIA 1.1 <code>aria-label</code> (property)</a></li>
+</ul>
+<h2>Version notes</h2>
+<dl>
+<dt>v1.0.1</dt>
+<dd>
+<p>The recommendation to use the redacted character "Dark shade" (U+2593) are changed for "Full block" (U+2588).</p>
+<p><strong>Migration instruction:</strong> Change the "Dark shade" character in your document for the "Full block" character</p>
+<p><strong>WCAG note:</strong> None</p>
+<p><strong>Rational:</strong> We received feedback saying the dark shade was not visually pleasant. Also the use of the full block on printed document is much more common than the dark shade character.</p>
+<p><strong>Feedback (for v1.0)</strong> The consensus feedback from employees in a small office was the "it hurts the eyes" or "it is headache inducing".</p>
+</dd>
+<dt>v1.0</dt>
+<dd>Released on: 2018-12-13 and packaged with GCWeb 5.0</dd>
+</dl>
+      <!-- szczegóły strony -->
+      <div class="pagedetails">
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-lg-4">
+            <details class="brdr-0">
+              <summary class="btn btn-default text-center">Zgłoś problem z tą stroną</summary>
+
+              <div class="well row">
+                <div class="gc-rprt-prblm">
+                  <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+                    <form action="#">
+                      <fieldset>
+                        <legend><span class="field-name">Zaznacz wszystko, czego dotyczy zgłoszenie: </span></legend>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f1">
+                            <input type="checkbox" name="problem1" value="Tak" id="gc-rprt-prblm-f1">Łącze, przycisk lub wideo nie działa
+                          </label>
+                          <input name="problem1" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f2">
+                            <input type="checkbox" name="problem2" value="Tak" id="gc-rprt-prblm-f2">Na stronie są błędy ortograficzne lub gramatyczne
+                          </label>
+                          <input name="problem2" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f3">
+                            <input type="checkbox" name="problem3" value="Tak" id="gc-rprt-prblm-f3">Informacje są błędne
+                          </label>
+                          <input name="problem3" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f4">
+                            <input type="checkbox" name="problem4" value="Tak" id="gc-rprt-prblm-f4">Informacje są nieaktualne
+                          </label>
+                          <input name="problem4" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f5">
+                            <input type="checkbox" name="problem5" value="Tak" id="gc-rprt-prblm-f5">Nie mogę znaleźć, czego szukam
+                          </label>
+                          <input name="problem5" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f6">
+                            <input type="checkbox" name="problem6" value="Tak" id="gc-rprt-prblm-f6">Inne, ktorych nie ma na tej liście
+                          </label>
+                          <input name="problem6" type="hidden" value="Nie">
+                        </div>
+                      </fieldset>
+                      <button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Wyślij</button>
+                    </form>
+                  </div>
+                  <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+                    <h3>Dziękujemy za Twoją pomoc!</h3>
+                    <p>Nie otrzymasz odpowiedzi na tę wiadomość. Jeśli masz pytania, <a href="https://lepszyweb.pl/kontakt.html">napisz do nas</a>.</p>
+                  </div>
+                </div>
+              </div>
+            </details>
+
+
+          </div>
+          <div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+        </div>
+        <dl id="wb-dtmd">
+          <dt>Data modyfikacji:</dt>
+          <dd>
+            <time property="dateModified">2020-06-10</time>
+          </dd>
+        </dl>
+      </div>
+
+    </main>
+    <footer id="wb-info">
+      <div class="landscape">
+        <nav class="container wb-navcurr">
+          <h2 class="wb-inv">O usługach LepszyWeb.pl</h2>
+          <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+            <li><a href="./pages/lw/kontakt.html">Skontaktuj się z nami</a></li>
+            <li><a href="./pages/lw/uslugi.html">Szkolenia</a></li>
+            <li><a href="./pages/lw/audyty.html">Audyty</a></li>
+            <li><a href="./pages/lw/blog.html">Blog</a></li>
+            <li><a href="./pages/lw/pomoc.html">Pomoc</a></li>
+            <li><a href="./pages/lw/raporty.html">Raporty</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+
+            <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+              <h2 class="wb-inv">O tej stronie</h2>
+              <ul>
+                <li><a href="./pages/prawne/o-lepszyweb.html/wsieci.html">W Sieci</a></li>
+                <li><a href="./pages/prawne/o-lepszyweb.html">O LepszyWeb.pl</a></li>
+                <li><a href="./pages/prawne/regulamin.html">Regulamin</a></li>
+                <li><a href="./pages/prawne/prywatnosc.html">Prywatność</a></li>			  
+                <li><a href="./pages/prawne/dostepnosc.html">Dostępność</a></li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg"> 
+              <a href="#wb-cont">Góra strony <span class="glyphicon glyphicon-chevron-up"></span></a> 
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="../LWeb/assets/lepszyweb-min.svg" alt="Logo Pracowni Dostępności Cyfrowej LepszyWeb.pl"> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="../wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+ <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
+
+ <![endif]-->
+    <script src="../LWeb/js/theme.min.js"></script>		
+  </body>
+</html>

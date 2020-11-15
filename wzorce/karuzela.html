@@ -1,0 +1,1022 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="pl" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl" dir="ltr">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Interfejs kart - karuzela - LepszyWeb.pl</title>
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="Dynamicznie układa wiele obrazów i napisów w widżet karuzelowy (lub suwakowy).">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="./../LWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../LWeb/css/theme.css">
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+  <link href="./../LWeb/assets/favicon.ico" rel="shortcut icon" />
+
+  <link rel="stylesheet" href="./../LWeb/css/ie8-theme.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="./../wet-boew/js/ie8-wet-boew.min.js"></script>
+  <![endif]-->
+    <!--[if lte IE 9]>
+
+
+  <![endif]-->
+    <noscript><link rel="stylesheet" href="./../wet-boew/css/noscript.min.css" /></noscript>
+  </head>
+
+ <body vocab="http://schema.org/" typeof="WebPage">
+    <nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-cont">Przejdź do treści głównej</a>
+        </li>
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-info">Przejdź do &bdquo;O tej stronie&rdquo;</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container">
+<!-- Sekcja Wybierz język -->
+<!-- Koniec sekcji Wybierz język -->
+
+        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+          <h2>Wyszukiwanie i menu</h2>
+          <ul class="pnl-btn list-inline text-right">
+            <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
+          </ul>
+          <div id="mb-pnl"></div>
+        </section>	 		
+
+
+
+        <div class="row">
+          <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="./../index.html" property="url"><img src="./../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
+            <meta property="areaServed" typeof="Country" content="Polska">
+            <link property="logo" href="./../LWeb/assets/lepszyweb-min.svg">
+          </div>
+          <section id="wb-srch" class="col-lg-8 text-right">
+            <h2>Szukaj</h2>
+            <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+              <div class="form-group">
+                <label for="wb-srch-q" class="wb-inv">Szukaj na LepszyWeb.pl</label>
+                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Szukaj na LepszyWeb.pl">
+                <datalist id="wb-srch-q-ac"> </datalist>
+              </div>
+              <div class="form-group submit">
+                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Szukaj</span></button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+	  
+      <nav role="navigation" id="wb-sm" data-ajax-replace="./../ajax/menu-audyt.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <div class="container nvbar">
+          <h2>Spis tematów</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a href="./index.html">O szkoleniu</a></li>
+              <li><a href="./przypadki/index.html">Przypadki</a></li>		  
+              <li><a href="./zgodne/index.html">Zgodne</a></li>
+              <li><a href="./niezgodne/index.html">Niezgodne</a></li>
+              <li><a href="./wzorce/index.html">Wzorce</a></li>
+              <li><a href="./szablony/index.html">Szablony</a></li>					  
+              <li><a href="./pomoc/index.html">Pomoc</a></li>		
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav role="navigation" id="wb-bc" property="breadcrumb">
+        <h2>Jesteś tutaj:</h2>
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>
+                <a href="./../index-en.html">Start</a>
+              </li>
+              <li>
+                <a href="./../demos/index-pl.html">Przykłady działania</a>
+              </li>
+              <li>Interfejs kart - karuzela</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<main property="mainContentOfPage" class="container" typeof="WebPageElement">
+
+
+<h1 property="name" id="wb-cont">Interfejs kart - karuzela</h1>
+<span class="wb-prettify all-pre hide"></span>
+<section>
+<h2>Cel</h2>
+<p>Dynamicznie układa wiele obrazów i napisów w widżet karuzelowy (lub suwakowy).</p>
+</section>
+<section>
+<h2 id="carousel-s1">Styl karuzeli - przykład 1 (<code>carousel-s1</code>)</h2>
+<div class="wb-tabs carousel-s1">
+<ul role="tablist">
+<li class="active"><a href="#panel1">Karta 1: Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową.</a></li>
+<li><a href="#panel2">Karta 2: Przekonaj się: Tworzymy dostępne strony internetowe.</a></li>
+<li><a href="#panel3">Karta 3: Oferujemy: Profesjonalne audyty dostępności cyfrowej</a></li>
+</ul>
+<div class="tabpanels">
+<div role="tabpanel" id="panel1" class="in fade">
+<a href="https://www.tc.gc.ca/eng/civilaviation/opssvs/general-personnel-changes-1814.htm">
+<figure>
+<img src="img/slajd1.jpg" alt="">
+<figcaption>
+<p>Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel2" class="out fade">
+<a href="https://www.tc.gc.ca/eng/railsafety/publications-46.htm">
+<figure>
+<img src="img/slajd2.jpg" alt="">
+<figcaption>
+<p>Przekonaj się: Tworzymy dostępne strony internetowe.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel3" class="out fade">
+<a href="https://www.tc.gc.ca/eng/tankersafetyexpertpanel/menu.htm">
+<figure>
+<img src="img/slajd3.jpg" alt="">
+<figcaption>
+<p>Oferujemy: Profesjonalne audyty dostępności cyfrowej.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+</div>
+</div>
+<section>
+<h3>Kod</h3>
+<details>
+<summary>Pokaż kod</summary>
+<pre><code>&lt;div class=&quot;wb-tabs carousel-s1&quot;&gt;
+	&lt;ul role=&quot;tablist&quot;&gt;
+		&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#panel1&quot;&gt;Karta 1: ...&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#panel2&quot;&gt;Tab 2: ...&lt;/a&gt;&lt;/li&gt;
+		...
+	&lt;/ul&gt;
+	&lt;div class=&quot;tabpanels&quot;&gt;
+		&lt;div role=&quot;tabpanel&quot; id=&quot;panel1&quot; class=&quot;in fade&quot;&gt;
+			&lt;figure&gt;
+				&lt;img src=&quot;img/slajd3.jpg&quot; alt=&quot;&quot; /&gt;
+				&lt;figcaption&gt;
+					&lt;p&gt;
+						...
+					&lt;/p&gt;
+				&lt;/figcaption&gt;
+			&lt;/figure&gt;
+		&lt;/div&gt;
+		&lt;div role=&quot;tabpanel&quot; id=&quot;panel2&quot; class=&quot;out fade&quot;&gt;
+			&lt;figure&gt;
+				&lt;img src=&quot;img/slajd2.jpg&quot; alt=&quot;&quot; /&gt;
+				&lt;figcaption&gt;
+					&lt;p&gt;
+						...
+					&lt;/p&gt;
+				&lt;/figcaption&gt;
+			&lt;/figure&gt;
+		&lt;/div&gt;
+		...
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</details>
+</section>
+</section>
+<section>
+<h2 id="carousel-s2">Styl karuzeli - przykład 2 (<code>carousel-s2</code>)</h2>
+<div class="wb-tabs carousel-s2">
+<ul role="tablist">
+<li class="active"><a href="#panel4"><img src="img/slajd3.jpg" alt="Karta1: Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową."></a></li>
+<li><a href="#panel5"><img src="img/slajd2.jpg" alt="Karta2: Przekonaj się: Tworzymy dostępne strony internetowe."></a></li>
+<li><a href="#panel6"><img src="img/slajd1.jpg" alt="Karta3: Oferujemy: Profesjonalne audyty dostępności cyfrowej."></a></li>
+</ul>
+<div class="tabpanels">
+<div role="tabpanel" id="panel4" class="in fade">
+<a href="https://www.tc.gc.ca/eng/civilaviation/opssvs/general-personnel-changes-1814.htm">
+<figure>
+<img src="img/slajd1.jpg" alt="">
+<figcaption>
+<p>Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel5" class="out fade">
+<a href="https://www.tc.gc.ca/eng/railsafety/publications-46.htm">
+<figure>
+<img src="img/slajd2.jpg" alt="">
+<figcaption>
+<p>Przekonaj się: Tworzymy dostępne strony internetowe.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel6" class="out fade">
+<a href="https://www.tc.gc.ca/eng/tankersafetyexpertpanel/menu.htm">
+<figure>
+<img src="img/slajd3.jpg" alt="">
+<figcaption>
+<p>Oferujemy: Profesjonalne audyty dostępności cyfrowej.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+</div>
+</div>
+<section>
+<h3>Kod</h3>
+<details>
+<summary>Pokaż kod</summary>
+<pre><code>&lt;div class=&quot;wb-tabs carousel-s2&quot;&gt;
+	&lt;ul role=&quot;tablist&quot;&gt;
+		&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#panel4&quot;&gt;&lt;img src=&quot;img/slajd3.jpg&quot; alt=&quot;Karta 1: ...&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#panel5&quot;&gt;&lt;img src=&quot;img/slajd2.jpg&quot; alt=&quot;Karta 2: ...&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		...
+	&lt;/ul&gt;
+	&lt;div class=&quot;tabpanels&quot;&gt;
+		&lt;div role=&quot;tabpanel&quot; id=&quot;panel4&quot; class=&quot;in fade&quot;&gt;
+			&lt;figure&gt;
+				&lt;img src=&quot;img/slajd3.jpg&quot; alt=&quot;&quot; /&gt;
+				&lt;figcaption&gt;
+					&lt;p&gt;
+						...
+					&lt;/p&gt;
+				&lt;/figcaption&gt;
+			&lt;/figure&gt;
+		&lt;/div&gt;
+		&lt;div role=&quot;tabpanel&quot; id=&quot;panel5&quot; class=&quot;out fade&quot;&gt;
+			&lt;figure&gt;
+				&lt;img src=&quot;img/slajd2.jpg&quot; alt=&quot;&quot; /&gt;
+				&lt;figcaption&gt;
+					&lt;p&gt;
+						...
+					&lt;/p&gt;
+				&lt;/figcaption&gt;
+			&lt;/figure&gt;
+		&lt;/div&gt;
+		...
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</details>
+</section>
+</section>
+<section>
+<h2 id="carousel-s2-thmb">Styl karuzeli z miniaturami - przykład 3 (<code>carousel-s2 show-thumbs</code>)</h2>
+<div class="wb-tabs carousel-s2 show-thumbs">
+<ul role="tablist">
+<li class="active"><a href="#panel30"><img src="img/slajd3.jpg" alt="Karta1: Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową."></a></li>
+<li><a href="#panel31"><img src="img/slajd2.jpg" alt="Karta2: Przekonaj się: Tworzymy dostępne strony internetowe."></a></li>
+<li><a href="#panel32"><img src="img/slajd1.jpg" alt="Karta3: Oferujemy: Profesjonalne audyty dostępności cyfrowej."></a></li>
+</ul>
+<div class="tabpanels">
+<div role="tabpanel" id="panel30" class="in fade">
+<a href="https://www.tc.gc.ca/eng/civilaviation/opssvs/general-personnel-changes-1814.htm">
+<figure>
+<img src="img/slajd1.jpg" alt="">
+<figcaption>
+<p>Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel31" class="out fade">
+<a href="https://www.tc.gc.ca/eng/railsafety/publications-46.htm">
+<figure>
+<img src="img/slajd2.jpg" alt="">
+<figcaption>
+<p>Przekonaj się: Tworzymy dostępne strony internetowe.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel32" class="out fade">
+<a href="https://www.tc.gc.ca/eng/tankersafetyexpertpanel/menu.htm">
+<figure>
+<img src="img/slajd3.jpg" alt="">
+<figcaption>
+<p>Oferujemy: Profesjonalne audyty dostępności cyfrowej.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+</div>
+</div>
+<section>
+<h3>Kod</h3>
+<details>
+<summary>Pokaż kod</summary>
+<pre><code>&lt;div class=&quot;wb-tabs carousel-s2  show-thumbs&quot;&gt;
+	&lt;ul role=&quot;tablist&quot;&gt;
+		&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#panel30&quot;&gt;&lt;img src=&quot;img/slajd3.jpg&quot; alt=&quot;Karta 1: ...&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#panel31&quot;&gt;&lt;img src=&quot;img/slajd2.jpg&quot; alt=&quot;Karta 2: ...&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+		...
+	&lt;/ul&gt;
+	&lt;div class=&quot;tabpanels&quot;&gt;
+		&lt;div role=&quot;tabpanel&quot; id=&quot;panel30&quot; class=&quot;in fade&quot;&gt;
+			&lt;figure&gt;
+				&lt;img src=&quot;img/slajd3.jpg&quot; alt=&quot;&quot; /&gt;
+				&lt;figcaption&gt;
+					&lt;p&gt;
+						...
+					&lt;/p&gt;
+				&lt;/figcaption&gt;
+			&lt;/figure&gt;
+		&lt;/div&gt;
+		&lt;div role=&quot;tabpanel&quot; id=&quot;panel31&quot; class=&quot;out fade&quot;&gt;
+			&lt;figure&gt;
+				&lt;img src=&quot;img/slajd2.jpg&quot; alt=&quot;&quot; /&gt;
+				&lt;figcaption&gt;
+					&lt;p&gt;
+						...
+					&lt;/p&gt;
+				&lt;/figcaption&gt;
+			&lt;/figure&gt;
+		&lt;/div&gt;
+		...
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</details>
+</section>
+</section>
+<section>
+<h2>Przykład siatki</h2>
+<div class="row">
+<section class="col-sm-6 col-md-4">
+<h3>Styl karuzeli na siatce - przykład 1 - col-sm-6 col-md-4</h3>
+<div class="wb-tabs carousel-s1">
+<ul role="tablist">
+<li class="active"><a href="#panel7">Karta 1: Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową.</a></li>
+<li><a href="#panel8">Karta 2: Przekonaj się: Tworzymy dostępne strony internetowe.</a></li>
+<li><a href="#panel9">Karta 3: Oferujemy: Profesjonalne audyty dostępności cyfrowej.</a></li>
+</ul>
+<div class="tabpanels">
+<div role="tabpanel" id="panel7" class="in fade">
+<a href="https://www.tc.gc.ca/eng/civilaviation/opssvs/general-personnel-changes-1814.htm">
+<figure>
+<img src="img/slajd1.jpg" alt="">
+<figcaption>
+<p>Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel8" class="out fade">
+<a href="https://www.tc.gc.ca/eng/railsafety/publications-46.htm">
+<figure>
+<img src="img/slajd2.jpg" alt="">
+<figcaption>
+<p>Przekonaj się: Tworzymy dostępne strony internetowe.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel9" class="out fade">
+<a href="https://www.tc.gc.ca/eng/tankersafetyexpertpanel/menu.htm">
+<figure>
+<img src="img/slajd3.jpg" alt="">
+<figcaption>
+<p>Oferujemy: Profesjonalne audyty dostępności cyfrowej.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+</div>
+</div>
+<!--
+
+			-->
+<h3>Karuzela - Styl 1 - Tylko jeden wybór (suwaki i przejścia nie są stosowane)</h3>
+<div class="wb-tabs carousel-s1">
+<ul role="tablist">
+<li><a href="#panels7">Karta 1: Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową.</a></li>
+</ul>
+<div class="tabpanels">
+<div role="tabpanel" id="panels7" class="in fade">
+<a href="https://www.tc.gc.ca/eng/civilaviation/opssvs/general-personnel-changes-1814.htm">
+<figure>
+<img src="img/slajd1.jpg" alt="">
+<figcaption>
+<p>Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową</p>
+</figcaption>
+</figure>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="col-sm-6 col-md-8">
+<h3>Styl karuzeli - przykład 2 - col-sm-6 col-md-8</h3>
+<div class="wb-tabs carousel-s2">
+<ul role="tablist">
+<li class="active"><a href="#panel10">Karta 1: Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową.</a></li>
+<li><a href="#panel11">Karta 2: Przekonaj się: Tworzymy dostępne strony internetowe.</a></li>
+<li><a href="#panel12">Karta 3: Oferujemy: Profesjonalne audyty dostępności cyfrowej.</a></li>
+</ul>
+<div class="tabpanels">
+<div role="tabpanel" id="panel10" class="in fade">
+<a href="https://www.tc.gc.ca/eng/civilaviation/opssvs/general-personnel-changes-1814.htm">
+<figure>
+<img src="img/slajd1.jpg" alt="">
+<figcaption>
+<p>Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel11" class="out fade">
+<a href="https://www.tc.gc.ca/eng/railsafety/publications-46.htm">
+<figure>
+<img src="img/slajd2.jpg" alt="">
+<figcaption>
+<p>Przekonaj się: Tworzymy dostępne strony internetowe.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel12" class="out fade">
+<a href="https://www.tc.gc.ca/eng/tankersafetyexpertpanel/menu.htm">
+<figure>
+<img src="img/slajd3.jpg" alt="">
+<figcaption>
+<p>Oferujemy: Profesjonalne audyty dostępności cyfrowej.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<section>
+<h3>Kod</h3>
+<details>
+<summary>Pokaż kod</summary>
+<pre><code>&lt;div class=&quot;row&quot;&gt;
+	&lt;section class=&quot;col-sm-6 col-md-4&quot;&gt;
+		&lt;h3&gt;Carousel style 1 - col-sm-6 col-md-4&lt;/h3&gt;
+		&lt;div class=&quot;wb-tabs carousel-s1&quot;&gt;
+			&lt;ul role=&quot;tablist&quot;&gt;
+				...
+			&lt;/ul&gt;
+			&lt;div class=&quot;tabpanels&quot;&gt;
+				...
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+	&lt;section class=&quot;col-sm-6 col-md-8&quot;&gt;
+		&lt;h3&gt;Carousel style 2 - col-sm-6 col-md-8&lt;/h3&gt;
+		&lt;div class=&quot;wb-tabs carousel-s2&quot;&gt;
+			&lt;ul role=&quot;tablist&quot;&gt;
+				...
+			&lt;/ul&gt;
+			&lt;div class=&quot;tabpanels&quot;&gt;
+				...
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+&lt;/div&gt;</code></pre>
+</details>
+</section>
+</section>
+<section>
+<h2>Zmiana prędkości przesuwania</h2>
+<section>
+<h3>Przykład atrybutu danych (<code>data-wb-tabs='{"interval": 3}'</code>)</h3>
+<div class="wb-tabs carousel-s2" data-wb-tabs='{"interval": 3}'>
+<ul role="tablist">
+<li class="active"><a href="#panel13">Karta 1: Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową.</a></li>
+<li><a href="#panel14">Karta 2: Przekonaj się: Tworzymy dostępne strony internetowe.</a></li>
+<li><a href="#panel15">Karta 3: Oferujemy: Profesjonalne audyty dostępności cyfrowej.</a></li>
+</ul>
+<div class="tabpanels">
+<div role="tabpanel" id="panel13" class="in fade">
+<a href="https://www.tc.gc.ca/eng/civilaviation/opssvs/general-personnel-changes-1814.htm">
+<figure>
+<img src="img/slajd1.jpg" alt="">
+<figcaption>
+<p>Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel14" class="out fade">
+<a href="https://www.tc.gc.ca/eng/railsafety/publications-46.htm">
+<figure>
+<img src="img/slajd2.jpg" alt="">
+<figcaption>
+<p>Przekonaj się: Tworzymy dostępne strony internetowe.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel15" class="out fade">
+<a href="https://www.tc.gc.ca/eng/tankersafetyexpertpanel/menu.htm">
+<figure>
+<img src="img/slajd3.jpg" alt="">
+<figcaption>
+<p>Oferujemy: Profesjonalne audyty dostępności cyfrowej.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+</div>
+</div>
+<section>
+<h4>Kod</h4>
+<details>
+<summary>Pokaż kod</summary>
+<pre><code>&lt;div class=&quot;wb-tabs carousel-s2&quot; data-wb-tabs='{&quot;interval&quot;: 3}'&gt;</code></pre>
+</details>
+</section>
+</section>
+<section>
+<h3>Klasy CSS - przykład (<code>slow</code>, <code>fast</code>)</h3>
+<div class="wb-tabs carousel-s2 fast">
+<ul role="tablist">
+<li class="active"><a href="#panel16">Karta 1: Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową.</a></li>
+<li><a href="#panel17">Karta 2: Przekonaj się: Tworzymy dostępne strony internetowe.</a></li>
+<li><a href="#panel18">Karta 3: Oferujemy: Profesjonalne audyty dostępności cyfrowej.</a></li>
+</ul>
+<div class="tabpanels">
+<div role="tabpanel" id="panel16" class="in fade">
+<a href="https://www.tc.gc.ca/eng/civilaviation/opssvs/general-personnel-changes-1814.htm">
+<figure>
+<img src="img/slajd1.jpg" alt="">
+<figcaption>
+<p>Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel17" class="out fade">
+<a href="https://www.tc.gc.ca/eng/railsafety/publications-46.htm">
+<figure>
+<img src="img/slajd2.jpg" alt="">
+<figcaption>
+<p>Przekonaj się: Tworzymy dostępne strony internetowe.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel18" class="out fade">
+<a href="https://www.tc.gc.ca/eng/tankersafetyexpertpanel/menu.htm">
+<figure>
+<img src="img/slajd3.jpg" alt="">
+<figcaption>
+<p>Oferujemy: Profesjonalne audyty dostępności cyfrowej.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+</div>
+</div>
+<section>
+<h4>Kod</h4>
+<details>
+<summary>Pokaż kod</summary>
+<pre><code>&lt;div class=&quot;wb-tabs carousel-s2 fast&quot;&gt;</code></pre>
+</details>
+</section>
+</section>
+</section>
+<section>
+<h2>Przykład odtwarzacza multimediów</h2>
+<div class="row">
+<div class="col-xs-12 col-sm-6">
+<div class="wb-tabs carousel-s2">
+<ul role="tablist">
+<li class="active"><a href="#panel19">Karta 1</a></li>
+<li><a href="#panel20">Karta 2</a></li>
+</ul>
+<div class="tabpanels">
+<div role="tabpanel" id="panel19" class="in fade">
+<figure class="wb-mltmd">
+<video poster="../multimedia/demo/video1-en.jpg" title="Looking for a Job">
+<source type="video/webm" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-eng.webm">
+<source type="video/mp4" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-eng.mp4">
+<track src="../multimedia/cpts-lg-en.html" kind="captions" data-type="text/html" srclang="en" label="English">
+</video>
+<figcaption>
+<p>Looking for a Job (<a href="../multimedia/cpts-lg-en.html">Transcript</a>)</p>
+</figcaption>
+</figure>
+</div>
+<div role="tabpanel" id="panel20" class="out fade">
+<figure class="wb-mltmd">
+<video poster="../multimedia/demo/video2-en.jpg" title="Training and Development">
+<source type="video/webm" src="https://video2.servicecanada.gc.ca/video/boew-wet/dc-td-eng.webm">
+<source type="video/mp4" src="https://video2.servicecanada.gc.ca/video/boew-wet/dc-td-eng.mp4">
+<track src="../multimedia/demo/video2-captions-en.xml" kind="captions" data-type="application/ttml+xml" srclang="en" label="English">
+</video>
+<figcaption>
+<p>Training and Development (<a href="../multimedia/cpts-lg2-en.html">Transcript</a>)</p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section>
+<h3>Kod</h3>
+<details>
+<summary>Pokaż kod</summary>
+<pre><code>&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6&quot;&gt;
+		&lt;div class=&quot;wb-tabs carousel-s2&quot;&gt;
+			&lt;ul role=&quot;tablist&quot;&gt;
+				&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#panel19&quot;&gt;Karta 1&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#panel20&quot;&gt;Karta 2&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;div class=&quot;tabpanels&quot;&gt;
+				&lt;div role=&quot;tabpanel&quot; id=&quot;panel19&quot; class=&quot;in fade&quot;&gt;
+					&lt;figure class=&quot;wb-mltmd&quot;&gt;
+						&lt;video poster=&quot;../multimedia/demo/video1-en.jpg&quot; title=&quot;Looking for a Job&quot;&gt;
+							&lt;source type=&quot;video/webm&quot; src=&quot;https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-eng.webm&quot; /&gt;
+							&lt;source type=&quot;video/mp4&quot; src=&quot;https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-eng.mp4&quot; /&gt;
+							&lt;track src=&quot;../multimedia/cpts-lg-en.html&quot; kind=&quot;captions&quot; data-type=&quot;text/html&quot; srclang=&quot;en&quot; label=&quot;English&quot; /&gt;
+						&lt;/video&gt;
+						&lt;figcaption&gt;
+							&lt;p&gt;Looking for a Job (&lt;a href=&quot;../multimedia/cpts-lg-en.html&quot;&gt;Transcript&lt;/a&gt;)&lt;/p&gt;
+						&lt;/figcaption&gt;
+					&lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div role=&quot;tabpanel&quot; id=&quot;panel20&quot; class=&quot;out fade&quot;&gt;
+					&lt;figure class=&quot;wb-mltmd&quot;&gt;
+						&lt;video poster=&quot;../multimedia/demo/video2-en.jpg&quot; title=&quot;Training and Development&quot;&gt;
+							&lt;source type=&quot;video/webm&quot; src=&quot;https://video2.servicecanada.gc.ca/video/boew-wet/dc-td-eng.webm&quot; /&gt;
+							&lt;source type=&quot;video/mp4&quot; src=&quot;https://video2.servicecanada.gc.ca/video/boew-wet/dc-td-eng.mp4&quot; /&gt;
+							&lt;track src=&quot;../multimedia/demo/video2-captions-en.xml&quot; kind=&quot;captions&quot; data-type=&quot;application/ttml+xml&quot; srclang=&quot;en&quot; label=&quot;English&quot; /&gt;
+						&lt;/video&gt;
+						&lt;figcaption&gt;
+							&lt;p&gt;Training and Development (&lt;a href=&quot;../multimedia/cpts-lg2-en.html&quot;&gt;Transcript&lt;/a&gt;)&lt;/p&gt;
+						&lt;/figcaption&gt;
+					&lt;/figure&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</details>
+</section>
+</section>
+<section>
+<h2>Przejścia (tranzycje) CSS</h2>
+<section>
+<h3 id="fade">Przykład zanikania (<code>fade</code>)</h3>
+<div class="wb-tabs carousel-s2 fast">
+<ul role="tablist">
+<li class="active"><a href="#panel21">Karta 1: Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową.</a></li>
+<li><a href="#panel22">Karta 2: Przekonaj się: Tworzymy dostępne strony internetowe.</a></li>
+<li><a href="#panel23">Karta 3: Oferujemy: Profesjonalne audyty dostępności cyfrowej.</a></li>
+</ul>
+<div class="tabpanels">
+<div role="tabpanel" id="panel21" class="in fade">
+<a href="https://www.tc.gc.ca/eng/civilaviation/opssvs/general-personnel-changes-1814.htm">
+<figure>
+<img src="img/slajd1.jpg" alt="">
+<figcaption>
+<p>Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel22" class="out fade">
+<a href="https://www.tc.gc.ca/eng/railsafety/publications-46.htm">
+<figure>
+<img src="img/slajd2.jpg" alt="">
+<figcaption>
+<p>Przekonaj się: Tworzymy dostępne strony internetowe.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel23" class="out fade">
+<a href="https://www.tc.gc.ca/eng/tankersafetyexpertpanel/menu.htm">
+<figure>
+<img src="img/slajd3.jpg" alt="">
+<figcaption>
+<p>Oferujemy: Profesjonalne audyty dostępności cyfrowej.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+</div>
+</div>
+<section>
+<h4>Kod</h4>
+<details>
+<summary>Pokaż kod</summary>
+<pre><code>&lt;div class=&quot;wb-tabs carousel-s2 fast&quot;&gt;
+	&lt;ul role=&quot;tablist&quot;&gt;
+		&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#panel21&quot;&gt;Karta 1: ...&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#panel22&quot;&gt;Karta 2: ...&lt;/a&gt;&lt;/li&gt;
+		...
+	&lt;/ul&gt;
+	&lt;div class=&quot;tabpanels&quot;&gt;
+		&lt;div role=&quot;tabpanel&quot; id=&quot;panel21&quot; class=&quot;in fade&quot;&gt;
+			...
+		&lt;/div&gt;
+		&lt;div role=&quot;tabpanel&quot; id=&quot;panel22&quot; class=&quot;out fade&quot;&gt;
+			...
+		&lt;/div&gt;
+		...
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</details>
+</section>
+</section>
+<section>
+<h3 id="slide">Slajd - przesuwanie poziomo (<code>slide</code>)</h3>
+<div class="wb-tabs carousel-s2 fast">
+<ul role="tablist">
+<li class="active"><a href="#panel24">Karta 1: Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową.</a></li>
+<li><a href="#panel25">Karta 2: Przekonaj się: Tworzymy dostępne strony internetowe.</a></li>
+<li><a href="#panel26">Karta 3: Oferujemy: Profesjonalne audyty dostępności cyfrowej.</a></li>
+</ul>
+<div class="tabpanels">
+<div role="tabpanel" id="panel24" class="slide in">
+<a href="https://www.tc.gc.ca/eng/civilaviation/opssvs/general-personnel-changes-1814.htm">
+<figure>
+<img src="img/slajd1.jpg" alt="">
+<figcaption>
+<p>Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel25" class="slide out">
+<a href="https://www.tc.gc.ca/eng/railsafety/publications-46.htm">
+<figure>
+<img src="img/slajd2.jpg" alt="">
+<figcaption>
+<p>Przekonaj się: Tworzymy dostępne strony internetowe.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel26" class="slide out">
+<a href="https://www.tc.gc.ca/eng/tankersafetyexpertpanel/menu.htm">
+<figure>
+<img src="img/slajd3.jpg" alt="">
+<figcaption>
+<p>Oferujemy: Profesjonalne audyty dostępności cyfrowej.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+</div>
+</div>
+<section>
+<h4>Kod</h4>
+<details>
+<summary>Pokaż kod</summary>
+<pre><code>&lt;div class=&quot;wb-tabs carousel-s2 fast&quot;&gt;
+	&lt;ul role=&quot;tablist&quot;&gt;
+		&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#panel24&quot;&gt;Karta 1: ...&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#panel25&quot;&gt;Karta 2: ...&lt;/a&gt;&lt;/li&gt;
+		...
+	&lt;/ul&gt;
+	&lt;div class=&quot;tabpanels&quot;&gt;
+		&lt;div role=&quot;tabpanel&quot; id=&quot;panel24&quot; class=&quot;slide in&quot;&gt;
+			...
+		&lt;/div&gt;
+		&lt;div role=&quot;tabpanel&quot; id=&quot;panel25&quot; class=&quot;slide out&quot;&gt;
+			...
+		&lt;/div&gt;
+		...
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</details>
+</section>
+</section>
+<section>
+<h3 id="slidevert">Slajd - opadanie pionowo (<code>slidevert</code>)</h3>
+<div class="wb-tabs carousel-s2 fast">
+<ul role="tablist">
+<li class="active"><a href="#panel27">Karta 1: Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową.</a></li>
+<li><a href="#panel28">Karta 2: Przekonaj się: Tworzymy dostępne strony internetowe.</a></li>
+<li><a href="#panel29">Karta 3: Oferujemy: Profesjonalne audyty dostępności cyfrowej.</a></li>
+</ul>
+<div class="tabpanels">
+<div role="tabpanel" id="panel27" class="slidevert in">
+<a href="https://www.tc.gc.ca/eng/civilaviation/opssvs/general-personnel-changes-1814.htm">
+<figure>
+<img src="img/slajd1.jpg" alt="">
+<figcaption>
+<p>Sprawdź nas: Skutecznie wdrażamy dostępność cyfrową</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel28" class="slidevert out">
+<a href="https://www.tc.gc.ca/eng/railsafety/publications-46.htm">
+<figure>
+<img src="img/slajd2.jpg" alt="">
+<figcaption>
+<p>Przekonaj się: Tworzymy dostępne strony internetowe.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div role="tabpanel" id="panel29" class="slidevert out">
+<a href="https://www.tc.gc.ca/eng/tankersafetyexpertpanel/menu.htm">
+<figure>
+<img src="img/slajd3.jpg" alt="">
+<figcaption>
+<p>Oferujemy: Profesjonalne audyty dostępności cyfrowej.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+</div>
+</div>
+<section>
+<h4>Kod</h4>
+<details>
+<summary>Pokaż kod</summary>
+<pre><code>&lt;div class=&quot;wb-tabs carousel-s2 fast&quot;&gt;
+	&lt;ul role=&quot;tablist&quot;&gt;
+		&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#panel27&quot;&gt;Karta 1: ...&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#panel28&quot;&gt;Karta 2: ...&lt;/a&gt;&lt;/li&gt;
+		...
+	&lt;/ul&gt;
+	&lt;div class=&quot;tabpanels&quot;&gt;
+		&lt;div role=&quot;tabpanel&quot; id=&quot;panel27&quot; class=&quot;slidevert in&quot;&gt;
+			...
+		&lt;/div&gt;
+		&lt;div role=&quot;tabpanel&quot; id=&quot;panel28&quot; class=&quot;slidevert out&quot;&gt;
+			...
+		&lt;/div&gt;
+		...
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</details>
+</section>
+</section>
+<section>
+<h3>Karuzela - Styl 2 - Tylko jeden wybór (przesuwanie i przejścia nie są stosowane)</h3>
+<div class="wb-tabs carousel-s2 show-thumbs playing slow">
+<ul role="tablist">
+<li><a href="#paneln2">Karta 2: Przekonaj się: Tworzymy dostępne strony internetowe.</a></li>
+</ul>
+<div class="tabpanels">
+<div role="tabpanel" id="paneln2" class="in fade">
+<a href="https://www.tc.gc.ca/eng/railsafety/publications-46.htm">
+<figure>
+<img src="img/slajd2.jpg" alt="">
+<figcaption>
+<p>Przekonaj się: Tworzymy dostępne strony internetowe.</p>
+</figcaption>
+</figure>
+</a>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+
+
+
+
+<!-- szczegóły strony -->
+   <div class="pagedetails">
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-4">
+          <details class="brdr-0">
+            <summary class="btn btn-default text-center">Zgłoś problem z tą stroną</summary>
+
+  <div class="well row">
+    <div class="gc-rprt-prblm">
+      <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+        <form action="#">
+          <fieldset>
+            <legend><span class="field-name">Zaznacz wszystko, czego dotyczy zgłoszenie: </span></legend>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f1">
+                <input type="checkbox" name="problem1" value="Tak" id="gc-rprt-prblm-f1">Łącze, przycisk lub wideo nie działa
+              </label>
+              <input name="problem1" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f2">
+                <input type="checkbox" name="problem2" value="Tak" id="gc-rprt-prblm-f2">Na stronie są błędy ortograficzne lub gramatyczne
+              </label>
+              <input name="problem2" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f3">
+                <input type="checkbox" name="problem3" value="Tak" id="gc-rprt-prblm-f3">Informacje są błędne
+              </label>
+              <input name="problem3" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f4">
+                <input type="checkbox" name="problem4" value="Tak" id="gc-rprt-prblm-f4">Informacje są nieaktualne
+              </label>
+              <input name="problem4" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f5">
+                <input type="checkbox" name="problem5" value="Tak" id="gc-rprt-prblm-f5">Nie mogę znaleźć, czego szukam
+              </label>
+              <input name="problem5" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f6">
+                <input type="checkbox" name="problem6" value="Tak" id="gc-rprt-prblm-f6">Inne, ktorych nie ma na tej liście
+              </label>
+              <input name="problem6" type="hidden" value="Nie">
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Wyślij</button>
+        </form>
+      </div>
+      <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+        <h3>Dziękujemy za Twoją pomoc!</h3>
+        <p>Nie otrzymasz odpowiedzi na tę wiadomość. Jeśli masz pytania, <a href="https://lepszyweb.pl/kontakt.html">napisz do nas</a>.</p>
+      </div>
+    </div>
+  </div>
+</details>
+
+
+        </div>
+        <div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+      </div>
+      <dl id="wb-dtmd">
+        <dt>Data modyfikacji:</dt>
+        <dd>
+          <time property="dateModified">2020-06-10</time>
+        </dd>
+      </dl>
+    </div>
+
+    </main>
+   <footer id="wb-info">
+      <div class="landscape">
+        <nav class="container wb-navcurr">
+          <h2 class="wb-inv">O usługach LepszyWeb.pl</h2>
+          <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+            <li><a href="./pages/lw/kontakt.html">Skontaktuj się z nami</a></li>
+            <li><a href="./pages/lw/uslugi.html">Szkolenia</a></li>
+            <li><a href="./pages/lw/audyty.html">Audyty</a></li>
+            <li><a href="./pages/lw/blog.html">Blog</a></li>
+            <li><a href="./pages/lw/pomoc.html">Pomoc</a></li>
+            <li><a href="./pages/lw/raporty.html">Raporty</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+
+            <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+              <h2 class="wb-inv">O tej stronie</h2>
+              <ul>
+                <li><a href="./pages/prawne/o-lepszyweb.html/wsieci.html">W Sieci</a></li>
+                <li><a href="./pages/prawne/o-lepszyweb.html">O LepszyWeb.pl</a></li>
+                <li><a href="./pages/prawne/regulamin.html">Regulamin</a></li>
+                <li><a href="./pages/prawne/prywatnosc.html">Prywatność</a></li>			  
+                <li><a href="./pages/prawne/dostepnosc.html">Dostępność</a></li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg"> 
+              <a href="#wb-cont">Góra strony <span class="glyphicon glyphicon-chevron-up"></span></a> 
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="./../LWeb/assets/lepszyweb-min.svg" alt="Logo Pracowni Dostępności Cyfrowej LepszyWeb.pl"> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="./../wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+	<script src="./../wet-boew/js/ie8-wet-boew2.min.js"></script>
+	
+	<![endif]-->
+    <script src="./../LWeb/js/theme.min.js"></script>		
+  </body>
+</html>

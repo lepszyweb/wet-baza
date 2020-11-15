@@ -1,0 +1,378 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="pl" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl" dir="ltr">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Tabele - LepszyWeb.pl</title>
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="Integruje wtyczkę DataTables z WET zapewniając wyszukiwanie, sortowanie, filtrowanie, paginację i inne zaawansowane funkcje dla tabel.">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="./../LWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../LWeb/css/theme.css">
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+  <link href="./../LWeb/assets/favicon.ico" rel="shortcut icon" />
+
+  <link rel="stylesheet" href="./../LWeb/css/ie8-theme.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="./../wet-boew/js/ie8-wet-boew.min.js"></script>
+  <![endif]-->
+    <!--[if lte IE 9]>
+
+
+  <![endif]-->
+    <noscript><link rel="stylesheet" href="./../wet-boew/css/noscript.min.css" /></noscript>
+  </head>
+
+ <body vocab="http://schema.org/" typeof="WebPage">
+    <nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-cont">Przejdź do treści głównej</a>
+        </li>
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-info">Przejdź do &bdquo;O tej stronie&rdquo;</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container">
+<!-- Sekcja Wybierz język -->
+<!-- Koniec sekcji Wybierz język -->
+
+        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+          <h2>Wyszukiwanie i menu</h2>
+          <ul class="pnl-btn list-inline text-right">
+            <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
+          </ul>
+          <div id="mb-pnl"></div>
+        </section>	 		
+
+
+
+        <div class="row">
+          <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="./../index.html" property="url"><img src="./../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
+            <meta property="areaServed" typeof="Country" content="Polska">
+            <link property="logo" href="./../LWeb/assets/lepszyweb-min.svg">
+          </div>
+          <section id="wb-srch" class="col-lg-8 text-right">
+            <h2>Szukaj</h2>
+            <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+              <div class="form-group">
+                <label for="wb-srch-q" class="wb-inv">Szukaj na LepszyWeb.pl</label>
+                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Szukaj na LepszyWeb.pl">
+                <datalist id="wb-srch-q-ac"> </datalist>
+              </div>
+              <div class="form-group submit">
+                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Szukaj</span></button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+	  
+      <nav role="navigation" id="wb-sm" data-ajax-replace="./../ajax/menu-audyt.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <div class="container nvbar">
+          <h2>Spis tematów</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a href="./index.html">O szkoleniu</a></li>
+              <li><a href="./przypadki/index.html">Przypadki</a></li>		  
+              <li><a href="./zgodne/index.html">Zgodne</a></li>
+              <li><a href="./niezgodne/index.html">Niezgodne</a></li>
+              <li><a href="./wzorce/index.html">Wzorce</a></li>
+              <li><a href="./szablony/index.html">Szablony</a></li>					  
+              <li><a href="./pomoc/index.html">Pomoc</a></li>		
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <nav role="navigation" id="wb-bc" property="breadcrumb">
+        <h2>Jesteś tutaj:</h2>
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>
+                <a href="./../index-en.html">Start</a>
+              </li>
+              <li>
+                <a href="./../demos/index-pl.html">Przykłady działania</a>
+              </li>
+              <li>Tabele</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<main property="mainContentOfPage" class="container" typeof="WebPageElement">
+<h1 property="name" id="wb-cont">Tabele</h1>
+<section>
+<h2>Przykład</h2>
+<p>Integruje wtyczkę <a href="https://www.datatables.net">DataTables</a> z WET, zapewniając wyszukiwanie, sortowanie, filtrowanie, paginację i inne zaawansowane funkcje tabel.</p>
+
+<h3>Testy dostępności cyfrowej</h3>
+<p><a href="https://www.datatables.net/ref">API DataTables </a> jest w pełni dostępne za pośrednictwem atrybutu<code>data-wb-tables</code> przy użyciu właściwości tablicy JSON, a filtrowanie może zostać uruchomione za pomocą klasy <code>.wb-tables-filter</code>.</p>
+
+<div class="row">
+<div class="col-md-3">
+<h4 class="wb-inv">Opcje filtrowania</h4>
+<details open>
+<summary><h4 class="h4">Opcje filtrów</h4></summary>
+<p class="mrgn-tp-md">Użyj poniższych opcji filtrów, aby dostosować wyświetlanie pozycji w tabeli.</p>
+<form class="wb-tables-filter" data-bind-to="dataset-filter">
+<div class="form-group">
+<fieldset>
+<legend><span class="field-name">Poziom</span></legend>
+<ul class="list-unstyled">
+<li class="checkbox"><label for="dt_poziom0"><input type="checkbox" id="dt_poziom0" name="dt_poziom" data-column="4" value="">wszystkie</label></li>
+<li class="checkbox"><label for="dt_poziom1"><input type="checkbox" id="dt_poziom1" name="dt_poziom" data-column="4" value="A">A</label></li>
+<li class="checkbox"><label for="dt_poziom2"><input type="checkbox" id="dt_poziom2" name="dt_poziom" data-column="4" value="AA">AA</label></li>
+<li class="checkbox"><label for="dt_poziom3"><input type="checkbox" id="dt_poziom3" name="dt_poziom" data-column="4" value="AAA">AAA</label></li>
+</ul>
+
+</select>
+</div>
+<div class="form-group">
+<label for="dt_zasada">Zasada</label>
+<select class="form-control" id="dt_zasada" name="dt_zasada" data-column="5">
+<option value="">Dowolna zasada</option>
+<option value="postrzegalność">Postrzegalność</option>
+<option value="funkcjonalność">Funkcjonalność</option>
+<option value="zrozumiałość">Zrozumiałość</option>
+<option value="solidność">Solidność</option>
+<option value="Wymagania ogólne">Wymagania ogólne</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="dt_status">Status</label>
+<select class="form-control" id="dt_status" name="dt_status" data-column="7">
+<option value="">Wszystkie</option>
+<option value="powodzenie">Powodzenie</option>
+<option value="niepowodzenie">Niepowodzenie</option>
+<option value="nie dotyczy">Nie dotyczy</option>
+<option value="nie testowano">Nie testowano</option>
+
+</select>
+</div>
+
+
+<div class="form-group">
+<label for="dt_minister">Odpowiedzialność</label>
+<select class="form-control" id="dt_minister" name="dt_minister" data-column="9">
+<option value="">Dowolnie</option>
+<option value="architekt informacji">Architekt informacji</option>
+<option value="projektant interakcji">Projektant interakcji</option>
+<option value="projektant grafiki">Projektant grafiki</option>
+<option value="webmaster">Webmaster</option>
+<option value="programista">Programista</option>
+<option value="redakcja">Redakcja</option>
+<option value="kontrola jakości">Kontrola jakości</option>
+<option value="zarządzanie projektem">Zarządzanie projektem</option>
+</select>
+</div>
+
+<div class="form-group">
+<fieldset>
+<legend><span class="field-name">Waga</span></legend>
+<ul class="list-unstyled">
+<li class="checkbox"><label for="dt_waga1"><input type="checkbox" id="dt_waga1" name="dt_waga" data-column="8" value="">Wszystkie</label></li>
+<li class="checkbox"><label for="dt_waga2"><input type="checkbox" id="dt_waga2" name="dt_waga" data-column="8" value="Krytyczny">Krytyczny</label></li>
+<li class="checkbox"><label for="dt_waga3"><input type="checkbox" id="dt_waga3" name="dt_waga" data-column="8" value="Poważny">Poważny</label></li>
+<li class="checkbox"><label for="dt_waga4"><input type="checkbox" id="dt_waga4" name="dt_waga" data-column="8" value="Umiarkowany">Umiarkowany</label></li>
+<li class="checkbox"><label for="dt_waga5"><input type="checkbox" id="dt_waga5" name="dt_waga" data-column="8" value="Niewielki">Niewielki</label></li>
+</ul>
+</fieldset>
+
+
+<details>
+<summary><h6>Opcje zaawansowane</h6></summary>
+<div class="radio">
+<label for="advanced_options1_1"><input type="radio" name="advanced_options1" id="advanced_options1_1" data-aopts='{"type": "any", "column": "5"}' checked=checked>dowolne</label>
+</div>
+<div class="radio">
+<label for="advanced_options1_2"><input type="radio" name="advanced_options1" id="advanced_options1_2" data-aopts='{"type": "both", "column": "5"}'>obie</label>
+</div>
+<div class="radio">
+<label for="advanced_options1_3"><input type="radio" name="advanced_options1" id="advanced_options1_3" data-aopts='{"type": "either", "column": "5"}'>albo</label>
+</div>
+<div class="radio">
+<label for="advanced_options1_4"><input type="radio" name="advanced_options1" id="advanced_options1_4" data-aopts='{"type": "and", "column": "5"}'>oraz</label>
+</div>
+</details>
+</div>
+<div class="form-group">
+<button type="submit" class="btn btn-primary" aria-controls="dataset-filter">Filtruj</button>
+</div>
+<div class="form-group">
+<button type="reset" class="btn btn-link btn-sm p-0">Przywróć domyślne</button>
+</div>
+</form>
+</details>
+</div>
+<div class="col-md-12">
+<table class="wb-tables table table-striped table-hover" id="dataset-filter" aria-live="polite" data-wb-tables='{
+			"bDeferRender": true,
+			"ajaxSource": "ajax/danetestow.json",
+			"order": [3, "asc"],
+			"columns": [
+				{ "data": "GRUPA", "className": "nws-tbl-grup","visible": true },
+				{ "data": "TEST", "className": "nws-tbl-test" },
+				{ "data": "ID", "className": "nws-tbl-id" },
+				{ "data": "KS", "className": "nws-tbl-ks","visible": true },
+				{ "data": "POZIOM",  "className": "nws-tbl-poziom","visible": true },
+				{ "data": "ZASADA",  "visible": true },
+				{ "data": "OPIS",  "visible": true },
+				{ "data": "STATUS", "visible": false },
+				{ "data": "WAGA", "visible": false },
+				{ "data": "ODP", "visible": false }				
+			]}'>
+<thead>
+<tr>
+<th>Grupa testów</th>
+<th>Nazwa testu</th>
+<th>Id testu</th>
+<th>KS</th>
+<th>Poziom</th>
+<th>Zasada</th>
+<th>Opis</th>
+<th>Status</th>
+<th>Waga</th>
+<th>Odpowiedzialność</th>
+</tr>
+</thead>
+</table>
+</div>
+</div>
+</section>
+<!-- szczegóły strony -->
+   <div class="pagedetails">
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-4">
+          <details class="brdr-0">
+            <summary class="btn btn-default text-center">Zgłoś problem z tą stroną</summary>
+
+  <div class="well row">
+    <div class="gc-rprt-prblm">
+      <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+        <form action="#">
+          <fieldset>
+            <legend><span class="field-name">Zaznacz wszystko, czego dotyczy zgłoszenie: </span></legend>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f1">
+                <input type="checkbox" name="problem1" value="Tak" id="gc-rprt-prblm-f1">Łącze, przycisk lub wideo nie działa
+              </label>
+              <input name="problem1" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f2">
+                <input type="checkbox" name="problem2" value="Tak" id="gc-rprt-prblm-f2">Na stronie są błędy ortograficzne lub gramatyczne
+              </label>
+              <input name="problem2" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f3">
+                <input type="checkbox" name="problem3" value="Tak" id="gc-rprt-prblm-f3">Informacje są błędne
+              </label>
+              <input name="problem3" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f4">
+                <input type="checkbox" name="problem4" value="Tak" id="gc-rprt-prblm-f4">Informacje są nieaktualne
+              </label>
+              <input name="problem4" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f5">
+                <input type="checkbox" name="problem5" value="Tak" id="gc-rprt-prblm-f5">Nie mogę znaleźć, czego szukam
+              </label>
+              <input name="problem5" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f6">
+                <input type="checkbox" name="problem6" value="Tak" id="gc-rprt-prblm-f6">Inne, ktorych nie ma na tej liście
+              </label>
+              <input name="problem6" type="hidden" value="Nie">
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Wyślij</button>
+        </form>
+      </div>
+      <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+        <h3>Dziękujemy za Twoją pomoc!</h3>
+        <p>Nie otrzymasz odpowiedzi na tę wiadomość. Jeśli masz pytania, <a href="https://lepszyweb.pl/kontakt.html">napisz do nas</a>.</p>
+      </div>
+    </div>
+  </div>
+</details>
+
+
+        </div>
+        <div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+      </div>
+      <dl id="wb-dtmd">
+        <dt>Data modyfikacji:</dt>
+        <dd>
+          <time property="dateModified">2020-06-10</time>
+        </dd>
+      </dl>
+    </div>
+
+    </main>
+   <footer id="wb-info">
+      <div class="landscape">
+        <nav class="container wb-navcurr">
+          <h2 class="wb-inv">O usługach LepszyWeb.pl</h2>
+          <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+            <li><a href="./pages/lw/kontakt.html">Skontaktuj się z nami</a></li>
+            <li><a href="./pages/lw/uslugi.html">Szkolenia</a></li>
+            <li><a href="./pages/lw/audyty.html">Audyty</a></li>
+            <li><a href="./pages/lw/blog.html">Blog</a></li>
+            <li><a href="./pages/lw/pomoc.html">Pomoc</a></li>
+            <li><a href="./pages/lw/raporty.html">Raporty</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+
+            <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+              <h2 class="wb-inv">O tej stronie</h2>
+              <ul>
+                <li><a href="./pages/prawne/o-lepszyweb.html/wsieci.html">W Sieci</a></li>
+                <li><a href="./pages/prawne/o-lepszyweb.html">O LepszyWeb.pl</a></li>
+                <li><a href="./pages/prawne/regulamin.html">Regulamin</a></li>
+                <li><a href="./pages/prawne/prywatnosc.html">Prywatność</a></li>			  
+                <li><a href="./pages/prawne/dostepnosc.html">Dostępność</a></li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg"> 
+              <a href="#wb-cont">Góra strony <span class="glyphicon glyphicon-chevron-up"></span></a> 
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="./../LWeb/assets/lepszyweb-min.svg" alt="Logo Pracowni Dostępności Cyfrowej LepszyWeb.pl"> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="./../wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+	<script src="./../wet-boew/js/ie8-wet-boew2.min.js"></script>
+	
+	<![endif]-->
+    <script src="./../LWeb/js/theme.min.js"></script>		
+  </body>
+</html>

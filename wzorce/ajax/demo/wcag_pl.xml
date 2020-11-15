@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="pl" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" ttp:timeBase="media" ttp:frameRate="24" ttp:frameRateMultiplier="1000 1001" xmlns:smpte="http://www.smpte-ra.org/schemas/2052-1/2010/smpte-tt" xmlns:m608="http://www.smpte-ra.org/schemas/2052-1/2010/smpte-tt#cea608">
+  <head>
+    <metadata>
+      <ttm:title>wcag_pl</ttm:title>
+      <ttm:desc>SMPTE Timed Text document created by Subtitle Edit</ttm:desc>
+      <smpte:information xmlns:m608="http://www.smpte-ra.org/schemas/2052-1/2010/smpte-tt#cea608" origin="http://www.smpte-ra.org/schemas/2052-1/2010/smpte-tt#cea608" mode="Preserved" m608:channel="CC1" m608:programName="Demo" m608:captionService="F1C1CC" />
+    </metadata>
+    <styling>
+      <style xml:id="basic" tts:color="white" tts:fontFamily="Arial" tts:backgroundColor="transparent" tts:fontSize="21" tts:fontWeight="normal" tts:fontStyle="normal" />
+    </styling>
+    <layout>
+      <region xml:id="bottom" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 55%" tts:extent="80% 80%" tts:displayAlign="after" />
+      <region xml:id="top" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p begin="00:00:00:00" end="00:00:10:00" textAlign="center" region="bottom" style="basic">W-C-A-G, WCAG, jestem fajnym DJ-em,<br/>SHARKY, SH-SH-SHARKY</p>
+      <p begin="00:00:11:00" end="00:00:17:00" textAlign="center" region="bottom" style="basic">Hej, oszaleję z tym fajnym bitem, mam lepszy rytm od czasu,<br/>gdy zainstalowałeś nowy program kwantyfikujący.</p>
+      <p begin="00:00:17:00" end="00:00:21:00" textAlign="center" region="bottom" style="basic">Tańczę elektryczne boogie. Chcesz to zobaczyć David?</p>
+      <p begin="00:00:21:00" end="00:00:27:00" textAlign="center" region="bottom" style="basic">Nie Sharky, musimy się zająć tą piosenką, możesz tańczyć,<br/>kiedy ja śpiewam, ale nie wyciągaj się znowu z gniazdka.</p>
+      <p begin="00:00:27:00" end="00:00:31:00" textAlign="center" region="bottom" style="basic">Mamy zupełnie nową specyfikację,<br/>która wspódziała z narzędziem weryfikacji,</p>
+      <p begin="00:00:31:00" end="00:00:34:00" textAlign="center" region="bottom" style="basic">sprawi, że dostępność będzie możliwa do sprawdzenia</p>
+      <p begin="00:00:34:00" end="00:00:35:00" textAlign="center" region="bottom" style="basic">WCAG, WCAG</p>
+      <p begin="00:00:36:00" end="00:00:41:00" textAlign="center" region="bottom" style="basic">sprawi, że sieć będzie zrozumiała,<br/>a jej postrzeganie stanie się namacalne,</p>
+      <p begin="00:00:41:00" end="00:00:44:12" textAlign="center" region="bottom" style="basic">Interoperacyjność Sieci będzie nie do zatrzymania.</p>
+      <p begin="00:00:44:13" end="00:00:47:12" textAlign="center" region="bottom" style="basic">WCAG, WCAG</p>
+      <p begin="00:00:47:13" end="00:00:52:12" textAlign="center" region="bottom" style="basic">Chcemy pokazać ci WCAG,</p>
+      <p begin="00:00:52:13" end="00:00:58:12" textAlign="center" region="bottom" style="basic">Chcemy pokazać Ci, jaki może być ten świat</p>
+      <p begin="00:00:58:13" end="00:01:02:00" textAlign="center" region="bottom" style="basic">Chcemy pokazać ci WCAG.</p>
+      <p begin="00:01:02:00" end="00:01:07:00" textAlign="center" region="bottom" style="basic">Nie jest to ciężkie zadanie<br/>otworzyć swój kod i pisać według WCAG, WCAG</p>
+      <p begin="00:01:07:00" end="00:01:14:00" textAlign="center" region="bottom" style="basic">Hej, David, widziałem w TV faceta, jak mówił, że jest<br/>najszybszym raperem na świecie, ale wysadzam go<br/>w powietrze, rozwalam go, oglądam to...</p>
+      <p begin="00:01:14:00" end="00:01:20:00" textAlign="center" region="bottom" style="basic">[Sharky rapuje 250 słów na minutę]</p>
+      <p begin="00:01:20:00" end="00:01:29:00" textAlign="center" region="bottom" style="basic">Jestem świetnym DJ-em, Sharky, WCAG…<br/>Lubię muzykę maniaków techno.<br/>I jak, Dawidzie, jestem teraz fajnym raperem?</p>
+      <p begin="00:01:29:00" end="00:01:31:00" textAlign="center" region="bottom" style="basic">[David] Sharky, nie mogłem zrozumieć ani słowa,które wymówiłeś.</p>
+      <p begin="00:01:31:00" end="00:01:34:00" textAlign="center" region="bottom" style="basic">[Sharky] Większość moich niewidomych przyjaciół<br/>rozumie wszystko, gdy mówię w takim tempie.</p>
+      <p begin="00:01:34:00" end="00:01:39:00" textAlign="center" region="bottom" style="basic">[powoli] Chcesz... żebym mówił... naprawdę...<br/>powoli... dla... ciebie... David?</p>
+      <p begin="00:01:39:00" end="00:01:43:17" textAlign="center" region="bottom" style="basic">[David] To bardzo zabawne, śpiewajmy ten werset razem.</p>
+      <p begin="00:01:43:18" end="00:01:48:00" textAlign="center" region="bottom" style="basic">Zrobimy z Sieci lepsze miejsce<br/>dla każdej umiejętności i różnych ludzi</p>
+      <p begin="00:01:48:00" end="00:01:53:00" textAlign="center" region="bottom" style="basic">Nawet jeśli surfujesz z kosmosu, masz WCAG, WCAG</p>
+      <p begin="00:01:53:13" end="00:01:59:12" textAlign="center" region="bottom" style="basic">Chcemy pokazać ci WCAG,</p>
+      <p begin="00:01:59:13" end="00:02:04:12" textAlign="center" region="bottom" style="basic">Chcemy pokazać Ci, jaki może być ten świat</p>
+      <p begin="00:02:04:13" end="00:02:08:00" textAlign="center" region="bottom" style="basic">Chcemy pokazać ci WCAG.</p>
+      <p begin="00:02:08:00" end="00:02:12:00" textAlign="center" region="bottom" style="basic">Nie jest to ciężkie zadanie otworzyć swój kod<br/>i pisać według WCAG, WCAG.</p>
+      <p begin="00:02:12:00" end="00:02:15:00" textAlign="center" region="bottom" style="basic">Więc pozwól mi powiedzieć,<br/>czym jest WCAG i czym WCAG nie jest</p>
+      <p begin="00:02:15:00" end="00:02:18:00" textAlign="center" region="bottom" style="basic">WCAG to zestaw narzędziowy,<br/>który zawiera zestaw reguł</p>
+      <p begin="00:02:18:00" end="00:02:23:00" textAlign="center" region="bottom" style="basic">Pomaga ci ożywiać twoją witrynę dla ludzi<br/>z innymi zdolnościami i wrażliwościami.</p>
+      <p begin="00:02:23:02" end="00:02:26:00" textAlign="center" region="bottom" style="basic">Kiedy więc trafią do Ciebie w Sieci,<br/>mogą się dobrze bawić.</p>
+      <p begin="00:02:26:00" end="00:02:28:00" textAlign="center" region="bottom" style="basic">Nieważne, że są niewidomi, albo że muszą migać...</p>
+      <p begin="00:02:28:02" end="00:02:31:00" textAlign="center" region="bottom" style="basic">albo że ich ręce zaczynają się trząść przy każdym ruchu</p>
+      <p begin="00:02:31:02" end="00:02:33:00" textAlign="center" region="bottom" style="basic">Albo jeśli ich umysły pomylą, co chcą zrobić</p>
+      <p begin="00:02:33:02" end="00:02:39:00" textAlign="center" region="bottom" style="basic">Mogą łatwo zrozumieć, o czym mówisz,<br/>jeśli będziesz przestrzegać zasad, które przedstawiamy</p>
+      <p begin="00:02:39:02" end="00:02:44:00" textAlign="center" region="bottom" style="basic">Zasada 1: Treść musi być postrzegalna</p>
+      <p begin="00:02:44:02" end="00:02:49:00" textAlign="center" region="bottom" style="basic">Zasada 2: Elementy interfejsu muszą być funkcjonalne</p>
+      <p begin="00:02:49:02" end="00:02:54:02" textAlign="center" region="bottom" style="basic">Zasada 3: Treść i kontrolki muszą być zrozumiałe</p>
+      <p begin="00:02:54:03" end="00:03:02:02" textAlign="center" region="bottom" style="basic">Zasada 4: Treść musi być rzetelnie kodowana, aby działać<br/>z obecnymi i przyszłymi technologiami</p>
+      <p begin="00:03:05:02" end="00:03:15:03" textAlign="center" region="bottom" style="basic">Chcemy pokazać ci WCAG,<br/>Chcemy pokazać ci, jaki może być ten świat</p>
+      <p begin="00:03:15:03" end="00:03:20:02" textAlign="center" region="bottom" style="basic">Chcemy pokazać ci WCAG.</p>
+      <p begin="00:03:20:03" end="00:03:26:02" textAlign="center" region="bottom" style="basic">Nie jest to ciężkie zadanie otworzyć swój kod<br/>i pisać według WCAG, WCAG</p>
+      <p begin="00:03:26:03" end="00:03:30:02" textAlign="center" region="bottom" style="basic">Sharky: Hej David, twoja muzyka jest o wiele bardziej zabawna,<br/>odkąd wyniosłeś się z przedmieść<br/>i przebywasz w centrum  miasta na rogach ulic.</p>
+      <p begin="00:03:30:03" end="00:03:34:02" textAlign="center" region="bottom" style="basic">Lubię temat drugiej piosenki,<br/>ale brzmiała trochę jak niepodłączona,<br/>a ja nigdy nie szalałem za wyłączonym dźwiękiem,</p>
+      <p begin="00:03:34:03" end="00:03:39:02" textAlign="center" region="bottom" style="basic">Lubię muzykę techno-maniaków, gdzie komputery robią wszystko,<br/>a ludzie nie grają na żadnych instrumentach.</p>
+      <p begin="00:03:39:03" end="00:03:41:02" textAlign="center" region="bottom" style="basic">Myślę, że jest to o wiele bardziej naturalne,<br/>gdy muzyka jest odtwarzana, kup oryginalne komputery.</p>
+      <p begin="00:03:41:03" end="00:03:42:02" textAlign="center" region="bottom" style="basic">Kiedy ludzie grają, brzmi to tak bezemocyjnie i fałszywie.</p>
+      <p begin="00:03:42:03" end="00:03:45:02" textAlign="center" region="bottom" style="basic">David: Będziemy to robić tylko dlatego,<br/>że jesteście kupą zer i zer, jak wielkoludy.</p>
+      <p begin="00:03:45:03" end="00:03:50:03" textAlign="center" region="bottom" style="basic">[Sharky] David, to było wredne z twojej strony, że to powiedziałeś,<br/>wiesz, że zawsze byłem bardzo wrażliwy na moje binarne kodowanie strukturalne.</p>
+      <p begin="00:03:50:04" end="00:03:52:03" textAlign="center" region="bottom" style="basic">To zawsze było dla mnie źródłem<br/>wielkiej emocjonalnej niepewności.</p>
+      <p begin="00:03:52:04" end="00:03:59:03" textAlign="center" region="bottom" style="basic">[David] Och, daj spokój Sharky, wiesz, że cię kocham człowieku,<br/>a poza tym jesteś niesamowitym raperem,<br/>powinieneś pójść do American Idol.</p>
+      <p begin="00:03:59:04" end="00:04:04:03" textAlign="center" region="bottom" style="basic">Będę gwiazdą, już widzę te nagłówki,<br/>Sharky wygrywa American Idol dla osób niepełnosprawnych.</p>
+    </div>
+  </body>
+</tt>

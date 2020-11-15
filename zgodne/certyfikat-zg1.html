@@ -1,0 +1,473 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="pl" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl" dir="ltr">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Dane - LepszyWeb.pl</title>
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="./../LWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../LWeb/css/theme.css">
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+  <link href="./../LWeb/assets/favicon.ico" rel="shortcut icon" />
+
+  <link rel="stylesheet" href="./../LWeb/css/ie8-theme.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="./../wet-boew/js/ie8-wet-boew.min.js"></script>
+  <![endif]-->
+    <!--[if lte IE 9]>
+
+
+  <![endif]-->
+    <noscript><link rel="stylesheet" href="./../wet-boew/css/noscript.min.css" /></noscript>
+
+<style>
+.numSearch{font-size:2.5em;}
+.puste {color:#fff;}
+.red {color: red;}
+		#ruchomyTekst {
+			/* Starting position */
+			-moz-transform:translateX(100%);
+			-webkit-transform:translateX(100%); 
+			transform:translateX(100%);
+			/* Apply animation to this element */ 
+			-moz-animation: ruchomyTekst 10s linear infinite;
+			-webkit-animation: ruchomyTekst 10s linear infinite;
+			animation: ruchomyTekst 10s linear infinite;
+		}
+			
+		/* Move it (define the animation) */
+		@-moz-keyframes ruchomyTekst {
+			0% { -moz-transform: translateX(100%); }
+			100% { -moz-transform: translateX(-100%); }
+		}
+		
+		@-webkit-keyframes ruchomyTekst {
+			0% { -webkit-transform: translateX(100%); }
+			100% { -webkit-transform: translateX(-100%); }
+		}
+		
+		@keyframes ruchomyTekst {
+			0% { 
+				-moz-transform: translateX(100%); /* Browser bug fix */
+				-webkit-transform: translateX(100%); /* Browser bug fix */
+				transform: translateX(100%); 
+			}
+			
+			100% { 
+				-moz-transform: translateX(-100%); /* Browser bug fix */
+				-webkit-transform: translateX(-100%); /* Browser bug fix */
+				transform: translateX(-100%); 
+			}
+		}
+</style>
+    <script>
+        var totalNum = 1130765;
+        var auto_begin = setInterval(startCount, 1000);
+
+        function stopCount() {
+            // this function stops the counter
+            window.clearInterval(auto_begin);
+            document.getElementById('disableUpdate').innerHTML = '<a id="disableUpBtn" href="#noScroll" onclick="resumeCount(); focusContent(\'#disableUpBtn\');" tabindex="0">włącz aktualizacje</a>';
+        }
+
+        function resumeCount() {
+            document.getElementById('disableUpdate').innerHTML = '<a id="disableUpBtn" href="#noScroll" onclick="stopCount(); focusContent(\'#disableUpBtn\');" tabindex="0" >wyłącz aktualizacje</a>';
+            auto_begin = setInterval(startCount, 1000);
+        }
+
+        function startCount() {
+            if (window.document.getElementById('increasedNum')) {
+                var num = Math.floor(Math.random() * (10)) + 1;
+                totalNum = totalNum + num;
+                // var finalNum = totalNum+12000;
+                var numString = totalNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+                document.getElementById('increasedNum').innerHTML = numString;
+            }
+            // return (5.000 + (total_increasedNum / 1000)).toFixed(3);
+        }
+    </script>
+  </head>
+
+  <body vocab="http://schema.org/" typeof="WebPage">
+
+
+    <nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-cont">Przejdź do treści głównej</a>
+        </li>
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-info">Przejdź do &bdquo;O tej stronie&rdquo;</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container">
+        <!-- Sekcja Wybierz język -->
+        <!-- Koniec sekcji Wybierz język -->
+
+        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+          <h2>Wyszukiwanie i menu</h2>
+          <ul class="pnl-btn list-inline text-right">
+            <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
+          </ul>
+          <div id="mb-pnl"></div>
+        </section>	 		
+
+        <div class="row">
+          <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="./../index.html" property="url"><img src="./../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
+            <meta property="areaServed" typeof="Country" content="Polska">
+            <link property="logo" href="./../LWeb/assets/lepszyweb-min.svg">
+          </div>
+          <section id="wb-srch" class="col-lg-8 text-right">
+            <h2>Szukaj</h2>
+            <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+              <div class="form-group">
+                <label for="wb-srch-q" class="wb-inv">Szukaj na LepszyWeb.pl</label>
+                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Szukaj na LepszyWeb.pl">
+                <datalist id="wb-srch-q-ac"> </datalist>
+              </div>
+              <div class="form-group submit">
+                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Szukaj</span></button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+
+      <nav role="navigation" id="wb-sm" data-ajax-replace="./../ajax/menu-audyt.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <div class="container nvbar">
+          <h2>Spis tematów</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a href="./index.html">O szkoleniu</a></li>
+              <li><a href="./przypadki/index.html">Przypadki</a></li>		  
+              <li><a href="./zgodne/index.html">Zgodne</a></li>
+              <li><a href="./niezgodne/index.html">Niezgodne</a></li>
+              <li><a href="./wzorce/index.html">Wzorce</a></li>
+              <li><a href="./szablony/index.html">Szablony</a></li>					  
+              <li><a href="./pomoc/index.html">Pomoc</a></li>		
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav id="wb-bc" property="breadcrumb" aria-label="Ścieżka powrotu">
+        <h2>Jesteś tutaj:</h2>
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>
+                <a href="./../index.html">Start</a>
+              </li>
+              <li>Testowa - zgodna</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+
+    <!--Main-->
+    <div class="main-con">
+        <div class="data text-center section">
+            <h1 id="mainHeadPage2" tabindex="-1" onclick="focusContent(&#39;#mainHeadPage2&#39;)">Uzyskaj certyfikat &bdquo;Tworzymy LepszyWeb&rdquo;</h1>
+            <p>Certyfikat LepszyWeb jest czymś więcej niż tylko nagrodą. To świadectwo 
+			skutecznych wysiłków Twojej instytucji na rzecz zapewniania dostępności cyfrowej. 
+			W ciągu roku działania naszej Pracowni liczba unikalnych wyszukiwań nazwy LepszyWeb potwierdza ogromny wzrost dążeń podmiotów publicznych do poprawy jakości swoich witryn.</p>
+        </div>
+        <div class="row text-center section">
+            <h2 id="numSearches" aria-label="Liczba unikalnych wyszukiwań hasła &bdquo;LepszyWeb&rdquo;">Liczba unikalnych wyszukiwań hasła &bdquo;LepszyWeb&rdquo;.</h2>
+            <p id="increasedNum" class="numSearch" aria-labelledby="numSearches">1 130 765</p>
+        </div>
+		
+
+        <div class="asSeenGraph section text-center">
+            <p>Co więcej, jak widać na poniższym wykresie, LepszyWeb wyprzedził swojego wiodącego konkurenta!</p>
+
+      <section>
+        <table class="wb-charts table">
+          <caption>Porównanie unikalnych wyszukiwań słów &bdquo;GorszyWeb&rdquo; i &bdquo;LepszyWeb&rdquo;</caption>
+          <tr>
+            <td></td>
+            <th>1. kwartał 2019</th>
+            <th>2. kwartał 2019</th>			
+            <th>3. kwartał 2019</th>
+            <th>4. kwartał 2019</th>
+            <th>1. kwartał 2020</th>
+            <th>2. kwartał 2020</th>			
+          </tr>
+
+          <tr>
+            <th>GorszyWeb</th>
+            <td>62 000</td>
+            <td>96 000</td>			
+            <td>110 000</td>
+            <td>112 000</td>
+            <td>221 000</td>
+            <td>430 000</td>			
+          </tr>
+          <tr>
+            <th>LepszyWeb</th>
+            <td></td>
+            <td></td>			
+            <td>25 000</td>
+            <td>125 000</td>
+            <td>450 000</td>
+            <td>950 000</td>			
+          </tr>
+        </table>
+      </section>			
+			
+			
+            <p>GorszyWeb rozpoczął w 2019 roku od 62&nbsp;000 unikalnych wyszukiwań, osiągając 96&nbsp;000 w II kwartale, 110&nbsp;000 w III kwartale i 112&nbsp;000 w IV kwartale. LepszyWeb rozpoczął w III kwartale 2019 roku z 25&nbsp;000 unikalnych wyszukiwań, zwiększając tę liczbę do 110&nbsp;000 w IV kwartale, wyprzedzając GorszyWeb w I kwartale 2020 z 125&nbsp;000, aby osiągjnąć w końcu II kwartału 2020 roku 1&nbsp;250&nbsp;000.</p>
+        </div>
+        <h2 class="text-center">Zalety certyfikacji</h2>
+        <!-- iframe start -->
+        <iframe src="./img/iFrame1.html" frameborder="0" class="page2_iframe" title="Zalety certyfikacji" data-la-frameid="[xxxx]"></iframe>
+        <!-- iframe end -->
+
+  	  
+
+
+
+
+
+      <section class="container gc-features">
+        <h2>Certyfikowani członkowie</h2>
+		<p>Ponad 200 instytucji i organizacji uzyskało certyfikat LepszyWeb. Zobacz poniżej kilka dobrze znanych przykładów.</p>
+        
+		<div class="row wb-eqht">
+          <div class="col-sm-6">
+            <div class="well well-sm brdr-rds-0 eqht-trgt standard-member">
+                    <h3>Podstawowa certyfikacja</h3>
+                    <ul>
+                        <li>Urząd Gminy</li>
+                        <li>Urząd Miasta</li>
+                        <li>Starostwo Powiatowe</li>
+                        <li>Powiatowy Urząd Pracy</li>
+                        <li>Urząd Skarbowy</li>
+                        <li>Najważniejsze Ministerstwo</li>
+                    </ul>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="well well-sm brdr-rds-0 eqht-trgt super-member">
+
+                    <h3>Super certyfikacja</h3>
+                    <ul>
+                        <li>Urząd Gminy</li>
+                        <li>Urząd Miasta</li>
+                        <li>Starostwo Powiatowe</li>
+                        <li>Powiatowy Urząd Pracy</li>
+                        <li>Urząd Skarbowy</li>
+                        <li>Najważniejsze Ministerstwo</li>
+                    </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row contactUs section text-center">
+            <h2>Kontakt z nami</h2>
+            <p>Aby uzyskać więcej szczegółów na temat zalet certyfikacji LepszyWeb, skontaktuj się z nami! Aby zapobiec spamowi, umieściliśmy nasz adres e-mail w formacie audio. Odtwórz go, aby otrzymać ten adres.</p>
+            <div class="sound-controls">
+                <audio id="audio_bgm">
+                    <source src="audio/kontakt-z-nami.mp3" type="audio/mp3">
+                </audio>
+                <a href="#noscroll" id="togglePlay" role="button" tabindex="0">Graj
+                    <span id="playIcon" class="glyphicon glyphicon-play" role="presentation"></span>
+                </a>
+                <a href="#noscroll" id="toggleMute" title="Wyłącz głos" role="button" tabindex="0">Wyłącz głos
+                    <span id="muteIcon" class="glyphicon glyphicon-volume-up" role="presentation"></span>
+                </a>
+                <button id="page2-trascriptBtn" onclick="openTranscript(2)" target="_blank" tabindex="0" class="btmtranscriptbtn">Transkrypcja</button>
+            </div>
+        </div>
+
+
+
+    </div>
+ 
+
+      <!-- szczegóły strony -->
+      <div class="pagedetails">
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-lg-4">
+            <details class="brdr-0">
+              <summary class="btn btn-default text-center">Zgłoś problem z tą stroną</summary>
+
+              <div class="well row">
+                <div class="gc-rprt-prblm">
+                  <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+                    <form action="#">
+                      <fieldset>
+                        <legend><span class="field-name">Zaznacz wszystko, czego dotyczy zgłoszenie: </span></legend>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f1">
+                            <input type="checkbox" name="problem1" value="Tak" id="gc-rprt-prblm-f1">Łącze, przycisk lub wideo nie działa
+                          </label>
+                          <input name="problem1" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f2">
+                            <input type="checkbox" name="problem2" value="Tak" id="gc-rprt-prblm-f2">Na stronie są błędy ortograficzne lub gramatyczne
+                          </label>
+                          <input name="problem2" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f3">
+                            <input type="checkbox" name="problem3" value="Tak" id="gc-rprt-prblm-f3">Informacje są błędne
+                          </label>
+                          <input name="problem3" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f4">
+                            <input type="checkbox" name="problem4" value="Tak" id="gc-rprt-prblm-f4">Informacje są nieaktualne
+                          </label>
+                          <input name="problem4" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f5">
+                            <input type="checkbox" name="problem5" value="Tak" id="gc-rprt-prblm-f5">Nie mogę znaleźć, czego szukam
+                          </label>
+                          <input name="problem5" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f6">
+                            <input type="checkbox" name="problem6" value="Tak" id="gc-rprt-prblm-f6">Inne, ktorych nie ma na tej liście
+                          </label>
+                          <input name="problem6" type="hidden" value="Nie">
+                        </div>
+                      </fieldset>
+                      <button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Wyślij</button>
+                    </form>
+                  </div>
+                  <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+                    <h3>Dziękujemy za Twoją pomoc!</h3>
+                    <p>Nie otrzymasz odpowiedzi na tę wiadomość. Jeśli masz pytania, <a href="https://lepszyweb.pl/kontakt.html">napisz do nas</a>.</p>
+                  </div>
+                </div>
+              </div>
+            </details>
+
+
+          </div>
+          <div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+        </div>
+        <dl id="wb-dtmd">
+          <dt>Data modyfikacji:</dt>
+          <dd>
+            <time property="dateModified">2020-06-10</time>
+          </dd>
+        </dl>
+      </div>
+
+    </main>
+    <footer id="wb-info">
+      <div class="landscape">
+        <nav class="container wb-navcurr">
+          <h2 class="wb-inv">O usługach LepszyWeb.pl</h2>
+          <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+            <li><a href="https://wcag.lepszyweb.pl/">Jak spełnić WCAG?</a></li>
+            <li><a href="https://lepszyweb.pl/walidator">ALLY - walidator dostępności</a></li>
+            <li><a href="https://lepszyweb.pl/andi">ANDI - inspektor dostępności</a></li>
+            <li><a href="https://raport.lepszyweb.pl/">Generator raportów z oceny</a></li>
+            <li><a href="https://deklaracja.lepszyweb.pl">Generator deklaracji dostępności</a></li>
+            <li><a href="https://kontrast.lepszyweb.pl">Wyszukiwarka kontrastów</a></li>
+            <li><a href="https://przedipo.lepszyweb.pl">Demo Przed i Po</a></li>
+            <li><a href="https://lepszyweb.pl/walidator/5-rodzajow-wynikow-testow-dostepnosci">5 rodzajów wyników testów dostępności </a></li>
+            <li><a href="https://lepszyweb.pl/walidator/audyt-wspomagany">Audyt wspomagany</a></li>
+            <li><a href="https://lepszyweb.pl/walidator/dlaczego-metoda-rgaa">Dlaczego metoda RGAA?</a></li>
+            <li><a href="https://lepszyweb.pl/walidator/orientacyjny-miernik-dostepnosci">Orientacyjny miernik dostępności </a></li>
+            <li class="nav-item"><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/rgaa-jako-metoda-oceniania-dostepnosci">RGAA jako metoda oceniania dostępności</a></li>
+            <li class="nav-item"><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/struktura-wynikow">Struktura wyników</a></li>
+            <li class="nav-item"><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/szybki-audyt-stron">Szybki audyt stron</a></li>
+            <li><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/audyt-dostepnosci-we-wlasnym-zakresie">Audyt dostępności we własnym zakresie</a></li>
+            <li><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/tworzenie-dokumentow-pdf">Tworzenie dokumentów PDF</a></li>
+            <li><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/tworzenie-dostepnych-dokumentow-biurowych">Tworzenie dostępnych dokumentów biurowych</a></li>
+            <li class="nav-item"><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/zarzadzanie-dostepnoscia-cyfrowa">Zarządzanie dostępnością cyfrową</a></li>
+
+          </ul>
+        </nav>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+
+            <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+              <h2 class="wb-inv">O tej stronie</h2>
+              <ul>
+                <li><a href="./pages/prawne/o-lepszyweb.html/wsieci.html">W Sieci</a></li>
+                <li><a href="./pages/prawne/o-lepszyweb.html">O LepszyWeb.pl</a></li>
+                <li><a href="./pages/prawne/regulamin.html">Regulamin</a></li>
+                <li><a href="./pages/prawne/prywatnosc.html">Prywatność</a></li>			  
+                <li><a href="./pages/prawne/dostepnosc.html">Dostępność</a></li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg"> 
+              <a href="#wb-cont">Góra strony <span class="glyphicon glyphicon-chevron-up"></span></a> 
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="./../LWeb/assets/lepszyweb-min.svg" alt="Logo Pracowni Dostępności Cyfrowej LepszyWeb.pl"> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="./../wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+ <script src="./../wet-boew/js/ie8-wet-boew2.min.js"></script>
+
+ <![endif]-->
+    <script src="./../LWeb/js/theme.min.js"></script>	
+    <script src="./js/main.js"></script>
+
+
+
+
+
+
+
+
+	<script>
+		/* var t = setInterval(function () {
+			var ele = document.getElementById('ruchomyTekst');
+			ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+		}, 1000); */
+
+		function openTranscript(pageNum) {
+		  // opens the html transcript with the name given
+		  var fullName = "transcript_" + pageNum + ".html";
+		  window.open(fullName);
+		}
+	</script>
+		<script>
+		handlePage2Audio(true);
+	</script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling">
+  <head>
+    <styling>
+      <style id="defaultSpeaker" tts:fontSize="12px" tts:fontFamily="SansSerif" tts:fontWeight="normal" tts:fontStyle="normal" tts:textDecoration="none" tts:color="white" tts:backgroundColor="black" tts:textAlign="center">wcag_pl2</style>
+    </styling>
+  </head>
+  <body id="thebody" style="defaultCaption">
+    <div>
+      <p begin="00:00:00.000" id="p0" end="00:00:10.000">W-C-A-G, WCAG, jestem fajnym DJ-em,<br />SHARKY, SH-SH-SHARKY</p>
+      <p begin="00:00:11.003" id="p1" end="00:00:17.000">Hej, oszaleję z tym fajnym bitem, mam lepszy rytm od czasu,<br />gdy zainstalowałeś nowy program kwantyfikujący.</p>
+      <p begin="00:00:17.003" id="p2" end="00:00:21.000">Tańczę elektryczne boogie. Chcesz to zobaczyć David?</p>
+      <p begin="00:00:21.003" id="p3" end="00:00:27.000">Nie Sharky, musimy się zająć tą piosenką, możesz tańczyć,<br />kiedy ja śpiewam, ale nie wyciągaj się znowu z gniazdka.</p>
+      <p begin="00:00:27.003" id="p4" end="00:00:31.000">Mamy zupełnie nową specyfikację,<br />która wspódziała z narzędziem weryfikacji,</p>
+      <p begin="00:00:31.003" id="p5" end="00:00:34.000">sprawi, że dostępność będzie możliwa do sprawdzenia</p>
+      <p begin="00:00:34.003" id="p6" end="00:00:35.000">WCAG, WCAG</p>
+      <p begin="00:00:36.000" id="p7" end="00:00:41.000">sprawi, że sieć będzie zrozumiała,<br />a jej postrzeganie stanie się namacalne,</p>
+      <p begin="00:00:41.003" id="p8" end="00:00:44.500">Interoperacyjność Sieci będzie nie do zatrzymania.</p>
+      <p begin="00:00:44.530" id="p9" end="00:00:47.500">WCAG, WCAG</p>
+      <p begin="00:00:47.530" id="p10" end="00:00:52.500">Chcemy pokazać ci WCAG,</p>
+      <p begin="00:00:52.530" id="p11" end="00:00:58.500">Chcemy pokazać Ci, jaki może być ten świat</p>
+      <p begin="00:00:58.530" id="p12" end="00:01:02.003">Chcemy pokazać ci WCAG.</p>
+      <p begin="00:01:02.006" id="p13" end="00:01:07.003">Nie jest to ciężkie zadanie<br />otworzyć swój kod i pisać według WCAG, WCAG</p>
+      <p begin="00:01:07.007" id="p14" end="00:01:14.003">Hej, David, widziałem w TV faceta, jak mówił, że jest<br />najszybszym raperem na świecie, ale wysadzam go<br />w powietrze, rozwalam go, oglądam to...</p>
+      <p begin="00:01:14.007" id="p15" end="00:01:20.003">[Sharky rapuje 250 słów na minutę]</p>
+      <p begin="00:01:20.007" id="p16" end="00:01:29.003">Jestem świetnym DJ-em, Sharky, WCAG…<br />Lubię muzykę maniaków techno.<br />I jak, Dawidzie, jestem teraz fajnym raperem?</p>
+      <p begin="00:01:29.007" id="p17" end="00:01:31.003">[David] Sharky, nie mogłem zrozumieć ani słowa,które wymówiłeś.</p>
+      <p begin="00:01:31.007" id="p18" end="00:01:34.003">[Sharky] Większość moich niewidomych przyjaciół<br />rozumie wszystko, gdy mówię w takim tempie.</p>
+      <p begin="00:01:34.007" id="p19" end="00:01:39.003">[powoli] Chcesz... żebym mówił... naprawdę...<br />powoli... dla... ciebie... David?</p>
+      <p begin="00:01:39.007" id="p20" end="00:01:43.700">[David] To bardzo zabawne, śpiewajmy ten werset razem.</p>
+      <p begin="00:01:43.730" id="p21" end="00:01:48.003">Zrobimy z Sieci lepsze miejsce<br />dla każdej umiejętności i różnych ludzi</p>
+      <p begin="00:01:48.007" id="p22" end="00:01:53.007">Nawet jeśli surfujesz z kosmosu, masz WCAG, WCAG</p>
+      <p begin="00:01:53.530" id="p23" end="00:01:59.500">Chcemy pokazać ci WCAG,</p>
+      <p begin="00:01:59.530" id="p24" end="00:02:04.500">Chcemy pokazać Ci, jaki może być ten świat</p>
+      <p begin="00:02:04.530" id="p25" end="00:02:08.003">Chcemy pokazać ci WCAG.</p>
+      <p begin="00:02:08.007" id="p26" end="00:02:12.003">Nie jest to ciężkie zadanie otworzyć swój kod<br />i pisać według WCAG, WCAG.</p>
+      <p begin="00:02:12.007" id="p27" end="00:02:15.003">Więc pozwól mi powiedzieć,<br />czym jest WCAG i czym WCAG nie jest</p>
+      <p begin="00:02:15.007" id="p28" end="00:02:18.003">WCAG to zestaw narzędziowy,<br />który zawiera zestaw reguł</p>
+      <p begin="00:02:18.007" id="p29" end="00:02:23.007">Pomaga ci ożywiać twoją witrynę dla ludzi<br />z innymi zdolnościami i wrażliwościami.</p>
+      <p begin="00:02:23.099" id="p30" end="00:02:26.002">Kiedy więc trafią do Ciebie w Sieci,<br />mogą się dobrze bawić.</p>
+      <p begin="00:02:26.007" id="p31" end="00:02:28.007">Nieważne, że są niewidomi, albo że muszą migać...</p>
+      <p begin="00:02:28.099" id="p32" end="00:02:31.007">albo że ich ręce zaczynają się trząść przy każdym ruchu</p>
+      <p begin="00:02:31.099" id="p33" end="00:02:33.007">Albo jeśli ich umysły pomylą, co chcą zrobić</p>
+      <p begin="00:02:33.099" id="p34" end="00:02:39.007">Mogą łatwo zrozumieć, o czym mówisz,<br />jeśli będziesz przestrzegać zasad, które przedstawiamy</p>
+      <p begin="00:02:39.099" id="p35" end="00:02:44.007">Zasada 1: Treść musi być postrzegalna</p>
+      <p begin="00:02:44.099" id="p36" end="00:02:49.007">Zasada 2: Elementy interfejsu muszą być funkcjonalne</p>
+      <p begin="00:02:49.099" id="p37" end="00:02:54.099">Zasada 3: Treść i kontrolki muszą być zrozumiałe</p>
+      <p begin="00:02:54.129" id="p38" end="00:03:02.099">Zasada 4: Treść musi być rzetelnie kodowana, aby działać<br />z obecnymi i przyszłymi technologiami</p>
+      <p begin="00:03:05.099" id="p39" end="00:03:15.120">Chcemy pokazać ci WCAG,<br />Chcemy pokazać ci, jaki może być ten świat</p>
+      <p begin="00:03:15.129" id="p40" end="00:03:20.099">Chcemy pokazać ci WCAG.</p>
+      <p begin="00:03:20.129" id="p41" end="00:03:26.099">Nie jest to ciężkie zadanie otworzyć swój kod<br />i pisać według WCAG, WCAG</p>
+      <p begin="00:03:26.129" id="p42" end="00:03:30.099">Sharky: Hej David, twoja muzyka jest o wiele bardziej zabawna,<br />odkąd wyniosłeś się z przedmieść<br />i przebywasz w centrum  miasta na rogach ulic.</p>
+      <p begin="00:03:30.129" id="p43" end="00:03:34.099">Lubię temat drugiej piosenki,<br />ale brzmiała trochę jak niepodłączona,<br />a ja nigdy nie szalałem za wyłączonym dźwiękiem,</p>
+      <p begin="00:03:34.129" id="p44" end="00:03:39.099">Lubię muzykę techno-maniaków, gdzie komputery robią wszystko,<br />a ludzie nie grają na żadnych instrumentach.</p>
+      <p begin="00:03:39.129" id="p45" end="00:03:41.099">Myślę, że jest to o wiele bardziej naturalne,<br />gdy muzyka jest odtwarzana, kup oryginalne komputery.</p>
+      <p begin="00:03:41.129" id="p46" end="00:03:42.099">Kiedy ludzie grają, brzmi to tak bezemocyjnie i fałszywie.</p>
+      <p begin="00:03:42.129" id="p47" end="00:03:45.099">David: Będziemy to robić tylko dlatego,<br />że jesteście kupą zer i zer, jak wielkoludy.</p>
+      <p begin="00:03:45.129" id="p48" end="00:03:50.129">[Sharky] David, to było wredne z twojej strony, że to powiedziałeś,<br />wiesz, że zawsze byłem bardzo wrażliwy na moje binarne kodowanie strukturalne.</p>
+      <p begin="00:03:50.169" id="p49" end="00:03:52.129">To zawsze było dla mnie źródłem<br />wielkiej emocjonalnej niepewności.</p>
+      <p begin="00:03:52.169" id="p50" end="00:03:59.129">[David] Och, daj spokój Sharky, wiesz, że cię kocham człowieku,<br />a poza tym jesteś niesamowitym raperem,<br />powinieneś pójść do American Idol.</p>
+      <p begin="00:03:59.169" id="p51" end="00:04:04.129">Będę gwiazdą, już widzę te nagłówki,<br />Sharky wygrywa American Idol dla osób niepełnosprawnych.</p>
+    </div>
+  </body>
+</tt>

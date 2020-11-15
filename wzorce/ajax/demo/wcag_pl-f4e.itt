@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3.org/ns/ttml" xmlns:tt="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en-US" ttp:timeBase="smpte" ttp:frameRate="24" ttp:frameRateMultiplier="999 1000" ttp:dropMode="nonDrop">
+  <head>
+    <styling>
+      <style tts:fontSize="100%" tts:color="white" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="sansSerif" xml:id="normal" />
+      <style tts:fontSize="100%" tts:color="white" tts:fontStyle="normal" tts:fontWeight="bold" tts:fontFamily="sansSerif" xml:id="bold" />
+      <style tts:fontSize="100%" tts:color="white" tts:fontStyle="italic" tts:fontWeight="normal" tts:fontFamily="sansSerif" xml:id="italic" />
+    </styling>
+    <layout>
+      <region xml:id="top" tts:origin="0% 0%" tts:extent="100% 15%" tts:textAlign="center" tts:displayAlign="before" />
+      <region xml:id="bottom" tts:origin="0% 85%" tts:extent="100% 15%" tts:textAlign="center" tts:displayAlign="after" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="bottom" begin="0.0s" end="10.0s">W-C-A-G, WCAG, jestem fajnym DJ-em,<br/>SHARKY, SH-SH-SHARKY</p>
+      <p region="bottom" begin="11.003s" end="17.0s">Hej, oszaleję z tym fajnym bitem, mam lepszy rytm od czasu,<br/>gdy zainstalowałeś nowy program kwantyfikujący.</p>
+      <p region="bottom" begin="17.003s" end="21.0s">Tańczę elektryczne boogie. Chcesz to zobaczyć David?</p>
+      <p region="bottom" begin="21.003s" end="27.0s">Nie Sharky, musimy się zająć tą piosenką, możesz tańczyć,<br/>kiedy ja śpiewam, ale nie wyciągaj się znowu z gniazdka.</p>
+      <p region="bottom" begin="27.003s" end="31.0s">Mamy zupełnie nową specyfikację,<br/>która wspódziała z narzędziem weryfikacji,</p>
+      <p region="bottom" begin="31.003s" end="34.0s">sprawi, że dostępność będzie możliwa do sprawdzenia</p>
+      <p region="bottom" begin="34.003s" end="35.0s">WCAG, WCAG</p>
+      <p region="bottom" begin="36.0s" end="41.0s">sprawi, że sieć będzie zrozumiała,<br/>a jej postrzeganie stanie się namacalne,</p>
+      <p region="bottom" begin="41.003s" end="44.5s">Interoperacyjność Sieci będzie nie do zatrzymania.</p>
+      <p region="bottom" begin="44.53s" end="47.5s">WCAG, WCAG</p>
+      <p region="bottom" begin="47.53s" end="52.5s">Chcemy pokazać ci WCAG,</p>
+      <p region="bottom" begin="52.53s" end="58.5s">Chcemy pokazać Ci, jaki może być ten świat</p>
+      <p region="bottom" begin="58.53s" end="62.003s">Chcemy pokazać ci WCAG.</p>
+      <p region="bottom" begin="62.006s" end="67.003s">Nie jest to ciężkie zadanie<br/>otworzyć swój kod i pisać według WCAG, WCAG</p>
+      <p region="bottom" begin="67.007s" end="74.003s">Hej, David, widziałem w TV faceta, jak mówił, że jest<br/>najszybszym raperem na świecie, ale wysadzam go<br/>w powietrze, rozwalam go, oglądam to...</p>
+      <p region="bottom" begin="74.007s" end="80.003s">[Sharky rapuje 250 słów na minutę]</p>
+      <p region="bottom" begin="80.007s" end="89.003s">Jestem świetnym DJ-em, Sharky, WCAG…<br/>Lubię muzykę maniaków techno.<br/>I jak, Dawidzie, jestem teraz fajnym raperem?</p>
+      <p region="bottom" begin="89.007s" end="91.003s">[David] Sharky, nie mogłem zrozumieć ani słowa,które wymówiłeś.</p>
+      <p region="bottom" begin="91.007s" end="94.003s">[Sharky] Większość moich niewidomych przyjaciół<br/>rozumie wszystko, gdy mówię w takim tempie.</p>
+      <p region="bottom" begin="94.007s" end="99.003s">[powoli] Chcesz... żebym mówił... naprawdę...<br/>powoli... dla... ciebie... David?</p>
+      <p region="bottom" begin="99.007s" end="103.7s">[David] To bardzo zabawne, śpiewajmy ten werset razem.</p>
+      <p region="bottom" begin="103.73s" end="108.003s">Zrobimy z Sieci lepsze miejsce<br/>dla każdej umiejętności i różnych ludzi</p>
+      <p region="bottom" begin="108.007s" end="113.007s">Nawet jeśli surfujesz z kosmosu, masz WCAG, WCAG</p>
+      <p region="bottom" begin="113.53s" end="119.5s">Chcemy pokazać ci WCAG,</p>
+      <p region="bottom" begin="119.53s" end="124.5s">Chcemy pokazać Ci, jaki może być ten świat</p>
+      <p region="bottom" begin="124.53s" end="128.003s">Chcemy pokazać ci WCAG.</p>
+      <p region="bottom" begin="128.007s" end="132.003s">Nie jest to ciężkie zadanie otworzyć swój kod<br/>i pisać według WCAG, WCAG.</p>
+      <p region="bottom" begin="132.007s" end="135.003s">Więc pozwól mi powiedzieć,<br/>czym jest WCAG i czym WCAG nie jest</p>
+      <p region="bottom" begin="135.007s" end="138.003s">WCAG to zestaw narzędziowy,<br/>który zawiera zestaw reguł</p>
+      <p region="bottom" begin="138.007s" end="143.007s">Pomaga ci ożywiać twoją witrynę dla ludzi<br/>z innymi zdolnościami i wrażliwościami.</p>
+      <p region="bottom" begin="143.099s" end="146.002s">Kiedy więc trafią do Ciebie w Sieci,<br/>mogą się dobrze bawić.</p>
+      <p region="bottom" begin="146.007s" end="148.007s">Nieważne, że są niewidomi, albo że muszą migać...</p>
+      <p region="bottom" begin="148.099s" end="151.007s">albo że ich ręce zaczynają się trząść przy każdym ruchu</p>
+      <p region="bottom" begin="151.099s" end="153.007s">Albo jeśli ich umysły pomylą, co chcą zrobić</p>
+      <p region="bottom" begin="153.099s" end="159.007s">Mogą łatwo zrozumieć, o czym mówisz,<br/>jeśli będziesz przestrzegać zasad, które przedstawiamy</p>
+      <p region="bottom" begin="159.099s" end="164.007s">Zasada 1: Treść musi być postrzegalna</p>
+      <p region="bottom" begin="164.099s" end="169.007s">Zasada 2: Elementy interfejsu muszą być funkcjonalne</p>
+      <p region="bottom" begin="169.099s" end="174.099s">Zasada 3: Treść i kontrolki muszą być zrozumiałe</p>
+      <p region="bottom" begin="174.129s" end="182.099s">Zasada 4: Treść musi być rzetelnie kodowana, aby działać<br/>z obecnymi i przyszłymi technologiami</p>
+      <p region="bottom" begin="185.099s" end="195.12s">Chcemy pokazać ci WCAG,<br/>Chcemy pokazać ci, jaki może być ten świat</p>
+      <p region="bottom" begin="195.129s" end="200.099s">Chcemy pokazać ci WCAG.</p>
+      <p region="bottom" begin="200.129s" end="206.099s">Nie jest to ciężkie zadanie otworzyć swój kod<br/>i pisać według WCAG, WCAG</p>
+      <p region="bottom" begin="206.129s" end="210.099s">Sharky: Hej David, twoja muzyka jest o wiele bardziej zabawna,<br/>odkąd wyniosłeś się z przedmieść<br/>i przebywasz w centrum  miasta na rogach ulic.</p>
+      <p region="bottom" begin="210.129s" end="214.099s">Lubię temat drugiej piosenki,<br/>ale brzmiała trochę jak niepodłączona,<br/>a ja nigdy nie szalałem za wyłączonym dźwiękiem,</p>
+      <p region="bottom" begin="214.129s" end="219.099s">Lubię muzykę techno-maniaków, gdzie komputery robią wszystko,<br/>a ludzie nie grają na żadnych instrumentach.</p>
+      <p region="bottom" begin="219.129s" end="221.099s">Myślę, że jest to o wiele bardziej naturalne,<br/>gdy muzyka jest odtwarzana, kup oryginalne komputery.</p>
+      <p region="bottom" begin="221.129s" end="222.099s">Kiedy ludzie grają, brzmi to tak bezemocyjnie i fałszywie.</p>
+      <p region="bottom" begin="222.129s" end="225.099s">David: Będziemy to robić tylko dlatego,<br/>że jesteście kupą zer i zer, jak wielkoludy.</p>
+      <p region="bottom" begin="225.129s" end="230.129s">[Sharky] David, to było wredne z twojej strony, że to powiedziałeś,<br/>wiesz, że zawsze byłem bardzo wrażliwy na moje binarne kodowanie strukturalne.</p>
+      <p region="bottom" begin="230.169s" end="232.129s">To zawsze było dla mnie źródłem<br/>wielkiej emocjonalnej niepewności.</p>
+      <p region="bottom" begin="232.169s" end="239.129s">[David] Och, daj spokój Sharky, wiesz, że cię kocham człowieku,<br/>a poza tym jesteś niesamowitym raperem,<br/>powinieneś pójść do American Idol.</p>
+      <p region="bottom" begin="239.169s" end="244.129s">Będę gwiazdą, już widzę te nagłówki,<br/>Sharky wygrywa American Idol dla osób niepełnosprawnych.</p>
+    </div>
+  </body>
+</tt>

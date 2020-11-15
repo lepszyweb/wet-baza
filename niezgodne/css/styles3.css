@@ -1,0 +1,200 @@
+.red {
+    color: #c00;
+}
+
+.green {
+    color: #080;
+}
+
+.pad {
+    padding: 5px 5px 20px 5px;
+}
+.fg-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.section {
+    margin-bottom: 20px;
+}
+/**
+(webpage 3)
+**/
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.form-group .field-Con:nth-of-type(2){
+    text-align: right;
+}
+
+.form-group .field-Con:nth-of-type(2){
+    text-align: left;
+}
+
+.field-Con{
+    flex-basis: 50%;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    margin-right: 45px;
+    margin-left: 45px;
+}
+
+.field-Con label {
+    padding-right: 30px;
+    margin-bottom: 0;
+}
+
+.radio-legend{
+    border-bottom: none;
+    text-align: center;
+}
+
+.radio-fieldSet {
+    text-align: center;
+}
+
+.radio-options {
+    display: inline-flex;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.radio-options input[type=radio]{
+    margin-bottom: 6px;
+}
+
+.radio-options label {
+    padding-right: 10px;
+}
+
+#field10{
+    padding: 5px;
+    min-width: 150px;
+}
+
+.superCert-outline{
+    outline: 2px solid black;
+    padding: 0 50px;
+    display: none;
+}
+.superCertified-questions {
+    display: flex;
+	flex-direction: column;
+}
+.superCertified-questions legend{
+    border: none;
+    text-align: center;
+	margin: 12px 0;
+	flex:0 1 auto;
+}
+
+.superCertified {
+    text-align: center;
+}
+
+.superCertified label {
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#super {
+    margin-left: 10px;
+}
+
+
+
+.checkbox-con {
+    display: flex;
+	flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-options {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 10px 20px;
+}
+
+.checkbox-options label{
+    margin-bottom: 0;
+    margin-right: 8px;
+}
+
+.superCertified-questions2 {
+    display: flex;
+	flex-direction: column;
+}
+
+.scq2-fieldset{
+    margin: 0 50px 20px 50px;
+}
+
+.radio-groupCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-group1, .radio-group2 {
+    padding: 0 50px;
+}
+
+.captcha-con{
+    outline: 2px solid black;
+    padding: 20px;
+    display: none;
+    margin-top: 20px;
+}
+
+.captcha-head {
+    margin-bottom: 20px;
+}
+
+#captcha-image{
+    cursor: pointer;
+}
+
+.captcha-head h3 {
+    display: inline;
+    margin-right: 10px;
+}
+
+.form-submitBtn{
+    margin-bottom: 20px;
+}
+
+.submit-con {
+    padding-top: 20px;
+    border-top: 1px solid rgba(238, 238, 238, 0.6);
+}
+
+.submit-con p{
+    padding-top: 20px;
+}
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}

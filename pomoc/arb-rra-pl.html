@@ -1,0 +1,1350 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="pl" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl" dir="ltr">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Podział odpowiedzialności za dostępność (WCAG 2.0) - LepszyWeb.pl</title>
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="Przedstawia podział odpowiedzialności za dostępność WCAG 2.0 w całym łańcuchu produkcji internetowej.">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="./../LWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../LWeb/css/theme.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="demo/arb-rra.min.css">
+    <!--[if lt IE 9]>
+  <link href="./../LWeb/assets/favicon.ico" rel="shortcut icon" />
+
+  <link rel="stylesheet" href="./../LWeb/css/ie8-theme.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="./../wet-boew/js/ie8-wet-boew.min.js"></script>
+  <![endif]-->
+    <!--[if lte IE 9]>
+
+
+  <![endif]-->
+    <noscript><link rel="stylesheet" href="./../wet-boew/css/noscript.min.css" /></noscript>
+  </head>
+
+ <body vocab="http://schema.org/" typeof="WebPage">
+    <nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-cont">Przejdź do treści głównej</a>
+        </li>
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-info">Przejdź do &bdquo;O tej stronie&rdquo;</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container">
+<!-- Sekcja Wybierz język -->
+<!-- Koniec sekcji Wybierz język -->
+
+        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+          <h2>Wyszukiwanie i menu</h2>
+          <ul class="pnl-btn list-inline text-right">
+            <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
+          </ul>
+          <div id="mb-pnl"></div>
+        </section>	 		
+
+
+
+        <div class="row">
+          <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="./../index.html" property="url"><img src="./../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
+            <meta property="areaServed" typeof="Country" content="Polska">
+            <link property="logo" href="./../LWeb/assets/lepszyweb-min.svg">
+          </div>
+          <section id="wb-srch" class="col-lg-8 text-right">
+            <h2>Szukaj</h2>
+            <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+              <div class="form-group">
+                <label for="wb-srch-q" class="wb-inv">Szukaj na LepszyWeb.pl</label>
+                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Szukaj na LepszyWeb.pl">
+                <datalist id="wb-srch-q-ac"> </datalist>
+              </div>
+              <div class="form-group submit">
+                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Szukaj</span></button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+	  
+      <nav role="navigation" id="wb-sm" data-ajax-replace="./../ajax/menu-audyt.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <div class="container nvbar">
+          <h2>Spis tematów</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a href="./index.html">O szkoleniu</a></li>
+              <li><a href="./przypadki/index.html">Przypadki</a></li>		  
+              <li><a href="./zgodne/index.html">Zgodne</a></li>
+              <li><a href="./niezgodne/index.html">Niezgodne</a></li>
+              <li><a href="./wzorce/index.html">Wzorce</a></li>
+              <li><a href="./szablony/index.html">Szablony</a></li>					  
+              <li><a href="./pomoc/index.html">Pomoc</a></li>		
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav role="navigation" id="wb-bc" property="breadcrumb">
+        <h2>Jesteś tutaj:</h2>
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>
+                <a href="./../index-en.html">Start</a>
+              </li>
+              <li>
+                <a href="./../demos/index-pl.html">Przykłady działania</a>
+              </li>
+              <li>Podział odpowiedzialności za dostępność (WCAG 2.0)</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+      <h1 property="name" id="wb-cont">Podział odpowiedzialności za dostępność (WCAG 2.0)</h1>
+      <p>Wytyczne dotyczące dostępności treści internetowych (WCAG) 2.0 zawierają sześćdziesiąt jeden (61) kryteriów sukcesu obejmujących najlepsze praktyki promowania dostępności treści dla osób z niepełnosprawnościami. Te kryteria sukcesu wpływają na wszystkie fazy projektu witryny internetowej. Związane z nimi obowiązki muszą być przypisane różnym zaangażowanym osobom, aby zapewnić powodzenie projektu dostępności treści. Jest to szczególnie prawdziwe w kontekście zobowiązań dotyczących zapewnienia zgodności, jeśli takie obowiązki obowiązują w Twojej organizacji.</p>
+      <section>
+        <h2 id="a1">Podział obowiązków według funkcji sieciowych</h2>
+        <p>Wszystkie kryteria sukcesu WCAG 2.0 można znaleźć w dwunastu (12) wytycznych dotyczących dostępności. Zostały one przypisane do dziewięciu (9) ogólnie akceptowanych ogniw w łańcuchu produkcji stron internetowych. Te tradycyjne ogniwa to:</p>
+        <ol class="list-unstyled">
+          <li>
+            <details>
+              <summary>Zarządzanie projektem</summary>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>Do celów tego podziału funkcja zarządzania projektem obejmuje zadania zwykle związane z planowaniem produkcji i różnymi powiązanymi działaniami monitorującymi.</p>
+                  <p>W kontekście dostępności obowiązki kierownika projektu polegają na zapewnieniu optymalizacji łańcucha produkcyjnego poprzez:</p>
+
+                  <ul>
+                    <li>Integracja koncepcji przekrojowych</li>
+                    <li>Planowanie dostępności na każdym etapie</li>
+                    <li>Podział obowiązków (odpowiedizalności) związanych z dostępnością</li>
+                    <li>Zapewnienie kryteriów technicznych i funkcjonalnych</li>
+                    <li>Rozróżnianie między dostępnością a zgodnością</li>
+                    <li>Świadomość ograniczeń narzędzi</li>
+                    <li>Ocena wpływu platform technologicznych</li>
+                  </ul>
+                  <p>Aby uzyskać więcej informacji na temat czynników, które należy rozważyć, aby osiągnąć cele dostępności z perspektywy lidera projektu, zapoznaj się z artykułem "<a href="arb-rra-planAccess-pl.html">Planowanie&#160;dostępności</a>".</p>
+
+                </div>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Analiza: 9 kryteriów sukcesu</summary>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>Na potrzeby tego podziału  funkcja analizy obejmuje zadania zwykle związane z analizą strategicznych kierunków projektu, analizą opcji platform technologicznych lub analizą funkcjonalną interfejsów internetowych.</p>
+                </div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Poziom</th>
+                      <th scope="col">Kryteria</th>
+                      <th scope="col">Szczegóły</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>A</td>
+                      <td>2</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#consistent-behavior-receive-focus" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.1</a> i <a href="https://wcag.lepszyweb.pl/#minimize-error-identified" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.1</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AA</td>
+                      <td>2</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#minimize-error-suggestions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.3</a> i <a href="https://wcag.lepszyweb.pl/#minimize-error-reversible" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.4</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AAA</td>
+                      <td>5</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#time-limits-no-exceptions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.3</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-postponed" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.4</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-server-timeout" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.5</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-context-help" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.5</a> i <a href="https://wcag.lepszyweb.pl/#minimize-error-reversible-all" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.6</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Architektura: 9 kryteriów sukcesu</summary>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>Do celów tego podziału funkcja architektury obejmuje zadania zwykle związane z architekturą informacji (treści WWW) i architekturą danych.</p>
+                </div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Poziom</th>
+                      <th scope="col">Kryteria</th>
+                      <th scope="col">Szczegóły</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>A</td>
+                      <td>2</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#content-structure-separation-programmatic" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.1</a> i <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-title" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.2</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AA</td>
+                      <td>3</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-mult-loc" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.5</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-descriptive" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.6</a> i <a href="https://wcag.lepszyweb.pl/#meaning-other-lang-id" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.2</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AAA</td>
+                      <td>4</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-location" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.8</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-headings" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.10</a>, <a href="https://wcag.lepszyweb.pl/#meaning-idioms" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.3</a> i <a href="https://wcag.lepszyweb.pl/#meaning-located" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.4</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Projektowanie interakcji: 36 kryteriów sukcesu</summary>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>Na potrzeby tego podziału funkcja projektowania interakcji obejmuje zadania zwykle związane ze skryptowaniem interfejsów internetowych, planowaniem zmian treści, interaktywnością i treścią inną niż główna treść stron.</p>
+                </div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Poziom</th>
+                      <th scope="col">Kryteria</th>
+                      <th scope="col">Szczegóły</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>A</td>
+                      <td>15</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#content-structure-separation-programmatic" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.1</a>, <a href="https://wcag.lepszyweb.pl/#content-structure-separation-understanding" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.3</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-without-color" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.1</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-dis-audio" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.2</a>, <a href="https://wcag.lepszyweb.pl/#keyboard-operation-keyboard-operable" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.1</a>, <a href="https://wcag.lepszyweb.pl/#keyboard-operation-trapping" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.2</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-required-behaviors" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.1</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-pause" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.2</a>, <a href="https://wcag.lepszyweb.pl/#seizure-does-not-violate" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.3.1</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-refs" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.4</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-receive-focus" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.1</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-unpredictable-change" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.2</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-identified" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.1</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-cues" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.2</a> i <a href="https://wcag.lepszyweb.pl/#ensure-compat-rsv" rel="external"><span class="wb-inv">Kryterium sukcesu </span>4.1.2</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AA</td>
+                      <td>7</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-scale" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.4</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-mult-loc" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.5</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-descriptive" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.6</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-locations" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.3</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-functionality" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.4</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-suggestions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.3</a> i <a href="https://wcag.lepszyweb.pl/#minimize-error-reversible" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.4</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AAA</td>
+                      <td>14</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-noaudio" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.7</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-visual-presentation" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.8</a>, <a href="https://wcag.lepszyweb.pl/#keyboard-operation-all-funcs" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.3</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-no-exceptions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.3</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-postponed" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.4</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-server-timeout" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.5</a>, <a href="https://wcag.lepszyweb.pl/#seizure-three-times" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.3.2</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-location" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.8</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-link" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.9</a>, <a href="https://wcag.lepszyweb.pl/#meaning-idioms" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.3</a>, <a href="https://wcag.lepszyweb.pl/#meaning-supplements" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.5</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-no-extreme-changes-context" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.5</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-context-help" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.5</a> i <a href="https://wcag.lepszyweb.pl/#minimize-error-reversible-all" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.6</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Projektowanie graficzne: 32 kryteriów sukcesu</summary>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>Dla celów tego podziału funkcja projektowania graficznego obejmuje zadania zwykle związane z projektowaniem graficznym interfejsów, związanych z tym elementów graficznych, konkretny projekt elementów nawigacyjnych, zmian w kontekście i treści innych niż główna treść stron.
+
+                  </p>
+                </div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Poziom</th>
+                      <th scope="col">Kryteria</th>
+                      <th scope="col">Szczegóły</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>A</td>
+                      <td>12</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#content-structure-separation-programmatic" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.1</a>, <a href="https://wcag.lepszyweb.pl/#content-structure-separation-understanding" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.3</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-without-color" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.1</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-dis-audio" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.2</a>, <a href="https://wcag.lepszyweb.pl/#keyboard-operation-keyboard-operable" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.1</a>, <a href="https://wcag.lepszyweb.pl/#keyboard-operation-trapping" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.2</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-pause" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.2</a>, <a href="https://wcag.lepszyweb.pl/#seizure-does-not-violate" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.3.1</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-skip" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.1</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-receive-focus" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.1</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-identified" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.1</a> i <a href="https://wcag.lepszyweb.pl/#minimize-error-cues" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.2</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AA</td>
+                      <td>9</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-contrast" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.3</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-scale" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.4</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-text-presentation" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.5</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-mult-loc" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.5</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-descriptive" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.6</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-visible" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.7</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-locations" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.3</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-functionality" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.4</a> i <a href="https://wcag.lepszyweb.pl/#minimize-error-suggestions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.3</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AAA</td>
+                      <td>11</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast7" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.6</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-noaudio" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.7</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-visual-presentation" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.8</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-text-images" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.9</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-no-exceptions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.3</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-postponed" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.4</a>, <a href="https://wcag.lepszyweb.pl/#seizure-three-times" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.3.2</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-location" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.8</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-no-extreme-changes-context" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.5</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-context-help" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.5</a> i <a href="https://wcag.lepszyweb.pl/#minimize-error-reversible-all" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.6</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Prototypowanie: 25 kryteriów sukcesu</summary>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>Na potrzeby tego podzialu funkcja prototypowania obejmuje zadania związane zwykle z produkcją szablonów witryn internetowych (HTML i CSS)
+                  </p>
+                </div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Poziom</th>
+                      <th scope="col">Kryteria</th>
+                      <th scope="col">Szczegóły</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>A</td>
+                      <td>12</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#text-equiv-all" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.1.1</a>, <a href="https://wcag.lepszyweb.pl/#content-structure-separation-programmatic" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.1</a>, <a href="https://wcag.lepszyweb.pl/#content-structure-separation-sequence" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.2</a>, <a href="https://wcag.lepszyweb.pl/#keyboard-operation-keyboard-operable" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.1</a>, <a href="https://wcag.lepszyweb.pl/#keyboard-operation-trapping" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.2</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-skip" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.1</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-title" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.2</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-order" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.3</a>, <a href="https://wcag.lepszyweb.pl/#meaning-doc-lang-id" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.1</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-cues" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.2</a>, <a href="https://wcag.lepszyweb.pl/#ensure-compat-parses" rel="external"><span class="wb-inv">Kryterium sukcesu </span>4.1.1</a> i <a href="https://wcag.lepszyweb.pl/#ensure-compat-rsv" rel="external"><span class="wb-inv">Kryterium sukcesu </span>4.1.2</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AA</td>
+                      <td>7</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-contrast" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.3</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-scale" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.4</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-text-presentation" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.5</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-mult-loc" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.5</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-descriptive" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.6</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-visible" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.7</a> i <a href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-functionality" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.4</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AAA</td>
+                      <td>6</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast7" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.6</a>, <a href="https://wcag.lepszyweb.pl/#keyboard-operation-all-funcs" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.3</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-location" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.8</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-headings" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.10</a>, <a href="https://wcag.lepszyweb.pl/#meaning-idioms" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.3</a> i <a href="https://wcag.lepszyweb.pl/#consistent-behavior-no-extreme-changes-context" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.5</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Redagowanie: 21 kryteriów sukcesu</summary>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>Na potrzeby tego podziału funkcja redakcyjna obejmuje zadania związane zwykle z tworzeniem treści tekstowej wityny, równoważnej treści alternatywnej oraz treści innej niż główna treść stron.</p>
+
+
+
+
+
+                </div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Poziom</th>
+                      <th scope="col">Kryteria</th>
+                      <th scope="col">Szczegóły</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>A</td>
+                      <td>11</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#text-equiv-all" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.1.1</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-av-only-alt" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.1</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-captions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.2</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-audio-desc" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.3</a>, <a href="https://wcag.lepszyweb.pl/#content-structure-separation-programmatic" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.1</a>, <a href="https://wcag.lepszyweb.pl/#content-structure-separation-understanding" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.3</a>, <a href="https://wcag.lepszyweb.pl/#keyboard-operation-keyboard-operable" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.1</a>, <a href="https://wcag.lepszyweb.pl/#keyboard-operation-trapping" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.2</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-title" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.2</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-refs" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.4</a> i <a href="https://wcag.lepszyweb.pl/#minimize-error-identified" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.1</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AA</td>
+                      <td>3</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#media-equiv-audio-desc-only" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.5</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-descriptive" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.6</a> i <a href="https://wcag.lepszyweb.pl/#meaning-other-lang-id" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.2</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AAA</td>
+                      <td>7</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#media-equiv-extended-ad" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.7</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-text-doc" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.8</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-link" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.9</a>, <a href="https://wcag.lepszyweb.pl/#meaning-idioms" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.3</a>, <a href="https://wcag.lepszyweb.pl/#meaning-located" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.4</a>, <a href="https://wcag.lepszyweb.pl/#meaning-supplements" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.5</a> i <a href="https://wcag.lepszyweb.pl/#meaning-pronunciation" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.6</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Programowanie: 59 kryteriów sukcesu</summary>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>Na potrzeby tego podziału funkcja programistyczna obejmuje zadania związane zwykle z opracowywaniem narzędzi do tworzenia treści, integracją HTML i CSS oraz programowaniem proponowanych skryptów i aplikacji na stronie internetowej.
+
+
+                  </p>
+                </div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Poziom</th>
+                      <th scope="col">Kryteria</th>
+                      <th scope="col">Szczegóły</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>A</td>
+                      <td>24</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#text-equiv-all" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.1.1</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-av-only-alt" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.1</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-captions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.2</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-audio-desc" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.3</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-real-time-captions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.4</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-audio-desc-only" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.5</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-sign" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.6</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-extended-ad" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.7</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-text-doc" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.8</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-live-audio-only" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.9</a>, <a href="https://wcag.lepszyweb.pl/#content-structure-separation-programmatic" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.1</a>, <a href="https://wcag.lepszyweb.pl/#content-structure-separation-sequence" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.2</a>, <a href="https://wcag.lepszyweb.pl/#content-structure-separation-understanding" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.3</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-dis-audio" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.2</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-contrast" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.3</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-scale" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.4</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-text-presentation" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.5</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast7" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.6</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-noaudio" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.7</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-visual-presentation" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.8</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-text-images" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.9</a>, <a href="https://wcag.lepszyweb.pl/#keyboard-operation-keyboard-operable" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.1</a>, <a href="https://wcag.lepszyweb.pl/#keyboard-operation-trapping" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.2</a> i <a href="https://wcag.lepszyweb.pl/#keyboard-operation-all-funcs" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.3</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AA</td>
+                      <td>13</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#time-limits-required-behaviors" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.1</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-pause" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.2</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-no-exceptions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.3</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-postponed" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.4</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-server-timeout" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.5</a>, <a href="https://wcag.lepszyweb.pl/#seizure-does-not-violate" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.3.1</a>, <a href="https://wcag.lepszyweb.pl/#seizure-three-times" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.3.2</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-skip" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.1</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-title" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.2</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-order" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.3</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-refs" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.4</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-mult-loc" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.5</a> i <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-descriptive" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.6</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AAA</td>
+                      <td>22</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-visible" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.7</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-location" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.8</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-link" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.9</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-headings" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.10</a>, <a href="https://wcag.lepszyweb.pl/#meaning-doc-lang-id" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.1</a>, <a href="https://wcag.lepszyweb.pl/#meaning-other-lang-id" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.2</a>, <a href="https://wcag.lepszyweb.pl/#meaning-idioms" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.3</a>, <a href="https://wcag.lepszyweb.pl/#meaning-located" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.4</a>, <a href="https://wcag.lepszyweb.pl/#meaning-pronunciation" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.6</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-receive-focus" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.1</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-unpredictable-change" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.2</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-locations" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.3</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-functionality" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.4</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-no-extreme-changes-context" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.5</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-identified" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.1</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-cues" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.2</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-suggestions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.3</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-reversible" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.4</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-context-help" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.5</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-reversible-all" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.6</a>, <a href="https://wcag.lepszyweb.pl/#ensure-compat-parses" rel="external"><span class="wb-inv">Kryterium sukcesu </span>4.1.1</a> i <a href="https://wcag.lepszyweb.pl/#ensure-compat-rsv" rel="external"><span class="wb-inv">Kryterium sukcesu </span>4.1.2</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Kontrola jakości: 61 kryteriów sukcesu</summary>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>Dla celów tego podziału funkcja kontroli jakości obejmuje zadania związane zwykle z weryfikacjami na koniec projektu.</p>
+                </div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Poziom</th>
+                      <th scope="col">Kryteria</th>
+                      <th scope="col">Szczegóły</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>A</td>
+                      <td>25</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#text-equiv-all" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.1.1</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-av-only-alt" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.1</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-captions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.2</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-audio-desc" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.3</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-real-time-captions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.4</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-audio-desc-only" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.5</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-sign" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.6</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-extended-ad" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.7</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-text-doc" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.8</a>, <a href="https://wcag.lepszyweb.pl/#media-equiv-live-audio-only" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.2.9</a>, <a href="https://wcag.lepszyweb.pl/#content-structure-separation-programmatic" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.1</a>, <a href="https://wcag.lepszyweb.pl/#content-structure-separation-sequence" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.2</a>, <a href="https://wcag.lepszyweb.pl/#content-structure-separation-understanding" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.3.3</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-without-color" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.1</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-dis-audio" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.2</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-contrast" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.3</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-scale" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.4</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-text-presentation" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.5</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast7" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.6</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-noaudio" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.7</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-visual-presentation" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.8</a>, <a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-text-images" rel="external"><span class="wb-inv">Kryterium sukcesu </span>1.4.9</a>, <a href="https://wcag.lepszyweb.pl/#keyboard-operation-keyboard-operable" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.1</a>, <a href="https://wcag.lepszyweb.pl/#keyboard-operation-trapping" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.2</a> i <a href="https://wcag.lepszyweb.pl/#keyboard-operation-all-funcs" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.1.3</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AA</td>
+                      <td>13</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#time-limits-required-behaviors" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.1</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-pause" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.2</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-no-exceptions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.3</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-postponed" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.4</a>, <a href="https://wcag.lepszyweb.pl/#time-limits-server-timeout" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.2.5</a>, <a href="https://wcag.lepszyweb.pl/#seizure-does-not-violate" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.3.1</a>, <a href="https://wcag.lepszyweb.pl/#seizure-three-times" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.3.2</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-skip" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.1</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-title" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.2</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-order" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.3</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-refs" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.4</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-mult-loc" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.5</a> i <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-descriptive" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.6</a>.</td>
+                    </tr>
+                    <tr>
+                      <td>AAA</td>
+                      <td>23</td>
+                      <td><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-visible" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.7</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-location" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.8</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-link" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.9</a>, <a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-headings" rel="external"><span class="wb-inv">Kryterium sukcesu </span>2.4.10</a>, <a href="https://wcag.lepszyweb.pl/#meaning-doc-lang-id" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.1</a>, <a href="https://wcag.lepszyweb.pl/#meaning-other-lang-id" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.2</a>, <a href="https://wcag.lepszyweb.pl/#meaning-idioms" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.3</a>, <a href="https://wcag.lepszyweb.pl/#meaning-located" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.4</a>, <a href="https://wcag.lepszyweb.pl/#meaning-supplements" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.5</a>, <a href="https://wcag.lepszyweb.pl/#meaning-pronunciation" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.1.6</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-receive-focus" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.1</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-unpredictable-change" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.2</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-locations" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.3</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-functionality" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.4</a>, <a href="https://wcag.lepszyweb.pl/#consistent-behavior-no-extreme-changes-context" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.2.5</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-identified" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.1</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-cues" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.2</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-suggestions" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.3</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-reversible" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.4</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-context-help" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.5</a>, <a href="https://wcag.lepszyweb.pl/#minimize-error-reversible-all" rel="external"><span class="wb-inv">Kryterium sukcesu </span>3.3.6</a>, <a href="https://wcag.lepszyweb.pl/#ensure-compat-parses" rel="external"><span class="wb-inv">Kryterium sukcesu </span>4.1.1</a> i <a href="https://wcag.lepszyweb.pl/#ensure-compat-rsv" rel="external"><span class="wb-inv">Kryterium sukcesu </span>4.1.2</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <div class="table-responsive">
+          <h2 id="a2">Tabela podsumowująca podział odpowiedzialnosci za WCAG 2.0 na poszczególnych etapach łańcucha produkcyjnego</h2>
+          <table id="tsrw" class="wb-tables table table-striped table-hover" data-wet-boew='{"aLengthMenu": [[10, 25, -1], [10, 25, "All"]], "iDisplayLength": -1}'>
+            <thead>
+              <tr>
+                <th scope="col">Kryterium sukcesu</th>
+                <th scope="col">Poziom</th>
+                <th scope="col">Analiza</th>
+                <th scope="col">Architektura</th>
+                <th scope="col">Projektowanie interakcji</th>
+                <th scope="col">Projektowanie graficzny</th>
+                <th scope="col">Prototypowanie</th>
+                <th scope="col">Edycja</th>
+                <th scope="col">Programowanie</th>
+                <th scope="col">Kontrola jakości</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="a-wcag2-111">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#text-equiv-all" rel="external">1.1.1</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-121">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#media-equiv-av-only-alt" rel="external">1.2.1</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-122">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#media-equiv-captions" rel="external">1.2.2</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-123">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#media-equiv-audio-desc" rel="external">1.2.3</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aa-wcag2-124">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#media-equiv-real-time-captions" rel="external">1.2.4</a></td>
+                <td>AA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aa-wcag2-125">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#media-equiv-audio-desc-only" rel="external">1.2.5</a></td>
+                <td>AA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-126">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#media-equiv-sign" rel="external">1.2.6</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-127">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#media-equiv-extended-ad" rel="external">1.2.7</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-128">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#media-equiv-text-doc" rel="external">1.2.8</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-129">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#media-equiv-live-audio-only" rel="external">1.2.9</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-131">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#content-structure-separation-programmatic" rel="external">1.3.1</a></td>
+                <td>A</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-132">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#content-structure-separation-sequence" rel="external">1.3.2</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-133">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#content-structure-separation-understanding" rel="external">1.3.3</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-141">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#visual-audio-contrast-without-color" rel="external">1.4.1</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-142">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#visual-audio-contrast-dis-audio" rel="external">1.4.2</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aa-wcag2-143">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#visual-audio-contrast-contrast" rel="external">1.4.3</a></td>
+                <td>AA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aa-wcag2-144">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#visual-audio-contrast-scale" rel="external">1.4.4</a></td>
+                <td>AA</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aa-wcag2-145">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#visual-audio-contrast-text-presentation" rel="external">1.4.5</a></td>
+                <td>AA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-146">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#visual-audio-contrast7" rel="external">1.4.6</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-147">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#visual-audio-contrast-noaudio" rel="external">1.4.7</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-148">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#visual-audio-contrast-visual-presentation" rel="external">1.4.8</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-149">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#visual-audio-contrast-text-images" rel="external">1.4.9</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-211">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#keyboard-operation-keyboard-operable" rel="external">2.1.1</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-212">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#keyboard-operation-trapping" rel="external">2.1.2</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-213">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#keyboard-operation-all-funcs" rel="external">2.1.3</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-221">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#time-limits-required-behaviors" rel="external">2.2.1</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-222">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#time-limits-pause" rel="external">2.2.2</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-223">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#time-limits-no-exceptions" rel="external">2.2.3</a></td>
+                <td>AAA</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-224">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#time-limits-postponed" rel="external">2.2.4</a></td>
+                <td>AAA</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-225">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#time-limits-server-timeout" rel="external">2.2.5</a></td>
+                <td>AAA</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-231">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#seizure-does-not-violate" rel="external">2.3.1</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-232">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#seizure-three-times" rel="external">2.3.2</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-241">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#navigation-mechanisms-skip" rel="external">2.4.1</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-242">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#navigation-mechanisms-title" rel="external">2.4.2</a></td>
+                <td>A</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-243">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-order" rel="external">2.4.3</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-244">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#navigation-mechanisms-refs" rel="external">2.4.4</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aa-wcag2-245">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#navigation-mechanisms-mult-loc" rel="external">2.4.5</a></td>
+                <td>AA</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aa-wcag2-246">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#navigation-mechanisms-descriptive" rel="external">2.4.6</a></td>
+                <td>AA</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aa-wcag2-247">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-visible" rel="external">2.4.7</a></td>
+                <td>AA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-248">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#navigation-mechanisms-location" rel="external">2.4.8</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-249">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#navigation-mechanisms-link" rel="external">2.4.9</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-2410">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#navigation-mechanisms-headings" rel="external">2.4.10</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-311">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#meaning-doc-lang-id" rel="external">3.1.1</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aa-wcag2-312">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#meaning-other-lang-id" rel="external">3.1.2</a></td>
+                <td>AA</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-313">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#meaning-idioms" rel="external">3.1.3</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-314">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#meaning-located" rel="external">3.1.4</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-315">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#meaning-supplements" rel="external">3.1.5</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-316">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#meaning-pronunciation" rel="external">3.1.6</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-321">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#consistent-behavior-receive-focus" rel="external">3.2.1</a></td>
+                <td>A</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-322">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#consistent-behavior-unpredictable-change" rel="external">3.2.2</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aa-wcag2-323">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-locations" rel="external">3.2.3</a></td>
+                <td>AA</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aa-wcag2-324">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-functionality" rel="external">3.2.4</a></td>
+                <td>AA</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-325">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#consistent-behavior-no-extreme-changes-context" rel="external">3.2.5</a></td>
+                <td>AAA</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-331">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#minimize-error-identified" rel="external">3.3.1</a></td>
+                <td>A</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-332">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#minimize-error-cues" rel="external">3.3.2</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aa-wcag2-333">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#minimize-error-suggestions" rel="external">3.3.3</a></td>
+                <td>AA</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aa-wcag2-334">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#minimize-error-reversible" rel="external">3.3.4</a></td>
+                <td>AA</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-335">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#minimize-error-context-help" rel="external">3.3.5</a></td>
+                <td>AAA</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="aaa-wcag2-336">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#minimize-error-reversible-all" rel="external">3.3.6</a></td>
+                <td>AAA</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-411">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#ensure-compat-parses" rel="external">4.1.1</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+              <tr id="a-wcag2-412">
+                <td><a class="wcagsc" href="https://wcag.lepszyweb.pl/#ensure-compat-rsv" rel="external">4.1.2</a></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <div class="clearfix"></div>
+      <hr>
+      <p><strong>Uwaga:</strong> Ten podział obowiązów oferuje wizję, która może nie odpowiadać dokładnie realiom Państwa własnego łańcucha produkcyjnego i dlatego powinni Państwo dostosować ją do swoich potrzeb.</p>
+
+      <hr>
+      <p>©<span>Coopérative AccessibilitéWeb 2011</span>, ©<span>LepszyWeb.pl</span>, 2020. <a href="arb-rra-terms-pl.html">Warunki wykorzystania</a>.</p>
+
+
+
+
+
+
+      <!-- szczegóły strony -->
+      <div class="pagedetails">
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-lg-4">
+            <details class="brdr-0">
+              <summary class="btn btn-default text-center">Zgłoś problem z tą stroną</summary>
+              <div class="well row">
+                <div class="gc-rprt-prblm">
+                  <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+                    <form action="#">
+                      <fieldset>
+                        <legend><span class="field-name">Zaznacz wszystko, czego dotyczy zgłoszenie: </span></legend>
+                        <div class="checkbox">
+                          <label for="problem1">
+                            <input type="checkbox" data-reveal="#broken" name="problem" value="Coś jest zepsute" id="problem1">
+                            Coś jest zepsute</label>
+                        </div>
+                        <div class="form-group hide" id="broken">
+                          <label for="problem1-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                          <input type="text" class="form-control full-width" id="problem1-detail">
+                        </div>
+                        <div class="checkbox">
+                          <label for="problem2">
+                            <input type="checkbox" data-reveal="#spelling" name="problem" value="Na stronie są błędy ortograficzne lub gramatyczne" id="problem2">
+                            Na stronie są błędy ortograficzne lub gramatyczne</label>
+                        </div>
+                        <div class="form-group hide" id="spelling">
+                          <label for="problem2-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                          <input type="text" class="form-control full-width" id="problem2-detail">
+                        </div>
+                        <div class="checkbox">
+                          <label for="problem3">
+                            <input type="checkbox" data-reveal="#wrong" name="problem" value="Na stronie są błędne informacje" id="problem3">
+                            Informacje są błędne</label>
+                        </div>
+                        <div class="form-group hide" id="wrong">
+                          <label for="problem3-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                          <input type="text" class="form-control full-width" id="problem3-detail">
+                        </div>
+                        <div class="checkbox">
+                          <label for="problem4">
+                            <input type="checkbox" data-reveal="#outdated" name="problem" value="Informacje są nieaktualne" id="problem4">
+                            Informacje są nieaktualne</label>
+                        </div>
+                        <div class="form-group hide" id="outdated">
+                          <label for="problem4-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                          <input type="text" class="form-control full-width" id="problem4-detail">
+                        </div>
+                        <div class="checkbox">
+                          <label for="problem5">
+                            <input type="checkbox" data-reveal="#find" name="problem" value="Nie mogę znaleźć, czego szukam" id="problem5">
+                            Nie mogę znaleźć, czego szukam</label>
+                        </div>
+                        <div class="form-group hide" id="find">
+                          <label for="problem5-detail">Opisz czego szukasz (opcjonalnie):</label>
+                          <input type="text" class="form-control full-width" id="problem5-detail">
+                        </div>
+                        <div class="checkbox">
+                          <label for="problem6">
+                            <input type="checkbox" data-reveal="#confusing" name="problem" value="To mylące" id="problem6">
+                            Inne</label>
+                        </div>
+                        <div class="form-group hide" id="confusing">
+                          <label for="problem6-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                          <input type="text" class="form-control full-width" id="problem6-detail">
+                        </div>
+                      </fieldset>
+                      <button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Wyślij</button>
+                    </form>
+                  </div>
+                  <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+                    <h3>Dziękujemy za Twoją pomoc!</h3>
+                    <p>
+                      Nie otrzymasz odpowiedzi na tę wiadomość. Jeśli masz pytania, <a href="https://lepszyweb.pl/kontakt.html">napisz do nas</a>.</p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+          <div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+        </div>
+        <dl id="wb-dtmd">
+          <dt>Data modyfikacji:</dt>
+          <dd>
+            <time property="dateModified">2020-06-10</time>
+          </dd>
+        </dl>
+      </div>
+
+    </main>
+    <footer id="wb-info">
+      <div class="landscape">
+        <nav class="container wb-navcurr">
+          <h2 class="wb-inv">O usługach LepszyWeb.pl</h2>
+          <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+            <li><a href="./pages/lw/kontakt.html">Skontaktuj się z nami</a></li>
+            <li><a href="./pages/lw/uslugi.html">Szkolenia</a></li>
+            <li><a href="./pages/lw/audyty.html">Audyty</a></li>
+            <li><a href="./pages/lw/blog.html">Blog</a></li>
+            <li><a href="./pages/lw/pomoc.html">Pomoc</a></li>
+            <li><a href="./pages/lw/raporty.html">Raporty</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+
+            <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+              <h2 class="wb-inv">O tej stronie</h2>
+              <ul>
+                <li><a href="./pages/prawne/o-lepszyweb.html/wsieci.html">W Sieci</a></li>
+                <li><a href="./pages/prawne/o-lepszyweb.html">O LepszyWeb.pl</a></li>
+                <li><a href="./pages/prawne/regulamin.html">Regulamin</a></li>
+                <li><a href="./pages/prawne/prywatnosc.html">Prywatność</a></li>			  
+                <li><a href="./pages/prawne/dostepnosc.html">Dostępność</a></li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg"> 
+              <a href="#wb-cont">Góra strony <span class="glyphicon glyphicon-chevron-up"></span></a> 
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="./../LWeb/assets/lepszyweb-min.svg" alt="Logo Pracowni Dostępności Cyfrowej LepszyWeb.pl"> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="./../wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+ <script src="./../wet-boew/js/ie8-wet-boew2.min.js"></script>
+
+ <![endif]-->
+    <script src="./../LWeb/js/theme.min.js"></script>		
+  </body>
+</html>

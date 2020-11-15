@@ -1,0 +1,46 @@
+<!document html>
+<html lang="pl">
+<head>
+<style>
+
+* {box-sizing: border-box;}
+
+.wrapper {
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+}
+
+.wrapper > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+}
+
+.box1 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+
+</style>
+</head>
+<body>
+<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Layout_and_Accessibility -->
+
+<div class="wrapper">
+  <div class="box box1"><a href="">Pierwszy element</a></div>
+  <div class="box box2"><a href="">Drugi ekement</a></div>
+  <div class="box box3"><a href="">Trzeci element</a></div>
+  <div class="box box4"><a href="">Czwarty element</a></div>
+  <div class="box box5"><a href="">Piąty element</a></div>
+</div>
+</body>
+</html>

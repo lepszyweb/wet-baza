@@ -1,0 +1,544 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="pl" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl" dir="ltr">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Multimedia - Odtwarzacz - Video - LepszyWeb.pl</title>
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="Zapewnia dostępny odtwarzacz multimedialny do osadzania filmów na stronach internetowych.">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="../../LWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../LWeb/css/theme.css">
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+  <link href="../../LWeb/assets/favicon.ico" rel="shortcut icon" />
+
+  <link rel="stylesheet" href="../../LWeb/css/ie8-theme.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="../../wet-boew/js/ie8-wet-boew.min.js"></script>
+  <![endif]-->
+    <!--[if lte IE 9]>
+
+
+  <![endif]-->
+    <noscript><link rel="stylesheet" href="../../wet-boew/css/noscript.min.css" /></noscript>
+  </head>
+
+ <body vocab="http://schema.org/" typeof="WebPage">
+    <nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-cont">Przejdź do treści głównej</a>
+        </li>
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-info">Przejdź do &bdquo;O tej stronie&rdquo;</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container">
+        <section id="wb-lng" class="text-right">
+          <h2 class="wb-inv">Wybierz język</h2>
+          <ul class="list-inline margin-bottom-none">
+            <li><a lang="en" hreflang="en" href="multimedia-en.html">Angielski</a></li>
+            <li><a lang="curr">Polski&#32;<span>(bieżący)</span></li>	
+          </ul>
+        </section>
+        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+          <h2>Wyszukiwanie i menu</h2>
+          <ul class="pnl-btn list-inline text-right">
+            <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
+          </ul>
+          <div id="mb-pnl"></div>
+        </section>		
+		
+        <div class="row">
+          <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="../../index.html" property="url"><img src="../../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
+            <meta property="areaServed" typeof="Country" content="Polska">
+            <link property="logo" href="../../LWeb/assets/lepszyweb-min.svg">
+          </div>
+          <section id="wb-srch" class="col-lg-8 text-right">
+            <h2>Szukaj</h2>
+            <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+              <div class="form-group">
+                <label for="wb-srch-q" class="wb-inv">Szukaj na LepszyWeb.pl</label>
+                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Szukaj na LepszyWeb.pl">
+                <datalist id="wb-srch-q-ac"> </datalist>
+              </div>
+              <div class="form-group submit">
+                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Szukaj</span></button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+      <nav role="navigation" id="wb-sm" data-ajax-replace="../../ajax/menu-lw-pl.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <div class="container nvbar">
+          <h2>Spis tematów</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a href="../../index.html">O witrynie</a></li>
+              <li><a href="../../pages/zgodne/index.html">Zgodne</a></li>
+              <li><a href="../../pages/niezogodne/">Niezgodne</a></li>
+              <li><a href="../demo/index.html">Komponenty</a></li>
+              <li><a href="../../pages/wzory/index.html">Szablony</a></li>
+              <li><a href="../pages/pomoc/index.html">Pomoc</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav role="navigation" id="wb-bc" property="breadcrumb">
+        <h2>Jesteś tutaj:</h2>
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>
+                <a href="../../index-en.html">Start</a>
+              </li>
+              <li>
+                <a href="../../demos/index-pl.html">Przykłady działania</a>
+              </li>
+              <li>Multimedia - Odtwarzacz - Video</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<main property="mainContentOfPage" class="container" typeof="WebPageElement">
+<h1 property="name" id="wb-cont">Multimedia - Odtwarzacz - Video</h1>
+<span class="wb-prettify all-pre hide"></span>
+<div class="row">
+<section class="col-md-12">
+<h2>Przegląd</h2>
+<p>W przypadku filmów, odtwarzacz multimedialny wykorzystuje natywny znacznik HTML5 <code>video</code>.
+Film wideo musi być w formacie MPEG 4 (kodek H264), ponieważ jest to standardowy format wideo w wielu przeglądarkach. Opcjonalny, ale wysoce zalecany format, Webm (kodek VP8), powinien być również dodany, aby umożliwić niektórym przeglądarkom, takim jak Firefox, które nie posiadają natywnego wsparcia dla H264, wykorzystanie natywnego znacznika HTML5.</p>
+<p>Oś czasowa odtwarzacza multimedialnego opiera się na elemencie postępu HTML5 i wykorzystuje polifill, gdy element ten nie jest obsługiwany.</p>
+
+</section>
+</div>
+<section>
+<div class="row">
+<div class="col-md-12">
+<h2>Przykłady</h2>
+<p>Wszystkie przykłady wideo używają natywnego znacznika HTML5 <code>video</code> działajacego w&nbsp;większości nowoczesnych przeglądarek, w tym Firefox 6+, Google Chrome 3+ i IE9.</p>
+</div>
+</div>
+<div class="row">
+<section class="col-md-6">
+<h3>Źródło MPEG4 (H264 + AAC) oraz WebM (VP8) z napisami HTML</h3>
+<figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-en.html"}'>
+<video poster="demo/wcag.jpg" title="Posłuchaj pieśni o WCAG">
+<source type="video/webm" src="demo/wcag.webm">
+<source type="video/mp4" src="demo/wcag.mp4">
+<track src="napisy-wcag-pl.html" kind="captions" data-type="text/html" srclang="pl" label="Polski">
+</video>
+<figcaption>
+<p>Posłuchaj pieśni o WCAG (<a href="napisy-wcag-pl.html">Transkrypcja</a>)</p>
+</figcaption>
+</figure>
+<details class="mrgn-tp-md mrgn-bttm-lg">
+<summary>Pokaż kod</summary>
+<section>
+<h4>HTML na stronie</h4>
+<pre><code>&lt;figure class=&quot;wb-mltmd&quot; data-wb-mltmd='{&quot;shareUrl&quot;: &quot;https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-en.html&quot;}'&gt;
+	&lt;video poster=&quot;demo/wcag.jpg&quot; title=&quot;Posłuchaj pieśni o WCAG&quot;&gt;
+		&lt;source type=&quot;video/webm&quot; src=&quot;demo/wcag.webm&quot; /&gt;
+		&lt;source type=&quot;video/mp4&quot; src=&quot;video/mp4" src="demo/wcag.mp4&quot; /&gt;
+		&lt;track src=&quot;napisy-wcag-pl.html&quot; kind=&quot;captions&quot; data-type=&quot;text/html&quot; srclang=&quot;pl&quot; label=&quot;Polski&quot; /&gt;
+	&lt;/video&gt;
+	&lt;figcaption&gt;
+		&lt;p&gt;Posłuchaj pieśni o WCAG (&lt;a href=&quot;napisy-wcag-pl.html&quot;&gt;Transkrypcja&lt;/a&gt;)&lt;/p&gt;
+	&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+</section>
+<section>
+<h4>napisy-wcag-pl.html</h4>
+<pre><code>&lt;div id=&quot;inline-captions&quot;&gt;
+	&lt;section&gt;
+		&lt;h2&gt;Transkrypcja&lt;/h2&gt;
+
+&lt;p class="wb-vd">&lt;strong>(Tu można umieścić tekst opisujący, co się dzieje na ekranie)&lt;/strong>&lt;/p>
+
+     &lt;p>&lt;span class="wb-tmtxt" data-begin="0.0s" data-dur="10.0s"&gt;W-C-A-G, WCAG, jestem fajnym DJ-em,&lt;br /&gt;SHARKY, SH-SH-SHARKY&lt;/span&gt;&lt;/p&gt;
+      &lt;p>&lt;span class="wb-tmtxt" data-begin="11.003s" data-dur="17.0s"&gt;Hej, oszaleję z tym fajnym bitem, mam lepszy rytm od czasu,&lt;br /&gt;gdy zainstalowałeś nowy program kwantyfikujący.&lt;/span&gt;&lt;/p&gt;
+     &lt;p>&lt;span class="wb-tmtxt" data-begin="17.003s" data-dur="21.0s"&gt;Tańczę elektryczne boogie. Chcesz to zobaczyć David?&lt;/span&gt;&lt;/p&gt;
+
+		...
+	&lt;/section&gt;
+&lt;/div&gt;</code></pre>
+
+</section>
+</details>
+</section>
+<section class="col-md-6">
+<h3>Źródło MPEG4 (H264 + AAC) i WebM (VP8) z napisami TTML</h3>
+<figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-en.html"}'>
+<video poster="demo/wcag.jpg" title="Posłuchaj pieśni o WCAG">
+<source type="video/webm" src="demo/wcag.webm">
+<source type="video/mp4" src="demo/wcag.mp4">
+<track src="demo/wcag_pl.vtt" kind="captions" srclang="pl" label="Polski" default/>
+
+
+</video>
+<figcaption>
+<p>Pieśń o WCAG (<a href="cpts-lg2-en.html">Transkrypcja</a>)</p>
+</figcaption>
+</figure>
+<details class="mrgn-tp-md mrgn-bttm-lg">
+<summary>Pokaż kod</summary>
+<section>
+<h4>HTML na stronie</h4>
+<pre><code>&lt;figure class=&quot;wb-mltmd&quot; data-wb-mltmd='{&quot;shareUrl&quot;: &quot;https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-en.html&quot;}'&gt;
+	&lt;video poster=&quot;demo/video2-en.jpg&quot; title=&quot;Training and Development&quot;&gt;
+		&lt;source type=&quot;video/webm&quot; src=&quot;https://video2.servicecanada.gc.ca/video/boew-wet/dc-td-eng.webm&quot; /&gt;
+		&lt;source type=&quot;video/mp4&quot; src=&quot;https://video2.servicecanada.gc.ca/video/boew-wet/dc-td-eng.mp4&quot; /&gt;
+		&lt;track src=&quot;demo/video2-captions-en.xml&quot; kind=&quot;captions&quot; data-type=&quot;application/ttml+xml&quot; srclang=&quot;en&quot; label=&quot;English&quot; /&gt;
+	&lt;/video&gt;
+	&lt;figcaption&gt;
+		&lt;p&gt;Training and Development (&lt;a href=&quot;cpts-lg2-en.html&quot;&gt;Transcript&lt;/a&gt;)&lt;/p&gt;
+	&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+</section>
+<section>
+<h4>video2-captions-en.xml</h4>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;tt xml:lang=&quot;en&quot; xmlns=&quot;http://www.w3.org/2006/10/ttaf1&quot; xmlns:tts=&quot;http://www.w3.org/2006/10/ttaf1#style&quot;&gt;
+	&lt;head&gt;
+		&lt;styling&gt;
+			&lt;style id=&quot;defaultSpeaker&quot; tts:fontSize=&quot;12&quot; tts:fontFamily=&quot;Arial&quot; tts:fontWeight=&quot;normal&quot; tts:fontStyle=&quot;normal&quot; tts:textDecoration=&quot;none&quot; tts:color=&quot;white&quot; tts:backgroundColor=&quot;black&quot; tts:textAlign=&quot;center&quot;/&gt;
+			&lt;style id=&quot;defaultCaption&quot; tts:fontSize=&quot;12&quot; tts:fontFamily=&quot;Arial&quot; tts:fontWeight=&quot;normal&quot; tts:fontStyle=&quot;normal&quot; tts:textDecoration=&quot;none&quot; tts:color=&quot;white&quot; tts:backgroundColor=&quot;black&quot; tts:textAlign=&quot;center&quot;/&gt;
+		&lt;/styling&gt;
+	&lt;/head&gt;
+	&lt;body style=&quot;defaultCaption&quot; id=&quot;thebody&quot; xml:id=&quot;b1&quot;&gt;
+		&lt;div begin=&quot;1.40s&quot; dur=&quot;3.33s&quot;&gt;Hi, my name is Eric, and I'm a Service Canada employee.&lt;/div&gt;
+		...
+	&lt;/body&gt;
+&lt;/tt&gt;</code></pre>
+</section>
+</details>
+</section>
+</div>
+<div class="row">
+<section class="col-md-6">
+<h3>Źródło MPEG4 (H264 + AAC) z napisami włączonymi w HTML</h3>
+<p>Ten przykład ilustruje użycie do tworzenia napisów transkrypcji śródliniowej (włączonej na stronę z filmem). Ten przykład może również pokazać mechanizm awaryjny w przeglądarkach internetowych, które nie obsługują filmów HTML5.</p>
+<figure class="wb-mltmd">
+<video poster="demo/wcag.jpg" title="Posłuchaj pieśni o WCAG">
+<source type="video/webm" src="demo/wcag.webm">
+<source type="video/mp4" src="demo/wcag.mp4">
+<track src="#inline-captions" kind="captions" data-type="text/html" srclang="pl" label="Polski">
+</video>
+<figcaption>
+<details id="inline-captions">
+<summary>Posłuchaj pieśni o WCAG - Transkypcja/Napisy HTML5</summary>
+
+<p class="wb-vd"><strong>(Tu można umieścić tekst opisujący, co się dzieje na ekranie)</strong></p>
+
+     <p><span class="wb-tmtxt" data-begin="0.0s" data-dur="10.0s">W-C-A-G, WCAG, jestem fajnym DJ-em,<br />SHARKY, SH-SH-SHARKY</span></p>
+      <p><span class="wb-tmtxt" data-begin="11.003s" data-dur="17.0s">Hej, oszaleję z tym fajnym bitem, mam lepszy rytm od czasu,<br />gdy zainstalowałeś nowy program kwantyfikujący.</span></p>
+      <p><span class="wb-tmtxt" data-begin="17.003s" data-dur="21.0s">Tańczę elektryczne boogie. Chcesz to zobaczyć David?</span></p>
+      <p><span class="wb-tmtxt" data-begin="21.003s" data-dur="27.0s">Nie Sharky, musimy się zająć tą piosenką, możesz tańczyć,<br />kiedy ja śpiewam, ale nie wyciągaj się znowu z gniazdka.</span></p>
+      <p><span class="wb-tmtxt" data-begin="27.003s" data-dur="31.0s">Mamy zupełnie nową specyfikację,<br />która wspódziała z narzędziem weryfikacji,</span></p>
+      <p><span class="wb-tmtxt" data-begin="31.003s"data-dur="34.0s">sprawi, że dostępność będzie możliwa do sprawdzenia</span></p>
+      <p><span class="wb-tmtxt" data-begin="34.003s" data-dur="35.0s">WCAG, WCAG</span></p>
+      <p><span class="wb-tmtxt" data-begin="36.0s" data-dur="41.0s">sprawi, że sieć będzie zrozumiała,<br />a jej postrzeganie stanie się namacalne,</span></p>
+      <p><span class="wb-tmtxt" data-begin="41.003s" data-dur="44.5s">Interoperacyjność Sieci będzie nie do zatrzymania.</span></p>
+      <p><span class="wb-tmtxt" data-begin="44.53s" data-dur="47.5s">WCAG, WCAG</span></p>
+      <p><span class="wb-tmtxt" data-begin="47.53s" data-dur="52.5s">Chcemy pokazać ci WCAG,</span></p>
+      <p><span class="wb-tmtxt" data-begin="52.53s" data-dur="58.5s">Chcemy pokazać Ci, jaki może być ten świat</span></p>
+      <p><span class="wb-tmtxt" data-begin="58.53s" data-dur="62.003s">Chcemy pokazać ci WCAG.</span></p>
+      <p><span class="wb-tmtxt" data-begin="62.006s" data-dur="67.003s">Nie jest to ciężkie zadanie<br />otworzyć swój kod i pisać według WCAG, WCAG</span></p>
+      <p><span class="wb-tmtxt" data-begin="67.007s" data-dur="74.003s">Hej, David, widziałem w TV faceta, jak mówił, że jest<br />najszybszym raperem na świecie, ale wysadzam go<br />w powietrze, rozwalam go, oglądam to...</span></p>
+      <p><span class="wb-tmtxt" data-begin="74.007s" data-dur="80.003s">[Sharky rapuje 250 słów na minutę]</span></p>
+      <p><span class="wb-tmtxt" data-begin="80.007s" data-dur="89.003s">Jestem świetnym DJ-em, Sharky, WCAG…<br />Lubię muzykę maniaków techno.<br />I jak, Dawidzie, jestem teraz fajnym raperem?</span></p>
+      <p><span class="wb-tmtxt" data-begin="89.007s" data-dur="91.003s">[David] Sharky, nie mogłem zrozumieć ani słowa,które wymówiłeś.</span></p>
+      <p><span class="wb-tmtxt" data-begin="91.007s" data-dur="94.003s">[Sharky] Większość moich niewidomych przyjaciół<br />rozumie wszystko, gdy mówię w takim tempie.</span></p>
+      <p><span class="wb-tmtxt" data-begin="94.007s" data-dur="99.003s">[powoli] Chcesz... żebym mówił... naprawdę...<br />powoli... dla... ciebie... David?</span></p>
+      <p><span class="wb-tmtxt" data-begin="99.007s" data-dur="103.7s">[David] To bardzo zabawne, śpiewajmy ten werset razem.</span></p>
+      <p><span class="wb-tmtxt" data-begin="103.73s" data-dur="108.003s">Zrobimy z Sieci lepsze miejsce<br />dla każdej umiejętności i różnych ludzi</span></p>
+      <p><span class="wb-tmtxt" data-begin="108.007s" data-dur="113.007s">Nawet jeśli surfujesz z kosmosu, masz WCAG, WCAG</span></p>
+      <p><span class="wb-tmtxt" data-begin="113.53s" data-dur="119.5s">Chcemy pokazać ci WCAG,</span></p>
+      <p><span class="wb-tmtxt" data-begin="119.53s" data-dur="124.5s">Chcemy pokazać Ci, jaki może być ten świat</span></p>
+      <p><span class="wb-tmtxt" data-begin="124.53s" data-dur="128.003s">Chcemy pokazać ci WCAG.</span></p>
+      <p><span class="wb-tmtxt" data-begin="128.007s" data-dur="132.003s">Nie jest to ciężkie zadanie otworzyć swój kod<br />i pisać według WCAG, WCAG.</span></p>
+      <p><span class="wb-tmtxt" data-begin="132.007s" data-dur="135.003s">Więc pozwól mi powiedzieć,<br />czym jest WCAG i czym WCAG nie jest</span></p>
+      <p><span class="wb-tmtxt" data-begin="135.007s" data-dur="138.003s">WCAG to zestaw narzędziowy,<br />który zawiera zestaw reguł</span></p>
+      <p><span class="wb-tmtxt" data-begin="138.007s" data-dur="143.007s">Pomaga ci ożywiać twoją witrynę dla ludzi<br />z innymi zdolnościami i wrażliwościami.</span></p>
+      <p><span class="wb-tmtxt" data-begin="143.099s" data-dur="146.002s">Kiedy więc trafią do Ciebie w Sieci,<br />mogą się dobrze bawić.</span></p>
+      <p><span class="wb-tmtxt" data-begin="146.007s" data-dur="148.007s">Nieważne, że są niewidomi, albo że muszą migać...</span></p>
+      <p><span class="wb-tmtxt" data-begin="148.099s" data-dur="151.007s">albo że ich ręce zaczynają się trząść przy każdym ruchu</span></p>
+      <p><span class="wb-tmtxt" data-begin="151.099s" data-dur="153.007s">Albo jeśli ich umysły pomylą, co chcą zrobić</span></p>
+      <p><span class="wb-tmtxt" data-begin="153.099s" data-dur="159.007s">Mogą łatwo zrozumieć, o czym mówisz,<br />jeśli będziesz przestrzegać zasad, które przedstawiamy</span></p>
+      <p><span class="wb-tmtxt" data-begin="159.099s" data-dur="164.007s">Zasada 1: Treść musi być postrzegalna</span></p>
+      <p><span class="wb-tmtxt" data-begin="164.099s" data-dur="169.007s">Zasada 2: Elementy interfejsu muszą być funkcjonalne</span></p>
+      <p><span class="wb-tmtxt" data-begin="169.099s" data-dur="174.099s">Zasada 3: Treść i kontrolki muszą być zrozumiałe</span></p>
+      <p><span class="wb-tmtxt" data-begin="174.129s" data-dur="182.099s">Zasada 4: Treść musi być rzetelnie kodowana, aby działać<br />z obecnymi i przyszłymi technologiami</span></p>
+      <p><span class="wb-tmtxt" data-begin="185.099s" data-dur="195.12s">Chcemy pokazać ci WCAG,<br />Chcemy pokazać ci, jaki może być ten świat</span></p>
+      <p><span class="wb-tmtxt" data-begin="195.129s" data-dur="200.099s">Chcemy pokazać ci WCAG.</span></p>
+      <p><span class="wb-tmtxt" data-begin="200.129s" data-dur="206.099s">Nie jest to ciężkie zadanie otworzyć swój kod<br />i pisać według WCAG, WCAG</span></p>
+      <p><span class="wb-tmtxt" data-begin="206.129s" data-dur="210.099s">Sharky: Hej David, twoja muzyka jest o wiele bardziej zabawna,<br />odkąd wyniosłeś się z przedmieść<br />i przebywasz w centrum  miasta na rogach ulic.</span></p>
+      <p><span class="wb-tmtxt" data-begin="210.129s" data-dur="214.099s">Lubię temat drugiej piosenki,<br />ale brzmiała trochę jak niepodłączona,<br />a ja nigdy nie szalałem za wyłączonym dźwiękiem,</span></p>
+      <p><span class="wb-tmtxt" data-begin="214.129s" data-dur="219.099s">Lubię muzykę techno-maniaków, gdzie komputery robią wszystko,<br />a ludzie nie grają na żadnych instrumentach.</span></p>
+      <p><span class="wb-tmtxt" data-begin="219.129s" data-dur="221.099s">Myślę, że jest to o wiele bardziej naturalne,<br />gdy muzyka jest odtwarzana, kup oryginalne komputery.</span></p>
+      <p><span class="wb-tmtxt" data-begin="221.129s" data-dur="222.099s">Kiedy ludzie grają, brzmi to tak bezemocyjnie i fałszywie.</span></p>
+      <p><span class="wb-tmtxt" data-begin="222.129s" data-dur="225.099s">David: Będziemy to robić tylko dlatego,<br />że jesteście kupą zer i zer, jak wielkoludy.</span></p>
+      <p><span class="wb-tmtxt" data-begin="225.129s" data-dur="230.129s">[Sharky] David, to było wredne z twojej strony, że to powiedziałeś,<br />wiesz, że zawsze byłem bardzo wrażliwy na moje binarne kodowanie strukturalne.</span></p>
+      <p><span class="wb-tmtxt" data-begin="230.169s" data-dur="232.129s">To zawsze było dla mnie źródłem<br />wielkiej emocjonalnej niepewności.</span></p>
+      <p><span class="wb-tmtxt" data-begin="232.169s" data-dur="239.129s">[David] Och, daj spokój Sharky, wiesz, że cię kocham człowieku,<br />a poza tym jesteś niesamowitym raperem,<br />powinieneś pójść do American Idol.</span></p>
+      <p><span class="wb-tmtxt" data-begin="239.169s" xml:id="p51" data-dur="244.129s">Będę gwiazdą, już widzę te nagłówki,<br />Sharky wygrywa American Idol dla osób niepełnosprawnych.</span></p>
+
+</details>
+</figcaption>
+</figure>
+<details class="mrgn-tp-md">
+<summary>Pokaż kod</summary>
+<pre><code>&lt;figure class=&quot;wb-mltmd&quot;&gt;
+	&lt;video poster=&quot;demo/wcag.jpg&quot; title=&quot;Posłuchaj pieśni o WCAG&quot;&gt;
+		&lt;source type=&quot;video/webm&quot; src=&quot;demo/wcag.webm&quot; /&gt;
+		&lt;source type=&quot;video/mp4&quot; src=&quot;video/mp4" src="demo/wcag.mp4&quot; /&gt;
+		&lt;track src=&quot;#inline-captions&quot; kind=&quot;captions&quot; data-type=&quot;text/html&quot; srclang=&quot;pl&quot; label=&quot;Polski&quot; /&gt;
+	&lt;/video&gt;
+	&lt;figcaption&gt;
+		&lt;details id=&quot;inline-captions&quot;&gt;
+			&lt;summary&gt;Posłuchaj pieśni o WCAG - Transkypcja/Napisy HTML5&lt;/summary&gt;
+			&lt;p class="wb-vd">&lt;strong>(Tu można umieścić tekst opisujący, co się dzieje na ekranie)&lt;/strong&gt;&lt;/p&gt;
+			&lt;p>&lt;span class="wb-tmtxt" data-begin="0.0s" data-dur="10.0s"&gt;W-C-A-G, WCAG, jestem fajnym DJ-em,&lt;br /&gt;SHARKY, SH-SH-SHARKY&lt;/span&gt;&lt;/p&gt;
+			&lt;p>&lt;span class="wb-tmtxt" data-begin="11.003s" data-dur="17.0s"&gt;Hej, oszaleję z tym fajnym bitem, mam lepszy rytm od czasu,&lt;br /&gt;gdy zainstalowałeś nowy program kwantyfikujący.&lt;/span&gt;&lt;/p&gt;
+			&lt;p>&lt;span class="wb-tmtxt" data-begin="17.003s" data-dur="21.0s"&gt;Tańczę elektryczne boogie. Chcesz to zobaczyć David?&lt;/span&gt;&lt;/p&gt;
+			...
+			&lt;/section&gt;
+		&lt;/div&gt;
+		</code></pre>
+
+</details>
+</section>
+<section class="col-md-6">
+<h3>Źródło MPEG4 (H264 + AAC) źródło z punktami podpowiedzi</h3>
+<p>Ten przykład ilustruje użycie przycisków do poruszania się po określonych punktach w filmie.</p>
+<figure class="wb-mltmd">
+<video poster="demo/wcag.jpg" title="Posłuchaj pieśni o WCAG">
+<source type="video/webm" src="demo/wcag.webm">
+<source type="video/mp4" src="demo/wcag.mp4">
+<track src="#inline-captions" kind="captions" data-type="text/html" srclang="pl" label="Polski">
+</video>
+<button class="btn btn-info cuepoint" data-cuepoint="45s" type="button">Punkt orientacyjny - 45s</button>
+<button class="btn btn-info cuepoint" data-cuepoint="01:10" type="button">Punkt orientacyjny - 01:10</button>
+<figcaption>
+<p>Posłuchaj pieśni o WCAG (<a href="cpts-lg-en.html">Transkrypcja</a>)</p>
+</figcaption>
+</figure>
+
+
+<details class="mrgn-tp-md">
+<summary>Pokaż kod</summary>
+<pre><code>&lt;figure class=&quot;wb-mltmd&quot;&gt;
+	&lt;video poster=&quot;demo/wcag.jpg&quot; title=&quot;Posłuchaj pieśni o WCAG&quot;&gt;
+		&lt;source type=&quot;video/webm&quot; src=&quot;demo/wcag.webm&quot; /&gt;
+		&lt;source type=&quot;video/mp4&quot; src=&quot;video/mp4" src="demo/wcag.mp4&quot; /&gt;
+		&lt;track src=&quot;#inline-captions&quot; kind=&quot;captions&quot; data-type=&quot;text/html&quot; srclang=&quot;pl&quot; label=&quot;Polski&quot; /&gt;
+	&lt;/video&gt;	
+	&lt;button class="btn btn-info cuepoint" data-cuepoint="45s" type="button"&gt;Punkt orientacyjny - 45s&lt;/button&gt;
+	&lt;button class="btn btn-info cuepoint" data-cuepoint="01:10" type="button"&gt;Punkt orientacyjny - 01:10&lt;/button&gt;
+	&lt;figcaption&gt;
+		&lt;p&gt;Posłuchaj pieśni o WCAG (&lt;a href="napisy-wcag-pl.html"&gt;Transkrypcja&lt;/a&gt;)&lt;/p&gt;
+	&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+</details>
+</section>
+</div>
+<section>
+<h3>Odtwarzacz multimedialny w nakładce</h3>
+<p><a href="#mltmd-overlay" aria-controls="mltmd-overlay" class="overlay-lnk" role="button">Otwórz wideo</a></p>
+<details class="mrgn-tp-md">
+<summary>Pokaż kod</summary>
+<pre><code>&lt;p&gt;&lt;a href="#mltmd-overlay" aria-controls="mltmd-overlay" class="overlay-lnk" role="button"&gt;Open the video&lt;/a&gt;&lt;/p&gt;
+
+&lt;section id="mltmd-overlay" class="wb-overlay modal-content overlay-def wb-popup-full"&gt;
+	&lt;header class="modal-header"&gt;
+		&lt;h2 class="modal-title"&gt;Odtwarzacz multimedialny w nakładce&lt;/h2&gt;
+	&lt;/header&gt;
+	&lt;div class="modal-body"&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col-xs-8 col-xs-offset-2"&gt;
+				&lt;figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-en.html"}'&gt;
+					&lt;video poster="demo/wcag.jpg" title="Posłuchaj pieśni o WCAG"&gt;
+						&lt;source type="video/webm" src="demo/wcag.webm" /&gt;
+						&lt;source type="video/mp4" src="demo/wcag.mp4" /&gt;
+						&lt;track src="cpts-lg-en.html" kind="captions" data-type="text/html" srclang="en" label="English" /&gt;
+					&lt;/video&gt;
+					&lt;figcaption&gt;Posłuchaj pieśni o WCAG (&lt;a href="napisy-wcag-pl.html"&gt;Transkrypcja&lt;/a&gt;)&lt;/figcaption&gt;
+				&lt;/figure&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+</details>
+</section>
+</section>
+<section id="mltmd-overlay" class="wb-overlay modal-content overlay-def wb-popup-full">
+<header class="modal-header">
+<h2 class="modal-title">Odtwarzacz multimedialny w nakładce</h2>
+</header>
+<div class="modal-body">
+<div class="row">
+<div class="col-xs-8 col-xs-offset-2">
+<figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-en.html"}'>
+<video poster="demo/wcag.jpg" title="Posłuchaj pieśni o WCAG">
+<source type="video/webm" src="demo/wcag.webm">
+<source type="video/mp4" src="demo/wcag.mp4">
+<track src="napisy-wcag-pl.html" kind="captions" data-type="text/html" srclang="pl" label="Polski">
+</video>
+<figcaption>Posłuchaj pieśni o WCAG (<a href="napisy-wcag-pl.html">Transkrypcja</a>)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<!-- szczegóły strony -->
+   <div class="pagedetails">
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-4">
+          <details class="brdr-0">
+            <summary class="btn btn-default text-center">Zgłoś problem z tą stroną</summary>
+            <div class="well row">
+              <div class="gc-rprt-prblm">
+                <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+                  <form action="#">
+                    <fieldset>
+                      <legend><span class="field-name">Zaznacz wszystko, czego dotyczy zgłoszenie: </span></legend>
+                      <div class="checkbox">
+                        <label for="problem1">
+                          <input type="checkbox" data-reveal="#broken" name="problem" value="Coś jest zepsute" id="problem1">
+                          Coś jest zepsute</label>
+                      </div>
+                      <div class="form-group hide" id="broken">
+                        <label for="problem1-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                        <input type="text" class="form-control full-width" id="problem1-detail">
+                      </div>
+                      <div class="checkbox">
+                        <label for="problem2">
+                          <input type="checkbox" data-reveal="#spelling" name="problem" value="Na stronie są błędy ortograficzne lub gramatyczne" id="problem2">
+                          Na stronie są błędy ortograficzne lub gramatyczne</label>
+                      </div>
+                      <div class="form-group hide" id="spelling">
+                        <label for="problem2-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                        <input type="text" class="form-control full-width" id="problem2-detail">
+                      </div>
+                      <div class="checkbox">
+                        <label for="problem3">
+                          <input type="checkbox" data-reveal="#wrong" name="problem" value="Na stronie są błędne informacje" id="problem3">
+                          Informacje są błędne</label>
+                      </div>
+                      <div class="form-group hide" id="wrong">
+                        <label for="problem3-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                        <input type="text" class="form-control full-width" id="problem3-detail">
+                      </div>
+                      <div class="checkbox">
+                        <label for="problem4">
+                          <input type="checkbox" data-reveal="#outdated" name="problem" value="Informacje są nieaktualne" id="problem4">
+                          Informacje są nieaktualne</label>
+                      </div>
+                      <div class="form-group hide" id="outdated">
+                        <label for="problem4-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                        <input type="text" class="form-control full-width" id="problem4-detail">
+                      </div>
+                      <div class="checkbox">
+                        <label for="problem5">
+                          <input type="checkbox" data-reveal="#find" name="problem" value="Nie mogę znaleźć, czego szukam" id="problem5">
+                          Nie mogę znaleźć, czego szukam</label>
+                      </div>
+                      <div class="form-group hide" id="find">
+                        <label for="problem5-detail">Opisz czego szukasz (opcjonalnie):</label>
+                        <input type="text" class="form-control full-width" id="problem5-detail">
+                      </div>
+                      <div class="checkbox">
+                        <label for="problem6">
+                          <input type="checkbox" data-reveal="#confusing" name="problem" value="To mylące" id="problem6">
+                          Inne</label>
+                      </div>
+                      <div class="form-group hide" id="confusing">
+                        <label for="problem6-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                        <input type="text" class="form-control full-width" id="problem6-detail">
+                      </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Wyślij</button>
+                  </form>
+                </div>
+                <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+                  <h3>Dziękujemy za Twoją pomoc!</h3>
+                  <p>
+				  Nie otrzymasz odpowiedzi na tę wiadomość. Jeśli masz pytania, <a href="https://lepszyweb.pl/kontakt.html">napisz do nas</a>.</p>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+        <div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+      </div>
+      <dl id="wb-dtmd">
+        <dt>Data modyfikacji:</dt>
+        <dd>
+          <time property="dateModified">2020-06-10</time>
+        </dd>
+      </dl>
+    </div>
+
+    </main>
+   <footer id="wb-info">
+      <div class="landscape">
+        <nav class="container wb-navcurr">
+          <h2 class="wb-inv">O usługach LepszyWeb.pl</h2>
+          <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+            <li><a href="./pages/lw/kontakt.html">Skontaktuj się z nami</a></li>
+            <li><a href="./pages/lw/uslugi.html">Szkolenia</a></li>
+            <li><a href="./pages/lw/audyty.html">Audyty</a></li>
+            <li><a href="./pages/lw/blog.html">Blog</a></li>
+            <li><a href="./pages/lw/pomoc.html">Pomoc</a></li>
+            <li><a href="./pages/lw/raporty.html">Raporty</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+
+            <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+              <h2 class="wb-inv">O tej stronie</h2>
+              <ul>
+                <li><a href="./pages/prawne/o-lepszyweb.html/wsieci.html">W Sieci</a></li>
+                <li><a href="./pages/prawne/o-lepszyweb.html">O LepszyWeb.pl</a></li>
+                <li><a href="./pages/prawne/regulamin.html">Regulamin</a></li>
+                <li><a href="./pages/prawne/prywatnosc.html">Prywatność</a></li>			  
+                <li><a href="./pages/prawne/dostepnosc.html">Dostępność</a></li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg"> 
+              <a href="#wb-cont">Góra strony <span class="glyphicon glyphicon-chevron-up"></span></a> 
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="../../LWeb/assets/lepszyweb-min.svg" alt="Logo Pracowni Dostępności Cyfrowej LepszyWeb.pl"> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="../../wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+	<script src="../../wet-boew/js/ie8-wet-boew2.min.js"></script>
+	
+	<![endif]-->
+    <script src="../../LWeb/js/theme.min.js"></script>		
+  </body>
+</html>

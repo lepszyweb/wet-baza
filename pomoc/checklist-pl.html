@@ -1,0 +1,684 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="pl" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl" dir="ltr">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Lista kontrolna dla testów dostępności mobilnej - LepszyWeb.pl</title>
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="Przewodnik dotyczący codziennych testów dostępności mobilnej - na każde pytanie należy odpowiedzieć "tak"..">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="./../LWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../LWeb/css/theme.css">
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+  <link href="./../LWeb/assets/favicon.ico" rel="shortcut icon" />
+
+  <link rel="stylesheet" href="./../LWeb/css/ie8-theme.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="./../wet-boew/js/ie8-wet-boew.min.js"></script>
+  <![endif]-->
+    <!--[if lte IE 9]>
+
+
+  <![endif]-->
+    <noscript><link rel="stylesheet" href="./../wet-boew/css/noscript.min.css" /></noscript>
+  </head>
+
+ <body vocab="http://schema.org/" typeof="WebPage">
+    <nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-cont">Przejdź do treści głównej</a>
+        </li>
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-info">Przejdź do &bdquo;O tej stronie&rdquo;</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container">
+<!-- Sekcja Wybierz język -->
+<!-- Koniec sekcji Wybierz język -->
+
+        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+          <h2>Wyszukiwanie i menu</h2>
+          <ul class="pnl-btn list-inline text-right">
+            <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
+          </ul>
+          <div id="mb-pnl"></div>
+        </section>	 		
+
+
+
+        <div class="row">
+          <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="./../index.html" property="url"><img src="./../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
+            <meta property="areaServed" typeof="Country" content="Polska">
+            <link property="logo" href="./../LWeb/assets/lepszyweb-min.svg">
+          </div>
+          <section id="wb-srch" class="col-lg-8 text-right">
+            <h2>Szukaj</h2>
+            <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+              <div class="form-group">
+                <label for="wb-srch-q" class="wb-inv">Szukaj na LepszyWeb.pl</label>
+                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Szukaj na LepszyWeb.pl">
+                <datalist id="wb-srch-q-ac"> </datalist>
+              </div>
+              <div class="form-group submit">
+                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Szukaj</span></button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+	  
+      <nav role="navigation" id="wb-sm" data-ajax-replace="./../ajax/menu-audyt.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <div class="container nvbar">
+          <h2>Spis tematów</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a href="./index.html">O szkoleniu</a></li>
+              <li><a href="./przypadki/index.html">Przypadki</a></li>		  
+              <li><a href="./zgodne/index.html">Zgodne</a></li>
+              <li><a href="./niezgodne/index.html">Niezgodne</a></li>
+              <li><a href="./wzorce/index.html">Wzorce</a></li>
+              <li><a href="./szablony/index.html">Szablony</a></li>					  
+              <li><a href="./pomoc/index.html">Pomoc</a></li>		
+            </ul>
+          </div>
+        </div>
+      </nav>	  
+      <nav role="navigation" id="wb-bc" property="breadcrumb">
+        <h2>Jesteś tutaj:</h2>
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>
+                <a href="./../index-en.html">Start</a>
+              </li>
+              <li>
+                <a href="./../demos/index-pl.html">Przykłady działania</a>
+              </li>
+              <li>Lista kontrolna dla testów dostępności mobilnej</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<main property="mainContentOfPage" class="container" typeof="WebPageElement">
+<h1 property="name" id="wb-cont">Lista kontrolna dla testów dostępności mobilnej </h1>
+<section>
+<h2>Cel:</h2>
+<p>Intencją twórcy jest dostarczenie wskazówek do wykorzystania w codziennych testach - na każde pytanie należy odpowiedzieć &bdquo;tak&rdquo;.</p>
+<small class="alert alert-info">Pamiętaj, jeśli odświeżysz stronę lub przejdziesz dalej, wszystkie wprowadzone wartości zostaną trwale wyczyszczone.</small>
+</section>
+
+<section>
+<h2>Spis treści strony</h2>
+<ul>
+<li>Lista kontrolna kryteriów sukcesu dostępności cyfrowej tresci na urządzeniach przenośnych
+<ul>
+<li><a href="#mas1">Wyłączone powiększanie i wyjście głosowe</a></li>
+<li><a href="#mas2">Wyjście głosowe włączone</a></li>
+<li><a href="#mas3">Powiększanie włączone</a></li>
+<li><a href="#mas4">Wyjście głosowe i powiększanie włączone</a></li>
+<li><a href="#mas5">Inwersja kolorów</a></li>
+<li><a href="#mas6">Podsumowanie</a></li>
+</ul>
+</li>
+<li><a href="#about">O liście kontrolnej</a></li>
+</ul>
+</section><!-- /h2 -->
+<section class="wb-wamethod mrgn-tp-lg">
+<h2 id="mas1">Wyłączone powiększanie i wyjście głosowe</h2>
+<ol>
+<li>
+<fieldset>
+<legend>Czy jest wystarczający kontrast?</legend>
+<input id="ap111" type="radio" name="a111" value="pass"><label for="ap111">&nbsp;Pass</label>&nbsp;
+<input id="af111" type="radio" name="a111" value="fail"><label for="af111">&nbsp;Fail</label>&nbsp;
+<input id="an111" type="radio" name="a111" value="na"><label for="an111"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Czy kolor wzmacnia znaczenie, a nie tylko je przekazuje?</legend>
+<input id="ap121" type="radio" name="a121" value="pass"><label for="ap121">&nbsp;Pass</label>&nbsp;
+<input id="af121" type="radio" name="a121" value="fail"><label for="af121">&nbsp;Fail</label>&nbsp;
+<input id="an121" type="radio" name="a121" value="na"><label for="an121"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Czy łącza są wyraźnie widoczne?</legend>
+<input id="ap122" type="radio" name="a122" value="pass"><label for="ap122">&nbsp;Pass</label>&nbsp;
+<input id="af122" type="radio" name="a122" value="fail"><label for="af122">&nbsp;Fail</label>&nbsp;
+<input id="an122" type="radio" name="a122" value="na"><label for="an122"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Czy wskazówki nawigacyjne są jasne?</legend>
+<input id="ap123" type="radio" name="a123" value="pass"><label for="ap123">&nbsp;Pass</label>&nbsp;
+<input id="af123" type="radio" name="a123" value="fail"><label for="af123">&nbsp;Fail</label>&nbsp;
+<input id="an123" type="radio" name="a123" value="na"><label for="an123"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Czy obsługiwane jest powiększanie gestem   <a href="http://www.iheni.com/using-opera-10-beta-with-voiceover/">pinch zoom supported (HTML only)</a>?</legend>
+<input id="ap124" type="radio" name="a124" value="pass"><label for="ap124">&nbsp;Pass</label>&nbsp;
+<input id="af124" type="radio" name="a124" value="fail"><label for="af124">&nbsp;Fail</label>&nbsp;
+<input id="an124" type="radio" name="a124" value="na"><label for="an124"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Is the <a href="http://mobileinputtypes.com/">correct keyboard/input type</a> used in forms i.e. telephone, date, numbers, letters etc?</legend>
+<input id="ap125" type="radio" name="a125" value="pass"><label for="ap125">&nbsp;Pass</label>&nbsp;
+<input id="af125" type="radio" name="a125" value="fail"><label for="af125">&nbsp;Fail</label>&nbsp;
+<input id="an125" type="radio" name="a125" value="na"><label for="an125"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Can you complete all actions?</legend>
+<input id="ap126" type="radio" name="a126" value="pass"><label for="ap126">&nbsp;Pass</label>&nbsp;
+<input id="af126" type="radio" name="a126" value="fail"><label for="af126">&nbsp;Fail</label>&nbsp;
+<input id="an126" type="radio" name="a126" value="na"><label for="an126"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Do pop ups fit within the viewport i.e. you don’t have to swipe to find the close/submit/cancel buttons?</legend>
+<input id="ap127" type="radio" name="a127" value="pass"><label for="ap127">&nbsp;Pass</label>&nbsp;
+<input id="af127" type="radio" name="a127" value="fail"><label for="af127">&nbsp;Fail</label>&nbsp;
+<input id="an127" type="radio" name="a127" value="na"><label for="an127"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Do pop ups have a close button?</legend>
+<input id="ap128" type="radio" name="a128" value="pass"><label for="ap128">&nbsp;Pass</label>&nbsp;
+<input id="af128" type="radio" name="a128" value="fail"><label for="af128">&nbsp;Fail</label>&nbsp;
+<input id="an128" type="radio" name="a128" value="na"><label for="an128"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Is all content and functionality available by touch?</legend>
+<input id="ap129" type="radio" name="a129" value="pass"><label for="ap129">&nbsp;Pass</label>&nbsp;
+<input id="af129" type="radio" name="a129" value="fail"><label for="af129">&nbsp;Fail</label>&nbsp;
+<input id="an129" type="radio" name="a129" value="na"><label for="an129"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Is there a clear visible focus on links, form fields, buttons etc when tested with a keyboard (Android)?</legend>
+<input id="ap130" type="radio" name="a130" value="pass"><label for="ap130">&nbsp;Pass</label>&nbsp;
+<input id="af130" type="radio" name="a130" value="fail"><label for="af130">&nbsp;Fail</label>&nbsp;
+<input id="an130" type="radio" name="a130" value="na"><label for="an130"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Is Text selectable i.e. can users copy and paste and use speak aloud options?</legend>
+<input id="ap131" type="radio" name="a131" value="pass"><label for="ap131">&nbsp;Pass</label>&nbsp;
+<input id="af131" type="radio" name="a131" value="fail"><label for="af131">&nbsp;Fail</label>&nbsp;
+<input id="an131" type="radio" name="a131" value="na"><label for="an131"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+</ol>
+</section><!-- /h2 -->
+<section class="wb-wamethod mrgn-tp-lg">
+<h2 id="mas2">Wyjście głosowe włączone</h2>
+<p>Use the Web Rotor in iOS to test content on selections such as images, headings, landmarks, forms, hints, links, buttons etc. Try not to look at the screen when doing this or activate Screen Curtain if using iOS (3 finger triple tap).</p>
+<ol>
+<li>
+<fieldset>
+<legend>Are images labelled appropriately?</legend>
+<input id="bp120" type="radio" name="b120" value="pass"><label for="bp120">&nbsp;Pass</label>&nbsp;
+<input id="bf120" type="radio" name="b120" value="fail"><label for="bf120">&nbsp;Fail</label>&nbsp;
+<input id="bn120" type="radio" name="b120" value="na"><label for="bn120"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Are decorative images ignored?</legend>
+<input id="bp121" type="radio" name="b121" value="pass"><label for="bp121">&nbsp;Pass</label>&nbsp;
+<input id="bf121" type="radio" name="b121" value="fail"><label for="bf121">&nbsp;Fail</label>&nbsp;
+<input id="bn121" type="radio" name="b121" value="na"><label for="bn121"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Is the <a href="http://www.iheni.com/content-order-on-touch-screens/">content order logical</a>?</legend>
+<input id="bp122" type="radio" name="b122" value="pass"><label for="bp122">&nbsp;Pass</label>&nbsp;
+<input id="bf122" type="radio" name="b122" value="fail"><label for="bf122">&nbsp;Fail</label>&nbsp;
+<input id="bn122" type="radio" name="b122" value="na"><label for="bn122"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Are <a href="http://www.iheni.com/usable-landmarks-across-desktop-and-mobile/">landmarks</a> labelled or have the appropriate headings been announced with them?</legend>
+<input id="bp123" type="radio" name="b123" value="pass"><label for="bp123">&nbsp;Pass</label>&nbsp;
+<input id="bf123" type="radio" name="b123" value="fail"><label for="bf123">&nbsp;Fail</label>&nbsp;
+<input id="bn123" type="radio" name="b123" value="na"><label for="bn123"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Do form fields have clear labels?</legend>
+<input id="bp124" type="radio" name="b124" value="pass"><label for="bp124">&nbsp;Pass</label>&nbsp;
+<input id="bf124" type="radio" name="b124" value="fail"><label for="bf124">&nbsp;Fail</label>&nbsp;
+<input id="bn124" type="radio" name="b124" value="na"><label for="bn124"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Is the appropriate keyboard used in forms i.e. telephone, date, numbers, letters etc?</legend>
+<input id="bp125" type="radio" name="b125" value="pass"><label for="bp125">&nbsp;Pass</label>&nbsp;
+<input id="bf125" type="radio" name="b125" value="fail"><label for="bf125">&nbsp;Fail</label>&nbsp;
+<input id="bn125" type="radio" name="b125" value="na"><label for="bn125"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Do data table headings read correctly?</legend>
+<input id="bp126" type="radio" name="b126" value="pass"><label for="bp126">&nbsp;Pass</label>&nbsp;
+<input id="bf126" type="radio" name="b126" value="fail"><label for="bf126">&nbsp;Fail</label>&nbsp;
+<input id="bn126" type="radio" name="b126" value="na"><label for="bn126"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Are hints appropriate?</legend>
+<input id="bp127" type="radio" name="b127" value="pass"><label for="bp127">&nbsp;Pass</label>&nbsp;
+<input id="bf127" type="radio" name="b127" value="fail"><label for="bf127">&nbsp;Fail</label>&nbsp;
+<input id="bn127" type="radio" name="b127" value="na"><label for="bn127"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Are users notified of navigation cues i.e. can you scroll pages/screen by swiping right when in portrait?</legend>
+<input id="bp128" type="radio" name="b128" value="pass"><label for="bp128">&nbsp;Pass</label>&nbsp;
+<input id="bf128" type="radio" name="b128" value="fail"><label for="bf128">&nbsp;Fail</label>&nbsp;
+<input id="bn128" type="radio" name="b128" value="na"><label for="bn128"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Are changes of state announced?</legend>
+<input id="bp129" type="radio" name="b129" value="pass"><label for="bp129">&nbsp;Pass</label>&nbsp;
+<input id="bf129" type="radio" name="b129" value="fail"><label for="bf129">&nbsp;Fail</label>&nbsp;
+<input id="bn129" type="radio" name="b129" value="na"><label for="bn129"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Does link text describe the target?</legend>
+<input id="bp130" type="radio" name="b130" value="pass"><label for="bp130">&nbsp;Pass</label>&nbsp;
+<input id="bf130" type="radio" name="b130" value="fail"><label for="bf130">&nbsp;Fail</label>&nbsp;
+<input id="bn130" type="radio" name="b130" value="na"><label for="bn130"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Are <a href="http://www.spotlessinteractive.com/articles/accessibility/handling-repeated-adjacent-links.php">images and links to the same target grouped into one touchzone</a>?</legend>
+<input id="bp131" type="radio" name="b131" value="pass"><label for="bp131">&nbsp;Pass</label>&nbsp;
+<input id="bf131" type="radio" name="b131" value="fail"><label for="bf131">&nbsp;Fail</label>&nbsp;
+<input id="bn131" type="radio" name="b131" value="na"><label for="bn131"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Can you complete all actions?</legend>
+<input id="bp132" type="radio" name="b132" value="pass"><label for="bp132">&nbsp;Pass</label>&nbsp;
+<input id="bf132" type="radio" name="b132" value="fail"><label for="bf132">&nbsp;Fail</label>&nbsp;
+<input id="bn132" type="radio" name="b132" value="na"><label for="bn132"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Can you complete all actions?</legend>
+<input id="bp133" type="radio" name="b133" value="pass"><label for="bp133">&nbsp;Pass</label>&nbsp;
+<input id="bf133" type="radio" name="b133" value="fail"><label for="bf133">&nbsp;Fail</label>&nbsp;
+<input id="bn133" type="radio" name="b133" value="na"><label for="bn133"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Is content in a different language read correctly?</legend>
+<input id="bp134" type="radio" name="b134" value="pass"><label for="bp134">&nbsp;Pass</label>&nbsp;
+<input id="bf134" type="radio" name="b134" value="fail"><label for="bf134">&nbsp;Fail</label>&nbsp;
+<input id="bn134" type="radio" name="b134" value="na"><label for="bn134"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Are buttons used for actions?</legend>
+<input id="bp135" type="radio" name="b135" value="pass"><label for="bp135">&nbsp;Pass</label>&nbsp;
+<input id="bf135" type="radio" name="b135" value="fail"><label for="bf135">&nbsp;Fail</label>&nbsp;
+<input id="bn135" type="radio" name="b135" value="na"><label for="bn135"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Have the correct controls (HTML) and traits (app) been used?</legend>
+<input id="bp136" type="radio" name="b136" value="pass"><label for="bp136">&nbsp;Pass</label>&nbsp;
+<input id="bf136" type="radio" name="b136" value="fail"><label for="bf136">&nbsp;Fail</label>&nbsp;
+<input id="bn136" type="radio" name="b136" value="na"><label for="bn136"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Is hidden content appropriate and necessary?</legend>
+<input id="bp137" type="radio" name="b137" value="pass"><label for="bp137">&nbsp;Pass</label>&nbsp;
+<input id="bf137" type="radio" name="b137" value="fail"><label for="bf137">&nbsp;Fail</label>&nbsp;
+<input id="bn137" type="radio" name="b137" value="na"><label for="bn137"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Do pop ups have close buttons?</legend>
+<input id="bp138" type="radio" name="b138" value="pass"><label for="bp138">&nbsp;Pass</label>&nbsp;
+<input id="bf138" type="radio" name="b138" value="fail"><label for="bf138">&nbsp;Fail</label>&nbsp;
+<input id="bn138" type="radio" name="b138" value="na"><label for="bn138"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Does focus stay in the pop up rather than continue through the rest of the page/screen?</legend>
+<input id="bp139" type="radio" name="b139" value="pass"><label for="bp139">&nbsp;Pass</label>&nbsp;
+<input id="bf139" type="radio" name="b139" value="fail"><label for="bf139">&nbsp;Fail</label>&nbsp;
+<input id="bn139" type="radio" name="b139" value="na"><label for="bn139"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Is all content and functionality available by swiping left and right and up and down?</legend>
+<input id="bp140" type="radio" name="b140" value="pass"><label for="bp140">&nbsp;Pass</label>&nbsp;
+<input id="bf140" type="radio" name="b140" value="fail"><label for="bf140">&nbsp;Fail</label>&nbsp;
+<input id="bn140" type="radio" name="b140" value="na"><label for="bn140"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+</ol>
+</section><!-- /h2 -->
+<section class="wb-wamethod mrgn-tp-lg">
+<h2 id="mas3">Powiększanie włączone</h2>
+<ol>
+<li>
+<fieldset>
+<legend>Is text readable?</legend>
+<input id="cp138" type="radio" name="c138" value="pass"><label for="cp138">&nbsp;Pass</label>&nbsp;
+<input id="cf138" type="radio" name="c138" value="fail"><label for="cf138">&nbsp;Fail</label>&nbsp;
+<input id="cn138" type="radio" name="c138" value="na"><label for="cn138"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Are large areas of empty spaces absent?</legend>
+<input id="cp139" type="radio" name="c139" value="pass"><label for="cp139">&nbsp;Pass</label>&nbsp;
+<input id="cf139" type="radio" name="c139" value="fail"><label for="cf139">&nbsp;Fail</label>&nbsp;
+<input id="cn139" type="radio" name="c139" value="na"><label for="cn139"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Are labels and form inputs not separated by large areas of empty spaces?</legend>
+<input id="cp140" type="radio" name="c140" value="pass"><label for="cp140">&nbsp;Pass</label>&nbsp;
+<input id="cf140" type="radio" name="c140" value="fail"><label for="cf140">&nbsp;Fail</label>&nbsp;
+<input id="cn140" type="radio" name="c140" value="na"><label for="cn140"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+</ol>
+</section><!-- /h2 -->
+<section class="wb-wamethod mrgn-tp-lg">
+<h2 id="mas4">Wyjście głosowe i powiększanie włączone</h2>
+<p>iOS 6 now allows both zoom and Voiceover to run simultaneously. Follow the same tests used with just zoom enabled, voice output running, and as well as the following:</p>
+<ol>
+<li>
+<fieldset>
+<legend>Does visible text match audible labels on buttons, forms, linked images of text etc?</legend>
+<input id="dp138" type="radio" name="d138" value="pass"><label for="dp138">&nbsp;Pass</label>&nbsp;
+<input id="df138" type="radio" name="d138" value="fail"><label for="df138">&nbsp;Fail</label>&nbsp;
+<input id="dn138" type="radio" name="d138" value="na"><label for="dn138"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Do visible and Voiceover focus match?</legend>
+<input id="dp139" type="radio" name="d139" value="pass"><label for="dp139">&nbsp;Pass</label>&nbsp;
+<input id="df139" type="radio" name="d139" value="fail"><label for="df139">&nbsp;Fail</label>&nbsp;
+<input id="dn139" type="radio" name="d139" value="na"><label for="dn139"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+</ol>
+</section><!-- /h2 -->
+<section class="wb-wamethod mrgn-tp-lg">
+<h2 id="mas5">Inwersja kolorów</h2>
+<p>Follow the same tests used when zoom and voice output are disabled paying special attention to the following:</p>
+<ol>
+<li>
+<fieldset>
+<legend>Is text readable?</legend>
+<input id="ep138" type="radio" name="e138" value="pass"><label for="ep138">&nbsp;Pass</label>&nbsp;
+<input id="ef138" type="radio" name="e138" value="fail"><label for="ef138">&nbsp;Fail</label>&nbsp;
+<input id="en138" type="radio" name="e138" value="na"><label for="en138"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Is there sufficient contrast?</legend>
+<input id="ep139" type="radio" name="e139" value="pass"><label for="ep139">&nbsp;Pass</label>&nbsp;
+<input id="ef139" type="radio" name="e139" value="fail"><label for="ef139">&nbsp;Fail</label>&nbsp;
+<input id="en139" type="radio" name="e139" value="na"><label for="en139"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+<li>
+<fieldset>
+<legend>Are navigation cues clear?</legend>
+<input id="ep140" type="radio" name="e140" value="pass"><label for="ep140">&nbsp;Pass</label>&nbsp;
+<input id="ef140" type="radio" name="e140" value="fail"><label for="ef140">&nbsp;Fail</label>&nbsp;
+<input id="en140" type="radio" name="e140" value="na"><label for="en140"><abbr title="Not applicable">&nbsp;N/A</abbr></label>&nbsp;
+</fieldset>
+</li>
+</ol>
+</section><!-- /h2 -->
+<section>
+<h2 id="mas6">Summary</h2>
+<table id="summary" class="table table-hover">
+<caption class="wb-inv">Test Results</caption>
+<tr>
+<th scope="col">Test Cases</th>
+<th class="text-right" scope="col">Results</th>
+<th class="text-right" scope="col">Percentage</th>
+</tr>
+<tbody>
+<tr>
+<th scope="row">Zoom and voice output disabled</th>
+<td class="text-right"><span id="rsltA"></span>/<span id="rsltACount"></span></td>
+<td class="text-right">(<span id="percA"></span>%)</td>
+</tr>
+<tr>
+<th scope="row">Voice output enabled</th>
+<td class="text-right"><span id="rsltB"></span>/<span id="rsltBCount"></span></td>
+<td class="text-right">(<span id="percB"></span>%)</td>
+</tr>
+<tr>
+<th scope="row">Zoom enabled</th>
+<td class="text-right"><span id="rsltC"></span>/<span id="rsltCCount"></span></td>
+<td class="text-right">(<span id="percC"></span>%)</td>
+</tr>
+<tr>
+<th scope="row">Voice output and zoom enabled</th>
+<td class="text-right"><span id="rsltD"></span>/<span id="rsltDCount"></span></td>
+<td class="text-right">(<span id="percD"></span>%)</td>
+</tr>
+<tr>
+<th scope="row">Inverse colours</th>
+<td class="text-right"><span id="rsltE"></span>/<span id="rsltECount"></span></td>
+<td class="text-right">(<span id="percE"></span>%)</td>
+</tr>
+</tbody>
+<tbody>
+<tr class="success">
+<th scope="row">Total items passed</th>
+<td class="text-right"><span id="itemsPassed"></span>/<span class="totalItems"></span></td>
+<td class="text-right">(<span id="percPassed"></span>%)</td>
+</tr>
+</tbody>
+<tbody>
+<tr class="active">
+<th scope="row">Number of items evaluated</th>
+<td class="text-right"><span id="itemsEvaluated"></span>/<span class="totalItems"></span></td>
+<td class="text-right">(<span id="percEval"></span>%)</td>
+</tr>
+<tr class="active">
+<th scope="row">Items <abbr title="Not applicable">N/A</abbr></th>
+<td class="text-right"><span id="itemsNotApplicable"></span>/<span class="totalItems"></span></td>
+<td class="text-right">(<span id="percNA"></span>%)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> The number of total items passed means the total number of PASS and <abbr title="Not applicable">N/A</abbr>.</p>
+</section>
+<section>
+<h2 id="about">About:</h2>
+<p>Inspired by Al Duggin’s <strong>browser based tests for accessibility</strong> in his kick ass post <a onclick="_gaq.push(['_trackPageview', '/out/alistairduggin.co.uk/blog/accessibile-interoperable-webpage-1'])" href="https://alistairduggin.co.uk/blog/accessibile-interoperable-webpage-1">building a web page with accessibility and interoperability in mind</a>, I thought I’d put some tests together for mobile. This is intended as a guide you can use in day-to-day testing – you should be able to answer ‘yes’ to each question.</p>
+<p>Tests should be carried out in the <a href="http://www.iheni.com/talk-is-cheap-screen-reader-testing-on-mobile/">native browser in iOS Android</a> or any other of your <a href="http://www.iheni.com/getting-to-grips-with-a-mobile-accessibility-strategy/">supported devices</a> without any accessibility settings or support running as well as a combination of settings and support running i.e. zoom, voice output, inverse colours etc.</p>
+<p>It’s worth also checking content in <a href="http://www.iheni.com/accessible-firefox-chrome-android-ios/">Firefox and Chrome on iOS and Android</a> which both have voice output support and various zoom functions. I find this especially useful when I need to establish whether the content, voice output or browser is buggy.</p>
+<p>Finally this is a general list of core tests. Different devices will offer different accessibility settings and support ranging from anything including external braille displays and keyboards to different types of zoom. It’s important to be aware of these and include them in your testing where possible.</p>
+<p>Henny Swan</p>
+<small>Sourced from this <a href="http://www.iheni.com/mobile-accessibility-tests">blog</a>.</small>
+</section><!-- /h2 -->
+
+<!-- szczegóły strony -->
+   <div class="pagedetails">
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-4">
+          <details class="brdr-0">
+            <summary class="btn btn-default text-center">Zgłoś problem z tą stroną</summary>
+
+  <div class="well row">
+    <div class="gc-rprt-prblm">
+      <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+        <form action="#">
+          <fieldset>
+            <legend><span class="field-name">Zaznacz wszystko, czego dotyczy zgłoszenie: </span></legend>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f1">
+                <input type="checkbox" name="problem1" value="Tak" id="gc-rprt-prblm-f1">Łącze, przycisk lub wideo nie działa
+              </label>
+              <input name="problem1" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f2">
+                <input type="checkbox" name="problem2" value="Tak" id="gc-rprt-prblm-f2">Na stronie są błędy ortograficzne lub gramatyczne
+              </label>
+              <input name="problem2" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f3">
+                <input type="checkbox" name="problem3" value="Tak" id="gc-rprt-prblm-f3">Informacje są błędne
+              </label>
+              <input name="problem3" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f4">
+                <input type="checkbox" name="problem4" value="Tak" id="gc-rprt-prblm-f4">Informacje są nieaktualne
+              </label>
+              <input name="problem4" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f5">
+                <input type="checkbox" name="problem5" value="Tak" id="gc-rprt-prblm-f5">Nie mogę znaleźć, czego szukam
+              </label>
+              <input name="problem5" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f6">
+                <input type="checkbox" name="problem6" value="Tak" id="gc-rprt-prblm-f6">Inne, ktorych nie ma na tej liście
+              </label>
+              <input name="problem6" type="hidden" value="Nie">
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Wyślij</button>
+        </form>
+      </div>
+      <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+        <h3>Dziękujemy za Twoją pomoc!</h3>
+        <p>Nie otrzymasz odpowiedzi na tę wiadomość. Jeśli masz pytania, <a href="https://lepszyweb.pl/kontakt.html">napisz do nas</a>.</p>
+      </div>
+    </div>
+  </div>
+</details>
+
+
+        </div>
+        <div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+      </div>
+      <dl id="wb-dtmd">
+        <dt>Data modyfikacji:</dt>
+        <dd>
+          <time property="dateModified">2020-06-10</time>
+        </dd>
+      </dl>
+    </div>
+
+    </main>
+   <footer id="wb-info">
+      <div class="landscape">
+        <nav class="container wb-navcurr">
+          <h2 class="wb-inv">O usługach LepszyWeb.pl</h2>
+          <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+            <li><a href="./pages/lw/kontakt.html">Skontaktuj się z nami</a></li>
+            <li><a href="./pages/lw/uslugi.html">Szkolenia</a></li>
+            <li><a href="./pages/lw/audyty.html">Audyty</a></li>
+            <li><a href="./pages/lw/blog.html">Blog</a></li>
+            <li><a href="./pages/lw/pomoc.html">Pomoc</a></li>
+            <li><a href="./pages/lw/raporty.html">Raporty</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+
+            <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+              <h2 class="wb-inv">O tej stronie</h2>
+              <ul>
+                <li><a href="./pages/prawne/o-lepszyweb.html/wsieci.html">W Sieci</a></li>
+                <li><a href="./pages/prawne/o-lepszyweb.html">O LepszyWeb.pl</a></li>
+                <li><a href="./pages/prawne/regulamin.html">Regulamin</a></li>
+                <li><a href="./pages/prawne/prywatnosc.html">Prywatność</a></li>			  
+                <li><a href="./pages/prawne/dostepnosc.html">Dostępność</a></li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg"> 
+              <a href="#wb-cont">Góra strony <span class="glyphicon glyphicon-chevron-up"></span></a> 
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="./../LWeb/assets/lepszyweb-min.svg" alt="Logo Pracowni Dostępności Cyfrowej LepszyWeb.pl"> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="./../wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+<script src="demo/mobile-accessibility-check.min.js"></script>	
+    <!--[if lt IE 9]>
+	<script src="./../wet-boew/js/ie8-wet-boew2.min.js"></script>
+	
+	<![endif]-->
+    <script src="./../LWeb/js/theme.min.js"></script>		
+  </body>
+</html>

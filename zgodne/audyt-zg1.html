@@ -1,0 +1,666 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="pl" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl" dir="ltr">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Testowa. Poproś o audyt | LepszyWeb </title>
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="./../LWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../LWeb/css/theme.css">
+    <link rel="stylesheet" href="css/styles3.css">	
+
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+	<link href="./../LWeb/assets/favicon.ico" rel="shortcut icon" />
+	
+	<link rel="stylesheet" href="./../LWeb/css/ie8-theme.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+	<script src="./../wet-boew/js/ie8-wet-boew.min.js"></script>
+	<![endif]-->
+	<!--[if lte IE 9]>
+	
+	<![endif]-->
+	
+    <noscript>
+	<link rel="stylesheet" href="./../wet-boew/css/noscript.min.css" />
+	</noscript>
+    <style>
+      .moveFocus {
+        position:absolute;
+        overflow:hidden;
+        width:1px;
+        height:1px;
+        margin:-1px;
+        padding:0
+      }
+    </style>
+  </head>
+
+
+  <body vocab="http://schema.org/" typeof="WebPage">
+
+
+    <nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-cont">Przejdź do treści głównej</a>
+        </li>
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-info">Przejdź do &bdquo;O tej stronie&rdquo;</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container">
+        <!-- Sekcja Wybierz język -->
+        <!-- Koniec sekcji Wybierz język -->
+
+        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+          <h2>Wyszukiwanie i menu</h2>
+          <ul class="pnl-btn list-inline text-right">
+            <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
+          </ul>
+          <div id="mb-pnl"></div>
+        </section>	 		
+
+        <div class="row">
+          <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="./../index.html" property="url"><img src="./../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
+            <meta property="areaServed" typeof="Country" content="Polska">
+            <link property="logo" href="./../LWeb/assets/lepszyweb-min.svg">
+          </div>
+          <section id="wb-srch" class="col-lg-8 text-right">
+            <h2>Szukaj</h2>
+            <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+              <div class="form-group">
+                <label for="wb-srch-q" class="wb-inv">Szukaj na LepszyWeb.pl</label>
+                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Szukaj na LepszyWeb.pl">
+                <datalist id="wb-srch-q-ac"> </datalist>
+              </div>
+              <div class="form-group submit">
+                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Szukaj</span></button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+
+      <nav role="navigation" id="wb-sm" data-ajax-replace="./../ajax/menu-audyt.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <div class="container nvbar">
+          <h2>Spis tematów</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a href="./index.html">O szkoleniu</a></li>
+              <li><a href="./przypadki/index.html">Przypadki</a></li>		  
+              <li><a href="./zgodne/index.html">Zgodne</a></li>
+              <li><a href="./niezgodne/index.html">Niezgodne</a></li>
+              <li><a href="./wzorce/index.html">Wzorce</a></li>
+              <li><a href="./szablony/index.html">Szablony</a></li>					  
+              <li><a href="./pomoc/index.html">Pomoc</a></li>		
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav id="wb-bc" property="breadcrumb" aria-label="Ścieżka powrotu">
+        <h2>Jesteś tutaj:</h2>
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>
+                <a href="./zgodna/index.html">Start</a>
+              </li>
+              <li>Testowa. Poproś o audyt</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+ 
+ <!-- start Main-->
+    <main property="mainContentOfPage" class="container" typeof="WebPageElement" id="main-contentP2">
+<!-- start Page Content -->
+
+        <div class="text-center" id="reqAudit">
+            <h1 id="mainHeadPage3" tabindex="-1">Poproś o audyt</h1>
+            <h2>Informacje o firmie lub organizacji (pola oznaczone <span class="red">czerwono gwiazdką</span> są wymagane)</h2>
+        </div>
+
+        <form class="form-con  section" method="post" id="form-register">
+            <div class="form-group">
+                <div class="field-Con">
+                    <label class="red" for="field1">Nazwa firmy*</label>
+                    <input tabindex="0" type="text" class="form-control" id="field1">
+                </div>
+				
+                <div class="field-Con">
+                    <label class="red" for="field2">Nazwa kontaktu*</label>
+                    <input tabindex="0" type="text" class="form-control keyboardTrap" id="field2">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="field-Con">
+                    <label class="red" for="field3">E-mail* (nazwa@adres.xy)</label>
+                    <input tabindex="0" type="email" class="form-control keyboardTrap" id="field3">
+                </div>
+                <div class="field-Con">
+                    <label class="red" for="field4">Telefon firmy* (###-###-###)</label>
+                    <input tabindex="0" type="text" class="form-control keyboardTrap" id="field4">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="field-Con">
+                    <label class="red" for="field5">Adres firmy - wiersz 1*</label>
+                    <input tabindex="0" type="text" class="form-control keyboardTrap" id="field5">
+                </div>
+                <div class="field-Con">
+                    <label for="field6">Adres firmy - wiersz 2</label>
+                    <input tabindex="0" type="text" class="form-control keyboardTrap" id="field6">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="field-Con">
+                    <label class="red" for="field8">Miasto*</label>
+                    <input tabindex="0" type="text" class="form-control" id="field8">
+                </div>
+                <div class="field-Con">
+                    <label class="red" for="field9">Poczta* (##-###)</label>
+                    <input tabindex="0" type="text" class="form-control" id="field9">
+                </div>
+            </div>
+
+            <fieldset class="radio-fieldSet">
+                <legend class="red radio-legend">Liczba pracowników*</legend>
+                <div class="radio-options">
+                    <label for="r1a">25 lub mniej</label>
+                    <input tabindex="0" type="radio" id="r1a" name="device-type" value="radio">
+                </div>
+                <div class="radio-options">
+                    <label for="r1b">26 - 75</label>
+                    <input type="radio" id="r1b" name="device-type" value="radio">
+                </div>
+                <div class="radio-options">
+                    <label for="r1c">76 - 200</label>
+                    <input type="radio" id="r1c" name="device-type" value="radio">
+                </div>
+                <div class="radio-options">
+                    <label for="r1d">Ponad 200</label>
+                    <input type="radio" id="r1d" name="device-type" value="radio">
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <label class="padRight50" for="field10">Preferowana metoda kontaktu</label>
+                <select tabindex="0" class="options-con" id="field10">
+                    <option value="Phone">Telefon</option>
+                    <option value="Email">E-mail</option>
+                </select>
+            </div>
+            <div class="superCertified section">
+				<fieldset style="display: inline;">
+					<div id="superCert_message"></div>
+					<div>
+						<h3><label for="super">Podaj więcej informacji o witrynie (Wybranie tej opcji spowoduje rozwinięcie dodatkowych szczegółów poniżej)</label>
+						<input type="checkbox" id="super" onclick="toggleHidden(&#39;superCertified-ID&#39;, false);">
+						</h3>
+					</div>
+				</fieldset>
+            </div>
+            <div class="row superCert-outline section" id="superCertified-ID">
+                <fieldset class="row superCertified-questions text-center section">
+                    <legend>Jakie udogodnienia zainstalowano na witrynie?</legend>
+					<section >
+                    <div class="checkbox-con">
+                        <div class="checkbox-options">
+                            <label for="cha">Wersje kontrastowe</label>
+                            <input type="checkbox" id="cha" onclick="handleCheckLink()">
+                        </div>
+                        <div class="checkbox-options">
+                            <label for="chb">Zmiana rozmiaru czcionek</label>
+                            <input type="checkbox" id="chb" tabindex="0">
+                        </div>
+                        <div class="checkbox-options">
+                            <label for="chc">Czytnik ekranu</label>
+                            <input type="checkbox" id="chc" tabindex="0">
+                        </div>
+                        <div class="checkbox-options">
+                            <label for="chd">Tłumacz migowy</label>
+                            <input type="checkbox" id="chd" tabindex="0">
+                        </div>
+                        <div class="checkbox-options">
+                            <label for="che">Inne</label>
+                            <input type="checkbox" id="che" tabindex="0">
+                        </div>
+                    </div>
+					</section>
+                </fieldset>
+                <div class="superCertified-questions2">
+                    <fieldset class="scq2-fieldset">
+                        <legend>Czy na witrynie znajdują się formularze?</legend>
+                        <div class="radio-groupCon">
+                            <div class="radio-group1">
+                                <label for="r2a">Tak</label>
+                                <input type="radio" id="r2a" name="r2">
+                            </div>
+                            <div class="radio-group2">
+                                <label for="r2b">Nie</label>
+                                <input type="radio" id="r2b" name="r2">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="scq2-fieldset">
+                        <legend>Czy na witrynie prezentowane są multimedia</legend>
+                        <div class="radio-groupCon">
+                            <div class="radio-group1">
+                                <label for="r3a">Tak</label>
+                                <input type="radio" id="r3a" name="r3">
+                            </div>
+                            <div class="radio-group2">
+                                <label for="r3b">Nie</label>
+                                <input type="radio" id="r3b" name="r3">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="row form-group fg-column form-con" id="humanCheck">
+                <div class="captcha-head text-center">
+                    <h3>Czy jesteś człowiekiem?</h3>
+                    <input onclick="openCaptcha()" type="button" value="Uzyskaj Captcha">
+                    <div class="captcha-con text-center" id="captcha-block">
+                        <a href="./nie_testuj_2.html" target="_blank">
+                            <img id="captcha-image" src="img/Captcha_image.png" alt="Obraz weryfikacji Captcha. Wybierz ten obraz, aby otworzyć dostępną wersję, lub wprowadź tekst znajdujący się na tym obrazie w poniższe pole">
+                        </a>
+                        <p id="captcha-descText" class="red codeDesc">Wpisz tekst znajdujący się na obrazie captcha powyżej lub wybierz obraz capcha, aby otworzyć dostępną wersję. *</p>
+                        <div class="fg-column column-pad">
+                            <input type="text" id="field11" aria-labelledby="captcha-descText">
+                        </div>
+                    </div>
+                </div>
+                <div class="row submit-con text-center">
+                    <input id="signUpForm" type="submit" onclick="return confirmation()" name="submitConfirmCode" value="Wyślij">
+                    <p>Po wysłaniu formularza, skontaktujemy się z Twoją organizacją w preferowany przez Ciebie sposób.</p>
+                </div>
+            </div>
+        </form>
+        <!-- Form END -->
+        <!-- Sekcja Video -->
+        <div class="row tooSimpleCon text-center section">
+            <h2 id="tooSimpleHeader" tabindex="-1">To zbyt proste, by czekać!</h2>
+            <div class="vid-con">
+                <!-- <video id="video1" class="video1-style" poster="images/videoStill.png" autoplay="autoplay" ontimeupdate="handleAudioDescription(this)"> -->
+                <video id="video2" class="video1-style">
+                    <source src="video/Silent_Website3_compressed.mp4" type="video/mp4">
+                    <track kind="captions" srclang="en" src="video/page1_video1.vtt" label="English">
+                    <audio id="AD-source1">
+                        <source src="audio/birds_sample.wav" type="audio/mp3">
+                    </audio>
+                </video>
+            </div>
+            <p id="CC" class="CC-con disappear">CC są tutaj</p>
+            <div class="vidBnt-con">
+                <!-- <button tabindex="0" onclick="playPause(&#39;video1&#39;,&#39;vidplay&#39;)" id="vidplay">Pauza</button>-->			
+			
+                <button onclick="playPause(&#39;video2&#39;,&#39;vidplay&#39;);" id="vidplay">Graj</button>
+                <button id="btnRewind" onclick="rewind(&#39;video2&#39;)">Do tyłu</button>
+                <button id="btnForward" onclick="forward(&#39;video2&#39;)">Do przodu</button>
+                <button onclick="openTranscript(3)">Transkrypcja</button>
+				<!-- <button tabindex="0" id="CCBtn" aria-label="Napisy zamknięte: Wyłącz">Napisy (CC): Wyłącz</button>
+                <button tabindex="0" id="ADBtn" aria-label="Audiodeskrypcja: Wyłącz">AD: Wyłącz</button>
+                <button tabindex="0" id="btnMute" onclick="toggleMute();">Włącz dźwięk</button> -->
+            </div>
+        </div>
+
+		<!-- End Sekcja Video -->
+
+		<!-- Copied from page2_main.php -->
+        <div class="row contactUs section text-center">
+            <h2>Skontaktuj się</h2>
+            <p>Aby uzyskać więcej szczegółów na temat zalet certyfikacji LepszyWeb.pl, skontaktuj się z nami! Aby zapobiec spamowi, umieściliśmy nasz adres e-mail w&nbsp;formacie audio. Odtwórz go, aby otrzymać ten adres.</p>
+            <div class="sound-controls">
+                <audio id="audio_bgm">
+                    <source src="./audio/website3_audio_only_pg2.mp3" type="audio/mp3">
+                </audio>
+                <a href="#noscroll" id="togglePlay" role="button" tabindex="0">Odtwórz
+                    <span id="playIcon" class="glyphicon glyphicon-play" role="presentation" aria-hidden="true"></span>
+                </a>
+                <a href="#noscroll" id="toggleMute" title="Wycisz" role="button" tabindex="0">Wycisz
+                    <span id="muteIcon" class="glyphicon glyphicon-volume-up" role="presentation" aria-hidden="true"></span>
+                </a>
+                <button id="page2-trascriptBtn" onclick="openTranscript(2)" target="_blank" tabindex="0" class="btmtranscriptbtn">Transkrypcja</button>
+            </div>
+        </div>
+		<!-- End Copied from page2_main.php -->
+<!-- end Page Content -->	
+
+
+      <!-- szczegóły strony -->
+      <div class="pagedetails">
+      <div class="pagedetails">
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-lg-4">
+            <details class="brdr-0">
+              <summary class="btn btn-default text-center">Zgłoś problem z tą stroną</summary>
+
+              <div class="well row">
+                <div class="gc-rprt-prblm">
+                  <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+                    <form action="#">
+                      <fieldset>
+                        <legend><span class="field-name">Zaznacz wszystko, czego dotyczy zgłoszenie: </span></legend>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f1">
+                            <input type="checkbox" name="problem1" value="Tak" id="gc-rprt-prblm-f1">Łącze, przycisk lub wideo nie działa
+                          </label>
+                          <input name="problem1" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f2">
+                            <input type="checkbox" name="problem2" value="Tak" id="gc-rprt-prblm-f2">Na stronie są błędy ortograficzne lub gramatyczne
+                          </label>
+                          <input name="problem2" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f3">
+                            <input type="checkbox" name="problem3" value="Tak" id="gc-rprt-prblm-f3">Informacje są błędne
+                          </label>
+                          <input name="problem3" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f4">
+                            <input type="checkbox" name="problem4" value="Tak" id="gc-rprt-prblm-f4">Informacje są nieaktualne
+                          </label>
+                          <input name="problem4" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f5">
+                            <input type="checkbox" name="problem5" value="Tak" id="gc-rprt-prblm-f5">Nie mogę znaleźć, czego szukam
+                          </label>
+                          <input name="problem5" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f6">
+                            <input type="checkbox" name="problem6" value="Tak" id="gc-rprt-prblm-f6">Inne, ktorych nie ma na tej liście
+                          </label>
+                          <input name="problem6" type="hidden" value="Nie">
+                        </div>
+                      </fieldset>
+                      <button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Wyślij</button>
+                    </form>
+                  </div>
+                  <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+                    <h3>Dziękujemy za Twoją pomoc!</h3>
+                    <p>Nie otrzymasz odpowiedzi na tę wiadomość. Jeśli masz pytania, <a href="https://lepszyweb.pl/kontakt.html">napisz do nas</a>.</p>
+                  </div>
+                </div>
+              </div>
+            </details>
+
+
+          </div>
+          <div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+        </div>
+        <dl id="wb-dtmd">
+          <dt>Data modyfikacji:</dt>
+          <dd>
+            <time property="dateModified">2020-06-10</time>
+          </dd>
+        </dl>
+      </div>
+
+    </main>
+    <footer id="wb-info">
+      <div class="landscape">
+        <nav class="container wb-navcurr">
+          <h2 class="wb-inv">O usługach LepszyWeb.pl</h2>
+          <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+            <li><a href="https://wcag.lepszyweb.pl/">Jak spełnić WCAG?</a></li>
+            <li><a href="https://lepszyweb.pl/walidator">ALLY - walidator dostępności</a></li>
+            <li><a href="https://lepszyweb.pl/andi">ANDI - inspektor dostępności</a></li>
+            <li><a href="https://raport.lepszyweb.pl/">Generator raportów z oceny</a></li>
+            <li><a href="https://deklaracja.lepszyweb.pl">Generator deklaracji dostępności</a></li>
+            <li><a href="https://kontrast.lepszyweb.pl">Wyszukiwarka kontrastów</a></li>
+            <li><a href="https://przedipo.lepszyweb.pl">Demo Przed i Po</a></li>
+            <li><a href="https://lepszyweb.pl/walidator/5-rodzajow-wynikow-testow-dostepnosci">5 rodzajów wyników testów dostępności </a></li>
+            <li><a href="https://lepszyweb.pl/walidator/audyt-wspomagany">Audyt wspomagany</a></li>
+            <li><a href="https://lepszyweb.pl/walidator/dlaczego-metoda-rgaa">Dlaczego metoda RGAA?</a></li>
+            <li><a href="https://lepszyweb.pl/walidator/orientacyjny-miernik-dostepnosci">Orientacyjny miernik dostępności </a></li>
+            <li class="nav-item"><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/rgaa-jako-metoda-oceniania-dostepnosci">RGAA jako metoda oceniania dostępności</a></li>
+            <li class="nav-item"><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/struktura-wynikow">Struktura wyników</a></li>
+            <li class="nav-item"><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/szybki-audyt-stron">Szybki audyt stron</a></li>
+            <li><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/audyt-dostepnosci-we-wlasnym-zakresie">Audyt dostępności we własnym zakresie</a></li>
+            <li><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/tworzenie-dokumentow-pdf">Tworzenie dokumentów PDF</a></li>
+            <li><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/tworzenie-dostepnych-dokumentow-biurowych">Tworzenie dostępnych dokumentów biurowych</a></li>
+            <li class="nav-item"><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/zarzadzanie-dostepnoscia-cyfrowa">Zarządzanie dostępnością cyfrową</a></li>
+
+          </ul>
+        </nav>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+
+            <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+              <h2 class="wb-inv">O tej stronie</h2>
+              <ul>
+                <li><a href="./pages/prawne/o-lepszyweb.html/wsieci.html">W Sieci</a></li>
+                <li><a href="./pages/prawne/o-lepszyweb.html">O LepszyWeb.pl</a></li>
+                <li><a href="./pages/prawne/regulamin.html">Regulamin</a></li>
+                <li><a href="./pages/prawne/prywatnosc.html">Prywatność</a></li>			  
+                <li><a href="./pages/prawne/dostepnosc.html">Dostępność</a></li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg"> 
+              <a href="#wb-cont">Góra strony <span class="glyphicon glyphicon-chevron-up"></span></a> 
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="./../LWeb/assets/lepszyweb-min.svg" alt="Logo Pracowni Dostępności Cyfrowej LepszyWeb.pl"> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap-session-timeout.js"></script>
+    <script src="./js/jquery-confirm.min.js"></script>
+    <script>
+      createVideoEndListener('video2','vidplay');
+      handlePage2Audio(true);
+
+      function superCert_message() {
+        if (document.getElementById("super").checked) {
+          document.getElementById('superCert_message').innerHTML = 'Super-certyfikacja jest bardzo konkurencyjna, a w przypadku poważnych wnioskodawców zaleca się wysłanie kolejnego e-maila.';
+        }
+      }
+
+      // Script with page timeout function
+      $.sessionTimeout({
+        keepAliveUrl: 'page3_main.php',
+        logoutUrl: 'nie_testuj.html',
+        redirUrl: 'page3_main.php?parametry-strony-wylogowania',
+        message: 'Twoja sesja wygaśnie w ciągu 20 sekund.<br />Wybierz dowolny klawisz, aby pozostać na tej stronie i wypełnić formularz.',
+        warnAfter: 360000, // 1 minute
+        redirAfter: 380000, // 80 seconds
+        countdownBar: true
+      });
+
+      function handleCheckLink() {
+        // po kliknięciu na pole wyboru, otworzy się link do innego okna
+        var cha = document.getElementById("cha").checked;
+        var chb = document.getElementById("chb").checked;
+        var chc = document.getElementById("chc").checked;
+        var chd = document.getElementById("chd").checked;
+        var che = document.getElementById("che").checked;
+      }
+      function openCaptcha() {
+        // oderwać się od elementu
+        document.getElementById("captcha-block").style.display = "block";
+      }
+      function closeCaptcha() {
+        document.getElementById("captcha-block").style.display = "hidden";
+      }
+      function openTranscript(pageNum) {
+        // otwiera transkrypcję w pliku html z podaną nazwą
+        var fullName = "transcript_" + pageNum + ".html";
+        window.open(fullName);
+      }
+
+    </script>
+    <div class="modal fade" id="session-timeout-dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title">Twoja sesja dobiega końca!</h4>
+          </div>
+          <div class="modal-body">
+            <p>Ta strona zostanie zamknięta w ciągu 20 sekund.<br>Wybierz dowolny klawisz, aby pozostać na tej stronie i wypełnić formularz.</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped countdown-bar active" role="progressbar" style="min-width: 15px; width: 87%;">
+                <span class="countdown-holder">70s</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--<button id="session-timeout-dialog-logout" type="button" class="btn btn-default">undefined</button> -->
+            <button id="session-timeout-dialog-keepalive" type="button" class="btn btn-primary" data-dismiss="modal">Kontynuuj</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Po wciśnięciu klawisza Enter na wejściach formularz jest automatycznie wysyłany. To powinno zatrzymać ten formularz.
+      // var form1 = document.getElementById("form-register");
+      // form1.addEventListener("keypress",function(e){
+      //     if((e.path[0].type !== "button") && (e.path[0].type !== "submit")){
+      //         console.log(e.path[0].type)
+
+      //         if(e.keyCode === 13) { 
+      //             console.log("go");
+      //             e.preventDefault(); return false; 
+      //         }}
+      // });
+
+      // $('form-register').on('submit', function (e) {
+      //     e.preventDefault();
+      //     e.stopPropagation(); // konieczne tylko wtedy, gdy coś powyżej również nasłuchuje zdarzenia (default-)event
+
+      // });
+
+    </script>
+
+    <script>
+      function confirmation() {
+        // Funkcja ta służy do procesu potwierdzania dla strony 3. Obsługuje ona komunikaty dla wszystkich pól formularza
+
+        var submitOK = "true";
+        var submitNow = confirm("Czy masz pewność, że podane przez Ciebie informacje są prawidłowe??");
+
+        // Użytkownik jest gotowy do wysłania, więc sprawdź wartości
+        if (submitNow == true) {
+          var field1 = document.getElementById("field1").value;
+          var field2 = document.getElementById("field2").value;
+          var field3a = document.getElementById("field3").value;
+          var field3b = document.getElementById("field3").value.indexOf("@");
+          var field4 = document.getElementById("field4").value;
+          var field5 = document.getElementById("field5").value;
+          var field8 = document.getElementById("field8").value;
+          var field9 = document.getElementById("field9").value;
+          var field11 = document.getElementById("field11").value;
+          var field11Tag = document.getElementById("field11");
+
+          if (field1.length < 1) {
+            alert("Musisz podać nazwę firmy");
+            submitOK = "false";
+          }
+
+          if (field2.length < 1) {
+            alert("Musisz podać nazwę kontaktu");
+            submitOK = "false";
+          }
+
+          if (field3a.length < 1) {
+            alert("Musisz podać e-mail");
+            submitOK = "false";
+          } else if (field3b == -1) {
+            alert("E-mail musi mieć następujący format: nazwa@adres.xy");
+            submitOK = "false";
+          }
+
+          if (field4.length < 1) {
+            alert("Musisz podać numer telefonu");
+            submitOK = "false";
+          } else if (!(field4.match(/^([0-9]{3})[-]([0-9]{3})[-]([0-9]{3})$/))) {
+            alert("Numer telefonu musi mieć następujący format: ###-###-###");
+            submitOK = "false";
+          }
+
+          if (field5.length < 1) {
+            alert("Musisz podać adres - linia 1");
+            submitOK = "false";
+          }
+
+          if (field8.length < 1) {
+            alert("Musisz podać miasto");
+            submitOK = "false";
+          }
+
+          if (field9.length < 1) {
+            alert("Musisz podać kod pocztowy");
+            submitOK = "false";
+          } else if (!(field9.match(/^([0-9]{2})[-]([0-9]{3})$/))) {
+            alert("Kod pocztowy musi mieć następujcy format: ##-###");
+            submitOK = "false";
+          }
+
+          // rb1 is short for radio button 1
+          var rb1a = document.getElementById("r1a").checked;
+          var rb1b = document.getElementById("r1b").checked;
+          var rb1c = document.getElementById("r1c").checked;
+          var rb1d = document.getElementById("r1d").checked;
+
+          if (rb1a == false && rb1b == false && rb1c == false && rb1d == false) {
+            alert("Musisz określić liczbę pracowników");
+            submitOK = "false";
+          }
+
+          if (field11Tag.value.length < 1) {
+            alert("Musisz odpowiedzieć na pytanie Captcha");
+            submitOK = "false";
+          } else if ((field11Tag.value.trim() === "G1MF4" || field11Tag.value.trim() === "g1mf4") === false) {
+            alert("Musisz podać poprawnie Captcha");
+            field11 = field11Tag.value;
+            submitOK = "false";
+          }
+          //console.log("Przycisk Prześlij jest równy ", submitOK);
+          // Znalezione problemy, więc wróć użytkownika z powrotem na stronę, aby je naprawił.
+
+
+          if (submitOK == "false") {
+            // Fix issues
+            return false;
+          } else {
+            // Wyślij dane i przejdź do innej strony.
+            // debugger;
+            alert("Dane wysłano");
+            // document.getElementById("form-register").submit();
+            location.replace("nie_testuj_4.html");
+            return false;
+          }
+        } else {
+          return false;
+        }
+      }
+
+    </script>
+  </body>
+</html>

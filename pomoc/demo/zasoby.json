@@ -1,0 +1,281 @@
+{
+  "data": [{
+    "TYTUL": "<a href=\"https://a11yproject.com/checklist/\">Checklist</a>",
+    "OPIS": "Określ poziom dostępności witryny. Ta lista kontrolna  jako punkt odniesienia wykorzystuje wytyczne dotyczące dostępności treści WWW (WCAG). ",
+    "JEZYK": "angielski",
+    "OGNIWO": "Ocenianie",	
+    "RODZAJ": "Lista kontrolna",
+    "WYDAWCA": "The A11Y Project",
+    "ADRESAT": "Audytorzy, Testerzy, Programiści",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie"
+  }, {
+    "TYTUL": "<a href=\"https://webaim.org/standards/wcag/checklist/\">WebAIM's WCAG 2 Checklist</a>",
+    "OPIS": "Lista kontrolna, która przedstawia zalecenia organizacji WebAIM.org dotyczące wdrażania zasad i technik dostępności dla osób poszukujących zgodności z WCAG. Użyty tutaj język znacznie upraszcza i skraca oficjalną specyfikację WCAG 2.1 oraz materiały pomocnicze, aby ułatwić wdrożenie i weryfikację stron internetowych.",
+    "JEZYK": "angielski", 
+	"OGNIWO": "Ocenianie",	
+    "RODZAJ": "Lista kontrolna",
+    "WYDAWCA": "WebAIM",
+    "ADRESAT": "Audytorzy, Testerzy, Programiści",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie"
+  }, {
+    "TYTUL": "<a href=\"https://www.brucelawson.co.uk/2019/checklist-to-avoid-the-most-common-accessibility-errors/\">Checklist to avoid the most common accessibility errors</a>",
+    "OPIS": "Nie jest to wyczerpujący przewodnik po dostępności, ale przyjrzymy się sposobom na uniknięcie najczęstszych błędów dostępności zidentyfikowanych w analizie dostępności WebAIM najpopularniejszych 1 000 000 stron głównych oraz analizie HTTPArchive 2019 Web Almanac 5,8 miliona stron.",
+    "JEZYK": "angielski",
+    "OGNIWO": "Projektowanie, Tworzenie",	
+    "RODZAJ": "Lista kontrolna",
+    "WYDAWCA": "Inni, Bruce Lawson",
+    "ADRESAT": "Programiści",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie"
+  }, {
+    "TYTUL": "<a href=\"http://accessibility.voxmedia.com/\">Accessibility Guidelines</a>",
+    "OPIS": "Listy kontrolne dla projektantów, inżynierów, menedżerów projektów, kontrolerów jakości. Możesz zaznaczyć pola z wytycznymi, które dotyczą twojego projektu, wyświetlić podgląd, skopiować listę do schowka, a nastepnie wkleić ją do dokumentu, Slack, Trello - lub w inny sposób, w jaki zespół organizuje projekty.",
+    "JEZYK": "angielski",
+    "OGNIWO": "Projektowanie, Tworzenie,Ocenianie",	
+    "RODZAJ": "Lista kontrolna",
+    "WYDAWCA": "Inni, Vox Media",
+    "ADRESAT": "Programiści,Kierownicy projektów,Testerzy,Projektanci interfejsu",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie"
+  },  {
+    "TYTUL": "<a href=\"https://codepen.io/weboverhauls/full/zYvopYE\">WCAG 2.1 Checklist with Filter and Links</a>",
+    "OPIS": "Filtrowana lista kontrolna oparta na kryteriach sukcesu WCAG 2.0 i WCAG 2.1 z łączami do WCAG. Adaptacja listy opracowanej przez Paula J. Adama",
+    "JEZYK": "angielski",
+    "OGNIWO": "Projektowanie, Tworzenie",	
+    "RODZAJ": "Lista kontrolna",
+    "WYDAWCA": "Inni, Web Overhauls",
+    "ADRESAT": "Programiści",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie"
+  }, {
+    "TYTUL": "<a href=\"https://lepszyweb.pl/blog/10-heurystyk-dostepnosci\">10 heurystyk dostępności</a>",
+    "OPIS": "Polskie tłumaczenie i opracowanie Heurystyk dostępności autorstwa Denisa Boudreau i Caitlin Geier z Deque Corporation. Heurystyki to uproszczone metody wnioskowania, którymi posługujemy się w skomplikowanych sytuacjach. Lista zawiera 70 szczegółowych punktów kontrolnych",
+    "JEZYK": "polski",
+    "OGNIWO": "Projektowanie, Tworzenie,Ocenianie",	
+    "RODZAJ": "Lista kontrolna",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Audytorzy, Testerzy, Programiści,Webmasterzy,Projektanci interfejsu",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie"
+  },{
+    "TYTUL": "<a href=\"http://romeo.elsevier.com/accessibility_checklist/\">Guidelines - Accessibility Checklist</a>",
+    "OPIS": "Lista kontrolna opracowana przez Jorrit van Hertum. Filtrowana. Zawiera wskazówki dla programistów, projektantów, testerów.",
+    "JEZYK": "angielski",
+    "OGNIWO": "Ocenianie, Projektowanie, Tworzenie",	
+    "RODZAJ": "Lista kontrolna",
+    "WYDAWCA": "Inni, Elsevier User Centered Design",
+    "ADRESAT": "Audytorzy, Testerzy, Programiści",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie"
+  }, {
+    "TYTUL": "<a href=\"https://deklaracja.lepszyweb.pl/\">Generator deklaracji dostępności</a>",
+    "OPIS": "Wpisz dane i wygeneruj deklarację dostępności strony internetowej lub aplikacji mobilnej zgodnej z wytycznymi określonymi przez Ministra Cyfryzacji",
+    "JEZYK": "polski",
+    "OGNIWO": "Zarządzanie",	
+    "RODZAJ": "Narzędzia",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Koordynatorzy dostępności,Kadra zarządzająca",
+    "TEMAT": "",
+    "KATEGORIA": "Narzędzia"
+  }, {
+    "TYTUL": "<a href=\"https://raport.lepszyweb.pl/\">WCAG-EM. Generator raportów</a>",
+    "OPIS": "Generator pomaga wygenerować raport zgodnie z Metodologią oceny zgodności stron internetowych z wymaganiami dostepności (WCAG-EM). Generator nie przeprowadza żadnych testów dostępności. Pomaga jedynie podążać za krokami WCAG-EM, aby wygenerować ustrukturyzowany raport z danych, które wprowadzisz.",
+    "JEZYK": "polski",
+    "OGNIWO": "Zarządzanie",	
+    "RODZAJ": "Lista kontrolna,Narzędzia",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Testerzy,Audytorzy",
+    "TEMAT": "",
+    "KATEGORIA": "Narzędzia"
+  }, {
+    "TYTUL": "<a href=\"https://przedipo.lepszyweb.pl/\">Demo Przed i Po</a>",
+    "OPIS": "Ucz się na cudzych błędach. Zobacz tę samą stronę w wersji niedostępnej i dostępnej. Zobacz typowe błędy dostępności, ich opisy i praktyczne rozwiązania. Przed i Po to strona edukacyjna. Wykorzystaj ją . Serwis Demo PrzediPo pokazuje dwie wersje tej samej, nieistniejącej w rzeczywistości witryny Światła Miasta: wersję niedostepną i poprawioną wersję dostępną. Możesz użyć stron PrzediPo, aby przećwiczyć wykonywanie testów dostepności, możesz wykorzystać go w samokształceniu lub na szkoleniu poświęconym dostępności cyfrowej stron internetowych.",
+    "JEZYK": "polski",
+    "OGNIWO": "Szkolenia",	
+    "RODZAJ": "Materiały szkoleniowe",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Koordynatorzy dostępności,Testerzy,Audytorzy,Liderzy dostępności,Trenerzy",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie i ocenianie"
+  }, {
+    "TYTUL": "<a href=\"https://testy.lepszyweb.pl/wcag21/\">Wytyczne dla dostępności internetowej (WCAG) 2.1</a>",
+    "OPIS": "Polskie tłumaczennie Web Content Accessibility Accessibility Guidelines (WCAG) 2.1",
+    "JEZYK": "polski",
+    "OGNIWO": "Zarządzanie,Szkolenia,Tworzenie,Ocenianie",	
+    "RODZAJ": "Specyfikacje",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Koordynatorzy dostępności,Kadra zarządzająca,Testerzy,Audytorzy",
+    "TEMAT": "",
+    "KATEGORIA": "Standardy"
+  }, {
+    "TYTUL": "<a href=\"https://wcag.lepszyweb.pl/\">Jak spełnić WCAG</a>",
+    "OPIS": "Konfigurowalny przewodnik po wymaganiach i technikach Wytycznych dostępności treści internetowych (WCAG) 2. Dokument towarzyszący WCAG. Polskie tłumaczenie",
+    "JEZYK": "polski",
+    "OGNIWO": "Zarządzanie",	
+    "RODZAJ": "Specyfikacje",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Koordynatorzy dostępności,Kadra zarządzająca,Testerzy,Audytorzy",
+    "TEMAT": "",
+    "KATEGORIA": "Narzędzia"
+  }, {
+    "TYTUL": "<a href=\"https://lepszyweb.pl/walidator/\">ALLY - walidator dostępności</a>",
+    "OPIS": "Potężne narzędzie oceniania i monitorowania dostępności cyfrowej stron internetowych. Badania i raporty z oceny pojedynczych stron, całych witryn, scenariuszy testowych. Porównania wyników badań okresowych. Wszystko po polsku.",
+    "JEZYK": "polski",
+    "OGNIWO": "Ocenianie",	
+    "RODZAJ": "Narzędzia",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Koordynatorzy dostępności,Audytorzy,Testerzy",
+    "TEMAT": "",
+    "KATEGORIA": "Narzędzia oceny"
+  }, {
+    "TYTUL": "<a href=\"https://lepszyweb.pl/andi/help/install.html/\">Wyszukiwarka kontrastów</a>",
+    "OPIS": "ANDI to bezpłatne narzędzie do testowania stron internetowych pod kątem dostępności. Nieodzowne dla każdego audytora, testera, twórcy stron internetowych.",
+    "JEZYK": "polski",
+    "OGNIWO": "Ocenianie,Tworzenie",	
+    "RODZAJ": "Narzędzia",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Koordynatorzy dostępności,Audytorzy,Testerzy,Redaktorzy treści",
+    "TEMAT": "",
+    "KATEGORIA": "Narzędzia oceny"
+  }, {
+    "TYTUL": "<a href=\"https://www.edx.org/course/web-accessibility-introduction\">Introduction to Web Accessibility</a>",
+    "OPIS": "Zdobądź solidne podstawy w cyfrowej dostępności, aby Twoje witryny i aplikacje działały dobrze dla osób niepełnosprawnych, spełniały międzynarodowe standardy i zapewniały lepszą obsługę dla wszystkich. Na tym kursie poznasz międzynarodowe standardy dostępu do sieci od W3C - w tym Wytyczne dotyczące dostępności treści internetowych (WCAG) i WAI-ARIA dla dostępnych bogatych aplikacji internetowych - i pierwsze kroki w ich stosowaniu.",
+    "JEZYK": "angielski",
+    "OGNIWO": "Szkolenia",	
+    "RODZAJ": "Kurs",
+    "WYDAWCA": "edX",
+    "ADRESAT": "Koordynatorzy dostępności,Audytorzy,Testerzy,Redaktorzy treści",
+    "TEMAT": "",
+    "KATEGORIA": "Wprowadzenia"
+  }, {
+    "TYTUL": "<a href=\"https://pave-pdf.org/?lang=en/\">Pave. Four steps to an accessible PDF</a>",
+    "OPIS": "Narzędzie do walidacji i udostępniania plików PDF nowej generacji. W 4 krokach zweryfikujesz i poprawisz dostepność swojego dokumentu. Bezpłatne do użytku osobistego.",
+    "JEZYK": "angielski, niemiecki",
+    "OGNIWO": "Ocenianie,Dostosowanie",	
+    "RODZAJ": "Narzędzia",
+    "WYDAWCA": "Inni,ZHAW - ICT-Accessibility Lab",
+    "ADRESAT": "Autorzy treści,Redaktorzy treści,Webmasterzy",
+    "TEMAT": "",
+    "KATEGORIA": "Narzędzia"
+  }, {
+    "TYTUL": "<a href=\"https://testy.lepszyweb.pl/latwe-testy\">Łatwe testy - prosty przegląd dostępności cyfrowej</a>",
+    "OPIS": "Łatwe testy pozwalają stwierdzić, czy strona internetowa jest dostępna na podstawowym poziomie. Mogą wykryć nawet 75-80% barier dostepności występujących na stronie. Baza łatwych testów pomaga oceniać dostępność cyfrową stron internetowych. Dzięki łatwym testom można się zorientować, czy dostępność treści na stronie internetowej została zapewniona w najbardziej elementarny sposób. Baza łatwych testów została opracowana na podstawie dokumentu W3C WAI zatytułowanego Easy Checks - A First Review of Web Accessibility, co można przetłumaczyć na język polski: Łatwe testy - Pierwszy przegląd dostępności cyfrowej.",
+    "JEZYK": "polski",
+    "OGNIWO": "Ocenianie",	
+    "RODZAJ": "Lista kontrolna,Poradniki",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Audytorzy,Testerzy,Webmasterzy",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie"
+ }, {
+    "TYTUL": "<a href=\"https://testy.lepszyweb.pl/testy-zgodnosci-z-wcag/\">Testy zgodności z WCAG</a>",
+    "OPIS": "Zestaw testów zgodności z WCAG 2.1 tworzony w ramach projektu &bdquo;Jednolita baza testów zgodności&rdquo;, aby zapewnić podstawę do eksperckiej oceny dostępności cyfrowej zasobów internetowych oraz zwiększyć wartości ocen poprzez oparcie ich na wspólnej interpretacji WCAG i zestawie testów, które są wystarczająco solidne, aby dać zainteresowanym stronom zaufanie do wyników.",
+    "JEZYK": "polski",
+    "OGNIWO": "Ocenianie",	
+    "RODZAJ": "Lista kontrolna,Poradniki",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Audytorzy,Testerzy,Webmasterzy",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie"
+ }, {
+    "TYTUL": "<a href=\"https://testy.lepszyweb.pl/ICT-podstawa-testowania/\">Podstawa testowania technologii informacyjno-komunikacyjnych</a>",
+    "OPIS": "Zestaw testów stosowanych w amerykańskich agencjach rządowych. Obejmuje uporządkowane w 25 podstawowych wymagań testy zgodności z kryteriami sukcesu WCAG 2.0. Polskie tłumaczenie wersja 3.0 pakietu testów ICT Testing Baseline.",
+    "JEZYK": "polski",
+    "OGNIWO": "Ocenianie",	
+    "RODZAJ": "Lista kontrolna,Poradniki",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Audytorzy,Testerzy,Webmasterzy",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie"
+  }, {
+    "TYTUL": "<a href=\"https://testy.lepszyweb.pl/zaufany-tester/\">Proces testowy Zaufany Tester</a>",
+    "OPIS": "Proces testowy Trusted Tester został pierwotnie stworzony przez Biuro Dostępnych Systemów i Technologii (OAST) w Departamencie Bezpieczeństwa Wewnętrznego (DHS) Stanów Zjednoczonych, a później przyyjęty przez kilka innych amerykańskich agencji federalnych. Jest to zestaw procedur testowych, ktorych celem jest stwierdzenie zgodności treści stron internetowych ze Zmienioną Sekcją 508, która w całości implementuje WCAG 2.0.",
+    "JEZYK": "polski",
+    "OGNIWO": "Ocenianie",	
+    "RODZAJ": "Lista kontrolna,Poradniki",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Audytorzy,Testerzy,Webmasterzy",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie"
+  }, {
+    "TYTUL": "<a href=\"https://testy.lepszyweb.pl/MSU-00-wprowadzenie/\">Wielopoziomowy protokół oceny WCAG</a>",
+    "OPIS": "Narzędzie powstało, aby zapewnić prosty i znormalizowany protokół oceny dostępności stron internetowych i treści cyfrowych przez wykładowców, pracowników i studentów Uniwersytetu Stanowego Michigan w USA. Protokół obejmuje ogółem 46 testów uporządkowanych w 6 poziomów trudności. Osoby dokonujące przeglądu powinny zawsze zaczynać od poziomu 1 i przechodzić kolejno przez następne poziomy, dopóki nie zabraknie im czasu lub nie osiągną granic swoich możliwości.",
+    "JEZYK": "polski",
+    "OGNIWO": "Ocenianie",	
+    "RODZAJ": "Lista kontrolna,Poradniki",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Audytorzy,Testerzy,Webmasterzy",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie"
+  }, {
+    "TYTUL": "<a href=\"https://testy.lepszyweb.pl/testy-6-prostych/\">6 prostych testów według Karla Grovesa</a>",
+    "OPIS": "Te testy może przeprowadzić każdy, bez żadnej wiedzy na temat dostępności i wiedzy na temat projektowania stron.",
+    "JEZYK": "polski",
+    "OGNIWO": "Ocenianie",	
+    "RODZAJ": "Lista kontrolna,Poradniki",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Redaktorzy treści,Webmasterzy,Koordynatorzy dostępności,Ewangeliści",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie"
+  }, {
+    "TYTUL": "<a href=\"https://testy.lepszyweb.pl/1-0-0-wprowadzenie/\">Pomocnik adepta dostępności</a>",
+    "OPIS": "Jest to zestaw blisko 39 testów zdefiniowanych w ramach projektu A3Web.org zrealizowanego w 2013 roku przez Stowarzyszenie Twoje nowe możliwości. Rozwój aplikacji został zarzucony. Ale zestaw testów można wykorzystać w przygotowaniu własnych procedur testowych.",
+    "JEZYK": "polski",
+    "OGNIWO": "Ocenianie",	
+    "RODZAJ": "Lista kontrolna,Poradniki",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Redaktorzy treści,Webmasterzy,Koordynatorzy dostępności,Ewangeliści",
+    "TEMAT": "",
+    "KATEGORIA": "Testowanie"
+  }, {
+    "TYTUL": "<a href=\"https://kontrast.lepszyweb.pl/\">Wyszukiwarka kontrastów</a>",
+    "OPIS": "Wyszukiwarka kontrastów znajduje właściwe kontrasty kolorów, aby zapewnić dostępność stron internetowych.",
+    "JEZYK": "polski",
+    "OGNIWO": "Projektowanie,Tworzenie",	
+    "RODZAJ": "Narzędzia",
+    "WYDAWCA": "LepszyWeb.pl",
+    "ADRESAT": "Graficy,Autorzy treści,Redaktorzy treści,Webmasterzy",
+    "TEMAT": "",
+    "KATEGORIA": "Narzędzia"
+  }, {
+    "TYTUL": "<a href=\"https://de.ryerson.ca/wa/business.html/\">Digital Accessibility as a Business Practice</a>",
+    "OPIS": "Cyfrowa dostępność jako praktyka biznesowa to bezpłatny, trzytygodniowy, masywny, otwarty kurs online (MOOC) opracowany przez zespół ds. Strategii edukacji cyfrowej w Szkole Ustawicznej ciągłej edukacji im. G. Raymonda Chang'a w Ryerson University, we współpracy z rządowym programem Ontario Enabling Change Program. Ten kurs zapewnia liderom biznesu narzędzia i wiedzę potrzebne do skutecznego umożliwienia cyfrowej dostępności w organizacji poprzez zmianę kulturową, podnoszenie świadomości jej znaczenia oraz wyposażanie pracowników w konkretne narzędzia i wiedzę, których potrzebują, aby zająć się cyfrową dostępnością w ramach swojej codziennej pracy .",
+    "JEZYK": "angielski",
+    "OGNIWO": "Zarządzanie",	
+    "RODZAJ": "Kurs",
+    "WYDAWCA": "Ryerson University",
+    "ADRESAT": "Koordynatorzy dostępności, Liderzy dostępności, Kadra zarządzająca",
+    "TEMAT": "",
+    "KATEGORIA": "Wdrażanie dostępności"
+  }, {
+    "TYTUL": "<a href=\"https://pressbooks.library.ryerson.ca/dabp//\">Digital Accessibility as a Business Practice</a>",
+    "OPIS": "Podręcznik towarzyszący kursowi &bdquo;Cyfrowa dostępność jako praktyka biznesowa&rdquo. Zapewnia liderom biznesu narzędzia i wiedzę potrzebne do skutecznego umożliwienia cyfrowej dostępności w organizacji poprzez zmianę kulturową, podnoszenie świadomości jej znaczenia oraz wyposażanie pracowników w konkretne narzędzia i wiedzę, których potrzebują, aby zająć się cyfrową dostępnością w ramach swojej codziennej pracy .",
+    "JEZYK": "angielski",
+    "OGNIWO": "Zarządzanie",	
+    "RODZAJ": "Poradniki",
+    "WYDAWCA": "Ryerson University",
+    "ADRESAT": "Koordynatorzy dostępności, Liderzy dostępności, Kadra zarządzająca",
+    "TEMAT": "",
+    "KATEGORIA": "Wdrażanie dostępności"
+  }, {
+    "TYTUL": "<a href=\"https://pressbooks.library.ryerson.ca/dabp//\">Web and App Accessibility. Your Roadmap to Digital Inclusion </a>",
+    "OPIS": "Po przeczytaniu tego e-booka uzyskasz głębsze zrozumienie, jak planować, realizować i utrzymywać skuteczną strategię dostępności dla swoich kanałów cyfrowych. Dowiesz się o różnych technikach i zagadnieniach programowych, które zespół w UsableNet uznał za najbardziej użyteczny w ciągu ponad 17 lat pomagania klientom we wszystkich głównych branżach.",
+    "JEZYK": "angielski",
+    "OGNIWO": "Zarządzanie",	
+    "RODZAJ": "Poradniki",
+    "WYDAWCA": "UsableNet",
+    "ADRESAT": "Koordynatorzy dostępności, Liderzy dostępności, Kadra zarządzająca",
+    "TEMAT": "",
+    "KATEGORIA": "Wdrażanie dostępności"
+  }]
+}
+
+
+ 
+  
+
+
+
+

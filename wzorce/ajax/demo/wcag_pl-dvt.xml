@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpenDVT UUID="{00000000-0000-0000-0000-000000000000" ShortID="wcag_pl-dvt" Type="Deposition" Version="1.3">
+  <Information>
+    <Origination>
+      <ID>00000000-0000-0000-0000-000000000000</ID>
+      <AppName>Subtitle Edit</AppName>
+      <AppVersion>2.9</AppVersion>
+      <VendorName>Nikse.dk</VendorName>
+      <VendorPhone></VendorPhone>
+      <VendorURL>www.nikse.dk.com</VendorURL>
+    </Origination>
+    <Case>
+      <MatterNumber />
+    </Case>
+    <Deponent>
+      <FirstName></FirstName>
+      <LastName></LastName>
+    </Deponent>
+    <ReportingFirm>
+      <Name />
+    </ReportingFirm>
+    <FirstPageNo>1</FirstPageNo>
+    <LastPageNo>3</LastPageNo>
+    <MaxLinesPerPage>25</MaxLinesPerPage>
+    <Volume>1</Volume>
+    <TakenOn>06/02/2010</TakenOn>
+    <TranscriptVerify></TranscriptVerify>
+    <PrintVerify></PrintVerify>
+  </Information>
+  <Lines Count="52">
+    <Line ID="0">
+      <Stream>0</Stream>
+      <TimeMs>0</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>W-C-A-G, WCAG, jestem fajnym DJ-em,
+SHARKY, SH-SH-SHARKY</Text>
+    </Line>
+    <Line ID="1">
+      <Stream>0</Stream>
+      <TimeMs>11003</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Hej, oszaleję z tym fajnym bitem, mam lepszy rytm od czasu,
+gdy zainstalowałeś nowy program kwantyfikujący.</Text>
+    </Line>
+    <Line ID="2">
+      <Stream>0</Stream>
+      <TimeMs>17003</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Tańczę elektryczne boogie. Chcesz to zobaczyć David?</Text>
+    </Line>
+    <Line ID="3">
+      <Stream>0</Stream>
+      <TimeMs>21003</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Nie Sharky, musimy się zająć tą piosenką, możesz tańczyć,
+kiedy ja śpiewam, ale nie wyciągaj się znowu z gniazdka.</Text>
+    </Line>
+    <Line ID="4">
+      <Stream>0</Stream>
+      <TimeMs>27003</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Mamy zupełnie nową specyfikację,
+która wspódziała z narzędziem weryfikacji,</Text>
+    </Line>
+    <Line ID="5">
+      <Stream>0</Stream>
+      <TimeMs>31003</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>sprawi, że dostępność będzie możliwa do sprawdzenia</Text>
+    </Line>
+    <Line ID="6">
+      <Stream>0</Stream>
+      <TimeMs>34003</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>WCAG, WCAG</Text>
+    </Line>
+    <Line ID="7">
+      <Stream>0</Stream>
+      <TimeMs>36000</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>sprawi, że sieć będzie zrozumiała,
+a jej postrzeganie stanie się namacalne,</Text>
+    </Line>
+    <Line ID="8">
+      <Stream>0</Stream>
+      <TimeMs>41003</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Interoperacyjność Sieci będzie nie do zatrzymania.</Text>
+    </Line>
+    <Line ID="9">
+      <Stream>0</Stream>
+      <TimeMs>44530</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>WCAG, WCAG</Text>
+    </Line>
+    <Line ID="10">
+      <Stream>0</Stream>
+      <TimeMs>47530</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Chcemy pokazać ci WCAG,</Text>
+    </Line>
+    <Line ID="11">
+      <Stream>0</Stream>
+      <TimeMs>52530</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Chcemy pokazać Ci, jaki może być ten świat</Text>
+    </Line>
+    <Line ID="12">
+      <Stream>0</Stream>
+      <TimeMs>58530</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Chcemy pokazać ci WCAG.</Text>
+    </Line>
+    <Line ID="13">
+      <Stream>0</Stream>
+      <TimeMs>62006</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Nie jest to ciężkie zadanie
+otworzyć swój kod i pisać według WCAG, WCAG</Text>
+    </Line>
+    <Line ID="14">
+      <Stream>0</Stream>
+      <TimeMs>67007</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Hej, David, widziałem w TV faceta, jak mówił, że jest
+najszybszym raperem na świecie, ale wysadzam go
+w powietrze, rozwalam go, oglądam to...</Text>
+    </Line>
+    <Line ID="15">
+      <Stream>0</Stream>
+      <TimeMs>74007</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>[Sharky rapuje 250 słów na minutę]</Text>
+    </Line>
+    <Line ID="16">
+      <Stream>0</Stream>
+      <TimeMs>80007</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Jestem świetnym DJ-em, Sharky, WCAG…
+Lubię muzykę maniaków techno.
+I jak, Dawidzie, jestem teraz fajnym raperem?</Text>
+    </Line>
+    <Line ID="17">
+      <Stream>0</Stream>
+      <TimeMs>89007</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>[David] Sharky, nie mogłem zrozumieć ani słowa,które wymówiłeś.</Text>
+    </Line>
+    <Line ID="18">
+      <Stream>0</Stream>
+      <TimeMs>91007</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>[Sharky] Większość moich niewidomych przyjaciół
+rozumie wszystko, gdy mówię w takim tempie.</Text>
+    </Line>
+    <Line ID="19">
+      <Stream>0</Stream>
+      <TimeMs>94007</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>[powoli] Chcesz... żebym mówił... naprawdę...
+powoli... dla... ciebie... David?</Text>
+    </Line>
+    <Line ID="20">
+      <Stream>0</Stream>
+      <TimeMs>99007</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>[David] To bardzo zabawne, śpiewajmy ten werset razem.</Text>
+    </Line>
+    <Line ID="21">
+      <Stream>0</Stream>
+      <TimeMs>103730</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Zrobimy z Sieci lepsze miejsce
+dla każdej umiejętności i różnych ludzi</Text>
+    </Line>
+    <Line ID="22">
+      <Stream>0</Stream>
+      <TimeMs>108007</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Nawet jeśli surfujesz z kosmosu, masz WCAG, WCAG</Text>
+    </Line>
+    <Line ID="23">
+      <Stream>0</Stream>
+      <TimeMs>113530</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Chcemy pokazać ci WCAG,</Text>
+    </Line>
+    <Line ID="24">
+      <Stream>0</Stream>
+      <TimeMs>119530</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Chcemy pokazać Ci, jaki może być ten świat</Text>
+    </Line>
+    <Line ID="25">
+      <Stream>0</Stream>
+      <TimeMs>124530</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Chcemy pokazać ci WCAG.</Text>
+    </Line>
+    <Line ID="26">
+      <Stream>0</Stream>
+      <TimeMs>128007</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Nie jest to ciężkie zadanie otworzyć swój kod
+i pisać według WCAG, WCAG.</Text>
+    </Line>
+    <Line ID="27">
+      <Stream>0</Stream>
+      <TimeMs>132007</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Więc pozwól mi powiedzieć,
+czym jest WCAG i czym WCAG nie jest</Text>
+    </Line>
+    <Line ID="28">
+      <Stream>0</Stream>
+      <TimeMs>135007</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>WCAG to zestaw narzędziowy,
+który zawiera zestaw reguł</Text>
+    </Line>
+    <Line ID="29">
+      <Stream>0</Stream>
+      <TimeMs>138007</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Pomaga ci ożywiać twoją witrynę dla ludzi
+z innymi zdolnościami i wrażliwościami.</Text>
+    </Line>
+    <Line ID="30">
+      <Stream>0</Stream>
+      <TimeMs>143099</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Kiedy więc trafią do Ciebie w Sieci,
+mogą się dobrze bawić.</Text>
+    </Line>
+    <Line ID="31">
+      <Stream>0</Stream>
+      <TimeMs>146007</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Nieważne, że są niewidomi, albo że muszą migać...</Text>
+    </Line>
+    <Line ID="32">
+      <Stream>0</Stream>
+      <TimeMs>148099</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>albo że ich ręce zaczynają się trząść przy każdym ruchu</Text>
+    </Line>
+    <Line ID="33">
+      <Stream>0</Stream>
+      <TimeMs>151099</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Albo jeśli ich umysły pomylą, co chcą zrobić</Text>
+    </Line>
+    <Line ID="34">
+      <Stream>0</Stream>
+      <TimeMs>153099</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Mogą łatwo zrozumieć, o czym mówisz,
+jeśli będziesz przestrzegać zasad, które przedstawiamy</Text>
+    </Line>
+    <Line ID="35">
+      <Stream>0</Stream>
+      <TimeMs>159099</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Zasada 1: Treść musi być postrzegalna</Text>
+    </Line>
+    <Line ID="36">
+      <Stream>0</Stream>
+      <TimeMs>164099</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Zasada 2: Elementy interfejsu muszą być funkcjonalne</Text>
+    </Line>
+    <Line ID="37">
+      <Stream>0</Stream>
+      <TimeMs>169099</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Zasada 3: Treść i kontrolki muszą być zrozumiałe</Text>
+    </Line>
+    <Line ID="38">
+      <Stream>0</Stream>
+      <TimeMs>174129</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Zasada 4: Treść musi być rzetelnie kodowana, aby działać
+z obecnymi i przyszłymi technologiami</Text>
+    </Line>
+    <Line ID="39">
+      <Stream>0</Stream>
+      <TimeMs>185099</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Chcemy pokazać ci WCAG,
+Chcemy pokazać ci, jaki może być ten świat</Text>
+    </Line>
+    <Line ID="40">
+      <Stream>0</Stream>
+      <TimeMs>195129</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Chcemy pokazać ci WCAG.</Text>
+    </Line>
+    <Line ID="41">
+      <Stream>0</Stream>
+      <TimeMs>200129</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Nie jest to ciężkie zadanie otworzyć swój kod
+i pisać według WCAG, WCAG</Text>
+    </Line>
+    <Line ID="42">
+      <Stream>0</Stream>
+      <TimeMs>206129</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Sharky: Hej David, twoja muzyka jest o wiele bardziej zabawna,
+odkąd wyniosłeś się z przedmieść
+i przebywasz w centrum  miasta na rogach ulic.</Text>
+    </Line>
+    <Line ID="43">
+      <Stream>0</Stream>
+      <TimeMs>210129</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Lubię temat drugiej piosenki,
+ale brzmiała trochę jak niepodłączona,
+a ja nigdy nie szalałem za wyłączonym dźwiękiem,</Text>
+    </Line>
+    <Line ID="44">
+      <Stream>0</Stream>
+      <TimeMs>214129</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Lubię muzykę techno-maniaków, gdzie komputery robią wszystko,
+a ludzie nie grają na żadnych instrumentach.</Text>
+    </Line>
+    <Line ID="45">
+      <Stream>0</Stream>
+      <TimeMs>219129</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Myślę, że jest to o wiele bardziej naturalne,
+gdy muzyka jest odtwarzana, kup oryginalne komputery.</Text>
+    </Line>
+    <Line ID="46">
+      <Stream>0</Stream>
+      <TimeMs>221129</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Kiedy ludzie grają, brzmi to tak bezemocyjnie i fałszywie.</Text>
+    </Line>
+    <Line ID="47">
+      <Stream>0</Stream>
+      <TimeMs>222129</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>David: Będziemy to robić tylko dlatego,
+że jesteście kupą zer i zer, jak wielkoludy.</Text>
+    </Line>
+    <Line ID="48">
+      <Stream>0</Stream>
+      <TimeMs>225129</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>[Sharky] David, to było wredne z twojej strony, że to powiedziałeś,
+wiesz, że zawsze byłem bardzo wrażliwy na moje binarne kodowanie strukturalne.</Text>
+    </Line>
+    <Line ID="49">
+      <Stream>0</Stream>
+      <TimeMs>230169</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>To zawsze było dla mnie źródłem
+wielkiej emocjonalnej niepewności.</Text>
+    </Line>
+    <Line ID="50">
+      <Stream>0</Stream>
+      <TimeMs>232169</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>[David] Och, daj spokój Sharky, wiesz, że cię kocham człowieku,
+a poza tym jesteś niesamowitym raperem,
+powinieneś pójść do American Idol.</Text>
+    </Line>
+    <Line ID="51">
+      <Stream>0</Stream>
+      <TimeMs>239169</TimeMs>
+      <PageNo>1</PageNo>
+      <LineNo>1</LineNo>
+      <QA>-</QA>
+      <Text>Będę gwiazdą, już widzę te nagłówki,
+Sharky wygrywa American Idol dla osób niepełnosprawnych.</Text>
+    </Line>
+  </Lines>
+  <Streams Count="0">
+    <Stream ID="0"></Stream>
+  </Streams>
+</OpenDVT>

@@ -1,0 +1,1297 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="pl" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl" dir="ltr">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Metodologia oceniania dostępności cyfrowej (Poziom AA) - Lepszyweb.pl</title>
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="Zapewnia metodologię oceny, która pomaga w pomiarze zgodności z Wytycznymi dotyczącymi dostępności treści internetowych (WCAG) 2.1 Kryteria sukcesu Poziom A i AA.">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="./../LWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../LWeb/css/theme.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="demo/wamethod.min.css">
+    <!--[if lt IE 9]>
+  <link href="./../LWeb/assets/favicon.ico" rel="shortcut icon" />
+
+  <link rel="stylesheet" href="./../LWeb/css/ie8-theme.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="./../wet-boew/js/ie8-wet-boew.min.js"></script>
+  <![endif]-->
+    <!--[if lte IE 9]>
+
+
+  <![endif]-->
+    <noscript><link rel="stylesheet" href="./../wet-boew/css/noscript.min.css" /></noscript>
+  </head>
+
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-cont">Przejdź do treści głównej</a>
+        </li>
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-info">Przejdź do &bdquo;O tej stronie&rdquo;</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container">
+<!-- Sekcja Wybierz język -->
+<!-- Koniec sekcji Wybierz język -->
+
+        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+          <h2>Wyszukiwanie i menu</h2>
+          <ul class="pnl-btn list-inline text-right">
+            <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
+          </ul>
+          <div id="mb-pnl"></div>
+        </section>	 		
+
+
+
+        <div class="row">
+          <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="./../index.html" property="url"><img src="./../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
+            <meta property="areaServed" typeof="Country" content="Polska">
+            <link property="logo" href="./../LWeb/assets/lepszyweb-min.svg">
+          </div>
+          <section id="wb-srch" class="col-lg-8 text-right">
+            <h2>Szukaj</h2>
+            <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+              <div class="form-group">
+                <label for="wb-srch-q" class="wb-inv">Szukaj na LepszyWeb.pl</label>
+                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Szukaj na LepszyWeb.pl">
+                <datalist id="wb-srch-q-ac"> </datalist>
+              </div>
+              <div class="form-group submit">
+                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Szukaj</span></button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+	  
+      <nav role="navigation" id="wb-sm" data-ajax-replace="./../ajax/menu-audyt.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <div class="container nvbar">
+          <h2>Spis tematów</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a href="./index.html">O szkoleniu</a></li>
+              <li><a href="./przypadki/index.html">Przypadki</a></li>		  
+              <li><a href="./zgodne/index.html">Zgodne</a></li>
+              <li><a href="./niezgodne/index.html">Niezgodne</a></li>
+              <li><a href="./wzorce/index.html">Wzorce</a></li>
+              <li><a href="./szablony/index.html">Szablony</a></li>					  
+              <li><a href="./pomoc/index.html">Pomoc</a></li>		
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav role="navigation" id="wb-bc" property="breadcrumb">
+        <h2>Jesteś tutaj:</h2>
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>
+                <a href="./../index-en.html">Start</a>
+              </li>
+              <li>
+                <a href="./../demos/index-pl.html">Przykłady działania</a>
+              </li>
+              <li>Metodologia oceniania dostępności cyfrowej (Poziom AA)</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" property="mainContentOfPage" class="container">
+      <h1 id="wb-cont" property="name">Metodologia oceniania dostępności cyfrowej (Poziom AA)</h1>
+      <ul class="list-inline">
+        <li><a class="btn btn-primary" href="./../docs/ref/wamethod/wamethod-pl.html">Dokumentacja</a></li>
+        <li><a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Web%20Accessibility%20Assessment%20Methodology%20(Level%20AA):%20">Pytania lub komentarze?</a></li>
+      </ul>
+      <section>
+        <h2>Cel:</h2>
+        <p>Pomaga w mierzeniu zgodności z <a href="https://wcag.lepszyweb.pl/" rel="external">Wytycznymi dotyczącymi dostępności internetowej (WCAG)&#160;2.1</a> poziom&#160;A oraz poziom&#160;AA.</p>
+      </section>
+      <nav role="navigation">
+        <h2>Spis treści</h2>
+        <ul>
+          <li><a href="#wcag">Lista kontrolna kryteriów sukcesu <abbr title="Wytyczne dotyczące dostępności internetowej">WCAG</abbr>&#160;2.1</a>
+            <ul>
+              <li><a href="#wcag1">Zasada: Postrzegalność</a></li>
+              <li><a href="#wcag2">Zasada: Funkcjonalność</a></li>
+              <li><a href="#wcag3">Zasada: Zrozumiałość</a></li>
+              <li><a href="#wcag4">Zasada: Rzetelność</a></li>
+              <li><a href="#sm">Podsumowanie</a></li>
+            </ul>
+          </li>
+          <li><a href="#gl">Słownik</a></li>
+        </ul>
+      </nav>
+      <p>Aby <a href="#webpagedef">strona internetowa</a> spełniała kryteria sukcesu <abbr title="Wytycznych dotyczących dostępności internetowej">WCAG</abbr>&#160;2.1:</p>
+      <ol>
+        <li>Strona internetowa pomyślnie unika wszystkich <a href="https://www.w3.org/WAI/WCAG21/Techniques/#failures" rel="external">powszechnych defektów</a> kryterium sukcesu.</li>
+        <li>Strona internetowa pomyślnie implementuje <a href="#sufftech">wystarczającą technikę</a> lub kombinacje wystarczających technik dla kryteriów sukcesu które są:
+          <ol>
+            <li>specyficzne dla każdej sytuacji mającej zastosowanie oraz</li>
+            <li>specyficzne dla każdej  <a href="#technologydef">technologii</a>, na której <a href="#reliedupondef">opiera się (polega)</a> kryterium sukcesu (z wyjątkiem przypadków, gdy udokumentowane są tylko ogólne techniki)</li>
+          </ol>
+        </li>
+      </ol>
+      <p><em>Uwaga</em>: Treść internetowa nie musi wykorzystywać opublikowanych technik W3C, aby zachować zgodność z WCAG 2.1. Oznacza to, że prawdziwe jest twierdzenie, iż jeśli techniki lub kombinacje technik wystarczających są zastosowane, to treść spełnia wymagania zgodności. Ale zgodność może być zapewniona także w sposób, który nie wykorzystuje technik wystarczających.</p>
+
+      <section class="wb-wamethod">
+        <h2 id="wcag"><abbr title="Wytycznych dotyczące dostępności internetowej">WCAG</abbr>&#160;2.1 Lista kontrolna kryteriów sukcesu (13&#160;wytycznych, 50&#160;kryteriów sukcesu)</h2>
+        <section>
+          <h3 id="wcag1"><b>Zasada:</b> Postrzegalność</h3>
+          <p>Przedstawiaj użytkownikom wszystko w sposób dostrzegalny dla ich zmysłów.</p>
+          <section class="mrgn-tp-lg">
+            <h4 id="g11"><b>Wytyczna 1.1 Alternatywa tekstowa:</b> Zapewnij tekstowe zastępniki wszystkich treści nietekstowych, aby można je było zamienić na inne formy (np. powiększyć, wydrukować brajlem, przeczytać, przedstawić za pomocą symboli lub uproszczonego języka).</h4>
+            <ol>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#text-equiv-all" rel="external" aria-describedby="g11">1.1.1 Treść nietekstowa (Poziom&#160;A)</a></legend>
+                  <input id="ap111" type="radio" name="sc111" value="pass"><label for="ap111">Zgodne</label>
+                  <input id="af111" type="radio" name="sc111" value="fail"><label for="af111">Niezgodne</label>
+                  <input id="an111" type="radio" name="sc111" value="na"><label for="an111"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#text-equiv-all" rel="external" aria-describedby="g11"><b>7.A Znacząca nazwa obrazu</b>. Dostępna nazwa i&nbsp;dostępny opis znaczących obrazów stanowią równoważny opis obrazów. </a></legend>
+                  <input id="ap111-7a" type="radio" name="sc111-7a" value="pass"><label for="ap111-7a">Zgodne</label>
+                  <input id="af111-7a" type="radio" name="sc111-7a" value="fail"><label for="af111-7a">Niezgodne</label>
+                  <input id="an111-7a" type="radio" name="sc111-7a" value="na"><label for="an111-7a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>			  
+			  
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#text-equiv-all" rel="external" aria-describedby="g11"><b>7.B Obrazy dekoracyjne</b>. Obrazy dekoracyjne mają pusty tekst alternatywny (nie mają dostępnej nazwy lub opisu). </a></legend>
+                  <input id="ap111-7b" type="radio" name="sc111-7b" value="pass"><label for="ap111-7b">Zgodne</label>
+                  <input id="af111-7b" type="radio" name="sc111-7b" value="fail"><label for="af111-7b">Niezgodne</label>
+                  <input id="an111-7b" type="radio" name="sc111-7b" value="na"><label for="an111-7b"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				  
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#text-equiv-all" rel="external" aria-describedby="g11"><b>7.C Dekoracyjne obrazy tła</b>. Obraz w tle nie jest jedynym środkiem wykorzystywanym do przekazywania ważnych informacji. </a></legend>
+                  <input id="ap111-7c" type="radio" name="sc111-7c" value="pass"><label for="ap111-7c">Zgodne</label>
+                  <input id="af111-7c" type="radio" name="sc111-7c" value="fail"><label for="af111-7c">Niezgodne</label>
+                  <input id="an111-7c" type="radio" name="sc111-7c" value="na"><label for="an111-7c"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>	
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#text-equiv-all" rel="external" aria-describedby="g11"><b>7.D Alternatywa CAPTCHA</b>. Na stronie istnieją alternatywne formy CAPTCHA </a></legend>
+                  <input id="ap111-7d" type="radio" name="sc111-7d" value="pass"><label for="ap111-7d">Zgodne</label>
+                  <input id="af111-7d" type="radio" name="sc111-7d" value="fail"><label for="af111-7d">Niezgodne</label>
+                  <input id="an111-7d" type="radio" name="sc111-7d" value="na"><label for="an111-7d"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>	
+
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#text-equiv-all" rel="external" aria-describedby="g11"><b>7.E Obrazy tekstu</b>. Obrazu tekstu nie można zastąpić tekstem lub można go dostosować. </a></legend>
+                  <input id="ap111-7e" type="radio" name="sc111-7e" value="pass"><label for="ap111-7e">Zgodne</label>
+                  <input id="af111-7e" type="radio" name="sc111-7e" value="fail"><label for="af111-7e">Niezgodne</label>
+                  <input id="an111-7e" type="radio" name="sc111-7e" value="na"><label for="an111-7e"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>	
+				
+			
+			
+			  </li>
+            </ol>
+          </section>
+          <section class="mrgn-tp-lg">
+            <h4 id="g12"><b>Wytyczna 1.2 Media zmienne w czasie:</b> Zapewnij rozwiązania alternatywne dla mediów opartych na czasie.</h4>
+            <ol>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#media-equiv-av-only-alt" rel="external" aria-describedby="g12">1.2.1 Tylko dźwięk lub tylko wideo (nagranie) (Poziom&#160;A)</a></legend>
+                  <input id="ap121" type="radio" name="sc121" value="pass"><label for="ap121">Zgodne</label>
+                  <input id="af121" type="radio" name="sc121" value="fail"><label for="af121">Niezgodne</label>
+                  <input id="an121" type="radio" name="sc121" value="na"><label for="an121"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#media-equiv-av-only-alt" rel="external" aria-describedby="g12"><b>16. A Transkrypcja nagrań dźwiękowych</b>. Dostępna jest alternatywa tekstowa dla nagrań dźwiękowych (tylko audio), która zapewnia dokładne i pełne przedstawienie treści nagrania.</a></legend>
+                  <input id="ap121-16a" type="radio" name="sc121-16a" value="pass"><label for="ap121-16a">Zgodne</label>
+                  <input id="af121-16a" type="radio" name="sc121-16a" value="fail"><label for="af121-16a">Niezgodne</label>
+                  <input id="an121-16a" type="radio" name="sc121-16a" value="na"><label for="an121-16a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#media-equiv-av-only-alt" rel="external" aria-describedby="g12"><b>16.B Odpowiedniki wideo</b>. Dokładne i pełne przedstawienie treści nagrania tylko-wideo dostępne jest również w postaci równoważnej alternatywy tekstowej lub dźwiękowej.</a></legend>
+                  <input id="ap121-16b" type="radio" name="sc121-16b" value="pass"><label for="ap121-16b">Zgodne</label>
+                  <input id="af121-16b" type="radio" name="sc121-16b" value="fail"><label for="af121-16b">Niezgodne</label>
+                  <input id="an121-16b" type="radio" name="sc121-16b" value="na"><label for="an121-16b"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>					
+				
+					
+				
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#media-equiv-captions" rel="external" aria-describedby="g12">1.2.2 Napisy rozszerzone (nagranie) (Poziom&#160;A)</a></legend>
+                  <input id="ap122" type="radio" name="sc122" value="pass"><label for="ap122">Zgodne</label>
+                  <input id="af122" type="radio" name="sc122" value="fail"><label for="af122">Niezgodne</label>
+                  <input id="an122" type="radio" name="sc122" value="na"><label for="an122"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+
+                <fieldset>				
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#media-equiv-captions" rel="external" aria-describedby="g12"><b>17.A Równoważne napisy</b>. Media mają napisy dokładnie odwzorowujące treści audio</a></legend>
+                  <input id="ap122-17a" type="radio" name="sc122-17a" value="pass"><label for="ap122-17a">Zgodne</label>
+                  <input id="af122-17a" type="radio" name="sc122-17a" value="fail"><label for="af122-17a">Niezgodne</label>
+                  <input id="an122-17a" type="radio" name="sc122-17a" value="na"><label for="an122-17a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#media-equiv-audio-desc" rel="external" aria-describedby="g12">1.2.3 Audiodeskrypcje lub alternatywa dla mediów (nagranie) (Poziom&#160;A)</a></legend>
+                  <input id="ap123" type="radio" name="sc123" value="pass"><label for="ap123">Zgodne</label>
+                  <input id="af123" type="radio" name="sc123" value="fail"><label for="af123">Niezgodne</label>
+                  <input id="an123" type="radio" name="sc123" value="na"><label for="an123"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+
+              <li>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#media-equiv-audio-desc-only" rel="external" aria-describedby="g12">1.2.5 Audiodeskrypcja (nagranie) (Poziom&#160;AA)</a></legend>
+                  <input id="aap125" type="radio" name="sc125" value="pass"><label for="aap125">Zgodne</label>
+                  <input id="aaf125" type="radio" name="sc125" value="fail"><label for="aaf125">Niezgodne</label>
+                  <input id="aan125" type="radio" name="sc125" value="na"><label for="aan125"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#media-equiv-audio-desc-only" rel="external" aria-describedby="g12"><b>17.B Równoważna audiodeskrypcja</b>. Multimedia zapewniają równoważną ścieżkę dźwiękową (połączenie narracji i opisów audio) dla treści wideo.</a></legend>
+                  <input id="aap125-17b" type="radio" name="sc125-17b" value="pass"><label for="aap125-17b">Zgodne</label>
+                  <input id="aaf125-17b" type="radio" name="sc125-17b" value="fail"><label for="aaf125-17b">Niezgodne</label>
+                  <input id="aan125-17b" type="radio" name="sc125-17b" value="na"><label for="aan125-17b"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+		
+				
+				
+				
+				
+				
+				
+              </li>
+            </ol>
+          </section>
+          <section class="mrgn-tp-lg">
+            <h4 id="g13"><b>Wytyczna 1.3 Możliwość adaptacji:</b> Twórz treści, które mogą być prezentowane na różne sposoby bez utraty informacji czy struktury.</h4>
+            <ol>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#info-and-relationships" rel="external" aria-describedby="g13">1.3.1 Informacje i relacje (Poziom&#160;A)</a></legend>
+                  <input id="ap131" type="radio" name="sc131" value="pass"><label for="ap131">Zgodne</label>
+                  <input id="af131" type="radio" name="sc131" value="fail"><label for="af131">Niezgodne</label>
+                  <input id="an131" type="radio" name="sc131" value="na"><label for="an131"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#info-and-relationships" rel="external" aria-describedby="g13"><b>10.B: Nagłówki określone programowo</b>. Każdy nagłówek określony programowo jest nagłówkiem wizualnym, a każdy nagłówek wizualny jest określony programowo.</a></legend>
+                  <input id="ap131-10b" type="radio" name="sc131-10b" value="pass"><label for="ap131-10b">Zgodne</label>
+                  <input id="af131-10b" type="radio" name="sc131-10b" value="fail"><label for="af131-10b">Niezgodne</label>
+                  <input id="an131-10b" type="radio" name="sc131-10b" value="na"><label for="an131-10b"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#info-and-relationships" rel="external" aria-describedby="g13"><b>10.C: Dopasowane poziomy nagłówków</b>. Programowy poziom każdego nagłówka jest logicznie dopasowany do wizualnej prezentacji (stylizacji) nagłówka w strukturze nagłówków.</a></legend>
+                  <input id="ap131-10c" type="radio" name="sc131-10c" value="pass"><label for="ap131-10c">Zgodne</label>
+                  <input id="af131-10c" type="radio" name="sc131-10c" value="fail"><label for="af131-10c">Niezgodne</label>
+                  <input id="an131-10c" type="radio" name="sc131-10c" value="na"><label for="an131-10c"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>					
+
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#info-and-relationships" rel="external" aria-describedby="g13"><b>5.C Etykiety powiązane programowo</b>. Kombinacja dostępnej nazwy, dostępnego opisu i innych asocjacji programowych (np. powiązania nagłówków kolumn lub wierszy z kolumnami lub wierszami) opisuje każde pole wejściowe i zawierają wszystkie niezbędne instrukcje i wskazówki (tekstowe i graficzne).</a></legend>
+                  <input id="ap131-5c" type="radio" name="sc131-5c" value="pass"><label for="ap131-5c">Zgodne</label>
+                  <input id="af131-5c" type="radio" name="sc131-5c" value="fail"><label for="af131-5c">Niezgodne</label>
+                  <input id="an131-5c" type="radio" name="sc131-5c" value="na"><label for="an131-5c"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>	
+
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#info-and-relationships" rel="external" aria-describedby="g13"><b>14.A Oznakowanie tabeli</b>. Każda tabela danych ma programowy znacznik identyfikujący ją jako tabelę.</a></legend>
+                  <input id="ap131-14a" type="radio" name="sc131-14a" value="pass"><label for="ap131-14a">Zgodne</label>
+                  <input id="af131-14a" type="radio" name="sc131-14a" value="fail"><label for="af131-14a">Niezgodne</label>
+                  <input id="an131-14a" type="radio" name="sc131-14a" value="na"><label for="an131-14a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>	
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#info-and-relationships" rel="external" aria-describedby="g13"><b>14.B Powiazanie komórek z nagłówkami</b>. Wszystkie komórki danych są programowo powiązane z odpowiednimi nagłówkami.</a></legend>
+                  <input id="ap131-14b" type="radio" name="sc131-14b" value="pass"><label for="ap131-14b">Zgodne</label>
+                  <input id="af131-14b" type="radio" name="sc131-14b" value="fail"><label for="af131-14b">Niezgodne</label>
+                  <input id="an131-14b" type="radio" name="sc131-14b" value="na"><label for="an131-14b"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#info-and-relationships" rel="external" aria-describedby="g13"><b>14.C Tabele układu</b>. Tabela układu nie są oznaczone atrybutem ARIA <code>role="table"</code> i nie zawiera struktury nagłówka tabeli ani elementów relacji i powiązanych atrybutów.</a></legend>
+                  <input id="ap131-14c" type="radio" name="sc131-14c" value="pass"><label for="ap131-14c">Zgodne</label>
+                  <input id="af131-14c" type="radio" name="sc131-14c" value="fail"><label for="af131-14c">Niezgodne</label>
+                  <input id="an131-14c" type="radio" name="sc131-14c" value="na"><label for="an131-14c"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#info-and-relationships" rel="external" aria-describedby="g13"><b>15.A Treści dodane przez css</b>. Znaczące treści dodane wyłącznie przez CSS są dostępne także w inny sposób.</a></legend>
+                  <input id="ap131-14c" type="radio" name="sc131-14c" value="pass"><label for="ap131-14c">Zgodne</label>
+                  <input id="af131-14c" type="radio" name="sc131-14c" value="fail"><label for="af131-14c">Niezgodne</label>
+                  <input id="an131-14c" type="radio" name="sc131-14c" value="na"><label for="an131-14c"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>	
+	
+	
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#content-structure-separation-sequence" rel="external" aria-describedby="g13">1.3.2 Zrozumiała kolejność (Poziom&#160;A)</a></legend>
+                  <input id="ap132" type="radio" name="sc132" value="pass"><label for="ap132">Zgodne</label>
+                  <input id="af132" type="radio" name="sc132" value="fail"><label for="af132">Niezgodne</label>
+                  <input id="an132" type="radio" name="sc132" value="na"><label for="an132"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#content-structure-separation-sequence" rel="external" aria-describedby="g13"><b>15.B Zrozumiała kolejność treści</b>. Kolejność odczytywania treści po wyłączeniu arkuszy stylów CSS jest sensowna oraz zachowane jest znaczenie treści (w kontekście).</a></legend>
+                  <input id="ap132-15b" type="radio" name="sc132-15b" value="pass"><label for="ap132-15b">Zgodne</label>
+                  <input id="af132-15b" type="radio" name="sc132-15b" value="fail"><label for="af132-15b">Niezgodne</label>
+                  <input id="an132-15b" type="radio" name="sc132-15b" value="na"><label for="an132-15b"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#content-structure-separation-understanding" rel="external" aria-describedby="g13">1.3.3 Właściwości zmysłowe (Poziom&#160;A)</a></legend>
+                  <input id="ap133" type="radio" name="sc133" value="pass"><label for="ap133">Zgodne</label>
+                  <input id="af133" type="radio" name="sc133" value="fail"><label for="af133">Niezgodne</label>
+                  <input id="an133" type="radio" name="sc133" value="na"><label for="an133"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#content-structure-separation-understanding" rel="external" aria-describedby="g13"><b>13.B Właściwości zmysłowe</b>. Instrukcje dotyczące zrozumienia i obsługi treści nie opierają się wyłącznie charakterystykach odwołujących się do zmysłów, takich jak kształt, rozmiar, lokalizacja wizualna, orientacja lub dźwięk.</a></legend>
+                  <input id="ap133-13b" type="radio" name="sc133-13b" value="pass"><label for="ap133-13b">Zgodne</label>
+                  <input id="af133-13b" type="radio" name="sc133-13b" value="fail"><label for="af133-13b">Niezgodne</label>
+                  <input id="an133-13b" type="radio" name="sc133-13b" value="na"><label for="an133-13b"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+
+				
+				
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#orientation" rel="external" aria-describedby="g13">1.3.4 Orientacja (Poziom&#160;AA)</a></legend>
+                  <input id="aap134" type="radio" name="sc134" value="pass"><label for="aap134">Zgodne</label>
+                  <input id="aaf134" type="radio" name="sc134" value="fail"><label for="aaf134">Niezgodne</label>
+                  <input id="aan134" type="radio" name="sc134" value="na"><label for="aan134"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#identify-input-purpose" rel="external" aria-describedby="g13">1.3.5 Określenie pożądanej wartości (Poziom&#160;AA)</a></legend>
+                  <input id="aap135" type="radio" name="sc135" value="pass"><label for="aap135">Zgodne</label>
+                  <input id="aaf135" type="radio" name="sc135" value="fail"><label for="aaf135">Niezgodne</label>
+                  <input id="aan135" type="radio" name="sc135" value="na"><label for="aan135"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+            </ol>
+          </section>
+          <section class="mrgn-tp-lg">
+            <h4 id="g14"><b>Wytyczna 1.4 Możliwość rozróżniania:</b> Ułatwiaj oglądanie i słuchanie treści oraz oddzielanie informacji od tła.</h4>
+            <ol>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-without-color" rel="external" aria-describedby="g14">1.4.1 Użycie koloru (Poziom&#160;A)</a></legend>
+                  <input id="ap141" type="radio" name="sc141" value="pass"><label for="ap141">Zgodne</label>
+                  <input id="af141" type="radio" name="sc141" value="fail"><label for="af141">Niezgodne</label>
+                  <input id="an141" type="radio" name="sc141" value="na"><label for="an141"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-without-color" rel="external" aria-describedby="g14"><b>13.A Użycie koloru</b>. Kolor nie jest używany jako jedyny wizualny sposób przekazywania informacji, wskazujący działanie, zachęcający do odpowiedzi lub wyróżniający element wizualny.</a></legend>
+                  <input id="ap141-13a" type="radio" name="sc141-13a" value="pass"><label for="ap141-13a">Zgodne</label>
+                  <input id="af141-13a" type="radio" name="sc141-13a" value="fail"><label for="af141-13a">Niezgodne</label>
+                  <input id="an141-13a" type="radio" name="sc141-13a" value="na"><label for="an141-13a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+			
+				
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-dis-audio" rel="external" aria-describedby="g14">1.4.2 Kontrola odtwarzania dźwięku (Poziom&#160;A)</a></legend>
+                  <input id="ap142" type="radio" name="sc142" value="pass"><label for="ap142">Zgodne</label>
+                  <input id="af142" type="radio" name="sc142" value="fail"><label for="af142">Niezgodne</label>
+                  <input id="an142" type="radio" name="sc142" value="na"><label for="an142"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-dis-audio" rel="external" aria-describedby="g14"><b>2.A Sterowanie dźwiękiem</b>. Użytkownik może wstrzymywać, zatrzymywać lub kontrolować głośność odtwarzanej automatycznie treści audio.</a></legend>
+                  <input id="ap142-2a" type="radio" name="sc142-2a" value="pass"><label for="ap142-2a">Zgodne</label>
+                  <input id="af142-2a" type="radio" name="sc142-2a" value="fail"><label for="af142-2a">Niezgodne</label>
+                  <input id="an142-2a" type="radio" name="sc142-2a" value="na"><label for="an142-2a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+	
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-contrast" rel="external" aria-describedby="g14">1.4.3 Kontrast (minimalny) (Poziom&#160;AA)</a></legend>
+                  <input id="aap143" type="radio" name="sc143" value="pass"><label for="aap143">Zgodne</label>
+                  <input id="aaf143" type="radio" name="sc143" value="fail"><label for="aaf143">Niezgodne</label>
+                  <input id="aan143" type="radio" name="sc143" value="na"><label for="aan143"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-contrast" rel="external" aria-describedby="g14"><b>13.C Kontrast</b>. Wizualna prezentacja tekstu i obrazy tekstu mają wystarczający kontrast.</a></legend>
+                  <input id="aap143-13c" type="radio" name="sc143-13c" value="pass"><label for="aap143-13c">Zgodne</label>
+                  <input id="aaf143-13c" type="radio" name="sc143-13c" value="fail"><label for="aaf143-13c">Niezgodne</label>
+                  <input id="aan143-13c" type="radio" name="sc143-13c" value="na"><label for="aan143-13c"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+				
+				
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#resize-text" rel="external" aria-describedby="g14">1.4.4 Zmiana rozmiaru tekstu (Poziom&#160;AA)</a></legend>
+                  <input id="aap144" type="radio" name="sc144" value="pass"><label for="aap144">Zgodne</label>
+                  <input id="aaf144" type="radio" name="sc144" value="fail"><label for="aaf144">Niezgodne</label>
+                  <input id="aan144" type="radio" name="sc144" value="na"><label for="aan144"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#resize-text" rel="external" aria-describedby="g14"><b>18.A Zmiana rozmiaru tekstu</b>. Istnieje mechanizm zmiany rozmiaru, skali lub powiększania tekstu do co najmniej 200% jego pierwotnego rozmiaru bez utraty treści lub funkcjonalności.</a></legend>
+                  <input id="aap144-18a" type="radio" name="sc144-18a" value="pass"><label for="aap144-18a">Zgodne</label>
+                  <input id="aaf144-18a" type="radio" name="sc144-18a" value="fail"><label for="aaf144-18a">Niezgodne</label>
+                  <input id="aan144-18a" type="radio" name="sc144-18a" value="na"><label for="aan144-18a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+			
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-text-presentation" rel="external" aria-describedby="g14">1.4.5  Obrazy tekstu (Poziom&#160;AA)</a></legend>
+                  <input id="aap145" type="radio" name="sc145" value="pass"><label for="aap145">Zgodne</label>
+                  <input id="aaf145" type="radio" name="sc145" value="fail"><label for="aaf145">Niezgodne</label>
+                  <input id="aan145" type="radio" name="sc145" value="na"><label for="aan145"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#visual-audio-contrast-text-presentation" rel="external" aria-describedby="g14"><b>7.E Obrazy tekstu</b>.	Obrazu tekstu nie można zastąpić tekstem lub można go dostosować.</a></legend>
+                  <input id="aap145-7e" type="radio" name="sc145-7e" value="pass"><label for="aap145-7e">Zgodne</label>
+                  <input id="aaf145-7e" type="radio" name="sc145-7e" value="fail"><label for="aaf145-7e">Niezgodne</label>
+                  <input id="aan145-7e" type="radio" name="sc145-7e" value="na"><label for="aan145-7e"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+
+				
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#reflow" rel="external" aria-describedby="g14">1.4.10 Dopasowanie do szerokości ekranu (Poziom&#160;AA)</a></legend>
+                  <input id="aap1410" type="radio" name="sc1410" value="pass"><label for="aap1410">Zgodne</label>
+                  <input id="aaf1410" type="radio" name="sc1410" value="fail"><label for="aaf1410">Niezgodne</label>
+                  <input id="aan1410" type="radio" name="sc1410" value="na"><label for="aan1410"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#non-text-contrast" rel="external" aria-describedby="g14">1.4.11 Kontrast nie-tekstu (Poziom&#160;AA)</a></legend>
+                  <input id="aap1411" type="radio" name="sc1411" value="pass"><label for="aap1411">Zgodne</label>
+                  <input id="aaf1411" type="radio" name="sc1411" value="fail"><label for="aaf1411">Niezgodne</label>
+                  <input id="aan1411" type="radio" name="sc1411" value="na"><label for="aan1411"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#text-spacing" rel="external" aria-describedby="g14">1.4.12 Odstępy w tekście (Poziom&#160;AA)</a></legend>
+                  <input id="aap1412" type="radio" name="sc1412" value="pass"><label for="aap1412">Zgodne</label>
+                  <input id="aaf1412" type="radio" name="sc1412" value="fail"><label for="aaf1412">Niezgodne</label>
+                  <input id="aan1412" type="radio" name="sc1412" value="na"><label for="aan1412"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#content-on-hover-or-focus" rel="external" aria-describedby="g14">1.4.13 Treść spod kursora lub fokusa (Poziom&#160;AA)</a></legend>
+                  <input id="aap1413" type="radio" name="sc1413" value="pass"><label for="aap1413">Zgodne</label>
+                  <input id="aaf1413" type="radio" name="sc1413" value="fail"><label for="aaf1413">Niezgodne</label>
+                  <input id="aan1413" type="radio" name="sc1413" value="na"><label for="aan1413"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+            </ol>
+          </section>
+        </section>
+        <section>
+          <h3 id="wcag2"><b>Zasada:</b> Funkcjonalność</h3>
+          <p>Dbaj o to, aby użytkownik mógł nawigować po stronie i wykonać wszystkie zadania</p>
+          <section class="mrgn-tp-lg">
+            <h4 id="g21"><b>Wytyczna 2.1 Dostępność z  klawiatury:</b> Zapewnij dostępność wszystkich funkcjonalności za pomocą klawiatury.
+            </h4>
+            <ol>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#keyboard-operation-keyboard-operable" rel="external" aria-describedby="g21">2.1.1 Klawiatura (Poziom&#160;A)</a></legend>
+                  <input id="ap211" type="radio" name="sc211" value="pass"><label for="ap211">Zgodne</label>
+                  <input id="af211" type="radio" name="sc211" value="fail"><label for="af211">Niezgodne</label>
+                  <input id="an211" type="radio" name="sc211" value="na"><label for="an211"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#keyboard-operation-keyboard-operable" rel="external" aria-describedby="g21"><b>4.A Dostęp z klawiatury</b>. Wszystkie funkcje i wszystkie informacje, które są niezbędne lub wymagane do wykonania danej czynności, mogą być dostępne i wykonywane wyłącznie za pomocą klawiatury.</a></legend>
+                  <input id="ap211-4a" type="radio" name="sc211-4a" value="pass"><label for="ap211-4a">Zgodne</label>
+                  <input id="af211-4a" type="radio" name="sc211-4a" value="fail"><label for="af211-4a">Niezgodne</label>
+                  <input id="an211-4a" type="radio" name="sc211-4a" value="na"><label for="an211-4a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#keyboard-operation-keyboard-operable" rel="external" aria-describedby="g21"><b>4.B Bez czasu naciśnięcia klawisza</b>. Poszczególne naciśnięcia klawiszy nie wymagają określonego czasu aktywacji funkcji.	</a></legend>
+                  <input id="ap211-4b" type="radio" name="sc211-4b" value="pass"><label for="ap211-4b">Zgodne</label>
+                  <input id="af211-4b" type="radio" name="sc211-4b" value="fail"><label for="af211-4b">Niezgodne</label>
+                  <input id="an211-4b" type="radio" name="sc211-4b" value="na"><label for="an211-4b"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>					
+
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#keyboard-operation-trapping" rel="external" aria-describedby="g21">2.1.2 Bez pułapki na klawiaturę (Poziom&#160;A)</a></legend>
+                  <input id="ap212" type="radio" name="sc212" value="pass"><label for="ap212">Zgodne</label>
+                  <input id="af212" type="radio" name="sc212" value="fail"><label for="af212">Niezgodne</label>
+                  <input id="an212" type="radio" name="sc212" value="na"><label for="an212"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#keyboard-operation-trapping" rel="external" aria-describedby="g21"><b>4 C. Bez pułapki na klawiaturę</b>. Nie ma pułapki na klawiaturę</a></legend>
+                  <input id="ap212-4c" type="radio" name="sc212-4c" value="pass"><label for="ap212-4c">Zgodne</label>
+                  <input id="af212-4c" type="radio" name="sc212-4c" value="fail"><label for="af212-4c">Niezgodne</label>
+                  <input id="an212-4c" type="radio" name="sc212-4c" value="na"><label for="an212-4c"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+		
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#character-key-shortcuts" rel="external" aria-describedby="g21">2.1.4 Jednoznakowe skróty klawiaturowe (Poziom&#160;A)</a></legend>
+                  <input id="ap214" type="radio" name="sc214" value="pass"><label for="ap214">Zgodne</label>
+                  <input id="af214" type="radio" name="sc214" value="fail"><label for="af214">Niezgodne</label>
+                  <input id="an214" type="radio" name="sc214" value="na"><label for="an214"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+            </ol>
+          </section>
+          <section class="mrgn-tp-lg">
+            <h4 id="g22"><b>Wytyczna 2.2 Wystarczający czas:</b> Daj użytkownikom wystarczająco dużo czasu na przeczytanie i skorzystanie z treści.</h4>
+            <ol>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#time-limits-required-behaviors" rel="external" aria-describedby="g22">2.2.1 Możliwość dostosowania czasu (Poziom&#160;A)</a></legend>
+                  <input id="ap221" type="radio" name="sc221" value="pass"><label for="ap221">Zgodne</label>
+                  <input id="af221" type="radio" name="sc221" value="fail"><label for="af221">Niezgodne</label>
+                  <input id="an221" type="radio" name="sc221" value="na"><label for="an221"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#time-limits-required-behaviors" rel="external" aria-describedby="g22"><b>8.A Dostosowanie czasu</b>. Użytkownik może wyłączyć, dostosować lub przedłużyć limit czasu.</a></legend>
+                  <input id="ap221-8a" type="radio" name="sc221-8a" value="pass"><label for="ap221-8a">Zgodne</label>
+                  <input id="af221-8a" type="radio" name="sc221-8a" value="fail"><label for="af221-8a">Niezgodne</label>
+                  <input id="an221-8a" type="radio" name="sc221-8a" value="na"><label for="an221-8a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+				
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#time-limits-pause" rel="external" aria-describedby="g22">2.2.2 Pauza, zatrzymanie, ukrycie (Poziom&#160;A)</a></legend>
+                  <input id="ap222" type="radio" name="sc222" value="pass"><label for="ap222">Zgodne</label>
+                  <input id="af222" type="radio" name="sc222" value="fail"><label for="af222">Niezgodne</label>
+                  <input id="an222" type="radio" name="sc222" value="na"><label for="an222"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#time-limits-pause" rel="external" aria-describedby="g22"><b>2.B Treści ruchome</b>. Użytkownik może wstrzymywać, zatrzymywać lub ukrywać treść, która miga, przesuwa się lub przewija przez ponad 5 sekund</a></legend>
+                  <input id="ap222-2b" type="radio" name="sc222-2b" value="pass"><label for="ap222-2b">Zgodne</label>
+                  <input id="af222-2b" type="radio" name="sc222-2b" value="fail"><label for="af222-2b">Niezgodne</label>
+                  <input id="an222-2b" type="radio" name="sc222-2b" value="na"><label for="an222-2b"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#time-limits-pause" rel="external" aria-describedby="g22"><b>2.C Automatyczna aktualizacja</b>. Użytkownik może wstrzymywać, zatrzymywać, ukrywać lub kontrolować częstotliwość automatycznego aktualizowania treści.</a></legend>
+                  <input id="ap222-2c" type="radio" name="sc222-2c" value="pass"><label for="ap222-2c">Zgodne</label>
+                  <input id="af222-2c" type="radio" name="sc222-2c" value="fail"><label for="af222-2c">Niezgodne</label>
+                  <input id="an222-2c" type="radio" name="sc222-2c" value="na"><label for="an222-2c"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>					
+
+              </li>
+            </ol>
+          </section>
+          <section class="mrgn-tp-lg">
+            <h4 id="g23"><b>Wytyczna 2.3 Ataki padaczki:</b> Projektuj treść tak, aby nie powodowała ona u niektórych użytkowników napadów chorobowych.</h4>
+            <ol>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#seizure-does-not-violate" rel="external" aria-describedby="g23">2.3.1 Trzy błyski lub przekaz podprogowy (Poziom&#160;A)</a></legend>
+                  <input id="ap231" type="radio" name="sc231" value="pass"><label for="ap231">Zgodne</label>
+                  <input id="af231" type="radio" name="sc231" value="fail"><label for="af231">Niezgodne</label>
+                  <input id="an231" type="radio" name="sc231" value="na"><label for="an231"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#seizure-does-not-violate" rel="external" aria-describedby="g23"><b>3.A Migotanie.</b> Na stronie internetowej nie ma treści migających, które mogą wywołać napady epileptyczne</a></legend>
+                  <input id="ap231-3a" type="radio" name="sc231-3a" value="pass"><label for="ap231-3a">Zgodne</label>
+                  <input id="af231-3a" type="radio" name="sc231-3a" value="fail"><label for="af231-3a">Niezgodne</label>
+                  <input id="an231-3a" type="radio" name="sc231-3a" value="na"><label for="an231-3a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+				
+				
+				
+				
+				
+				
+              </li>
+            </ol>
+          </section>
+          <section class="mrgn-tp-lg">
+            <h4 id="g24"><b>Wytyczna 2.4 Możliwość nawigacji:</b> Dodaj elementy wspomagające orientację, nawigację i znajdowanie treści w witrynie.</h4>
+            <ol>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-skip" rel="external" aria-describedby="g24">2.4.1 Możliwość pominięcia bloków (Poziom&#160;A)</a></legend>
+                  <input id="ap241" type="radio" name="sc241" value="pass"><label for="ap241">Zgodne</label>
+                  <input id="af241" type="radio" name="sc241" value="fail"><label for="af241">Niezgodne</label>
+                  <input id="an241" type="radio" name="sc241" value="na"><label for="an241"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-skip" rel="external" aria-describedby="g24"><b>9.A Omijanie treści</b>. Istnieje metoda ominięcia tylko za pomocą klawiatury powtarzanych treści.		</a></legend>
+                  <input id="ap241-9a" type="radio" name="sc241-9a" value="pass"><label for="ap241-9a">Zgodne</label>
+                  <input id="af241-9a" type="radio" name="sc241-9a" value="fail"><label for="af241-9a">Niezgodne</label>
+                  <input id="an241-9a" type="radio" name="sc241-9a" value="na"><label for="an241-9a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+				
+	
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-title" rel="external" aria-describedby="g24">2.4.2 Tytuł strony (Poziom&#160;A)</a></legend>
+                  <input id="ap242" type="radio" name="sc242" value="pass"><label for="ap242">Zgodne</label>
+                  <input id="af242" type="radio" name="sc242" value="fail"><label for="af242">Niezgodne</label>
+                  <input id="an242" type="radio" name="sc242" value="na"><label for="an242"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-title" rel="external" aria-describedby="g24"><b>12.A Określono tytuł strony</b>. Strona ma tytuł zdefiniowany w kodzie znacznikiem <code>title</code>.</a></legend>
+                  <input id="ap242-12a" type="radio" name="sc242-12a" value="pass"><label for="ap242-12a">Zgodne</label>
+                  <input id="af242-12a" type="radio" name="sc242-12a" value="fail"><label for="af242-12a">Niezgodne</label>
+                  <input id="an242-12a" type="radio" name="sc242-12a" value="na"><label for="an242-12a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-title" rel="external" aria-describedby="g24"><b>12.B Tytuł opisuje treść strony</b>. Tytuł strony opisuje jej treść lub cel.</a></legend>
+                  <input id="ap242-12b" type="radio" name="sc242-12b" value="pass"><label for="ap242-12b">Zgodne</label>
+                  <input id="af242-12b" type="radio" name="sc242-12b" value="fail"><label for="af242-12b">Niezgodne</label>
+                  <input id="an242-12b" type="radio" name="sc242-12b" value="na"><label for="an242-12b"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>					
+
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-order" rel="external" aria-describedby="g24">2.4.3 Kolejność fokusa (Poziom&#160;A)</a></legend>
+                  <input id="ap243" type="radio" name="sc243" value="pass"><label for="ap243">Zgodne</label>
+                  <input id="af243" type="radio" name="sc243" value="fail"><label for="af243">Niezgodne</label>
+                  <input id="an243" type="radio" name="sc243" value="na"><label for="an243"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-order" rel="external" aria-describedby="g24"><b>4.F Kolejność fokusa</b>. Kolejność ustawiania fokusa zachowuje znaczenie i użyteczność strony.</a></legend>
+                  <input id="ap243-4f" type="radio" name="sc243-4f" value="pass"><label for="ap243-4f">Zgodne</label>
+                  <input id="af243-4f" type="radio" name="sc243-4f" value="fail"><label for="af243-4f">Niezgodne</label>
+                  <input id="an243-4f" type="radio" name="sc243-4f" value="na"><label for="an243-4f"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-order" rel="external" aria-describedby="g24"><b>4.G Fokus do treści odkrytej</b>. Fokus jest przenoszony na odkryte treści.</a></legend>
+                  <input id="ap243-4g" type="radio" name="sc243-4g" value="pass"><label for="ap243-4g">Zgodne</label>
+                  <input id="af243-4g" type="radio" name="sc243-4g" value="fail"><label for="af243-4g">Niezgodne</label>
+                  <input id="an243-4g" type="radio" name="sc243-4g" value="na"><label for="an243-4g"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-order" rel="external" aria-describedby="g24"><b>4.H Powrót fokusa z treści odkrytej</b>. Fokus powraca do logicznej sekwencji</a></legend>
+                  <input id="ap243-4h" type="radio" name="sc243-4h" value="pass"><label for="ap243-4h">Zgodne</label>
+                  <input id="af243-4h" type="radio" name="sc243-4h" value="fail"><label for="af243-4h">Niezgodne</label>
+                  <input id="an243-4h" type="radio" name="sc243-4h" value="na"><label for="an243-4h"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>	
+
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-refs" rel="external" aria-describedby="g24">2.4.4 Cel linku (z kontekstem) (Poziom&#160;A)</a></legend>
+                  <input id="ap244" type="radio" name="sc244" value="pass"><label for="ap244">Zgodne</label>
+                  <input id="af244" type="radio" name="sc244" value="fail"><label for="af244">Niezgodne</label>
+                  <input id="an244" type="radio" name="sc244" value="na"><label for="an244"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-refs" rel="external" aria-describedby="g24"><b>6.A Cele łączy przycisków</b>. Cel każdego łącza lub przycisku można określić na podstawie dowolnej kombinacji tekstu łącza/przycisku, dostępnej nazwy, dostępnego opisu lub programowo określonego kontekstu łącza/przycisku.</a></legend>
+                  <input id="aap246-6a" type="radio" name="sc246-6a" value="pass"><label for="aap246-6a">Zgodne</label>
+                  <input id="aaf246-6a" type="radio" name="sc246-6a" value="fail"><label for="aaf246-6a">Niezgodne</label>
+                  <input id="aan246-6a" type="radio" name="sc246-6a" value="na"><label for="aan246-6a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>					
+					
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-mult-loc" rel="external" aria-describedby="g24">2.4.5 Wiele dróg (Poziom&#160;AA)</a></legend>
+                  <input id="aap245" type="radio" name="sc245" value="pass"><label for="aap245">Zgodne</label>
+                  <input id="aaf245" type="radio" name="sc245" value="fail"><label for="aaf245">Niezgodne</label>
+                  <input id="aan245" type="radio" name="sc245" value="na"><label for="aan245"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-mult-loc" rel="external" aria-describedby="g24"><b>19.A Wiele dróg</b>. Istnieją dwa lub więcej sposobów na zlokalizowanie strony internetowej w ramach jednego zestawu stron internetowych.	</a></legend>
+                  <input id="aap245-19a" type="radio" name="sc245-19a" value="pass"><label for="aap245-19a">Zgodne</label>
+                  <input id="aaf245-19a" type="radio" name="sc245-19a" value="fail"><label for="aaf245-19a">Niezgodne</label>
+                  <input id="aan245-19a" type="radio" name="sc245-19a" value="na"><label for="aan245-19a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-descriptive" rel="external" aria-describedby="g24">2.4.6 Nagłówki i etykiety (Poziom&#160;AA)</a></legend>
+                  <input id="aap246" type="radio" name="sc246" value="pass"><label for="aap246">Zgodne</label>
+                  <input id="aaf246" type="radio" name="sc246" value="fail"><label for="aaf246">Niezgodne</label>
+                  <input id="aan246" type="radio" name="sc246" value="na"><label for="aan246"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-descriptive" rel="external" aria-describedby="g24"><b>5.B Opisowe etykiety</b>. Każda etykieta lub instrukcja w formularzu wystarczająco informuje użytkowników, jakie dane są oczekiwane.</a></legend>
+                  <input id="aap246-5b" type="radio" name="sc246-5b" value="pass"><label for="aap246-5b">Zgodne</label>
+                  <input id="aaf246-5b" type="radio" name="sc246-5b" value="fail"><label for="aaf246-5b">Niezgodne</label>
+                  <input id="aan246-5b" type="radio" name="sc246-5b" value="na"><label for="aan246-5b"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+		
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-visible" rel="external" aria-describedby="g24">2.4.7 Widoczny fokus (Poziom&#160;AA)</a></legend>
+                  <input id="aap247" type="radio" name="sc247" value="pass"><label for="aap247">Zgodne</label>
+                  <input id="aaf247" type="radio" name="sc247" value="fail"><label for="aaf247">Niezgodne</label>
+                  <input id="aan247" type="radio" name="sc247" value="na"><label for="aan247"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#navigation-mechanisms-focus-visible" rel="external" aria-describedby="g24"><b>4.D Widoczny fokus</b>. Graficzny wskaźnik fokusa jest wyświetlany, gdy fokus znajduje się na komponencie interfejsu.</a></legend>
+                  <input id="aap247-4d" type="radio" name="sc247-4d" value="pass"><label for="aap247-4d">Zgodne</label>
+                  <input id="aaf247-4d" type="radio" name="sc247-4d" value="fail"><label for="aaf247-4d">Niezgodne</label>
+                  <input id="aan247-4d" type="radio" name="sc247-4d" value="na"><label for="aan247-4d"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+		
+				
+				
+              </li>
+            </ol>
+          </section>
+          <section class="mrgn-tp-lg">
+            <h4 id="g25"><b>Wytyczna 2.5 Sposoby wprowadzania danych:</b> Ułatwiaj użytkownikom wprowadzanie danych za pomocą różnych sposobów (klawiatura, mysz, dotyk)</h4>
+            <ol>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#pointer-gestures" rel="external" aria-describedby="g25">2.5.1 Gesty wskazujące (Poziom&#160;A)</a></legend>
+                  <input id="ap251" type="radio" name="sc251" value="pass"><label for="ap251">Zgodne</label>
+                  <input id="af251" type="radio" name="sc251" value="fail"><label for="af251">Niezgodne</label>
+                  <input id="an251" type="radio" name="sc251" value="na"><label for="an251"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#pointer-cancellation" rel="external" aria-describedby="g25">2.5.2 Rezygnacja ze wskazania (Poziom&#160;A)</a></legend>
+                  <input id="ap252" type="radio" name="sc252" value="pass"><label for="ap252">Zgodne</label>
+                  <input id="af252" type="radio" name="sc252" value="fail"><label for="af252">Niezgodne</label>
+                  <input id="an252" type="radio" name="sc252" value="na"><label for="an252"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#label-in-name" rel="external" aria-describedby="g25">2.5.3 Etykieta w nazwie (Poziom&#160;A)</a></legend>
+                  <input id="ap253" type="radio" name="sc253" value="pass"><label for="ap253">Zgodne</label>
+                  <input id="af253" type="radio" name="sc253" value="fail"><label for="af253">Niezgodne</label>
+                  <input id="an253" type="radio" name="sc253" value="na"><label for="an253"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#motion-actuation" rel="external" aria-describedby="g25">2.5.4 Aktywowanie ruchem (Poziom&#160;A)</a></legend>
+                  <input id="ap254" type="radio" name="sc254" value="pass"><label for="ap254">Zgodne</label>
+                  <input id="af254" type="radio" name="sc254" value="fail"><label for="af254">Niezgodne</label>
+                  <input id="an254" type="radio" name="sc254" value="na"><label for="an254"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+            </ol>
+          </section>
+        </section>
+        <section>
+          <h3 id="wcag3"><b>Zasada:</b> Zrozumiałość</h3>
+          <p>Dbaj o to, aby wszystko było zrozumiałe</p>
+          <section class="mrgn-tp-lg">
+            <h4 id="g31"><b>Wytyczna 3.1 Czytelność:</b> Twórz treści możliwe do odczytania i łatwe do zrozumienia</h4>
+            <ol>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#meaning-doc-lang-id" rel="external" aria-describedby="g31">3.1.1 Język strony (Poziom&#160;A)</a></legend>
+                  <input id="ap311" type="radio" name="sc311" value="pass"><label for="ap311">Zgodne</label>
+                  <input id="af311" type="radio" name="sc311" value="fail"><label for="af311">Niezgodne</label>
+                  <input id="an311" type="radio" name="sc311" value="na"><label for="an311"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#meaning-doc-lang-id" rel="external" aria-describedby="g31"><b>11.A Określono język strony</b>: Domyślny ludzki język każdej strony można ustalić programowo.</a></legend>
+                  <input id="ap311-11a" type="radio" name="sc311-11a" value="pass"><label for="ap311-11a">Zgodne</label>
+                  <input id="af311-11a" type="radio" name="sc311-11a" value="fail"><label for="af311-11a">Niezgodne</label>
+                  <input id="an311-11a" type="radio" name="sc311-11a" value="na"><label for="an311-11a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#meaning-other-lang-id" rel="external" aria-describedby="g31">3.1.2 Język części (Poziom&#160;AA)</a></legend>
+                  <input id="aap312" type="radio" name="sc312" value="pass"><label for="aap312">Zgodne</label>
+                  <input id="aaf312" type="radio" name="sc312" value="fail"><label for="aaf312">Niezgodne</label>
+                  <input id="aan312" type="radio" name="sc312" value="na"><label for="aan312"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#meaning-other-lang-id" rel="external" aria-describedby="g31"><b>11. B Określono język części</b>. Język ludzki dla każdego segmentu zawartości, który różni się od domyślnego języka ludzkiego strony, może być określony programowo.</a></legend>
+                  <input id="aap312-11b" type="radio" name="sc312-11b" value="pass"><label for="aap312-11b">Zgodne</label>
+                  <input id="aaf312-11b" type="radio" name="sc312-11b" value="fail"><label for="aaf312-11b">Niezgodne</label>
+                  <input id="aan312-11b" type="radio" name="sc312-11b" value="na"><label for="aan312-11b"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+				
+				
+              </li>
+            </ol>
+          </section>
+          <section class="mrgn-tp-lg">
+            <h4 id="g32"><b>Wytyczna 3.2 Przewidywalność:</b> Twórz strony internetowe tak, aby otwierały się, wyglądały i działały w sposób przewidywalny.</h4>
+            <ol>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#consistent-behavior-receive-focus" rel="external" aria-describedby="g32">3.2.1 Po otrzymaniu fokusa (Poziom&#160;A)</a></legend>
+                  <input id="ap321" type="radio" name="sc321" value="pass"><label for="ap321">Zgodne</label>
+                  <input id="af321" type="radio" name="sc321" value="fail"><label for="af321">Niezgodne</label>
+                  <input id="an321" type="radio" name="sc321" value="na"><label for="an321"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#consistent-behavior-receive-focus" rel="external" aria-describedby="g32"><b>4.E Po otrzymaniu fokusa</b>.  Przeniesienie fokusa na element interaktywny nie inicjuje zmiany kontekstu</a></legend>
+                  <input id="ap321-4e" type="radio" name="sc321-4e" value="pass"><label for="ap321-4e">Zgodne</label>
+                  <input id="af321-4e" type="radio" name="sc321-4e" value="fail"><label for="af321-4e">Niezgodne</label>
+                  <input id="an321-4e" type="radio" name="sc321-4e" value="na"><label for="an321-4e"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+		
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#consistent-behavior-unpredictable-change" rel="external" aria-describedby="g32">3.2.2 Podczas wprowadzania danych (Poziom&#160;A)</a></legend>
+                  <input id="ap322" type="radio" name="sc322" value="pass"><label for="ap322">Zgodne</label>
+                  <input id="af322" type="radio" name="sc322" value="fail"><label for="af322">Niezgodne</label>
+                  <input id="an322" type="radio" name="sc322" value="na"><label for="an322"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#consistent-behavior-unpredictable-change" rel="external" aria-describedby="g32"><b>5.D Podczas wprowadzania danych</b>. Żadna zmiana wyboru albo wartości w polu formularza (np. wprowadzanie danych w polu tekstowym, zmiana wyboru przycisku opcji), ani opuszczenie pola formularza nie inicjuje nieoczekiwanej zmiany kontekstu</a></legend>
+                  <input id="ap322-5d" type="radio" name="sc322-5d" value="pass"><label for="ap322-5d">Zgodne</label>
+                  <input id="af322-5d" type="radio" name="sc322-5d" value="fail"><label for="af322-5d">Niezgodne</label>
+                  <input id="an322-5d" type="radio" name="sc322-5d" value="na"><label for="an322-5d"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+				
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-locations" rel="external" aria-describedby="g32">3.2.3 Spójna nawigacja (Poziom&#160;AA)</a></legend>
+                  <input id="aap323" type="radio" name="sc323" value="pass"><label for="aap323">Zgodne</label>
+                  <input id="aaf323" type="radio" name="sc323" value="fail"><label for="aaf323">Niezgodne</label>
+                  <input id="aan323" type="radio" name="sc323" value="na"><label for="aan323"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-locations" rel="external" aria-describedby="g32"><b>9.B Spójna nawigacja</b>. Każdy element nawigacyjny występuje w tej samej względnej kolejności w odniesieniu do innych powtarzających się elementów na każdej stronie internetowej, na której się pojawia.</a></legend>
+                  <input id="aap323-9b" type="radio" name="sc323-9b" value="pass"><label for="aap323-9b">Zgodne</label>
+                  <input id="aaf323-9b" type="radio" name="sc323-9b" value="fail"><label for="aaf323-9b">Niezgodne</label>
+                  <input id="aan323-9b" type="radio" name="sc323-9b" value="na"><label for="aan323-9b"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-functionality" rel="external" aria-describedby="g32">3.2.4 Spójna identyfikacja (Poziom&#160;AA)</a></legend>
+                  <input id="aap324" type="radio" name="sc324" value="pass"><label for="aap324">Zgodne</label>
+                  <input id="aaf324" type="radio" name="sc324" value="fail"><label for="aaf324">Niezgodne</label>
+                  <input id="aan324" type="radio" name="sc324" value="na"><label for="aan324"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#consistent-behavior-consistent-functionality" rel="external" aria-describedby="g32"><b>9.C Spójna identyfikacja</b>. Dostępne nazwy i opisy komponentów wykonujących tę samą funkcję są spójne (takie same).</a></legend>
+                  <input id="aap324-9c" type="radio" name="sc324-9c" value="pass"><label for="aap324-9c">Zgodne</label>
+                  <input id="aaf324-9c" type="radio" name="sc324-9c" value="fail"><label for="aaf324-9c">Niezgodne</label>
+                  <input id="aan324-9c" type="radio" name="sc324-9c" value="na"><label for="aan324-9c"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+
+			
+				
+              </li>
+            </ol>
+          </section>
+          <section class="mrgn-tp-lg">
+            <h4 id="g33"><b>Wytyczna 3.3 Pomoc przy wprowadzaniu danych:</b> Pomagaj użytkownikom unikać błędów i je poprawiać.</h4>
+            <ol>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#minimize-error-identified" rel="external" aria-describedby="g33">3.3.1 Identyfikacja błędów (Poziom&#160;A)</a></legend>
+                  <input id="ap331" type="radio" name="sc331" value="pass"><label for="ap331">Zgodne</label>
+                  <input id="af331" type="radio" name="sc331" value="fail"><label for="af331">Niezgodne</label>
+                  <input id="an331" type="radio" name="sc331" value="na"><label for="an331"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#minimize-error-identified" rel="external" aria-describedby="g33"><b>5.F Identyfikacja błędów</b>. Błędnie wypełniony element formularza jest wskazany i wystarczająco opisany użytkownikowi w tekście.</a></legend>
+                  <input id="ap331-5f" type="radio" name="sc331-5f" value="pass"><label for="ap331-5f">Zgodne</label>
+                  <input id="af331-5f" type="radio" name="sc331-5f" value="fail"><label for="af331-5f">Niezgodne</label>
+                  <input id="an331-5f" type="radio" name="sc331-5f" value="na"><label for="an331-5f"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#minimize-error-cues" rel="external" aria-describedby="g33">3.3.2 Etykiety lub instrukcje (Poziom&#160;A)</a></legend>
+                  <input id="ap332" type="radio" name="sc332" value="pass"><label for="ap332">Zgodne</label>
+                  <input id="af332" type="radio" name="sc332" value="fail"><label for="af332">Niezgodne</label>
+                  <input id="an332" type="radio" name="sc332" value="na"><label for="an332"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#minimize-error-cues" rel="external" aria-describedby="g33"><b>5.A Etykiety lub instrukcje</b>	Każde pole formularza ma etykietę lub instrukcję ekranową.</a></legend>
+                  <input id="ap332-5a" type="radio" name="sc332-5a" value="pass"><label for="ap332-5a">Zgodne</label>
+                  <input id="af332-5a" type="radio" name="sc332-5a" value="fail"><label for="af332-5a">Niezgodne</label>
+                  <input id="an332-5a" type="radio" name="sc332-5a" value="na"><label for="an332-5a"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+
+				
+				
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#minimize-error-suggestions" rel="external" aria-describedby="g33">3.3.3 Sugestie korekty błędów (Poziom&#160;AA)</a></legend>
+                  <input id="aap333" type="radio" name="sc333" value="pass"><label for="aap333">Zgodne</label>
+                  <input id="aaf333" type="radio" name="sc333" value="fail"><label for="aaf333">Niezgodne</label>
+                  <input id="aan333" type="radio" name="sc333" value="na"><label for="aan333"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#minimize-error-suggestions" rel="external" aria-describedby="g33"><b>5.G Sugestie poprawy błędów</b>. Podano wskazówki dotyczące sposobu poprawienia błędów w polach formularza.</a></legend>
+                  <input id="aap333-5g" type="radio" name="sc333-5g" value="pass"><label for="aap333-5g">Zgodne</label>
+                  <input id="aaf333-5g" type="radio" name="sc333-5g" value="fail"><label for="aaf333-5g">Niezgodne</label>
+                  <input id="aan333-5g" type="radio" name="sc333-5g" value="na"><label for="aan333-5g"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+				
+				
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#minimize-error-reversible" rel="external" aria-describedby="g33">3.3.4 Zapobieganie błędom (formularze prawne, finansowe, z podawaniem danych) (Poziom&#160;AA)</a></legend>
+                  <input id="aap334" type="radio" name="sc334" value="pass"><label for="aap334">Zgodne</label>
+                  <input id="aaf334" type="radio" name="sc334" value="fail"><label for="aaf334">Niezgodne</label>
+                  <input id="aan334" type="radio" name="sc334" value="na"><label for="aan334"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+            </ol>
+          </section>
+        </section>
+        <section>
+          <h3 id="wcag4"><b>Zasada:</b> Rzetelność</h3>
+          <p>Dbaj o to, aby wszystko było solidnie zrobione</p>
+          <section class="mrgn-tp-lg">
+            <h4 id="g41"><b>Wytyczna 4.1 Kompatybilność:</b> Staraj się zachować jak najwyższy stopień zgodności  aktualnymi i przyszłymi programami użytkownika, w tym technologiami pomocniczymi.
+
+            </h4>
+            <ol>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#ensure-compat-parses" rel="external" aria-describedby="g41">4.1.1 Parsowanie (Poziom&#160;A)</a></legend>
+                  <input id="ap411" type="radio" name="sc411" value="pass"><label for="ap411">Zgodne</label>
+                  <input id="af411" type="radio" name="sc411" value="fail"><label for="af411">Niezgodne</label>
+                  <input id="an411" type="radio" name="sc411" value="na"><label for="an411"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#ensure-compat-rsv" rel="external" aria-describedby="g41">4.1.2 Nazwa, rola, wartość (Poziom&#160;A)</a></legend>
+                  <input id="ap412" type="radio" name="sc412" value="pass"><label for="ap412">Zgodne</label>
+                  <input id="af412" type="radio" name="sc412" value="fail"><label for="af412">Niezgodne</label>
+                  <input id="an412" type="radio" name="sc412" value="na"><label for="an412"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#ensure-compat-rsv" rel="external" aria-describedby="g41"><b>2.D Powiadamianie o automatycznej zmianie.</b> Strona zawiera powiadomienia o każdej automatycznej aktualizacji / zmianie treści.</a></legend>
+                  <input id="ap412-2d" type="radio" name="sc412-2d" value="pass"><label for="ap412-2d">Zgodne</label>
+                  <input id="af412-2d" type="radio" name="sc412-2d" value="fail"><label for="af412-2d">Niezgodne</label>
+                  <input id="an412-2d" type="radio" name="sc412-2d" value="na"><label for="an412-2d"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>				
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#ensure-compat-rsv" rel="external" aria-describedby="g41"><b>5.E Powiadamianie o zmianie.</b> Strona powiadamia użytkownika o każdej zmianie treści związanej z formularzem.</a></legend>
+                  <input id="ap412-5e" type="radio" name="sc412-5e" value="pass"><label for="ap412-5e">Zgodne</label>
+                  <input id="af412-5e" type="radio" name="sc412-5e" value="fail"><label for="af412-5e">Niezgodne</label>
+                  <input id="an412-5e" type="radio" name="sc412-5e" value="na"><label for="an412-5e"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>					
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#ensure-compat-rsv" rel="external" aria-describedby="g41"><b>6.B Łącza - powiadamianie o zmianach.</b> Użytkownik jest powiadamiany o każdej zmianie treści, która jest wynikiem interakcji z łączem lub przyciskiem.</a></legend>
+                  <input id="ap412-6b" type="radio" name="sc412-6b" value="pass"><label for="ap412-6b">Zgodne</label>
+                  <input id="af412-6b" type="radio" name="sc412-6b" value="fail"><label for="af412-6b">Niezgodne</label>
+                  <input id="an412-6b" type="radio" name="sc412-6b" value="na"><label for="an412-6b"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>	
+
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#ensure-compat-rsv" rel="external" aria-describedby="g41"><b>12.C Określono tytuł ramki.</b> Każdy element <code>frame</code> ma atrybut tytułu, który opisuje treść ramki.</a></legend>
+                  <input id="ap412-12c" type="radio" name="sc412-12c" value="pass"><label for="ap412-12c">Zgodne</label>
+                  <input id="af412-12c" type="radio" name="sc412-12c" value="fail"><label for="af412-12c">Niezgodne</label>
+                  <input id="an412-12c" type="radio" name="sc412-12c" value="na"><label for="an412-12c"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>	
+
+                <fieldset>
+                  <legend class="testdescr"><a href="https://wcag.lepszyweb.pl/#ensure-compat-rsv" rel="external" aria-describedby="g41"><b>12.D Nazwa ramki łączonej.</b> Kombinacja dostępnej nazwy i opisu każdej <code>iframe</code> opisuje jej zawartość.</a></legend>
+                  <input id="ap412-12d" type="radio" name="sc412-12d" value="pass"><label for="ap412-12d">Zgodne</label>
+                  <input id="af412-12d" type="radio" name="sc412-12d" value="fail"><label for="af412-12d">Niezgodne</label>
+                  <input id="an412-12d" type="radio" name="sc412-12d" value="na"><label for="an412-12d"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>	
+              </li>
+              <li>
+                <fieldset>
+                  <legend><a href="https://wcag.lepszyweb.pl/#status-messages" rel="external" aria-describedby="g41">4.1.3 Komunikaty o stanie (Poziom&#160;AA)</a></legend>
+                  <input id="aap413" type="radio" name="sc413" value="pass"><label for="aap413">Zgodne</label>
+                  <input id="aaf413" type="radio" name="sc413" value="fail"><label for="aaf413">Niezgodne</label>
+                  <input id="aan413" type="radio" name="sc413" value="na"><label for="aan413"><abbr title="Nie dotyczy">ND</abbr></label>
+                </fieldset>
+              </li>
+            </ol>
+          </section>
+        </section>
+        <section>
+          <h3 id="sm">Podsumowanie</h3>
+          <table id="summary" class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Poziom&#160;A - zaliczone kryteria sukcesu</th>
+                <td class="text-right"><span id="rsltA"></span>/30 (<span id="percA"></span>%)</td>
+              </tr>
+              <tr>
+                <th scope="row">Poziom&#160;AA - zaliczone kryteria sukcesu</th>
+                <td class="text-right"><span id="rsltAA"></span>/20 (<span id="percAA"></span>%)</td>
+              </tr>
+              <tr class="success">
+                <th scope="row">Ogółem zaliczonych kryteriów sukcesu</th>
+                <td class="text-right"><span id="rsltTotal"></span>/50 (<span id="percTotal"></span>%)</td>
+              </tr>
+              <tr class="active">
+                <th scope="row">Ocenionych kryteriów sukcesu</th>
+                <td class="text-right"><span id="evalTotal"></span>/50 (<span id="percEvalTotal"></span>%)</td>
+              </tr>
+              <tr class="active">
+                <th scope="row">Kryteriów sukcesu, które nie mają zastosowania (<abbr title="Nie dotyczy">ND</abbr>)</th>
+                <td class="text-right"><span id="naTotal"></span>/50 (<span id="percNATotal"></span>%)</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong>Uwaga:</strong> Liczba zaliczonych kryteriów sukcesu to całkowita liczba kryteriów sukcesu zgodnych i <abbr title="Nie dotyczy">ND</abbr>.</p>
+        </section>
+      </section>
+      <section>
+        <h2 id="gl">Słownik</h2>
+        <section>
+          <h3 id="reliedupondef">Technologia stanowiąca podstawę zgodności</h3>
+          <p>Technologia internetowa, które musi być obsługiwana, aby treść spełniała wymogi zgodności. Treść nie byłaby  <a href="https://wcag.lepszyweb.pl/#conformancedef" rel="external">zgodna</a> gdyby taka technologia <a href="https://wcag.lepszyweb.pl/#technologydef" rel="external">technologia</a> została wyłączona z oceny lub nie była obsługiwana.</p>
+          <p><strong>Źródło:</strong> <a href="https://wcag.lepszyweb.pl/#reliedupondef" rel="external">Web Content Accessibility Guidelines (WCAG) 2.0, Appendix A: Glossary, relied upon (technologies that are)</a></p>
+        </section>
+        <section>
+          <h3 id="success">Kryteria sukcesu</h3>
+          <p>Dla każdej wytycznej opracowano mierzalne kryteria sukcesu. Pozwala to na zastosowanie WCAG 2.1 wszędzie tam, gdzie konieczne jest sprawdzenie zgodności z wytycznymi, np. przy specyfikacji projektu, zamawianiu usług internetowych, w przepisach prawnych oraz przy umowach. Aby zaspokoić potrzeby różnych grup i różnych sytuacji, zdefiniowano trzy poziomy zgodności: A (najniższy), AA i AAA (najwyższy). Dodatkowe informacje na temat poziomów WCAG można znaleźć na stronie  <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-levels-head" rel="external">Understanding Levels of Conformance</a> (Zrozumieć poziomy zgodności).</p>
+          <p><strong>Źródło:</strong> <a href="https://wcag.lepszyweb.pl/#intro-layers-guidance" rel="external">Web Content Accessibility Guidelines (WCAG) 2.0, WCAG 2.0 Layers of Guidance</a></p>
+        </section>
+
+
+
+        <section>
+          <h3 id="sufftech">Techniki wystarczające i dodatkowe</h3>
+          <p>Dla każdej wytycznej oraz kryterium sukcesu w WCAG 2.1, grupa robocza zebrała szereg technik (dokument ma charakter informacyjny, ale nie formalny). Podzielono je na dwie kategorie: techniki wystarczające, by spełnić kryteria sukcesu, oraz techniki dodatkowe. Techniki dodatkowe wykraczają poza to, co jest wymagane przez dane kryteria sukcesu i pozwalają wykonawcom i autorom na jeszcze lepszą realizację wytycznych. Niektóre techniki dodatkowe dotyczą barier dostępności, które nie zostały ujęte w mierzalnych kryteriach sukcesu. Często występujące błędy w miarę możliwości również zostały udokumentowane. Więcej informacji w <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/intro.html#introduction-layers-techs-head" rel="external">Sufficient and Advisory Techniques in Understanding WCAG</a> (Zrozumieć techniki dla kryteriów sukcesu WCAG).</p>
+          <p><strong>Źródło:</strong> <a href="https://wcag.lepszyweb.pl/#intro-layers-guidance" rel="external">Web Content Accessibility Guidelines (WCAG) 2.0, WCAG 2.0 Layers of Guidance</a></p>
+        </section>
+
+
+        <section>
+          <h3 id="technologydef">Technologie (treści internetowych)</h3>
+          <p><a href="https://wcag.lepszyweb.pl/#mechanismdef" rel="external">Mechanizmy</a> służące do odkodowania danych, które mogą być zrenderowane, pokazane lub wykonane przez <a href="https://wcag.lepszyweb.pl/#useragentdef" rel="external">oprogramowanie użytkownika</a>.</p>
+          <p><em>Uwaga 1:</em> Pojęcie użyte zarówno tak, jak w wytycznych „Technologia internetowa”, jak i słowo „technologia” (użyte osobno), odnoszą się do „Technologii zamieszczania treści w internecie”.</p>
+          <p><em>Uwaga 2:</em> Technologie umieszczania treści w internecie mogą uwzględniać język znaczników, formaty danych lub język programowania, który może być używany samodzielnie, albo w kombinacji z innymi, żeby stworzyć ostatecznie wersję dla użytkownika, która swoim zasięgiem obejmie statyczne strony internetowe, przez zsynchronizowaną prezentację multimedialną do dynamicznej aplikacji internetowej.</p>
+          <p><em>Przykład:</em> Często spotykane przykłady technologii zamieszczania treści w internecie uwzględniają HTML, CSS, SVG, PNG, PDF, Flash, i JavaScript.</p>
+          <p><strong>Źródło:</strong> <a href="https://wcag.lepszyweb.pl/#technologydef" rel="external">Web Content Accessibility Guidelines (WCAG) 2.0, Appendix A: Glossary, technology (Web content)</a></p>
+
+
+        </section>
+        <section>
+          <h3 id="webpagedef">Strona internetowa</h3>
+          <p>Nieosadzony zasób, uzyskany z pojedynczego identyfikatora URI za pomocą protokołu HTTP wraz z wszelkimi innymi zasobami użytymi do renderowania strony w <a href="https://wcag.lepszyweb.pl/#useragentdef" rel="external">oprogramowaniu użytkownika</a> lub takimi, które potencjalnie mogą być użyte do renderowania.</p>
+          <p><em>Uwaga 1:</em> Strony internetowe mogą zawierać treści multimedialne, komponenty interaktywne oraz bogate i mobilne aplikacje internetowe. Strony internetowe nie są ograniczone do formatu HTML i mogą być dokumentami PDF, a także dokumentami w innych formatach.</p>
+          <p><em>Uwaga 2:</em> Terminu „strona internetowa” używa się potocznie zarówno na oznaczenie pojedynczych stron internetowych, jak serwisów złożonych z wielu stron internetowych, czyli witryn.</p>
+          <p><em>Uwaga 3:</em> Powyższa definicja ogranicza stosowanie terminu „strona internetowa” tylko do zasobu uzyskanego z „pojedynczego identyfikatora URI”, a więc do jednej, pojedynczej samodzielnej strony internetowej albo jednej, pojedynczej strony w witrynie złożonej z wielu stron.</p>
+
+          <p><em>Przykład 1:</em> Zasób sieciowy, wraz ze wszystkimi osadzonymi obrazami i multimediami.</p>
+          <p><em>Przykład 2:</em> Sieciowy program pocztowy zbudowany w technologii AJAX (asynchroniczny Java Script i XML). Program znajduje się pod adresem http://przyklad.com/mail, ale posiada skrzynkę odbiorczą, kontakty i kalendarz. Wszystkie linki lub przyciski są zaprojektowane w sposób pozwalający na wyświetlanie skrzynki, kontaktów i kalendarza bez zmiany adresu URI.</p>
+          <p><em>Przykład 3:</em> Konfigurowalny portal internetowy, w którym użytkownik może wybrać wyświetlaną treść spośród różnych modułów.</p>
+          <p><em>Przykład 4:</em> Kiedy wprowadzasz np. adres "http://sklep.przyklad.com/" w przeglądarce, wchodzisz do wyglądającego jak film sklepu, po którym możesz się poruszać, zabierać towar z półek i umieszczać go w wózku przed sobą. Kliknięcie na produkt powoduje wyświetlenie go wraz ze specyfikacją. Może to być jednostronicowy serwis lub jedna ze stron internetowych w serwisie internetowym.</p>
+          <p><strong>Źródło:</strong> <a href="https://wcag.lepszyweb.pl/#webpagedef" rel="external">Web Content Accessibility Guidelines (WCAG) 2.0, Appendix A: Glossary, Web page</a></p>
+        </section>
+
+
+
+
+      </section>
+ <!-- szczegóły strony -->
+   <div class="pagedetails">
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-4">
+          <details class="brdr-0">
+            <summary class="btn btn-default text-center">Zgłoś problem z tą stroną</summary>
+
+  <div class="well row">
+    <div class="gc-rprt-prblm">
+      <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+        <form action="#">
+          <fieldset>
+            <legend><span class="field-name">Zaznacz wszystko, czego dotyczy zgłoszenie: </span></legend>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f1">
+                <input type="checkbox" name="problem1" value="Tak" id="gc-rprt-prblm-f1">Łącze, przycisk lub wideo nie działa
+              </label>
+              <input name="problem1" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f2">
+                <input type="checkbox" name="problem2" value="Tak" id="gc-rprt-prblm-f2">Na stronie są błędy ortograficzne lub gramatyczne
+              </label>
+              <input name="problem2" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f3">
+                <input type="checkbox" name="problem3" value="Tak" id="gc-rprt-prblm-f3">Informacje są błędne
+              </label>
+              <input name="problem3" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f4">
+                <input type="checkbox" name="problem4" value="Tak" id="gc-rprt-prblm-f4">Informacje są nieaktualne
+              </label>
+              <input name="problem4" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f5">
+                <input type="checkbox" name="problem5" value="Tak" id="gc-rprt-prblm-f5">Nie mogę znaleźć, czego szukam
+              </label>
+              <input name="problem5" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f6">
+                <input type="checkbox" name="problem6" value="Tak" id="gc-rprt-prblm-f6">Inne, ktorych nie ma na tej liście
+              </label>
+              <input name="problem6" type="hidden" value="Nie">
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Wyślij</button>
+        </form>
+      </div>
+      <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+        <h3>Dziękujemy za Twoją pomoc!</h3>
+        <p>Nie otrzymasz odpowiedzi na tę wiadomość. Jeśli masz pytania, <a href="https://lepszyweb.pl/kontakt.html">napisz do nas</a>.</p>
+      </div>
+    </div>
+  </div>
+</details>
+
+
+        </div>
+        <div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+      </div>
+      <dl id="wb-dtmd">
+        <dt>Data modyfikacji:</dt>
+        <dd>
+          <time property="dateModified">2020-06-10</time>
+        </dd>
+      </dl>
+    </div>
+
+    </main>
+   <footer id="wb-info">
+      <div class="landscape">
+        <nav class="container wb-navcurr">
+          <h2 class="wb-inv">O usługach LepszyWeb.pl</h2>
+          <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+            <li><a href="./pages/lw/kontakt.html">Skontaktuj się z nami</a></li>
+            <li><a href="./pages/lw/uslugi.html">Szkolenia</a></li>
+            <li><a href="./pages/lw/audyty.html">Audyty</a></li>
+            <li><a href="./pages/lw/blog.html">Blog</a></li>
+            <li><a href="./pages/lw/pomoc.html">Pomoc</a></li>
+            <li><a href="./pages/lw/raporty.html">Raporty</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+
+            <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+              <h2 class="wb-inv">O tej stronie</h2>
+              <ul>
+                <li><a href="./pages/prawne/o-lepszyweb.html/wsieci.html">W Sieci</a></li>
+                <li><a href="./pages/prawne/o-lepszyweb.html">O LepszyWeb.pl</a></li>
+                <li><a href="./pages/prawne/regulamin.html">Regulamin</a></li>
+                <li><a href="./pages/prawne/prywatnosc.html">Prywatność</a></li>			  
+                <li><a href="./pages/prawne/dostepnosc.html">Dostępność</a></li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg"> 
+              <a href="#wb-cont">Góra strony <span class="glyphicon glyphicon-chevron-up"></span></a> 
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="./../LWeb/assets/lepszyweb-min.svg" alt="Logo Pracowni Dostępności Cyfrowej LepszyWeb.pl"> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="./../wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <script src="demo/wamethod.min.js"></script>		
+    <!--[if lt IE 9]>
+	<script src="./../wet-boew/js/ie8-wet-boew2.min.js"></script>
+	
+	<![endif]-->
+    <script src="./../LWeb/js/theme.min.js"></script>		
+  </body>
+</html>

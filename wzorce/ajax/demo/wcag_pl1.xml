@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xml:lang="en" xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#style">
+	<head>
+		<styling>
+			<style id="defaultSpeaker" tts:fontSize="12" tts:fontFamily="Arial" tts:fontWeight="normal" tts:fontStyle="normal" tts:textDecoration="none" tts:color="white" tts:backgroundColor="black" tts:textAlign="center"/>
+			<style id="defaultCaption" tts:fontSize="12" tts:fontFamily="Arial" tts:fontWeight="normal" tts:fontStyle="normal" tts:textDecoration="none" tts:color="white" tts:backgroundColor="black" tts:textAlign="center"/>
+		</styling>
+	</head>
+	<body style="defaultCaption" id="thebody" xml:id="b1">
+      <div begin="0.0s" dur="10.0s">W-C-A-G, WCAG, jestem fajnym DJ-em,<br />SHARKY, SH-SH-SHARKY</div>
+      <div begin="11.003s" dur="6.0s">Hej, oszaleję z tym fajnym bitem, mam lepszy rytm od czasu,<br />gdy zainstalowałeś nowy program kwantyfikujący.</div>
+      <div begin="17.003s" dur="4.0s">Tańczę elektryczne boogie. Chcesz to zobaczyć David?</div>
+      <div begin="21.003s" dur="6.0s">Nie Sharky, musimy się zająć tą piosenką, możesz tańczyć,<br />kiedy ja śpiewam, ale nie wyciągaj się znowu z gniazdka.</div>
+      <div begin="27.003s" dur="4.0s">Mamy zupełnie nową specyfikację,<br />która wspódziała z narzędziem weryfikacji,</div>
+      <div begin="31.003s" dur="3.0s">sprawi, że dostępność będzie możliwa do sprawdzenia</div>
+      <div begin="34.003s" dur="8.8s">WCAG, WCAG</div>
+
+	</body>
+</tt>

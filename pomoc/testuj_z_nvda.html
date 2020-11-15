@@ -1,0 +1,354 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="pl" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl" dir="ltr">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Korzystanie z NVDA do oceny dostępności</title>
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="Zapewnia metodologię oceny, która pomaga w pomiarze zgodności z Wytycznymi dotyczącymi dostępności treści internetowych (WCAG) 2.1 Kryteria sukcesu Poziom A i AA.">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="./../LWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../LWeb/css/theme.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="demo/wamethod.min.css">
+    <!--[if lt IE 9]>
+  <link href="./../LWeb/assets/favicon.ico" rel="shortcut icon" />
+
+  <link rel="stylesheet" href="./../LWeb/css/ie8-theme.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="./../wet-boew/js/ie8-wet-boew.min.js"></script>
+  <![endif]-->
+    <!--[if lte IE 9]>
+
+
+  <![endif]-->
+    <noscript><link rel="stylesheet" href="./../wet-boew/css/noscript.min.css" /></noscript>
+  </head>
+
+ <body vocab="http://schema.org/" typeof="WebPage">
+    <nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-cont">Przejdź do treści głównej</a>
+        </li>
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-info">Przejdź do &bdquo;O tej stronie&rdquo;</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container">
+<!-- Sekcja Wybierz język -->
+<!-- Koniec sekcji Wybierz język -->
+
+        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+          <h2>Wyszukiwanie i menu</h2>
+          <ul class="pnl-btn list-inline text-right">
+            <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
+          </ul>
+          <div id="mb-pnl"></div>
+        </section>	 		
+
+
+
+        <div class="row">
+          <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="./../index.html" property="url"><img src="./../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
+            <meta property="areaServed" typeof="Country" content="Polska">
+            <link property="logo" href="./../LWeb/assets/lepszyweb-min.svg">
+          </div>
+          <section id="wb-srch" class="col-lg-8 text-right">
+            <h2>Szukaj</h2>
+            <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+              <div class="form-group">
+                <label for="wb-srch-q" class="wb-inv">Szukaj na LepszyWeb.pl</label>
+                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Szukaj na LepszyWeb.pl">
+                <datalist id="wb-srch-q-ac"> </datalist>
+              </div>
+              <div class="form-group submit">
+                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Szukaj</span></button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+	  
+      <nav role="navigation" id="wb-sm" data-ajax-replace="./../ajax/menu-audyt.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <div class="container nvbar">
+          <h2>Spis tematów</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a href="./index.html">O szkoleniu</a></li>
+              <li><a href="./przypadki/index.html">Przypadki</a></li>		  
+              <li><a href="./zgodne/index.html">Zgodne</a></li>
+              <li><a href="./niezgodne/index.html">Niezgodne</a></li>
+              <li><a href="./wzorce/index.html">Wzorce</a></li>
+              <li><a href="./szablony/index.html">Szablony</a></li>					  
+              <li><a href="./pomoc/index.html">Pomoc</a></li>		
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav role="navigation" id="wb-bc" property="breadcrumb">
+        <h2>Jesteś tutaj:</h2>
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>
+                <a href="./../index-en.html">Start</a>
+              </li>
+              <li>
+                <a href="./../demos/index-pl.html">Przykłady działania</a>
+              </li>
+              <li>Korzystanie z NVDA do oceny dostępności</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" property="mainContentOfPage" class="container">
+
+       <article id="maincontent">
+<h1>Testowanie z czytnikiem ekranu NVDA</h1>
+
+<div class="floatright"><img src="./../img/NVDA.jpg" alt="NVDA logo"></div>
+<p><span class="menuchoice">Uwaga:</span> To kawałek o tym, jak skonfigurować i używać NVDA. Bardziej szczegółową instrukcję obsługi tego czytnika ekranu, znajdziesz w naszym <a href="http://webaim.org/articles/nvda/">samouczku NVDA</a>.</p>
+<p>Spędzam dużo czasu na ocenie dostępności stron internetowych i dużą część tego czasu poświęcam na testy za pomocą czytnika ekranu. Mam dostęp do pełnych wersji JAWS oraz Window-Eyes. I chociaż oba są dobrymi czytnikami ekranu, najczęściej używam <a href="http://www.nvaccess.org/">NVDA</a>.</p>
+<p>NVDA jest:</p>
+<ul>
+<li><strong>Lekki</strong>: Muszę ciągle włączać i wyłączać czytnik ekranu, przełączać przeglądarki, etc. Potrzebuję czytnika ekranu, który mam ciągle pod ręką. Inne czytniki uruchamiają się zbyt długo i mają tendencję do awarii, zwłaszcza JAWS.</li>
+<li><strong>Bezpłatny</strong>: Nie jestem przeciwnikiem firm, które pobierają opłaty za swoje produkty, ale trudniej jest godzić się z wysoką ceną, jeśli używasz produktu tylko w celach ewaluacyjnych.</li>
+<li><strong>Zawsze aktualny</strong>: Aktualizacje są na bieżąco i zawsze bezproblemowe.</li>
+<li><strong>Wierny</strong>: Niektóre czytniki ekranów próbują wypełnić luki dostępności na przykład poprzez zgadywanie etykiet dla nieoznaczonych kontrolek formularzy. W NVDA jest mniej takich interwencji. Chociaż można dowodzić wyższości jednej metody nad drugą dla użytkowników, to wierna prezentacja jest doskonała do oceny dostępności.</li>
+</ul>
+
+<h2>Konfigurowanie NVDA</h2>
+<p>Chcę, aby moje doświadczenie użytkownika podczas testowania dostępności stron internetowych były tak &bdquo;typowe&rdquo;, jak tylko to możliwe, więc staram się nie konfigurować mojego programu udźwiękawiającego zbyt &bdquo;ciężko&rdquo;. Muszę jednak wprowadzić w konfiguracji kilka zmian, które sprawiają, że doświadczenie testera jest przyjemniejsze i efektywniejsze bez zmiany prezentowanych informacji.</p>
+<ol>
+<li><span class="menuchoice">Ustawienia &gt; Syntezator</span>. Zaznacz opcję &bdquo;<span class="menuchoice">Microsoft Speech API Version 5</span>&rdquo;.
+ Następnie konfiguruję <span class="menuchoice">Ustawienia &gt; Ustawienia głosu &gt; Głos</span>. Domyślny syntezator nie jest najłatwiejszy do zrozumienia, więc pierwszą rzeczą, jaką mogę zrobić, to zmienić domyślny głos. Ja używam Microsoft Paulina Destkop, ponieważ uważam ten głos za naturalnie brzmiący przy niższych prędkościach, ale nadal zrozumiały przy wyższych prędkościach.</li>
+<li><span class="menuchoice">Ustawienia &gt; Ustawienia głosu &gt; Prędkość</span>. Zazwyczaj powinna oscylować wokół 80-90, ale zajęło mi trochę czasu, nim taka prędkość stała się wygodna w użyciu. Często zmieniałem prędkość zależnie od złożoności strony.</li>
+<li><span class="menuchoice">Ustawienia &gt; Ustawienia klawiatury</span>
+<ol>
+<li>Jeśli masz zamiar korzystać z laptopa, zaznacz opcję  &bdquo;<span class="menuchoice">Użyj CapsLock jako klawisza modyfikującego NVDA</span>&rdquo;.</li>
+<li>Domyślnie NVDA odczytuje każdy znak w trakcie pisania. Uważam to za zbyt rozpraszające, więc odznacz &bdquo;<span class="menuchoice">Czytaj pisane znaki</span>&rdquo; i zaznacz &bdquo;<span class="menuchoice">Czytaj pisane słowa</span>&rdquo;.</li>
+</ol>
+</li>
+<li><span class="menuchoice">Narzędzia &gt; Zarządzaj dodatkami &gt; Pobierz dodatki &gt;</span> Wyszukaj dodatek &bdquo;<span class="menuchoice">Focus Highlight</span>&rdquo;. <span lang="en">Focus Highlight</span> dodaje prostokątny obrys na elemencie aktualnie czytanym lub z którym odbywa się interakcja. Uważam ten dodatek za niezwykle przydatny, zwłaszcza przy testowaniu witryn, w których nie ma obsługi <a href="http://webaim.org/blog/plague-of-outline-0/">punktów uwagi</a>.</li>
+
+</ol>
+<h2>Typowe polecenia</h2>
+<p>Chociaż NVDA zawiera kilkadziesiąt czy nawet kilkaset poleceń klawiaturowych, ja korzystam zazwyczaj z mniej niż 20. To są najczęściej używane przeze mnie polecenia klawiaturowe:</p>
+<table>
+<tbody><tr>
+<th scope="col">Polecenie</th>
+<th scope="col">Opis</th>
+</tr>
+<tr>
+<td>Klawisz &bdquo;NVDA&rdquo;</td>
+<td><span class="keycap">Insert</span>/<span class="keycap">Caps Lock</span></td>
+</tr>
+<tr>
+<td>Zatrzymaj</td>
+<td><span class="keycap">Ctrl</span></td>
+</tr>
+<tr>
+<td>Otwórz</td>
+<td><span class="keycap">Ctrl</span> + <span class="keycap">Alt</span> + <span class="keycap">N</span></td>
+</tr>
+<tr>
+<td>Wyjdź</td>
+<td><span class="keycap">NVDA</span> + <span class="keycap">Q</span></td>
+</tr>
+<tr>
+<td>Szybciej/Wolniej</td>
+<td><span class="keycap">Ctrl</span> + <span class="keycap">NVDA</span> + <span class="keycap" title="strzałka w górę">↑</span>/<span class="keycap" title="strzałka w dół">↓</span></td>
+</tr>
+<tr>
+<td>Czytaj poprzedni/następny wiersz</td>
+<td><span class="keycap">↑</span>/<span class="keycap">↓</span></td>
+</tr>
+<tr>
+<td>Czytaj ponownie bieżący wiersz</td>
+<td><span class="keycap">NVDA</span> + <span class="keycap">↑</span></td>
+</tr>
+<tr>
+<td>Czytaj wszystko</td>
+<td><span class="keycap">NVDA</span> + <span class="keycap">↓</span></td>
+</tr>
+<tr>
+<td>Formularze/Łącza/Przyciski</td>
+<td><span class="keycap">Tab</span></td>
+</tr>
+<tr>
+<td>Nagłówki</td>
+<td><span class="keycap">H</span>, <span class="keycap">1</span>–<span class="keycap">6</span></td>
+</tr>
+<tr>
+<td>Formularze</td>
+<td><span class="keycap">F</span></td>
+</tr>
+<tr>
+<td>Przyciski</td>
+<td><span class="keycap">B</span></td>
+</tr>
+<tr>
+<td>Łącza</td>
+<td><span class="keycap">L</span></td>
+</tr>
+<tr>
+<td>Punkty orientacyjne</td>
+<td><span class="keycap">D</span></td>
+</tr>
+<tr>
+<td>Tabele</td>
+<td><span class="keycap">T</span></td>
+</tr>
+<tr>
+<td>Komórki tabeli</td>
+<td><span class="keycap">Ctrl</span> + <span class="keycap">Alt</span> + <span class="keycap">↑</span>/<span class="keycap">↓</span>/<span class="keycap">←</span>/<span class="keycap">→</span></td>
+</tr>
+<tr>
+<td>Nawigacja wstecz</td>
+<td><span class="keycap">Shift</span> (+ <span class="keycap">Tab</span>, <span class="keycap">H</span>, etc.)</td>
+</tr>
+<tr>
+<td>Przełącz tryb formularza</td>
+<td><span class="keycap">NVDA</span> + <span class="keycap">Space</span></td>
+</tr>
+</tbody></table>
+<p><strong>Aktualizacja 5 kwietnia:</strong> Dodano skróty klawiszowe poleceń <span class="keycap">↑</span> oraz <span class="keycap">NVDA</span> + <span class="keycap">↑</span></p>
+<h2>Doskonały czytnik ekranu</h2>
+<p>Muszę przyznać, że jestem fanem NVDA. Praca Michaela Currana, Jamesa Teha i innych z zespołu <a href="http://www.nvaccess.org/">NV Access</a> przynosi korzyści tysiącom ludzi na całym świecie oraz podnosi poprzeczkę wymagań wszystkim czytnikom ekranów w tym procesie. Jeśli korzystasz z Windows i testujesz dostępność internetową, czytnik powinien być w twoim przyborniku.</p>
+
+
+
+</article>
+
+ <!-- szczegóły strony -->
+   <div class="pagedetails">
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-4">
+          <details class="brdr-0">
+            <summary class="btn btn-default text-center">Zgłoś problem z tą stroną</summary>
+
+  <div class="well row">
+    <div class="gc-rprt-prblm">
+      <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+        <form action="#">
+          <fieldset>
+            <legend><span class="field-name">Zaznacz wszystko, czego dotyczy zgłoszenie: </span></legend>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f1">
+                <input type="checkbox" name="problem1" value="Tak" id="gc-rprt-prblm-f1">Łącze, przycisk lub wideo nie działa
+              </label>
+              <input name="problem1" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f2">
+                <input type="checkbox" name="problem2" value="Tak" id="gc-rprt-prblm-f2">Na stronie są błędy ortograficzne lub gramatyczne
+              </label>
+              <input name="problem2" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f3">
+                <input type="checkbox" name="problem3" value="Tak" id="gc-rprt-prblm-f3">Informacje są błędne
+              </label>
+              <input name="problem3" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f4">
+                <input type="checkbox" name="problem4" value="Tak" id="gc-rprt-prblm-f4">Informacje są nieaktualne
+              </label>
+              <input name="problem4" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f5">
+                <input type="checkbox" name="problem5" value="Tak" id="gc-rprt-prblm-f5">Nie mogę znaleźć, czego szukam
+              </label>
+              <input name="problem5" type="hidden" value="Nie">
+            </div>
+            <div class="checkbox">
+              <label for="gc-rprt-prblm-f6">
+                <input type="checkbox" name="problem6" value="Tak" id="gc-rprt-prblm-f6">Inne, ktorych nie ma na tej liście
+              </label>
+              <input name="problem6" type="hidden" value="Nie">
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Wyślij</button>
+        </form>
+      </div>
+      <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+        <h3>Dziękujemy za Twoją pomoc!</h3>
+        <p>Nie otrzymasz odpowiedzi na tę wiadomość. Jeśli masz pytania, <a href="https://lepszyweb.pl/kontakt.html">napisz do nas</a>.</p>
+      </div>
+    </div>
+  </div>
+</details>
+
+
+        </div>
+        <div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+      </div>
+      <dl id="wb-dtmd">
+        <dt>Data modyfikacji:</dt>
+        <dd>
+          <time property="dateModified">2020-06-10</time>
+        </dd>
+      </dl>
+    </div>
+
+    </main>
+   <footer id="wb-info">
+      <div class="landscape">
+        <nav class="container wb-navcurr">
+          <h2 class="wb-inv">O usługach LepszyWeb.pl</h2>
+          <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+            <li><a href="./pages/lw/kontakt.html">Skontaktuj się z nami</a></li>
+            <li><a href="./pages/lw/uslugi.html">Szkolenia</a></li>
+            <li><a href="./pages/lw/audyty.html">Audyty</a></li>
+            <li><a href="./pages/lw/blog.html">Blog</a></li>
+            <li><a href="./pages/lw/pomoc.html">Pomoc</a></li>
+            <li><a href="./pages/lw/raporty.html">Raporty</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+
+            <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+              <h2 class="wb-inv">O tej stronie</h2>
+              <ul>
+                <li><a href="./pages/prawne/o-lepszyweb.html/wsieci.html">W Sieci</a></li>
+                <li><a href="./pages/prawne/o-lepszyweb.html">O LepszyWeb.pl</a></li>
+                <li><a href="./pages/prawne/regulamin.html">Regulamin</a></li>
+                <li><a href="./pages/prawne/prywatnosc.html">Prywatność</a></li>			  
+                <li><a href="./pages/prawne/dostepnosc.html">Dostępność</a></li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg"> 
+              <a href="#wb-cont">Góra strony <span class="glyphicon glyphicon-chevron-up"></span></a> 
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="./../LWeb/assets/lepszyweb-min.svg" alt="Logo Pracowni Dostępności Cyfrowej LepszyWeb.pl"> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="./../wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <script src="demo/wamethod.min.js"></script>		
+    <!--[if lt IE 9]>
+	<script src="./../wet-boew/js/ie8-wet-boew2.min.js"></script>
+	
+	<![endif]-->
+    <script src="./../LWeb/js/theme.min.js"></script>		
+  </body>
+</html>

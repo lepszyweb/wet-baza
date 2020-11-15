@@ -1,0 +1,479 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="pl" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl" dir="ltr">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Planowanie dostępności internetowej - LepszyWeb.pl</title>
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="Przedstawia istotne uwarunkowania planowania procesu zapewnienia dostępności produkcji internetowych ">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="./../LWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../LWeb/css/theme.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="demo/arb-rra.min.css">
+    <!--[if lt IE 9]>
+  <link href="./../LWeb/assets/favicon.ico" rel="shortcut icon" />
+
+  <link rel="stylesheet" href="./../LWeb/css/ie8-theme.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="./../wet-boew/js/ie8-wet-boew.min.js"></script>
+  <![endif]-->
+    <!--[if lte IE 9]>
+
+
+  <![endif]-->
+    <noscript><link rel="stylesheet" href="./../wet-boew/css/noscript.min.css" /></noscript>
+  </head>
+
+ <body vocab="http://schema.org/" typeof="WebPage">
+    <nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-cont">Przejdź do treści głównej</a>
+        </li>
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-info">Przejdź do &bdquo;O tej stronie&rdquo;</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container">
+<!-- Sekcja Wybierz język -->
+<!-- Koniec sekcji Wybierz język -->
+
+        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+          <h2>Wyszukiwanie i menu</h2>
+          <ul class="pnl-btn list-inline text-right">
+            <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
+          </ul>
+          <div id="mb-pnl"></div>
+        </section>	 		
+
+
+
+        <div class="row">
+          <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="./../index.html" property="url"><img src="./../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
+            <meta property="areaServed" typeof="Country" content="Polska">
+            <link property="logo" href="./../LWeb/assets/lepszyweb-min.svg">
+          </div>
+          <section id="wb-srch" class="col-lg-8 text-right">
+            <h2>Szukaj</h2>
+            <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+              <div class="form-group">
+                <label for="wb-srch-q" class="wb-inv">Szukaj na LepszyWeb.pl</label>
+                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Szukaj na LepszyWeb.pl">
+                <datalist id="wb-srch-q-ac"> </datalist>
+              </div>
+              <div class="form-group submit">
+                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Szukaj</span></button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+	  
+      <nav role="navigation" id="wb-sm" data-ajax-replace="./../ajax/menu-audyt.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <div class="container nvbar">
+          <h2>Spis tematów</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a href="./index.html">O szkoleniu</a></li>
+              <li><a href="./przypadki/index.html">Przypadki</a></li>		  
+              <li><a href="./zgodne/index.html">Zgodne</a></li>
+              <li><a href="./niezgodne/index.html">Niezgodne</a></li>
+              <li><a href="./wzorce/index.html">Wzorce</a></li>
+              <li><a href="./szablony/index.html">Szablony</a></li>					  
+              <li><a href="./pomoc/index.html">Pomoc</a></li>		
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav role="navigation" id="wb-bc" property="breadcrumb">
+        <h2>Jesteś tutaj:</h2>
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>
+                <a href="./../index-en.html">Start</a>
+              </li>
+              <li>
+                <a href="./../demos/index-pl.html">Przykłady działania</a>
+              </li>
+              <li>Korzystanie z ChromeVox</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+			<main role="main" class="col span_9_of_12" id="maincontent" tabindex="0">
+
+<article id="maincontent">
+
+<h1>Korzystanie z ChromeVox</h1>
+
+<p id="breadcrumbs"><span class="hidden">Jesteś tutaj: </span><a href="http://webaim.org/">Strona główna</a> &gt; <a href="http://webaim.org/articles/">Artykuły</a> &gt; WebAIM: Korzystanie z ChromeVox</p>
+
+
+<p class="summary">Ten materiał nie jest gotowy, to kalka materiału z NVDA do napisania tekstu o Chromevox.   
+</p>
+
+
+<nav role="navigation">
+	<h2>Spis treści artykułu</h2>
+		<p>Poniższa lista to spis treści tej strony. Aby przejść do tej listy w ChromeVox, naciśnij klawisze modyfikujące ChromeVox i klawisz <span class="keycap">H</span>, aby przejść do następnej pozycji.</p>
+	
+<ol>
+	<li><a href="#intro">Wprowadzenie</a></li>
+	<li><a href="#getting">Pierwsze kroki</a></li>
+	<li><a href="#reading">Czytanie</a></li>
+	<li><a href="#navigation">Nawigacja</a>
+	<ol>
+		<li><a href="#quick">Skróty</a></li>
+		<li><a href="#shortcuts">Inne skróty nawigacyjne</a></li>
+	</ol>
+	</li>
+	<li><a href="#images">Obrazy</a></li>
+	<li><a href="#tables">Tabele danych</a></li>
+	<li><a href="#forms">Formularze</a></li>
+	<li><a href="#practice">Ćwiczenia</a></li>
+</ol>
+</nav>
+
+<div class="section" id="intro">
+
+<h2>Wprowadzenie</h2>
+
+<p>Ten artykuł ma na celu pomóc nowym użytkownikom <a href="http://www.chromevox.com/">ChromeVox</a> poznać podstawowe polecenia sterujące przeglądaniem stron za pomocą bezpłatnego czytnika ekranu działających w systemach Chromebook oraz przeglądarkach Chrome na platformach Windows, Mac OX czy Linux.</p>
+<p>Czytnik ChromeVox można <a href="https://chrome.google.com/webstore/search/chromevox">pobrać bezpłatnie</a> ze strony sklepu Chrome Web Shop. Instrukcje obsługi można znaleźć na stronie <a href="http://www.chromevox.com/">ChromeVox</a>.
+<div class="note">
+	<div class="title">Uwaga</div>
+<p>Instrukcje obsługi na stronie projektu mogą wprowadzać w błąd, ponieważ w nowszych wersjach ChromeVox skróty klawiaturowe zdefiniowane są w ustawieniach dodatku. Wiele ze skrótów predefiniowanych w ustawieniach dodatku różni się od zapowiadanych w instrukcjach obsługi.</p>    
+</div>
+<p>Podczas czytania tego artykułu, pamiętaj o kilku rzeczach:</p>
+<ul>
+	<li>Ten artykuł nie zawiera pełnej listy skrótów ChromeVox. Omawia jedynie listę <em>podstawowych</em> poleceń, które nowi i początkujący użytkownicy ChromeVox powinni znać. Wyczerpujący wykaz skrótów klawiaturowych ChromeVox znajdziesz w ustawieniach dodatku zainstalowanego w Twojej przeglądarce internetowej. Na stronie <a href="http://www.chromevox.com/">ChromeVox</a> dostępna jest bogatsza dokumentacja.</li>
+	<li>Jeśli jesteś nowym użytkownikiem czytnika ekranu, zaplanuj spędzenie większej ilości czasu (być może kilka godzin) na tej stronie i stronach przykładów, aby przećwiczyć posługiwanie się czytnikiem. Nie zniechęcaj się, jeśli rzeczy wydają się kłopotliwe zwłąszcza w pierwszych minutach. Spowolnij prędkość odczytu i nie spiesz się.</li>
+</ul>
+
+</div>
+
+<div class="section" id="getting">
+<h2>Pierwsze kroki</h2>
+<p>Powiadamianie głosowe ChromeVox jest gotowe.
+<p>Aby włączyć lub wyłączyć czytnik ChromeVox w systemie Windows użyj kombinacji klawiszy <span class="keycap">Shift</span> + <span class="keycap">Alt</span> + <span class="keycap">A</span> + <span class="keycap">></span>
+
+<h3>Klawisze modyfikujące</h3>
+	<p>Większość poleceń ChromeVox wymaga naciśnięcia kombinacji klawiszy modyfikujących zwanych klawiszami ChromeVox, w połączeniu z innymi klawiszami.</p>
+	<p>Klawisze modyfikujące definiowane są domyślnie w opcjach rozszerzenia <strong>ChromeVox</strong>. W systemie Windows są to standardowo klawisze <span class="keycap">Shift</span> + <span class="keycap">Alt</span>.</p>
+	<p>W dalszej części klawisze modyfikujące będziemy sygnalizować symbolem <span class="keycap">ChromeVox</span>
+<p>Jeśli używasz ChromeVox w systemie Mac OS X, klawiszami ChromeVox są <span class="keycap">Control</span> + <span class="keycap">Command</span>.</p>
+<h3>Tryb przylegania</h3>
+<p>Zamiast przytrzymywania klawiszy ChromeVox można użyć specjalnego trybu przylegania. Po włączeniu trybu przylegania wystarczy użyć pojedynczych klawiszy poleceń, aby poruszać się po obiektach strony.</p>
+<p>Aby włączyć tryb przylegania:</p>
+<ul>
+<li>Na Chrome OS (Chromebook), dwukrotnie naciśnij klawisz <span class="keycap">Szukaj</span></li>  
+<li>W systemie Mac OS, dwukrotnie naciśnij lewy klawisz <span class="keycap">Command</span></li> 
+<li>W systemie Windows, dwukrotnie naciśnij klawisz <span class="keycap">Insert</span></li> 
+</ul>
+<h3>Klawisz przedrostka</h3>
+<p>Kombinacja klawiszy <span class="keycap">Shift</span> + <span class="keycap">Alt</span> + <span class="keycap">;</span> powoduje, że ChromeVox  będzie reagować na naciśnięcie jakiegoś klawisza polecenia tak, jak by był użyty z klawiszami modyfikującymi ChromeVox. Potem następuje automatyczne wyłączenie klawiszy modyfikujących, chyba że znów zostanie uaktywniony klawisz przedrostka. </p>
+
+</div>
+
+<div class="section" id="reading">
+<h2>Czytanie</h2>
+<p>Złożone dokumenty przeznaczone tylko do odczytywania, na przykład strony internetowe, przedstawiane są w ChromeVox w trybie czytania.</p>
+<p>Istnieją skróty klawiaturowe, które pozwalają odczytać zawartość przez wiersze, zdania, słowa, znaki itp. Poniżej znajduje się lista podstawowych skrótów do czytania. Za pomocą tych skrótów powinieneś być w stanie poruszać się po większości zawartości.</p>
+<ul style="line-height:2">
+	<li><strong>Numeryczny <span class="keycap">+</span></strong>: Odczytuje wszystko od początku strony</li>
+	<li><span class="keycap">ChromeVox</span> + <span class="keycap">↓</span>: Zacznij czytać od bieżącej pozycji</li>
+	<li><span class="keycap">Ctrl</span> : Zatrzymaj czytanie</li>
+	<li><span class="keycap">ChromeVox</span> + <span class="keycap">↑</span> lub <strong>numeryczne <span class="keycap">8</span></strong> : Aktualny wiersz</li>
+	<li><span class="keycap">Ctrl</span> + <span class="keycap">←</span> / <span class="keycap">→</span> lub <strong>numeryczne <span class="keycap">4</span></strong> / <strong>numeryczne <span class="keycap">6</span></strong> : Poprzednie / następne słowo</li>
+	<li><span class="keycap">↑</span> lub <strong>numeryczne <span class="keycap">7</span></strong> : Poprzedni wiersz</li>
+	<li><span class="keycap">↓</span> lub <strong>numeryczne <span class="keycap">9</span></strong> : Następny wiersz</li>
+	<li><span class="keycap">←</span> / <span class="keycap">→</span> lub <strong>numeryczne <span class="keycap">1</span></strong> / <strong>Numeryczne <span class="keycap">3</span></strong> : Poprzedni / Następny znak</li>
+	<li><span class="keycap">F5</span> / <span class="keycap">Ctrl</span> + <span class="keycap">F5</span> : Wymusza odświeżenie aktualnej strony. Jeśli się zgubisz, to w ten sposób można zacząć od nowa.</li>
+	<li><span class="keycap">ChromeVox</span> + <span class="keycap">Ctrl</span> + <span class="keycap">↑</span> / <span class="keycap">↓</span> : Zwiększa / Zmniejsza tempo mowy</li>
+</ul>
+<p>Możesz przećwiczyć czytanie zawartości tej strony z ChromeVox teraz. Zwróć uwagę, że na górze strony istnieje łącze, które prowdzi do głównej zawartości.</p>
+</div>
+
+<div class="section" id="navigation">
+
+<h2>Nawigacja</h2>
+<p>Widzący użytkownicy poruszają się wzrokiem po zawartości strony internetowej na kilka sposobów. Wytłuszczone nagłówki, listy, tabele itp. Większość z tych metod jest dostępna dla użytkowników czytników ekranu, jeśli strona ma poprawną strukturę i jest dobrze zorganizowana. Aby poruszać się do przodu i do tyłu między linkami i elementami formularzy, użyj klawiszy <span class="keycap">TAB</span> i <span class="keycap">SHIFT</span> + <span class="keycap">TAB</span>. Inne skróty są wymienione poniżej.</p>
+<div class="section" id="quick">
+<h3>Inne skróty nawigacyjne</h3>
+<p>Poniższe skróty pomogą Ci poruszać miedzy typowymi elementami strony.</p>
+<ul style="line-height:2">
+<li><span class="keycap">ChromeVox</span> + <span class="keycap">↓</span> : Przejdź dalej - do przodu</li>
+ <li><span class="keycap">ChromeVox</span> + <span class="keycap">↑</span> : Przejdź wstecz - do tyłu</li>
+ <li><span class="keycap">ChromeVox</span> + <span class="keycap">←</span> : Przejdź w lewo</li>
+ <li><span class="keycap">ChromeVox</span> + <span class="keycap">→</span> : Przejdź w prawo</li>
+ <li><span class="keycap">ChromeVox</span> + <span class="keycap">=</span> : Zwiększ dokładność nawigacji</li> 
+  <li><span class="keycap">ChromeVox</span> + <span class="keycap">-</span> : Zmniejsz dokładność nawigacji</li> 
+ <li><span class="keycap">ChromeVox</span> + <span class="keycap">Home</span> : Zwiększ dokładność nawigacji</li> 
+  <li><span class="keycap">ChromeVox</span> + <span class="keycap">End</span> : Zmniejsz dokładność nawigacji</li>   
+  
+ <li><span class="keycap">ChromeVox</span> + <span class="keycap">R</span> : Zacznij czytać od bieżącego miejsca</li> 
+  <li><span class="keycap">Enter</span> : Wykonaj ddomyślne działanie</li>     
+ <li><span class="keycap">ChromeVox</span> + <span class="keycap">Spacja</span> : Kliknij bieżący element</li>
+
+ <li><span class="keycap">ChromeVox</span> + <span class="keycap">\</span> : Otwórz treści strukturalne, np. tabele</li>  
+  <li><span class="keycap">ChromeVox</span> + <span class="keycap">BackSpace</span> : Zamknij treści strukturalne, np. tabel</li>  
+
+
+ 
+	<li><span class="keycap">H</span> : Nagłówki</li>
+	<li><span class="keycap">;</span> : Punkty informacyjne</li>
+	<li><span class="keycap">1</span> - <span class="keycap">6</span> :  nagłówki poziomu odpowiednio od 1 do 6</li>
+	<li><span class="keycap">F</span> : Formularze</li>
+	<li><span class="keycap">T</span> : Tabele</li>
+	<li><span class="keycap">L</span> : Listy</li>
+	<li><span class="keycap">I</span> : Pozycje listy</li>	
+	<li><span class="keycap">B</span> : Przyciski
+	<ul>
+		<li>Przycisk Szukaj jest często pierwszym przyciskiem na stronie. Często można przejść do formularza wyszukiwania, wybierając najpierw klawisz <span class="keycap">B</span>, aby przejść do przycisku, a następnie kombinacji <span class="keycap">SHIFT</span> + <span class="keycap">TAB</span>, aby przejść do poprzedniego elementu formularza - pola wyszukiwania.
+		</li>
+	</ul>
+	</li>
+
+</ul>
+
+<p><span class="keycap">SHIFT</span> + <span class="keycap">klawisz skrótu</span> pozwoli na przemieszczanie się  między elementami strony w odwrotnej kolejności (działa z większością skrótów klawiaturowych). Kilka innych skrótów znajdziesz na naszej liście <a href="http://webaim.org/resources/shortcuts/nvda">skrótów klawiaturowych NVDA</a>.</p>
+ 
+</div>
+
+<div class="section" id="shortcuts">
+<h3>Inne skróty nawigacyjne</h3>
+<ul style="line-height:2">
+
+	<li><span class="keycap">NVDA</span> + <span class="keycap">F7</span> : Lista elementów - linki, nagłówki i punkty orientacyjne</li>
+	<li><span class="keycap">Ctrl</span> + <span class="keycap">Home</span> : Początek strony</li>
+	<li><span class="keycap">Ctrl</span> + <span class="keycap">End</span> : Dół strony</li>
+	<li><span class="keycap">Alt</span> + <span class="keycap">D</span> lub <span class="keycap">F6</span> : Pasek adresu przeglądarki</li>
+</ul>
+
+</div>
+
+<p>Aby przećwiczyć polecenia czytania i nawigacji, spróbuj odświeżyć stronę i przejść do tej części strony. Istnieje kilka sposobów, aby to zrobić - przejdź do spisu treści i aktywuj link do tej sekcji, a następnie rozpocznij czytanie lub nawigowanie po zdaniach, nagłówkach ( <span class="keycap">H</span> ), listach ( <span class="keycap">L</span> ), Znajdź lub odczytaj poprzednią/następną linię ( <span class="keycap">↑</span> / <span class="keycap">↓</span> ).</p>
+
+</div>
+
+<div class="section" id="images">
+<h2>Obrazy</h2>
+<p>Każdy obraz na stronie powinien posiadać <a href="http://webaim.org/techniques/alttext/">tekst alternatywny</a> . Jeśli obraz nie ma tekstu alternatywnego, czytnik ekranu zazwyczaj zignoruje go, ale zachowanie może się różnić w zależności od funkcji czytnika.</p>
+<p><a href="NVDA_praktyka_images.html">Obrazki: Ćwiczenia NVDA</a></p>
+
+</div>
+
+<div class="section" id="tables">
+
+<h2>Tabele danych</h2>
+<p>Istnieją dwa główne zastosowania tabel na stronie: <a href="http://webaim.org/techniques/tables/">dla układu zawartości</a> i <a href="http://webaim.org/techniques/tables/data">organizowania danych</a> W ChromeVox, aby przejść do następnej tabeli, naciśnij <span class="keycap">ChromeVox</span> + <span class="keycap">N</span> + <span class="keycap">T</span>. Aby poruszać się pomiędzy komórkami, przytrzymaj <span class="keycap">ChromeVox</span>  i użyj klawiszy <span class="keycap">↑</span> / <span class="keycap">↓</span> / <span class="keycap">←</span> / <span class="keycap">→</span>, aby przejść z komórki do komórki.</p>
+<p>Oto pełna lista skrótów służacych przemieszczaniu się po tabeli:</p>
+
+<ul style="line-height:2">
+    <li><span class="keycap">ChromeVox</span> + <span class="keycap">T</span> > <span class="keycap">H</span> H: Przeczytaj nagłówki bieżącej komórki</li>
+    <li><span class="keycap">ChromeVox</span> + <span class="keycap">T</span> > <span class="keycap">L</span> L: Podawaj współrzędne bieżących komórek</li>
+    <li><span class="keycap">ChromeVox</span> + T > <span class="keycap">[</span>:  Przejdź na początek tabeli</li>
+    <li><span class="keycap">ChromeVox</span> + T > <span class="keycap">]</span> = Przejdź na koniec tabeli</li>
+    <li><span class="keycap">ChromeVox</span> + <span class="keycap">T</span> > <span class="keycap">;</span>: Przejdź na początek bieżącego wiersza</li>
+    <li><span class="keycap">ChromeVox</span> + <span class="keycap">T</span> > <span class="keycap">'</span>: Przejdź na koniec bieżącego wiersza.</li>
+    <li><span class="keycap">ChromeVox</span> + <span class="keycap">T</span> > <span class="keycap">,</span>: Przejdź na początek bieżącej kolumny</li>
+    <li><span class="keycap">ChromeVox</span> + <span class="keycap">T</span> > <span class="keycap">.</span>: Przejdź na koniec bieżącej kolumny</li>
+    <li><span class="keycap">ChromeVox</span> + <span class="keycap">BackSpace</span> = wymusza opuszczenie trybu tabeli</li>
+    <li><span class="keycap">ChromeVox</span> + <span class="keycap">↓</span>: Przejdź do następnego wiersza tabeli</li>
+    <li><span class="keycap">ChromeVox</span> + <span class="keycap">↑</span>: Przejdź do poprzedniego wiersza tabeli</li>
+    <li><span class="keycap">ChromeVox</span> + <span class="keycap">→</span>: Przejdź do następnej kolumny tabeli</li>
+    <li><span class="keycap">ChromeVox</span> + <span class="keycap">←</span>: Przejdź do poprzedniej kolumny tabeli</li>
+</ul>
+
+
+
+<p><a href="NVDA_praktyka_tabela.html">Przykład tabeli - ćwiczenia</a></p>
+</div>
+
+<div class="section" id="forms">
+<h2>Formularze</h2>
+
+<p><a href="http://webaim.org/techniques/forms/">Formularze</a> są wykorzystywane do interakcji w internecie. Element <code>&lt;label&gt;</code> jest używany jednoznaczneego identyfikowania kontrolek formularzy i ich opisu. ChromeVox będzie czytać etykietę elementu formularza, gdy ten element formularza jest wskazywany. Jeżeli kontrola formularza nie ma przypisanej etykiety, ChromeVox nie wskaże cel tego elementu formularza. Element <code>&lt;fieldset&gt;</code> służy do grupowania powiązanych elementów formularza. Jest zwykle używany, aby podać szczegóły dotyczące grup pól wyboru i przycisków radiowych. ChromeVox zwykle czyta legendę fieldset.</p>
+
+<p>Użyj następujących skrótów do poruszania się i interakcji z formularzem:</p>
+<ul style="line-height:2">
+	<li>Po uzyskaniu dostępu element formularza, ChromeVox wchodzi formy lub trybu ostrości. W trybie ustawiania ostrości można wpisać tekst bez aktywacji klawiszy szybkiego i innych skrótów klawiszowych. Można nacisnąć <span class="keycap">Enter</span> lub <span class="keycap">ChromeVox</span> + <span class="keycap">spacja</span> , aby wejść w tryb ustawiania ostrości.</li>
+	<li>Prasa <span class="keycap">ChromeVox</span> + <span class="keycap">spacja</span> , aby wyjść z trybu ustawiania ostrości i powrócić do trybu przeglądania.</li>
+	<li>Gdy jesteś w centrum uwagi / trybu formularzy, należy użyć <span class="keycap">Tab</span> i <span class="keycap">Shift,</span> + <span class="keycap">Tab</span> , aby poruszać się po kontroli formularzy.</li>
+	<li>Użyj <span class="keycap">spacji</span> , aby wybrać i usunąć zaznaczenie pola wyboru.</li>
+	<li>Użyj <span class="keycap">↑</span> / <span class="keycap">↓</span> aby wybrać z grupy przycisków radiowych.</li>
+	<li>Użyj <span class="keycap">↑</span> / <span class="keycap">↓</span> lub pierwszą literę, aby wybrać element pola kombi.</li>
+	<li>ChromeVox automatycznie opuszcza tryb formularzy po naciśnięciu klawisza Enter, aby wysłać formularz, należy przejść do nowej strony, lub wybierz przycisk.</li>
+</ul>
+<p><a href="NVDA_praktyka_formularz.html">Przykład formularza - ćwiczenia</a></p>
+</div>
+
+<div class="section" id="practice">
+<h2>Ćwiczenia</h2>
+
+<ul>
+	<li>Przeglądaj tę stronę sekcja po sekcji. Na końcu każdej sekcji, powróć do góry i przejść do nowej sekcji w różny sposób. Na przykład:
+	<ul>
+		<li>Użyj spis treści</li>
+		<li>Użyj <span class="keycap">Ctrl</span> + <span class="keycap">F</span> , aby otworzyć okno dialogowe Znajdowanie</li>
+		<li>Nawiguj według działów (albo <span class="keycap">H</span> lub <span class="keycap">1</span> - <span class="keycap">3</span> )</li>
+	</ul>
+	</li>
+	<li>Istnieje kilka elementów w tej stronie, które są wizualnie ukryte, ale które są dostarczane w celu lepszego zorientowania użytkowników czytników ekranu. Sprawdź, czy można je zidentyfikować (podpowiedź: jeden jest tuż przed sekcji głównej zawartości, a drugi po prawej).</li>
+	<li>Zapisz się do newslettera WebAIM bez użycia myszki.</li>
+	<li>Wyłącz monitor i powtórz niektóre z tych zadań.</li>
+</ul>
+</div>
+
+</article>
+      <!-- szczegóły strony -->
+      <div class="pagedetails">
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-lg-4">
+            <details class="brdr-0">
+              <summary class="btn btn-default text-center">Zgłoś problem z tą stroną</summary>
+              <div class="well row">
+                <div class="gc-rprt-prblm">
+                  <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+                    <form action="#">
+                      <fieldset>
+                        <legend><span class="field-name">Zaznacz wszystko, czego dotyczy zgłoszenie: </span></legend>
+                        <div class="checkbox">
+                          <label for="problem1">
+                            <input type="checkbox" data-reveal="#broken" name="problem" value="Coś jest zepsute" id="problem1">
+                            Coś jest zepsute</label>
+                        </div>
+                        <div class="form-group hide" id="broken">
+                          <label for="problem1-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                          <input type="text" class="form-control full-width" id="problem1-detail">
+                        </div>
+                        <div class="checkbox">
+                          <label for="problem2">
+                            <input type="checkbox" data-reveal="#spelling" name="problem" value="Na stronie są błędy ortograficzne lub gramatyczne" id="problem2">
+                            Na stronie są błędy ortograficzne lub gramatyczne</label>
+                        </div>
+                        <div class="form-group hide" id="spelling">
+                          <label for="problem2-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                          <input type="text" class="form-control full-width" id="problem2-detail">
+                        </div>
+                        <div class="checkbox">
+                          <label for="problem3">
+                            <input type="checkbox" data-reveal="#wrong" name="problem" value="Na stronie są błędne informacje" id="problem3">
+                            Informacje są błędne</label>
+                        </div>
+                        <div class="form-group hide" id="wrong">
+                          <label for="problem3-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                          <input type="text" class="form-control full-width" id="problem3-detail">
+                        </div>
+                        <div class="checkbox">
+                          <label for="problem4">
+                            <input type="checkbox" data-reveal="#outdated" name="problem" value="Informacje są nieaktualne" id="problem4">
+                            Informacje są nieaktualne</label>
+                        </div>
+                        <div class="form-group hide" id="outdated">
+                          <label for="problem4-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                          <input type="text" class="form-control full-width" id="problem4-detail">
+                        </div>
+                        <div class="checkbox">
+                          <label for="problem5">
+                            <input type="checkbox" data-reveal="#find" name="problem" value="Nie mogę znaleźć, czego szukam" id="problem5">
+                            Nie mogę znaleźć, czego szukam</label>
+                        </div>
+                        <div class="form-group hide" id="find">
+                          <label for="problem5-detail">Opisz czego szukasz (opcjonalnie):</label>
+                          <input type="text" class="form-control full-width" id="problem5-detail">
+                        </div>
+                        <div class="checkbox">
+                          <label for="problem6">
+                            <input type="checkbox" data-reveal="#confusing" name="problem" value="To mylące" id="problem6">
+                            Inne</label>
+                        </div>
+                        <div class="form-group hide" id="confusing">
+                          <label for="problem6-detail">Podaj więcej szczegółów (opcjonalnie):</label>
+                          <input type="text" class="form-control full-width" id="problem6-detail">
+                        </div>
+                      </fieldset>
+                      <button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Wyślij</button>
+                    </form>
+                  </div>
+                  <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+                    <h3>Dziękujemy za Twoją pomoc!</h3>
+                    <p>
+                      Nie otrzymasz odpowiedzi na tę wiadomość. Jeśli masz pytania, <a href="https://lepszyweb.pl/kontakt.html">napisz do nas</a>.</p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+          <div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+        </div>
+        <dl id="wb-dtmd">
+          <dt>Data modyfikacji:</dt>
+          <dd>
+            <time property="dateModified">2020-06-10</time>
+          </dd>
+        </dl>
+      </div>
+
+    </main>
+    <footer id="wb-info">
+      <div class="landscape">
+        <nav class="container wb-navcurr">
+          <h2 class="wb-inv">O usługach LepszyWeb.pl</h2>
+          <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+            <li><a href="./pages/lw/kontakt.html">Skontaktuj się z nami</a></li>
+            <li><a href="./pages/lw/uslugi.html">Szkolenia</a></li>
+            <li><a href="./pages/lw/audyty.html">Audyty</a></li>
+            <li><a href="./pages/lw/blog.html">Blog</a></li>
+            <li><a href="./pages/lw/pomoc.html">Pomoc</a></li>
+            <li><a href="./pages/lw/raporty.html">Raporty</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+
+            <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+              <h2 class="wb-inv">O tej stronie</h2>
+              <ul>
+                <li><a href="./pages/prawne/o-lepszyweb.html/wsieci.html">W Sieci</a></li>
+                <li><a href="./pages/prawne/o-lepszyweb.html">O LepszyWeb.pl</a></li>
+                <li><a href="./pages/prawne/regulamin.html">Regulamin</a></li>
+                <li><a href="./pages/prawne/prywatnosc.html">Prywatność</a></li>			  
+                <li><a href="./pages/prawne/dostepnosc.html">Dostępność</a></li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg"> 
+              <a href="#wb-cont">Góra strony <span class="glyphicon glyphicon-chevron-up"></span></a> 
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="./../LWeb/assets/lepszyweb-min.svg" alt="Logo Pracowni Dostępności Cyfrowej LepszyWeb.pl"> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="./../wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+ <script src="./../wet-boew/js/ie8-wet-boew2.min.js"></script>
+
+ <![endif]-->
+    <script src="./../LWeb/js/theme.min.js"></script>		
+  </body>
+</html>

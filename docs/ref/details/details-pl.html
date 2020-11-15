@@ -1,0 +1,247 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="pl" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl" dir="ltr">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Details/summary polyfill (expandable/collapsible content) - Polyfills - Documentation - Web Experience Toolkit</title>
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="Emulates details and summary element support for browsers that do not have support. The details and summary elements allows content to be expanded and collapsed.">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="./../../../LWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../../../LWeb/css/theme.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <!--[if lt IE 9]>
+  <link href="./../../../LWeb/assets/favicon.ico" rel="shortcut icon" />
+
+  <link rel="stylesheet" href="./../LWeb/css/ie8-theme.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="./../../../wet-boew/js/ie8-wet-boew.min.js"></script>
+  <![endif]-->
+    <!--[if lte IE 9]>
+
+
+  <![endif]-->
+    <noscript><link rel="stylesheet" href="./../../../wet-boew/css/noscript.min.css" /></noscript>
+  </head>
+
+
+  <body vocab="http://schema.org/" typeof="WebPage">
+  <nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-cont">Przejdź do treści głównej</a>
+        </li>
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-info">Przejdź do &bdquo;O tej stronie&rdquo;</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container">
+<!-- Sekcja Wybierz język -->
+<!-- Koniec sekcji Wybierz język -->
+
+        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+          <h2>Wyszukiwanie i menu</h2>
+          <ul class="pnl-btn list-inline text-right">
+            <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
+          </ul>
+          <div id="mb-pnl"></div>
+        </section>	 		
+
+
+
+        <div class="row">
+          <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="./../../../index.html" property="url"><img src="./../../../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
+            <meta property="areaServed" typeof="Country" content="Polska">
+            <link property="logo" href="./../../../LWeb/assets/lepszyweb-min.svg">
+          </div>
+          <section id="wb-srch" class="col-lg-8 text-right">
+            <h2>Szukaj</h2>
+            <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+              <div class="form-group">
+                <label for="wb-srch-q" class="wb-inv">Szukaj na LepszyWeb.pl</label>
+                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Szukaj na LepszyWeb.pl">
+                <datalist id="wb-srch-q-ac"> </datalist>
+              </div>
+              <div class="form-group submit">
+                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Szukaj</span></button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+	  
+      <nav role="navigation" id="wb-sm" data-ajax-replace="./../../../ajax/menu-audyt.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <div class="container nvbar">
+          <h2>Spis tematów</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a href="./index.html">O szkoleniu</a></li>
+              <li><a href="./przypadki/index.html">Przypadki</a></li>		  
+              <li><a href="./zgodne/index.html">Zgodne</a></li>
+              <li><a href="./niezgodne/index.html">Niezgodne</a></li>
+              <li><a href="./wzorce/index.html">Wzorce</a></li>
+              <li><a href="./szablony/index.html">Szablony</a></li>					  
+              <li><a href="./pomoc/index.html">Pomoc</a></li>		
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <nav role="navigation" id="wb-bc" property="breadcrumb">
+        <h2>Jesteś tutaj:</h2>
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>
+                <a href="./../../../index-en.html">Start</a>
+              </li>
+			  <li>
+			  <a href="./../../../docs/index-en.html">Documentacja</a>
+			  </li>
+			  <li>
+<a href="../../../docs/ref/polyfills-en.html">Polyfills</a>
+			  </li>
+              <li>Details/summary polyfill (expandable/collapsible content)</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<main role="main" property="mainContentOfPage" class="container">
+<h1 id="wb-cont" property="name">Details/summary polyfill (expandable/collapsible content)</h1>
+<p>
+<a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Details%2Fsummary%20polyfill%20(expandable%2Fcollapsible%20content):%20">Questions or comments?</a>
+</p>
+<span class="wb-prettify all-pre hide"></span>
+<section>
+<h2>Purpose</h2>
+<p>The HTML5 <code>details</code> and <code>summary</code> elements allows content to be expanded and collapsed. Because some browsers do not support this functionality natively, this polyfill emulates the same functionality using generic HTML and WAI-ARIA.</p>
+</section>
+<section>
+<h2>Working example</h2>
+<ul>
+<li><a href="../../../demos/details/details-en.html">English examples</a></li>
+<li><a href="../../../demos/details/details-fr.html">French examples</a></li>
+</ul>
+</section>
+<section>
+<h2>How to implement</h2>
+<p>To use the polyfill, standard <code>details</code> and <code>summary</code> elements must be used. In cases where a browser doesn't support these elements, the polyfill is automatically loaded.</p>
+</section>
+<section>
+<h2>Configuration options</h2>
+<p><a rel="external" href="https://www.w3.org/TR/html51/interactive-elements.html#the-details-element">Configuration options available for the <code>details</code> and <code>summary</code> elements (HTML5 specification)</a></p>
+</section>
+<section>
+<h2>Events</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Event</th>
+<th>Trigger</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wb-init.wb-details</td>
+<td>Triggered manually (e.g., <code>$elm.trigger( "wb-init.wb-details" );</code>).</td>
+<td>Used to manually initialize the details/summary polyfill on a summary element. <strong>Note:</strong> The details/summary polyfill will be initialized automatically unless the <code>summary</code> element is added after the page has already loaded.</td>
+</tr>
+<tr>
+<td><code>wb-init.wb-details</code></td>
+<td>Triggered manually (e.g., <code>$( "summary" ).trigger( "wb-init.wb-details" );</code>).</td>
+<td>Used to manually initialize the details/summary polyfill on a <code>summary</code> element. <strong>Note:</strong> The details/summary polyfill will be initialized automatically unless the <code>summary</code> is added after the page has already loaded.</td>
+</tr>
+<tr>
+<td><code>wb-ready.wb-details</code> (v4.0.5+)</td>
+<td>Triggered automatically after the details/summary polyfill initializes. <strong>Note:</strong> This event will only be triggered if the polyfill is loaded. The polyfill will not load for browsers with native details/summary support.</td>
+<td>Used to identify where the details/summary polyfill initialized (target of the event)
+<pre><code>$( document ).on( "wb-ready.wb-details", "summary", function( event ) {
+});</code></pre>
+<pre><code>$( "summary" ).on( "wb-ready.wb-details", function( event ) {
+});</code></pre>
+</td>
+</tr>
+<tr>
+<td><code>wb-ready.wb</code> (v4.0.5+)</td>
+<td>Triggered automatically when WET has finished loading and executing.</td>
+<td>Used to identify when all WET plugins and polyfills have finished loading and executing.
+<pre><code>$( document ).on( "wb-ready.wb", function( event ) {
+});</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Source code</h2>
+<p><a href="https://github.com/wet-boew/wet-boew/tree/master/src/polyfills/details">Details/summary polyfill source code on GitHub</a></p>
+</section>
+<dl id="wb-dtmd">
+<dt>Date modified:&#32;</dt>
+<dd><time property="dateModified">2014-08-04</time></dd>
+</dl>
+</main>
+
+
+
+
+    <footer id="wb-info">
+      <div class="landscape">
+        <nav class="container wb-navcurr">
+          <h2 class="wb-inv">O usługach LepszyWeb.pl</h2>
+          <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+            <li><a href="./pages/lw/kontakt.html">Skontaktuj się z nami</a></li>
+            <li><a href="./pages/lw/uslugi.html">Szkolenia</a></li>
+            <li><a href="./pages/lw/audyty.html">Audyty</a></li>
+            <li><a href="./pages/lw/blog.html">Blog</a></li>
+            <li><a href="./pages/lw/pomoc.html">Pomoc</a></li>
+            <li><a href="./pages/lw/raporty.html">Raporty</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+
+            <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+              <h2 class="wb-inv">O tej stronie</h2>
+              <ul>
+                <li><a href="./pages/prawne/o-lepszyweb.html/wsieci.html">W Sieci</a></li>
+                <li><a href="./pages/prawne/o-lepszyweb.html">O LepszyWeb.pl</a></li>
+                <li><a href="./pages/prawne/regulamin.html">Regulamin</a></li>
+                <li><a href="./pages/prawne/prywatnosc.html">Prywatność</a></li>			  
+                <li><a href="./pages/prawne/dostepnosc.html">Dostępność</a></li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg"> 
+              <a href="#wb-cont">Góra strony <span class="glyphicon glyphicon-chevron-up"></span></a> 
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="./../../../LWeb/assets/lepszyweb-min.svg" alt="Logo Pracowni Dostępności Cyfrowej LepszyWeb.pl"> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="./../../../wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+ <script src="./../../../wet-boew/js/ie8-wet-boew2.min.js"></script>
+
+ <![endif]-->
+    <script src="./../../../LWeb/js/theme.min.js"></script>		
+  </body>
+</html>
