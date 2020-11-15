@@ -53,7 +53,7 @@
           </ul>
           <div id="mb-pnl"></div>
         </section>	 		
-		
+
         <div class="row">
           <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="./../index.html" property="url"><img src="./../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
             <meta property="areaServed" typeof="Country" content="Polska">
@@ -111,79 +111,81 @@
     <main property="mainContentOfPage" class="container" typeof="WebPageElement">
       <h1>Nagłówki</h1>
       <p>Użytkownicy czytników ekranu często używają nagłówków, aby szybko „przeskoczyć” do określonej części strony. Właściwe stosowanie nagłówków jest ważne dla utrzymania struktury strony i umożliwienia szybkiej nawigacji.</p>
- 
-<div class="wb-tabs ignore-session">
-	<div class="tabpanels">
-		<details id="details-panel10">
-			<summary>Jak testować</summary>
-			  <h3>Problemy</h3>
-			  <ul>
-			  <li>oznaczanie bloków treści</li>
-			  <li>streszczanie treści</li>
-			  <li>poprawna hierarchia</li>
-			  <li>zwięzłość</li>
-			  </ul>
-			  <h3>Co sprawdzać?</h3>
-			  <ul>
-			  <li>Czy treści, które wyglądają jak nagłowki zostały oznakowane jako nagłówki<!--Czy widoczne nagłówki są określono programowo za pomocą znaczników <code>Hx</code> lub atrybutu <code>role="heading"</code>-->?</li>
-			  <li>Czy poziom nagłówka poprawnie wskazuje przynależność treści do większych części?</li>
-			  <li>Czy nagłówki opisują wystarczająco następującą po nich treść?</li>
-			  </ul>
 
-                <div class="note info">
-				<p>Twórca strony nie musi stosować nagłówków!</p>
-				<p><strong>Streszczanie treści</strong>: Jeśli na stronie występują nagłówki, powinny opisywać następującą po nich treść.</p>
-				<p><strong>Poprawna hierarchia</strong>: Jeśli na stronie istnieje więcej nagłowków, poziom nagłówków powinien odzwierciedlać przynależność treści do większych części, to znaczy że np. treść oznaczona nagłówkiem <code>h2</code> nie może być częścią treści oznaczonej nagłówkiem <code>h3</code> lub niższego poziomu.</p>
-                </div>
+      <div class="wb-tabs ignore-session">
+        <div class="tabpanels">
+          <details id="details-panel20">
+            <summary>Zła praktyka</summary>
+            <h2>Zła praktyka</h2>
+            <div class="alert-warning">
+              <p>Wszystkie „nagłówki” w poniższym przykładzie zostały utworzone przez zastosowanie stylów czcionek do zwykłego tekstu akapitowego. Mimo że są wizualnie identyczne z odpowiednimi nagłówkami, czytniki ekranu całkowicie je zignorują podczas czytania struktury dokumentu.
+              </p>
+            </div>
+            <p class="h1">Powieści</p>
+            <p>Fikcyjna opowieść prozą, długości książki, przedstawiająca rozbudowany ciąg zdarzeń z pewnym stopniem realizmu. </p>
+            <p class="h2">Studium w szkarłacie</p>
+            <p>Powieść detektywistyczna autorstwa Arthura Conana Doyle’a napisana w 1886, której głównymi bohaterami są detektyw-amator Sherlock Holmes i jego wierny towarzysz doktor Watson, którzy później stali się dwiema najbardziej znanymi postaciami w literaturze.</p>
+            <p class="h2">Znak czterech </p>
+            <p>Zatytuowana także  w innym przekładzie Znamię czterech to druga powieść kryminalna napisana przez Sir Arthura Conana Doyle'a. Doyle napisał cztery powieści i 56 opowiadań z udziałem fikcyjnego detektywa.</p>
+            <p class="h1">Krótkie historie</p>
+            <p>Krótkie dzieło literackie, zwykle pisane prozą narracyjną. Krótka historia wywodząca się z wcześniejszych tradycji opowiadania ustnego w XVII wieku, rozrosła się i obejmuje tak różnorodne prace, że trudno jest ją scharakteryzować.</p>
+            <p class="h2">Przygody Sherlocka Holmesa</p>
+            <p>Zbiór 12 opowiadań Arthura Conana Doyle’a, ilustrowanych przez Sidneya Pageta i opublikowanych pierwotnie w „The Strand Magazine” w latach 1891–1892. I wydanie książkowe ukazało się 14 października 1892 w liczbie 10 tysięcy egzemplarzy. Podobnie jak w wymienionych wcześnej tytułach, Holmes rozwiązuje nietypowe i skomplikowane zagadki kryminalne, posługując się przede wszystkim metodą dedukcji. </p>
+            <p class="h3">„Skandal w Bohemii”</p>
+            <p>Pierwsze opowiadanie z cyklu 56 opisujących przygody detektywa Sherlocka Holmesa autorstwa Arthura Conana Doyle’a, które ukazały się w The Strand Magazine. Alternatywne polskie tytuły to Królewski skandal, Niezwykła kobieta i Skandal w Czechach.</p>
+            <p class="h3">„Związek rudowłosych”</p>
+            <p>Opowiadanie Arthura Conana Doyle’a z serii przygód Sherlocka Holmesa. Pierwsza publikacja w The Strand Magazine w sierpniu 1891, następna w tomie Przygody Sherlocka Holmesa w 1892. Ilustrowane przez Sidneya Pageta. Znane też pod tytułem &bdquo;Stowarzyszenie Czerwonowłosych” bądź &bdquo;Liga Rudych”.</p>
+          </details>
+          <details id="details-panel30">
+            <summary>Dobra praktyka</summary>
+            <h2>Dobra praktyka</h2>
+            <div class="alert-success">
+              <p>W poniższym przykładzie do logicznego podziału struktury dokumentu użyto znaczników nagłówków o różnych poziomach. Znacznie upraszcza to nawigację po stronie dla użytkowników czytników ekranowych.</p>
+            </div>
+            <h1>Powieści</h1>
+            <p>Fikcyjna opowieść prozą, długości książki, przedstawiająca rozbudowany ciąg zdarzeń z pewnym stopniem realizmu. </p>
+            <h2>Studium w szkarłacie</h2>
+            <p>Powieść detektywistyczna autorstwa Arthura Conana Doyle’a napisana w 1886, której głównymi bohaterami są detektyw-amator Sherlock Holmes i jego wierny towarzysz doktor Watson, którzy później stali się dwiema najbardziej znanymi postaciami w literaturze.</p>
+            <h2>Znak czterech</h2>
+            <p>Zatytuowana także  w innym przekładzie Znamię czterech to druga powieść kryminalna napisana przez Sir Arthura Conana Doyle'a. Doyle napisał cztery powieści i 56 opowiadań z udziałem fikcyjnego detektywa.</p>
 
-		</details>
-		<details id="details-panel20">
-			<summary>Zła praktyka</summary>
-          <h2>Zła praktyka</h2>
-          <div class="alert-warning">
-            <p>Wszystkie „nagłówki” w poniższym przykładzie zostały utworzone przez zastosowanie stylów czcionek do zwykłego tekstu akapitowego. Mimo że są wizualnie identyczne z odpowiednimi nagłówkami, czytniki ekranu całkowicie je zignorują podczas czytania struktury dokumentu.
-            </p>
-          </div>
-          <p class="h1">Powieści</p>
-          <p>Fikcyjna opowieść prozą, długości książki, przedstawiająca rozbudowany ciąg zdarzeń z pewnym stopniem realizmu. </p>
-          <p class="h2">Studium w szkarłacie</p>
-          <p>Powieść detektywistyczna autorstwa Arthura Conana Doyle’a napisana w 1886, której głównymi bohaterami są detektyw-amator Sherlock Holmes i jego wierny towarzysz doktor Watson, którzy później stali się dwiema najbardziej znanymi postaciami w literaturze.</p>
-          <p class="h2">Znak czterech </p>
-          <p>Zatytuowana także  w innym przekładzie Znamię czterech to druga powieść kryminalna napisana przez Sir Arthura Conana Doyle'a. Doyle napisał cztery powieści i 56 opowiadań z udziałem fikcyjnego detektywa.</p>
-          <p class="h1">Krótkie historie</p>
-          <p>Krótkie dzieło literackie, zwykle pisane prozą narracyjną. Krótka historia wywodząca się z wcześniejszych tradycji opowiadania ustnego w XVII wieku, rozrosła się i obejmuje tak różnorodne prace, że trudno jest ją scharakteryzować.</p>
-          <p class="h2">Przygody Sherlocka Holmesa</p>
-          <p>Zbiór 12 opowiadań Arthura Conana Doyle’a, ilustrowanych przez Sidneya Pageta i opublikowanych pierwotnie w „The Strand Magazine” w latach 1891–1892. I wydanie książkowe ukazało się 14 października 1892 w liczbie 10 tysięcy egzemplarzy. Podobnie jak w wymienionych wcześnej tytułach, Holmes rozwiązuje nietypowe i skomplikowane zagadki kryminalne, posługując się przede wszystkim metodą dedukcji. </p>
-          <p class="h3">„Skandal w Bohemii”</p>
-          <p>Pierwsze opowiadanie z cyklu 56 opisujących przygody detektywa Sherlocka Holmesa autorstwa Arthura Conana Doyle’a, które ukazały się w The Strand Magazine. Alternatywne polskie tytuły to Królewski skandal, Niezwykła kobieta i Skandal w Czechach.</p>
-          <p class="h3">„Związek rudowłosych”</p>
-          <p>Opowiadanie Arthura Conana Doyle’a z serii przygód Sherlocka Holmesa. Pierwsza publikacja w The Strand Magazine w sierpniu 1891, następna w tomie Przygody Sherlocka Holmesa w 1892. Ilustrowane przez Sidneya Pageta. Znane też pod tytułem &bdquo;Stowarzyszenie Czerwonowłosych” bądź &bdquo;Liga Rudych”.</p>
-		</details>
-		<details id="details-panel30">
-			<summary>Dobra praktyka</summary>
-          <h2>Dobra praktyka</h2>
-          <div class="alert-success">
-            <p>W poniższym przykładzie do logicznego podziału struktury dokumentu użyto znaczników nagłówków o różnych poziomach. Znacznie upraszcza to nawigację po stronie dla użytkowników czytników ekranowych.</p>
-          </div>
-          <h1>Powieści</h1>
-          <p>Fikcyjna opowieść prozą, długości książki, przedstawiająca rozbudowany ciąg zdarzeń z pewnym stopniem realizmu. </p>
-          <h2>Studium w szkarłacie</h2>
-          <p>Powieść detektywistyczna autorstwa Arthura Conana Doyle’a napisana w 1886, której głównymi bohaterami są detektyw-amator Sherlock Holmes i jego wierny towarzysz doktor Watson, którzy później stali się dwiema najbardziej znanymi postaciami w literaturze.</p>
-          <h2>Znak czterech</h2>
-          <p>Zatytuowana także  w innym przekładzie Znamię czterech to druga powieść kryminalna napisana przez Sir Arthura Conana Doyle'a. Doyle napisał cztery powieści i 56 opowiadań z udziałem fikcyjnego detektywa.</p>
+            <h1>Krótkie historie</h1>
+            <p>Krótkie dzieło literackie, zwykle pisane prozą narracyjną. Krótka historia wywodząca się z wcześniejszych tradycji opowiadania ustnego w XVII wieku, rozrosła się i obejmuje tak różnorodne prace, że trudno jest ją scharakteryzować.</p>
+            <h2>Przygody Sherlocka Holmesa</h2>
+            <p>Zbiór 12 opowiadań Arthura Conana Doyle’a, ilustrowanych przez Sidneya Pageta i opublikowanych pierwotnie w „The Strand Magazine” w latach 1891–1892. I wydanie książkowe ukazało się 14 października 1892 w liczbie 10 tysięcy egzemplarzy. Podobnie jak w wymienionych wcześnej tytułach, Holmes rozwiązuje nietypowe i skomplikowane zagadki kryminalne, posługując się przede wszystkim metodą dedukcji. </p>
 
-          <h1>Krótkie historie</h1>
-          <p>Krótkie dzieło literackie, zwykle pisane prozą narracyjną. Krótka historia wywodząca się z wcześniejszych tradycji opowiadania ustnego w XVII wieku, rozrosła się i obejmuje tak różnorodne prace, że trudno jest ją scharakteryzować.</p>
-          <h2>Przygody Sherlocka Holmesa</h2>
-          <p>Zbiór 12 opowiadań Arthura Conana Doyle’a, ilustrowanych przez Sidneya Pageta i opublikowanych pierwotnie w „The Strand Magazine” w latach 1891–1892. I wydanie książkowe ukazało się 14 października 1892 w liczbie 10 tysięcy egzemplarzy. Podobnie jak w wymienionych wcześnej tytułach, Holmes rozwiązuje nietypowe i skomplikowane zagadki kryminalne, posługując się przede wszystkim metodą dedukcji. </p>
+            <h3>„Skandal w Bohemii”</h3>
+            <p>Pierwsze opowiadanie z cyklu 56 opisujących przygody detektywa Sherlocka Holmesa autorstwa Arthura Conana Doyle’a, które ukazały się w The Strand Magazine. Alternatywne polskie tytuły to Królewski skandal, Niezwykła kobieta i Skandal w Czechach.</p>
+            <h3>„Związek rudowłosych”</h3>
+            <p>Opowiadanie Arthura Conana Doyle’a z serii przygód Sherlocka Holmesa. Pierwsza publikacja w The Strand Magazine w sierpniu 1891, następna w tomie Przygody Sherlocka Holmesa w 1892. Ilustrowane przez Sidneya Pageta. Znane też pod tytułem „Stowarzyszenie Czerwonowłosych” bądź „Liga Rudych”.</p>
+          </details>
 
-          <h3>„Skandal w Bohemii”</h3>
-          <p>Pierwsze opowiadanie z cyklu 56 opisujących przygody detektywa Sherlocka Holmesa autorstwa Arthura Conana Doyle’a, które ukazały się w The Strand Magazine. Alternatywne polskie tytuły to Królewski skandal, Niezwykła kobieta i Skandal w Czechach.</p>
-          <h3>„Związek rudowłosych”</h3>
-          <p>Opowiadanie Arthura Conana Doyle’a z serii przygód Sherlocka Holmesa. Pierwsza publikacja w The Strand Magazine w sierpniu 1891, następna w tomie Przygody Sherlocka Holmesa w 1892. Ilustrowane przez Sidneya Pageta. Znane też pod tytułem „Stowarzyszenie Czerwonowłosych” bądź „Liga Rudych”.</p>
-		</details>
-	</div>
-</div>
+          <details id="details-panel10">
+            <summary>Co i jak testować</summary>
+            <h2>Co i jak testować</h2>
+            <h3>Problemy</h3>
+            <ul>
+              <li>oznaczanie bloków treści</li>
+              <li>streszczanie treści</li>
+              <li>poprawna hierarchia</li>
+              <li>zwięzłość</li>
+            </ul>
+            <h3>Co sprawdzać?</h3>
+            <ul>
+              <li>Czy treści, które wyglądają jak nagłowki zostały oznakowane jako nagłówki<!--Czy widoczne nagłówki są określono programowo za pomocą znaczników <code>Hx</code> lub atrybutu <code>role="heading"</code>-->?</li>
+              <li>Czy poziom nagłówka poprawnie wskazuje przynależność treści do większych części?</li>
+              <li>Czy nagłówki opisują wystarczająco następującą po nich treść?</li>
+            </ul>
+
+            <div class="note info">
+              <p>Twórca strony nie musi stosować nagłówków!</p>
+              <p><strong>Streszczanie treści</strong>: Jeśli na stronie występują nagłówki, powinny opisywać następującą po nich treść.</p>
+              <p><strong>Poprawna hierarchia</strong>: Jeśli na stronie istnieje więcej nagłowków, poziom nagłówków powinien odzwierciedlać przynależność treści do większych części, to znaczy że np. treść oznaczona nagłówkiem <code>h2</code> nie może być częścią treści oznaczonej nagłówkiem <code>h3</code> lub niższego poziomu.</p>
+            </div>
+          </details>		
+
+        </div>
+      </div>
 
 
       <!-- szczegóły strony -->
@@ -270,7 +272,7 @@
         <dl id="wb-dtmd">
           <dt>Data modyfikacji:</dt>
           <dd>
-            <time property="dateModified">2020-06-10</time>
+           <time datetime="2011-11-01" property="dateModified">15 listopada 2020</time>
           </dd>
         </dl>
       </div>
