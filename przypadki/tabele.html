@@ -122,10 +122,35 @@
 	<div class="tabpanels">
 		<details id="details-panel00">
 			<summary>Co i jak testować</summary>
-                    <div class="note info">
-					<p>Uzytkownicy czytnika ekranu mogą nawigować po komórkach tabeli za pomocą klawiszy sterujących.</p>  
-					<p>Aby przejść do tabeli, naciśnij klawisz <strong> T</strong>. Aby nawigować między komórkami, przytrzymaj naciśnięte klawisze <strong>Ctrl + Alt</strong> oraz użyj <strong>klawisz strzałek</strong>, by przenosić się z komórki do komórki.</p>
-                    </div>
+
+			  <h3>Problemy</h3>
+			  <ul>
+			  <li>tabele danych i tabele układu</li>
+			  <li>tabele proste i tabele złożone</li>
+			  <li>powiązanie nagłówków z komórkami danych</li>
+			  <li>podpisy</li>
+			  </ul>
+			  <h3>Co sprawdzać?</h3>
+			  <ul>
+			  <li>Czy dane są powiązane z nagłowkami kolumn/wierszy?</li>
+			  <li>Czy komórki nagłówków są oznaczone jako takie?</li>
+			  <li>Czy każda tabela ma opisujący ją tytuł?</li>
+			  <li>Czy określono zakres każdego nagłówka atrybutem <code>scope="col"</code>/<code>scope="row"</code></li>
+			  <li>Czy w tabelach złożonych oznaczono powiązania komórek atrybutami <code>id</code> i <code>headers</code>?</li>
+			  <li>Czy w tabelach układu pominięto oznakowanie struktury przeznaczone dla tabel danych (<code>caption</code>, <code>th</code>, <code>head</code>, <code>foot</code>, <code>role="table"</code>?
+			  </ul>
+                <div class="note info">
+ 
+                  <p>Użytkownicy czytnika ekranu mogą nawigować po komórkach tabeli za pomocą klawiszy sterujących.</p>  
+                  <p>Aby przejść do tabeli, naciśnij klawisz <strong> T</strong>. Aby nawigować między komórkami, przytrzymaj naciśnięte klawisze <strong>Ctrl + Alt</strong> oraz użyj <strong>klawisz strzałek</strong>, by przenosić się z komórki do komórki.</p>
+                </div>
+  
+  <div class="note info">
+
+                  <p>Użytkownicy czytnika ekranu mogą nawigować po komórkach tabeli za pomocą klawiszy sterujących.</p>  
+                  <p>Aby przejść do tabeli, naciśnij klawisz <strong> T</strong>. Aby nawigować między komórkami, przytrzymaj naciśnięte klawisze <strong>Ctrl + Alt</strong> oraz użyj <strong>klawisz strzałek</strong>, by przenosić się z komórki do komórki.</p>
+                </div>
+
 		</details>
 
 		<details id="details-panel10">

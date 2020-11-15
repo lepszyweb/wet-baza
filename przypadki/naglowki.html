@@ -116,15 +116,26 @@
 	<div class="tabpanels">
 		<details id="details-panel10">
 			<summary>Jak testować</summary>
-			<p>
+			  <h3>Problemy</h3>
+			  <ul>
+			  <li>oznaczanie bloków treści</li>
+			  <li>streszczanie treści</li>
+			  <li>poprawna hierarchia</li>
+			  <li>zwięzłość</li>
+			  </ul>
+			  <h3>Co sprawdzać?</h3>
+			  <ul>
+			  <li>Czy treści, które wyglądają jak nagłowki zostały oznakowane jako nagłówki<!--Czy widoczne nagłówki są określono programowo za pomocą znaczników <code>Hx</code> lub atrybutu <code>role="heading"</code>-->?</li>
+			  <li>Czy poziom nagłówka poprawnie wskazuje przynależność treści do większych części?</li>
+			  <li>Czy nagłówki opisują wystarczająco następującą po nich treść?</li>
+			  </ul>
 
+                <div class="note info">
+				<p>Twórca strony nie musi stosować nagłówków!</p>
+				<p><strong>Streszczanie treści</strong>: Jeśli na stronie występują nagłówki, powinny opisywać następującą po nich treść.</p>
+				<p><strong>Poprawna hierarchia</strong>: Jeśli na stronie istnieje więcej nagłowków, poziom nagłówków powinien odzwierciedlać przynależność treści do większych części, to znaczy że np. treść oznaczona nagłówkiem <code>h2</code> nie może być częścią treści oznaczonej nagłówkiem <code>h3</code> lub niższego poziomu.</p>
+                </div>
 
-Struktura strony
-Sygnały struktury
-Poprawna hierarchia
-
-
-			</p>
 		</details>
 		<details id="details-panel20">
 			<summary>Zła praktyka</summary>
