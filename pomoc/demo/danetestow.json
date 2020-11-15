@@ -74,7 +74,7 @@
   }, {
     "LP": "07",  
     "GRUPA": "Treści nietekstowe",
-    "TEST": "<a href=\"\">Graficzne kontrolki formularzy/a>",
+    "TEST": "<a href=\"\">Graficzne kontrolki formularzy</a>",
     "ID": "7.D",
     "KS": "<a href=\"https://wcag.lepszyweb.pl/#non-text-content\">1.1.1</a>",
     "POZIOM": "A",
