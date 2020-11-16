@@ -45,8 +45,6 @@
 
 
   <body vocab="http://schema.org/" typeof="WebPage">
-
-
     <nav>
       <ul id="wb-tphp">
         <li class="wb-slc">
@@ -68,7 +66,8 @@
             <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
           </ul>
           <div id="mb-pnl"></div>
-        </section>	 		
+        </section>	 			
+
 
         <div class="row">
           <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="./../index.html" property="url"><img src="./../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
@@ -90,29 +89,29 @@
           </section>
         </div>
       </div>
-
       <nav role="navigation" id="wb-sm" data-ajax-replace="./../ajax/menu-audyt.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
         <div class="container nvbar">
           <h2>Spis tematów</h2>
           <div class="row">
             <ul class="list-inline menu">
-              <li><a href="./index.html">O szkoleniu</a></li>
-              <li><a href="./przypadki/index.html">Przypadki</a></li>		  
+              <li><a href="./index.html#about">Przypadki</a></li>
+              <li><a href="./przypadki/index.html">Startowa</a></li>		  
               <li><a href="./zgodne/index.html">Zgodne</a></li>
               <li><a href="./niezgodne/index.html">Niezgodne</a></li>
-              <li><a href="./wzorce/index.html">Wzorce</a></li>
-              <li><a href="./szablony/index.html">Szablony</a></li>					  
-              <li><a href="./pomoc/index.html">Pomoc</a></li>		
+              <li><a href="./wzorce/index.html">Wzorce</a></li>			  
+              <li><a href="./pomoc/index.html">Pomoc</a></li>
             </ul>
           </div>
         </div>
       </nav>
-
-      <nav id="wb-bc" property="breadcrumb" aria-label="Ścieżka powrotu">
+      <nav role="navigation" id="wb-bc" property="breadcrumb">
         <h2>Jesteś tutaj:</h2>
         <div class="container">
           <div class="row">
             <ol class="breadcrumb">
+              <li>
+                <a href="./../index.html">Start</a>
+              </li>
               <li>
                 <a href="./zgodna/index.html">Start</a>
               </li>
@@ -122,7 +121,6 @@
         </div>
       </nav>
     </header>
-
  
  <!-- start Main-->
     <main property="mainContentOfPage" class="container" typeof="WebPageElement" id="main-contentP2">
