@@ -1,0 +1,519 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="pl" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl" dir="ltr">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Strona główna - LepszyWeb.pl</title>
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="./../LWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../LWeb/css/theme.css">
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+  <link href="./../LWeb/assets/favicon.ico" rel="shortcut icon" />
+
+  <link rel="stylesheet" href="./../LWeb/css/ie8-theme.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="./../wet-boew/js/ie8-wet-boew.min.js"></script>
+  <![endif]-->
+    <!--[if lte IE 9]>
+
+
+  <![endif]-->
+    <noscript><link rel="stylesheet" href="./../wet-boew/css/noscript.min.css" /></noscript>
+
+<style>
+.numSearch{font-size:2.5em}
+.red {color: red;}
+#ruchomyTekst {
+			/* Starting position */
+			-moz-transform:translateX(100%);
+			-webkit-transform:translateX(100%); 
+			transform:translateX(100%);
+			/* Apply animation to this element */ 
+			-moz-animation: ruchomyTekst 10s linear infinite;
+			-webkit-animation: ruchomyTekst 10s linear infinite;
+			animation: ruchomyTekst 10s linear infinite;
+		}
+			
+		/* Move it (define the animation) */
+		@-moz-keyframes ruchomyTekst {
+			0% { -moz-transform: translateX(100%); }
+			100% { -moz-transform: translateX(-100%); }
+		}
+		
+		@-webkit-keyframes ruchomyTekst {
+			0% { -webkit-transform: translateX(100%); }
+			100% { -webkit-transform: translateX(-100%); }
+		}
+		
+		@keyframes ruchomyTekst {
+			0% { 
+				-moz-transform: translateX(100%); /* Browser bug fix */
+				-webkit-transform: translateX(100%); /* Browser bug fix */
+				transform: translateX(100%); 
+			}
+			
+			100% { 
+				-moz-transform: translateX(-100%); /* Browser bug fix */
+				-webkit-transform: translateX(-100%); /* Browser bug fix */
+				transform: translateX(-100%); 
+			}
+		}
+</style>
+    <script>
+        var totalNum = 1130765;
+        var auto_begin = setInterval(startCount, 1000);
+
+        function stopCount() {
+            // this function stops the counter
+            window.clearInterval(auto_begin);
+            document.getElementById('disableUpdate').innerHTML = 'Liczba unikalnych wyszukiwań jest wyświetalana z dokładnością do 100 trafień.<br><br><a id="disableUpBtn" href="#noScroll" onclick="resumeCount(); focusContent(\'#disableUpBtn\');" tabindex="0">włącz aktualizacje</a>';
+        }
+
+        function resumeCount() {
+            document.getElementById('disableUpdate').innerHTML = '<a id="disableUpBtn" href="#noScroll" onclick="stopCount(); focusContent(\'#disableUpBtn\');" tabindex="0" >wyłącz aktualizacje</a>';
+            auto_begin = setInterval(startCount, 1000);
+        }
+
+        function startCount() {
+            if (window.document.getElementById('increasedNum')) {
+                var num = Math.floor(Math.random() * (10)) + 1;
+                totalNum = totalNum + num;
+                // var finalNum = totalNum+12000;
+                var numString = totalNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+                document.getElementById('increasedNum').innerHTML = numString;
+            }
+            // return (5.000 + (total_increasedNum / 1000)).toFixed(3);
+        }
+    </script>
+  </head>
+
+  <body vocab="http://schema.org/" typeof="WebPage">
+
+
+    <nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-cont">Przejdź do treści głównej</a>
+        </li>
+        <li class="wb-slc">
+          <a class="wb-sl" href="#wb-info">Przejdź do &bdquo;O tej stronie&rdquo;</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container">
+        <!-- Sekcja Wybierz język -->
+        <!-- Koniec sekcji Wybierz język -->
+
+        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+          <h2>Wyszukiwanie i menu</h2>
+          <ul class="pnl-btn list-inline text-right">
+            <li><a href="#mb-pnl" title="Wyszukiwanie i menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Wyszukiwanie i menu</span></span></span></a></li>
+          </ul>
+          <div id="mb-pnl"></div>
+        </section>	 		
+
+        <div class="row">
+          <div class="brand col-xs-5 col-md-4" property="publisher" typeof="LocalBusiness"> <a href="./../index.html" property="url"><img src="./../LWeb/assets/lepszyweb.svg" alt="" property="logo"><span class="wb-inv" property="name"> Pracownia Dostępności Cyfrowej / <span lang="en">Digital Accessibility Lab</span></span></a>
+            <meta property="areaServed" typeof="Country" content="Polska">
+            <link property="logo" href="./../LWeb/assets/lepszyweb-min.svg">
+          </div>
+          <section id="wb-srch" class="col-lg-8 text-right">
+            <h2>Szukaj</h2>
+            <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+              <div class="form-group">
+                <label for="wb-srch-q" class="wb-inv">Szukaj na LepszyWeb.pl</label>
+                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Szukaj na LepszyWeb.pl">
+                <datalist id="wb-srch-q-ac"> </datalist>
+              </div>
+              <div class="form-group submit">
+                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Szukaj</span></button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+
+      <nav role="navigation" id="wb-sm" data-ajax-replace="./../ajax/menu-audyt.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+        <div class="container nvbar">
+          <h2>Spis tematów</h2>
+          <div class="row">
+            <ul class="list-inline menu">
+              <li><a href="./index.html">O szkoleniu</a></li>
+              <li><a href="./przypadki/index.html">Przypadki</a></li>		  
+              <li><a href="./zgodne/index.html">Zgodne</a></li>
+              <li><a href="./niezgodne/index.html">Niezgodne</a></li>
+              <li><a href="./wzorce/index.html">Wzorce</a></li>
+              <li><a href="./szablony/index.html">Szablony</a></li>					  
+              <li><a href="./pomoc/index.html">Pomoc</a></li>		
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav id="wb-bc" property="breadcrumb" aria-label="Ścieżka powrotu">
+        <h2>Jesteś tutaj:</h2>
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>
+                <a href="./../index.html">Start</a>
+              </li>
+              <li>Testowa - zgodna</li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+      <div class="welcome text-center section">
+        <h1 id="mainHeadPage1" tabindex="-1">Skutecznie wdrażamy dostępność cyfrową</h1>
+        <h1 id="mainHeadPage1" tabindex="-1">Skutecznie wdrażamy dostępność cyfrową</h1>
+        <p>Naszą misją jest ulepszanie Internetu tak, aby z jego możliwości korzystało jak najwięcej osób. Pomagamy poprawiać dostępność cyfrową serwisów internetowych dla każdego. </p>
+      </div>
+      <div class="top-qualities section">
+        <h2 id="topQualitiesHeader" tabindex="-1">Oferujemy Państwu</h2>
+        <p>Poniżej przedstawiamy odpłatne i nieodpłatne usługi oferowane przez naszą Pracownię Dostępności Cyfrowej.</p>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h3>ALLY - Walidator WCAG</h3>
+            <p>Samodzielnie zbadasz i ocenisz dostępność swoich witryn. Uruchomisz systematyczny monitoring. Wykryjesz problemy i ustalisz plan działań naprawczych. ALLY to jedyne w&nbsp;Polsce i&nbsp;po polsku narzędzie do badania i&nbsp;monitoringu dostępności cyfrowej o&nbsp;tak bogatych możliwościach.</p>
+            <p><a class="btn btn-primary"href="https://lepszyweb.pl/walidator">Poznaj walidator ALLY</a></p>
+
+          </div>
+          <div class="col-md-6">
+            <img src="./../img/01_walidator_wcag.webp" alt="">       
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./../img/01_szkolenia_wcag.webp" alt="">
+
+          </div>
+          <div class="col-md-6">
+            <h3>Szkolenia</h3>
+            <p>Dostępność cyfrowa wymaga nowej wiedzy i umiejętności!<br />Nasze szkolenia uczą:</p>
+            <ul>
+              <li>jak koordynować wdrażanie dostępności cyfrowej</li>
+              <li>jak racjonalizować koszty, jakie wdrażać procedury</li>
+              <li>jak tworzyć dostępne dokumenty biurowe</li>
+              <li>jak przeprowadzać przeglądy i audyty dostępności</li>
+              <li>jak przygotować deklarację dostępności</li>
+              <li>jak tworzyć dostępne strony internetowe</li>		
+            </ul> 
+            <p><a class="btn btn-primary"href="https://lepszyweb.pl/szkolenia">Zobacz ofertę szkoleń</a></p>			
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Konsultacje</h3>
+            <p>Nasi konsultanci mogą pomóc Tobie i Twojemu zespołowi:</p>
+
+            <ul>
+              <li>w przygotowaniu diagnozy aktualnego stanu   
+              <li>w przeprowadzeniu przeglądów dostępności</li>
+              <li>w przygotowaniu deklaracji dostępności</li>
+              <li>w opracowaniu polityki dostępności</li>
+			  <li>w planowaniu zadań i ich priorytetyzacji</li>
+              <li>w opracowaniu procedur zapewnienia dostępności</li>
+              <li>w definiowaniu wymagań przy zamawianiu produktów</li>
+            </ul>	
+            <p><a class="btn btn-primary"href="https://lepszyweb.pl/konsultacje">Zamów konsultacje z ekspertem</a></p>
+
+
+          </div>
+          <div class="col-md-6">
+            <img src="./../img/01_konsultacje_wcag.webp" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./../img/01_strony_ineternetowe_wcag.webp" alt="">
+          </div>
+          <div class="col-md-6">
+            <h3>Dostępna strona internetowa</h3>
+            <p>Wybierz najlepszą strategię i ogranicz niezbędne koszty:</p>
+			<ul>
+            <li>Ustal wykaz problemów i zleć naprawy interwencyjne</li>
+            <li>Stwórz dostępną stronę z pakietu startowego</li>
+            <li>Zamów nową strony według indywidualnego projektu</li>
+            <li>Zleć nową stronę z przeniesieniem danych ze starej</li>
+            </ul>
+
+            <p><a class="btn btn-primary"href="https://dostepnastrona.pl/">Przejdź na stronę oferty</a></p>			
+          </div>
+        </div>
+      </div> 
+
+<!-- dodana sekcja ruchomyTekst -->	
+<!-- koniec sekcji ruchomyTekst -->	  
+<!-- Sekcja filmu -->
+        <div class="row  physical section text-center">
+            <h2 id="physicalHealthHeader" class="red">Physical Health on-Hold</h2>
+            <p>Jakiś tekst</p>
+            <div class="vid-con">
+                <video id="video1" class="video1-style" autoplay="autoplay" muted="">
+                    <source src="video/w3_page1_vid_audio.mp4" srclang="en" type="video/mp4">
+                    <track kind="captions" srclang="en" src="video/page1_video1.vtt" label="English">
+                    Twoja przeglądarka nie obsługuje tego filmu
+                </video>
+            </div>
+			
+	         <!--   <div class="vid-con">
+                
+				 <video id="video1" class="video1-style" 
+				autoplay="autoplay" 
+				muted=""> 
+				<video id="video2" class="video1-style">
+                    <source src="video/w3_page1_vid_audio.mp4" srclang="en" type="video/mp4">
+                    <track kind="captions" srclang="en" src="video/page1_video1.vtt" label="English">
+                    Twoja przeglądarka nie obsługuje tego filmu
+                </video>
+            </div>		-->	
+
+			
+            <div class="vidBnt-con">
+                <button tabindex="0" onclick="playPause(&#39;video1&#39;,&#39;vidplay&#39;)" id="vidplay">Pauza</button>
+                <button tabindex="0" id="btnRewind" onclick="rewind(&#39;video1&#39;)">Do tyłu</button>
+                <button tabindex="0" id="btnForward" onclick="forward(&#39;video1&#39;)">Do przodu</button>
+                <button tabindex="0" onclick="openTranscript(1)" target="_blank">Transkrypcja</button>
+                <button tabindex="0" id="CCBtn" aria-label="Napisy zamknięte: Wyłącz">Napisy (CC): Wyłącz</button>
+                <button tabindex="0" id="ADBtn" aria-label="Audiodeskrypcja: Wyłącz">AD: Wyłącz</button>
+                <button tabindex="0" id="btnMute" onclick="toggleMute();">Włącz dźwięk</button>
+
+            </div>
+        </div>
+<!-- koniec sekcji filmu -->	  
+<!-- sekcja Bezpłatne uslugi -->	  
+	  
+	  
+	  
+	  
+	  
+	  <section aria-labelledby="bezplatneUslugi" class="row text-center">
+
+	  <h2 id="bezplatneUslugi" class="red">Nasze bezpłatne usługi</h2>
+	  <div class="col-md-4 text-center">
+	  <img src="./../img/01_kontrast.webp" width="50%" alt="">
+	  	  <h3>Sprawdź kontrast</h3>
+	  <p>Znajdź kontrasty kolorów odpowiednie do Twojej palety barw, aby zapewnić dostępność cyfrową swoich stron.</p>
+	   <p><a class="btn btn-primary"href="https://kontrast.lepszyweb.pl/">Wyszukiwarka kontrastów</a></p>	
+	  </div>
+	  <div class="col-md-4 text-center ">
+	  <img src="./../img/01_przed_po.webp" width="50%" alt="">
+	  <h3>Przed i Po</h3>
+	  <p>Zobacz, poznaj, zbadaj 45 barier i rozwiązań dostępności. Wykorzystaj nasze demo w samokształceniu lub na szkoleniu</p>
+	  <p><a class="btn btn-primary"href="https://przedipo.lepszyweb.pl/">Demo Przed i Po</a></p>
+	  </div>
+	  <div class="col-md-4 text-center ">
+	  <img src="./../img/01_deklaracje_dostepnosci.webp" width="50%" alt="">
+	  	  <h3>Wygeneruj deklarację </h3>
+	  <p>Przygotuj deklarację dostępności za pomocą naszego generatora. W kilku krokach otrzymasz potrzebny Ci kod do umieszczenia na stronie.</p>
+	  <p><a class="btn btn-primary"href="https://deklaracja.lepszyweb.pl/">Generator deklaracji</a></p>
+	  </div>
+	  </section>
+<!-- koniec sekcji BezplatneUslugi -->
+<!-- Sekcja z dynamiczna aktualizacja tekstu -->		
+        <div class="row text-center section">
+		
+            <h2 id="numSearches" aria-label="Zarejestrowanych użytkowników">Liczba unikalnych wyszukiwań witryny &bdquo;LepszyWeb&rdquo;.</h2>
+            <p id="increasedNum" class="numSearch" aria-live="polite"   aria-labelledby="numSearches">1 130 765</p>		
+            <p id="disableUpdate"><a id="disableUpBtn" href="#noScroll" onclick="stopCount(); focusContent(&#39;#disableUpBtn&#39;);" tabindex="0">wyłącz aktualizację</a></p>
+        </div>		
+		
+<!-- koniec sekcji z dynamiczna aktualizacja tekstu -->	
+      <!-- szczegóły strony -->
+      <div class="pagedetails">
+      <div class="pagedetails">
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-lg-4">
+            <details class="brdr-0">
+              <summary class="btn btn-default text-center">Zgłoś problem z tą stroną</summary>
+
+              <div class="well row">
+                <div class="gc-rprt-prblm">
+                  <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+                    <form action="#">
+                      <fieldset>
+                        <legend><span class="field-name">Zaznacz wszystko, czego dotyczy zgłoszenie: </span></legend>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f1">
+                            <input type="checkbox" name="problem1" value="Tak" id="gc-rprt-prblm-f1">Łącze, przycisk lub wideo nie działa
+                          </label>
+                          <input name="problem1" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f2">
+                            <input type="checkbox" name="problem2" value="Tak" id="gc-rprt-prblm-f2">Na stronie są błędy ortograficzne lub gramatyczne
+                          </label>
+                          <input name="problem2" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f3">
+                            <input type="checkbox" name="problem3" value="Tak" id="gc-rprt-prblm-f3">Informacje są błędne
+                          </label>
+                          <input name="problem3" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f4">
+                            <input type="checkbox" name="problem4" value="Tak" id="gc-rprt-prblm-f4">Informacje są nieaktualne
+                          </label>
+                          <input name="problem4" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f5">
+                            <input type="checkbox" name="problem5" value="Tak" id="gc-rprt-prblm-f5">Nie mogę znaleźć, czego szukam
+                          </label>
+                          <input name="problem5" type="hidden" value="Nie">
+                        </div>
+                        <div class="checkbox">
+                          <label for="gc-rprt-prblm-f6">
+                            <input type="checkbox" name="problem6" value="Tak" id="gc-rprt-prblm-f6">Inne, ktorych nie ma na tej liście
+                          </label>
+                          <input name="problem6" type="hidden" value="Nie">
+                        </div>
+                      </fieldset>
+                      <button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Wyślij</button>
+                    </form>
+                  </div>
+                  <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+                    <h3>Dziękujemy za Twoją pomoc!</h3>
+                    <p>Nie otrzymasz odpowiedzi na tę wiadomość. Jeśli masz pytania, <a href="https://lepszyweb.pl/kontakt.html">napisz do nas</a>.</p>
+                  </div>
+                </div>
+              </div>
+            </details>
+
+
+          </div>
+          <div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+        </div>
+        <dl id="wb-dtmd">
+          <dt>Data modyfikacji:</dt>
+          <dd>
+           <time datetime="2011-11-01" property="dateModified">15 listopada 2020</time>
+          </dd>
+        </dl>
+      </div>
+
+    </main>
+    <footer id="wb-info">
+      <div class="landscape">
+        <nav class="container wb-navcurr">
+          <h2 class="wb-inv">O usługach LepszyWeb.pl</h2>
+          <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+            <li><a href="https://wcag.lepszyweb.pl/">Jak spełnić WCAG?</a></li>
+            <li><a href="https://lepszyweb.pl/walidator">ALLY - walidator dostępności</a></li>
+            <li><a href="https://lepszyweb.pl/andi">ANDI - inspektor dostępności</a></li>
+            <li><a href="https://raport.lepszyweb.pl/">Generator raportów z oceny</a></li>
+            <li><a href="https://deklaracja.lepszyweb.pl">Generator deklaracji dostępności</a></li>
+            <li><a href="https://kontrast.lepszyweb.pl">Wyszukiwarka kontrastów</a></li>
+            <li><a href="https://przedipo.lepszyweb.pl">Demo Przed i Po</a></li>
+            <li><a href="https://lepszyweb.pl/walidator/5-rodzajow-wynikow-testow-dostepnosci">5 rodzajów wyników testów dostępności </a></li>
+            <li><a href="https://lepszyweb.pl/walidator/audyt-wspomagany">Audyt wspomagany</a></li>
+            <li><a href="https://lepszyweb.pl/walidator/dlaczego-metoda-rgaa">Dlaczego metoda RGAA?</a></li>
+            <li><a href="https://lepszyweb.pl/walidator/orientacyjny-miernik-dostepnosci">Orientacyjny miernik dostępności </a></li>
+            <li class="nav-item"><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/rgaa-jako-metoda-oceniania-dostepnosci">RGAA jako metoda oceniania dostępności</a></li>
+            <li class="nav-item"><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/struktura-wynikow">Struktura wyników</a></li>
+            <li class="nav-item"><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/walidator/szybki-audyt-stron">Szybki audyt stron</a></li>
+            <li><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/audyt-dostepnosci-we-wlasnym-zakresie">Audyt dostępności we własnym zakresie</a></li>
+            <li><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/tworzenie-dokumentow-pdf">Tworzenie dokumentów PDF</a></li>
+            <li><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/tworzenie-dostepnych-dokumentow-biurowych">Tworzenie dostępnych dokumentów biurowych</a></li>
+            <li class="nav-item"><a class="mod-articles-category-title nav-link px-0" href="https://lepszyweb.pl/szkolenia/zarzadzanie-dostepnoscia-cyfrowa">Zarządzanie dostępnością cyfrową</a></li>
+
+          </ul>
+        </nav>
+      </div>
+      <div class="brand">
+        <div class="container">
+          <div class="row">
+
+            <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+              <h2 class="wb-inv">O tej stronie</h2>
+              <ul>
+                <li><a href="./pages/prawne/o-lepszyweb.html/wsieci.html">W Sieci</a></li>
+                <li><a href="./pages/prawne/o-lepszyweb.html">O LepszyWeb.pl</a></li>
+                <li><a href="./pages/prawne/regulamin.html">Regulamin</a></li>
+                <li><a href="./pages/prawne/prywatnosc.html">Prywatność</a></li>			  
+                <li><a href="./pages/prawne/dostepnosc.html">Dostępność</a></li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg"> 
+              <a href="#wb-cont">Góra strony <span class="glyphicon glyphicon-chevron-up"></span></a> 
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="./../LWeb/assets/lepszyweb-min.svg" alt="Logo Pracowni Dostępności Cyfrowej LepszyWeb.pl"> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="./../wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+ <script src="./../wet-boew/js/ie8-wet-boew2.min.js"></script>
+
+ <![endif]-->
+    <script src="./../LWeb/js/theme.min.js"></script>	
+    <script src="js/main.js"></script>
+	<script>
+		// global var used to determine which AD to use
+		var websiteNum = 3;
+		handleCC();
+		handleAD();
+		createVideoEndListener('video1','vidplay');
+		
+		function toggleMute() {
+			var video1 = document.getElementById("video1");
+			var muteBtn = document.getElementById("btnMute");
+			
+			if (video1.muted) {
+				video1.muted = false;
+				muteBtn.innerHTML = "Włącz dźwięk";
+			}
+			else {
+				video1.muted = true;
+				muteBtn.innerHTML = "Włącz dźwięk";
+			}
+
+		}
+	</script>
+	<script>
+		/* var t = setInterval(function () {
+			var ele = document.getElementById('ruchomyTekst');
+			ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+		}, 1000); */
+
+		function openTranscript(pageNum) {
+		  // opens the html transcript with the name given
+		  var fullName = "transcript_" + pageNum + ".html";
+		  window.open(fullName);
+		}
+	</script>	
+	
+	
+    <script src="js/videoPlayerAD.js"></script>
+	<audio preload="auto" src="audio/w3_ma1.mp3" id="ad0"></audio>
+
+
+
+
+
+
+
+
+  </body>
+</html>
