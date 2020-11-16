@@ -63,7 +63,7 @@ function overlayClick(bigButton) {
     document.getElementById("playButtonLarge").parentElement.removeChild(document.getElementById("playButtonLarge"));
     if(!bigButton) {
         var btnPlay = getBtnPlay();
-        btnPlay.innerHTML = "Pause";
+        btnPlay.innerHTML = "Pauza";
         btnPlay.value = "pause";
     }
     initVidTime();
@@ -148,7 +148,7 @@ function parseDescriptions(XML) {
 function newAudioEl(index) {
     var thisEl = document.createElement("audio");
     thisEl.preload = "auto";
-    thisEl.src = "./audio/silent.mp3";
+    thisEl.src = "./../audio/silent.mp3";
     thisEl.id = "ad" + index;
     document.getElementsByTagName("body")[0].appendChild(thisEl);
 }

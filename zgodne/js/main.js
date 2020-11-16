@@ -23,7 +23,7 @@ function playPause(videoTagID, playBtnId) {
   if (myVideo.paused) {
     myVideo.play();
     btn.value = 'pause'; // will just add a hidden value
-    btn.innerHTML = 'Pause';
+    btn.innerHTML = 'Pauza';
 	if (headerPause !== null) { headerPause.innerHTML = "<button tabindex=\"2\" onclick=\"playPause('video1','vidplay')\">Pauza &raquo;</button>"; }
   } else if (!myVideo.paused) {
     myVideo.pause();
@@ -140,8 +140,8 @@ function handleAD() {
 }
 
 function handlePage2Audio(showMute) {
-  var muteText = "Włącz dźwięk";
-  var unmuteText = "Wyłącz dźwięk";
+  var muteText = "Wyłącz dźwięk";
+  var unmuteText = "Włącz dźwięk";
   if (!showMute) { 
 	  muteText = "";
 	  unmuteText = "";
@@ -187,14 +187,14 @@ function handlePage2Audio(showMute) {
         isMuted = true;
         buttonMute.innerHTML = unmuteText+" <span id='muteIcon' class='glyphicon glyphicon-volume-up' tabindex='-1' role='presentation'></span>";
 		buttonMute.title = "Włącz dźwięk";
-        // console.log("Dźwięk powinien być wyłączony [wyciszony]");
+        console.log("Dźwięk powinien być wyłączony [wyciszony]");
 
       } else if (isPlaying && isMuted) {
         audio.muted = !audio.muted;
         isMuted = false;
         buttonMute.innerHTML = muteText+" <span id='muteIcon' class='glyphicon glyphicon-volume-up' tabindex='-1' role='presentation'></span>";
 		buttonMute.title = "Wyłącz dźwięk";
-        // console.log("Dźwięk powinien być włączony [odtwarzany]"); 
+        console.log("Dźwięk powinien być włączony [odtwarzany]"); 
       }
     });
 

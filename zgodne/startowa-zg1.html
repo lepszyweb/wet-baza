@@ -74,7 +74,7 @@
         function stopCount() {
             // this function stops the counter
             window.clearInterval(auto_begin);
-            document.getElementById('disableUpdate').innerHTML = 'Liczba unikalnych wyszukiwań jest wyświetalana z dokładnością do 100 trafień.<br><br><a id="disableUpBtn" href="#noScroll" onclick="resumeCount(); focusContent(\'#disableUpBtn\');" tabindex="0">włącz aktualizacje</a>';
+            document.getElementById('disableUpdate').innerHTML = 'Liczba unikalnych wyszukiwań jest wyświetalana z dokładnością do 100 trafień.<br><br><a id="disableUpBtn" href="#noScroll" onclick="resumeCount(); focusContent(\'#disableUpBtn\');" tabindex="0">Włącz aktualizacje</a>';
         }
 
         function resumeCount() {
@@ -288,8 +288,8 @@
                 <button tabindex="0" id="btnRewind" onclick="rewind(&#39;video1&#39;)">Do tyłu</button>
                 <button tabindex="0" id="btnForward" onclick="forward(&#39;video1&#39;)">Do przodu</button>
                 <button tabindex="0" onclick="openTranscript(1)" target="_blank">Transkrypcja</button>
-                <button tabindex="0" id="CCBtn" aria-label="Napisy zamknięte: Włącz">Napisy (CC): Włącz</button>
-                <button tabindex="0" id="ADBtn" aria-label="Audiodeskrypcja: Włącz">AD: Włącz</button>
+                <button tabindex="0" id="CCBtn" aria-label="Napisy zamknięte: Wyłącz">Napisy (CC): Wyłącz</button>
+                <button tabindex="0" id="ADBtn" aria-label="Audiodeskrypcja: Wyłącz">AD: Wyłącz</button>
                 <button tabindex="0" id="btnMute" onclick="toggleMute();">Włącz dźwięk</button>
 
             </div>
@@ -329,7 +329,7 @@
 		
             <h2 id="numSearches" aria-label="Zarejestrowanych użytkowników">Liczba unikalnych wyszukiwań witryny &bdquo;LepszyWeb&rdquo;.</h2>
             <p id="increasedNum" class="numSearch" aria-live="polite"   aria-labelledby="numSearches">1 130 765</p>		
-            <p id="disableUpdate"><a id="disableUpBtn" href="#noScroll" onclick="stopCount(); focusContent(&#39;#disableUpBtn&#39;);" tabindex="0">wyłącz aktualizację</a></p>
+            <p id="disableUpdate"><a id="disableUpBtn" href="#noScroll" onclick="stopCount(); focusContent(&#39;#disableUpBtn&#39;);" tabindex="0">Wyłącz aktualizację</a></p>
         </div>		
 		
 <!-- koniec sekcji z dynamiczna aktualizacja tekstu -->	
@@ -482,7 +482,7 @@
 			
 			if (video1.muted) {
 				video1.muted = false;
-				muteBtn.innerHTML = "Włącz dźwięk";
+				muteBtn.innerHTML = "Wyłącz dźwięk";
 			}
 			else {
 				video1.muted = true;
