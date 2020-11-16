@@ -74,11 +74,11 @@
         function stopCount() {
             // this function stops the counter
             window.clearInterval(auto_begin);
-            document.getElementById('disableUpdate').innerHTML = '<a id="disableUpBtn" href="#noScroll" onclick="resumeCount(); focusContent(\'#disableUpBtn\');" tabindex="0">włącz aktualizacje</a>';
+            document.getElementById('disableUpdate').innerHTML = '<a id="disableUpBtn" href="#noScroll" onclick="resumeCount(); focusContent(\'#disableUpBtn\');" tabindex="0">Włącz aktualizacje</a>';
         }
 
         function resumeCount() {
-            document.getElementById('disableUpdate').innerHTML = '<a id="disableUpBtn" href="#noScroll" onclick="stopCount(); focusContent(\'#disableUpBtn\');" tabindex="0" >wyłącz aktualizacje</a>';
+            document.getElementById('disableUpdate').innerHTML = '<a id="disableUpBtn" href="#noScroll" onclick="stopCount(); focusContent(\'#disableUpBtn\');" tabindex="0" >Wyłącz aktualizacje</a>';
             auto_begin = setInterval(startCount, 1000);
         }
 
@@ -285,7 +285,7 @@
 <!-- Sekcja z dynamiczna aktualizacja tekstu -->		
         <div class="row text-center section">
 		
-            <h2 id="numSearches" aria-label="Zarejestrowanych użytkowników">Liczba wyszukiwań w tym słowa &bdquo;LepszyWeb&rdquo;.</h2>
+            <h2 id="numSearches" aria-label="Zarejestrowanych użytkowników">Liczba unikalnych wyszukiwań witryny &bdquo;LepszyWeb&rdquo;.</h2>
             <p id="increasedNum" class="numSearch" aria-labelledby="numSearches">1 130 765</p>		
         </div>	
 

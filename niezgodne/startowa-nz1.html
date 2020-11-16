@@ -74,11 +74,11 @@
         function stopCount() {
             // this function stops the counter
             window.clearInterval(auto_begin);
-            document.getElementById('disableUpdate').innerHTML = 'Liczba unikalnych wyszukiwań jest wyświetalana z dokładnością do 100 trafień.<br><br><a id="disableUpBtn" href="#noScroll" onclick="resumeCount(); focusContent(\'#disableUpBtn\');" tabindex="0">Włącz aktualizacje</a>';
+            document.getElementById('disableUpdate').innerHTML = '<a id="disableUpBtn" href="#noScroll" onclick="resumeCount(); focusContent(\'#disableUpBtn\');" tabindex="0">Włącz aktualizacje</a>';
         }
 
         function resumeCount() {
-            document.getElementById('disableUpdate').innerHTML = '<a id="disableUpBtn" href="#noScroll" onclick="stopCount(); focusContent(\'#disableUpBtn\');" tabindex="0" >wyłącz aktualizacje</a>';
+            document.getElementById('disableUpdate').innerHTML = '<a id="disableUpBtn" href="#noScroll" onclick="stopCount(); focusContent(\'#disableUpBtn\');" tabindex="0" >Wyłącz aktualizacje</a>';
             auto_begin = setInterval(startCount, 1000);
         }
 
