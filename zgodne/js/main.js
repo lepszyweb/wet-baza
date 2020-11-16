@@ -100,12 +100,12 @@ function handleCC() {
       ccBtn.classList.toggle("add-underline");
 
       if (ccBtn.classList.contains("add-underline")) {
-		ccBtn.innerHTML = "Napisy (CC): Włącz";
-		ccBtn.setAttribute('aria-label', 'Napisy zamknięte: Włącz');
-        textTrack.mode = "showing";
-      } else {
 		ccBtn.innerHTML = "Napisy (CC): Wyłącz";
 		ccBtn.setAttribute('aria-label', 'Napisy zamknięte: Wyłącz');
+        textTrack.mode = "showing";
+      } else {
+		ccBtn.innerHTML = "Napisy (CC): Włącz";
+		ccBtn.setAttribute('aria-label', 'Napisy zamknięte: Włącz');
         textTrack.mode = "hidden";
         hideTracks();
       }
@@ -127,12 +127,12 @@ function handleAD() {
       adBtn.classList.toggle("add-underline");
 
       if (adBtn.classList.contains("add-underline")) {
-		adBtn.innerHTML = "AD: Włącz";
-		adBtn.setAttribute('aria-label', 'Audiodeskrypcja: Włącz');
-        console.log("Audiodeskrypcja jest aktywna")
-      } else {
 		adBtn.innerHTML = "AD: Wyłącz";
 		adBtn.setAttribute('aria-label', 'Audiodeskrypcja: Wyłącz');
+        console.log("Audiodeskrypcja jest aktywna")
+      } else {
+		adBtn.innerHTML = "AD: Włącz";
+		adBtn.setAttribute('aria-label', 'Audiodeskrypcja: Włącz');
         console.log("Audiodeskrypcja jest nieaktywna")
       }
     });
