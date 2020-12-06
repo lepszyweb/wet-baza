@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
   wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>[Tytuł motywu] - LepszyWeb.pl</title>
+    <title>[Techniki WCAG - Błędy] - LepszyWeb.pl</title>
 
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
@@ -103,7 +103,7 @@
               <li>
                 <a href="./../demos/index-pl.html">Przykłady działania</a>
               </li>
-              <li>Testy dostępności cyfrowej</li>
+              <li>Techniki WCAG - Błędy</li>
             </ol>
           </div>
         </div>
@@ -111,155 +111,34 @@
     </header>
 
 <main property="mainContentOfPage" class="container gc-news" typeof="WebPageElement">
-<h1 property="name" id="wb-cont">Testy dostępności cyfrowej</h1>
+<h1 property="name" id="wb-cont">Techniki WCAG - Błędy</h1>
 
 
-<p class="summary">Ta strona zawiera konfigurowalną listę testów dostępności cyfrowej. Możesz określić zakres treści w tabeli (filrowanie) i sposób uporządkowania.</p>
-
-<div class="row">
-  <div class="col-md-12">
-    <h4 class="wb-inv">Opcje filtrowania</h4>
-    <details open>
-      <summary><h4 class="h4">Opcje filtrów</h4></summary>
-      <p class="mrgn-tp-md">Użyj poniższych opcji filtrów, aby dostosować wyświetlanie pozycji w tabeli.</p>
-      <form class="wb-tables-filter" data-bind-to="dataset-filter">
-		<div class="col-md-3">
-		<div class="form-group-3">
-          <fieldset>
-            <legend><span class="field-name">Poziom</span></legend>
-            <ul class="list-unstyled">
-              <li class="checkbox"><label for="dt_poziom0"><input type="checkbox" id="dt_poziom0" name="dt_poziom" data-column="5" value="">wszystkie</label></li>
-              <li class="checkbox"><label for="dt_poziom1"><input type="checkbox" id="dt_poziom1" name="dt_poziom" data-column="5" value="A">A</label></li>
-              <li class="checkbox"><label for="dt_poziom2"><input type="checkbox" id="dt_poziom2" name="dt_poziom" data-column="5" value="AA">AA</label></li>
-              <li class="checkbox"><label for="dt_poziom3"><input type="checkbox" id="dt_poziom3" name="dt_poziom" data-column="5" value="AAA">AAA</label></li>
-            </ul>
-
-            </select>
-        </div>
-        </div>		
-		<div class="col-md-3">
-        <div class="form-group">
-          <label for="dt_zasada">Zasada</label>
-          <select class="form-control" id="dt_zasada" name="dt_zasada" data-column="6">
-            <option value="">Dowolna zasada</option>
-            <option value="postrzegalność">Postrzegalność</option>
-            <option value="funkcjonalność">Funkcjonalność</option>
-            <option value="zrozumiałość">Zrozumiałość</option>
-            <option value="solidność">Solidność</option>
-            <option value="Wymagania ogólne">Wymagania ogólne</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="dt_status">Status</label>
-          <select class="form-control" id="dt_status" name="dt_status" data-column="7">
-            <option value="">Wszystkie</option>
-            <option value="powodzenie">Powodzenie</option>
-            <option value="niepowodzenie">Niepowodzenie</option>
-            <option value="nie dotyczy">Nie dotyczy</option>
-            <option value="nie testowano">Nie testowano</option>
-
-          </select>
-        </div>
+<p class="summary">Ta strona zawiera konfigurowalną listę technik WCAG sklasyfikowanych jako błędy dostępności cyfrowej.</p>
 
 
-        <div class="form-group">
-          <label for="dt_minister">Odpowiedzialność</label>
-          <select class="form-control" id="dt_minister" name="dt_minister" data-column="10">
-            <option value="">Dowolnie</option>
-            <option value="architekt informacji">Architekt informacji</option>
-            <option value="projektant interakcji">Projektant interakcji</option>
-            <option value="projektant grafiki">Projektant grafiki</option>
-            <option value="webmaster">Webmaster</option>
-            <option value="programista">Programista</option>
-            <option value="redakcja">Redakcja</option>
-            <option value="kontrola jakości">Kontrola jakości</option>
-            <option value="zarządzanie projektem">Zarządzanie projektem</option>
-          </select>
-        </div>
-        </div>
-        <div class="form-group col-md-3">
-          <fieldset>
-            <legend><span class="field-name">Waga</span></legend>
-            <ul class="list-unstyled">
-              <li class="checkbox"><label for="dt_waga1"><input type="checkbox" id="dt_waga1" name="dt_waga" data-column="9" value="">Wszystkie</label></li>
-              <li class="checkbox"><label for="dt_waga2"><input type="checkbox" id="dt_waga2" name="dt_waga" data-column="9" value="Krytyczny">Krytyczny</label></li>
-              <li class="checkbox"><label for="dt_waga3"><input type="checkbox" id="dt_waga3" name="dt_waga" data-column="9" value="Poważny">Poważny</label></li>
-              <li class="checkbox"><label for="dt_waga4"><input type="checkbox" id="dt_waga4" name="dt_waga" data-column="9" value="Umiarkowany">Umiarkowany</label></li>
-              <li class="checkbox"><label for="dt_waga5"><input type="checkbox" id="dt_waga5" name="dt_waga" data-column="9" value="Niewielki">Niewielki</label></li>
-            </ul>
-          </fieldset>
-
-        </div>
-        <div class="col-md-3">
-
-            <summary><h6>Opcje zaawansowane</h6></summary>
-            <div class="radio">
-              <label for="advanced_options1_1"><input type="radio" name="advanced_options1" id="advanced_options1_1" data-aopts='{"type": "any", "column": "5"}' checked=checked>dowolne</label>
-            </div>
-            <div class="radio">
-              <label for="advanced_options1_2"><input type="radio" name="advanced_options1" id="advanced_options1_2" data-aopts='{"type": "both", "column": "5"}'>wszystkie</label>
-            </div>
-            <div class="radio">
-              <label for="advanced_options1_3"><input type="radio" name="advanced_options1" id="advanced_options1_3" data-aopts='{"type": "either", "column": "5"}'>albo</label>
-            </div>
-            <div class="radio">
-              <label for="advanced_options1_4"><input type="radio" name="advanced_options1" id="advanced_options1_4" data-aopts='{"type": "and", "column": "5"}'>oraz</label>
-            </div>
-          </details>
-
-		
-		
-		
-        <div class="form-group">
-          <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">Filtruj</button>
-        </div>
-        <div class="form-group">
-          <button type="reset" class="btn btn-link btn-sm p-0">Przywróć domyślne</button>
-        </div>
-        </div>		
-      </form>
-
-
-  </div>
-  </div>  
-  
-  
-  
-  
+ 
   
  <div class="row"> 
   <div class="col-md-12">
     <table class="wb-tables table table-striped table-hover" id="dataset-filter" aria-live="polite" data-wb-tables='{
                                                                     "bDeferRender": true,
-																	"ajaxSource": "./demo/danetestow.json",
+																	"ajaxSource": "./demo/awarie.json",
 																	"order": [0, "asc"],
 																	"columns": [
-																	{ "data": "LP", "className": "nws-tbl-lp","visible": true},	
-																	{ "data": "GRUPA", "className": "nws-tbl-grup","visible": true },
-																	{ "data": "TEST", "className": "nws-tbl-test" },
-																	{ "data": "ID", "className": "nws-tbl-id" },
-																	{ "data": "KS", "className": "nws-tbl-ks","visible": true },
-																	{ "data": "POZIOM",  "className": "nws-tbl-poziom","visible": false },
-																	{ "data": "ZASADA",  "visible": false },
-																	{ "data": "OPIS",  "visible": true },
-																	{ "data": "STATUS", "visible": false },
-																	{ "data": "WAGA", "visible": true  },
-																	{ "data": "ODP", "visible": false }
+																	{ "data": "id", "className": "nws-tbl-id","visible": true},	
+																	{ "data": "ks", "className": "nws-tbl-ks","visible": true },
+																	{ "data": "nazwa", "className": "nws-tbl-nazwa" },
+																	{ "data": "url", "className": "nws-tbl-url" },
+																	{ "data": "opis", "className": "nws-tbl-opis","visible": true }
 																	]}'>
       <thead>
         <tr>
-          <th>LP</th>		
-          <th>Grupa testów</th>
-          <th>Nazwa testu</th>
-          <th>Id testu</th>
+          <th>ID</th>		
           <th>KS</th>
-          <th>Poziom</th>
-          <th>Zasada</th>
+          <th>Technika</th>
+          <th>URL</th>
           <th>Opis</th>
-          <th>Status</th>
-          <th>Waga</th>
-          <th>Odpowiedzialność</th>
         </tr>
       </thead>
     </table>

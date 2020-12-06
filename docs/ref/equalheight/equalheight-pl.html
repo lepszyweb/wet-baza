@@ -103,13 +103,13 @@
               <li>
                 <a href="./../../../index-en.html">Start</a>
               </li>
-			  <li>
-			  <a href="./../../../docs/index-en.html">Documentacja</a>
-			  </li>
-			  <li>
-<a href="../../../docs/ref/polyfills-en.html">Polyfills</a>
-			  </li>
-              <li>Details/summary polyfill (expandable/collapsible content)</li>
+              <li>
+                <a href="./../../../docs/index-en.html">Dokumentacja</a>
+              </li>
+              <li>
+                <a href="./../../../docs/ref/plugins-en.html">Dodatki</a>
+              </li>
+              <li>Wykresy i schematy</li>
             </ol>
           </div>
         </div>
@@ -118,30 +118,44 @@
 
 
 
+
+
+
 <main role="main" property="mainContentOfPage" class="container">
-<h1 id="wb-cont" property="name">Details/summary polyfill (expandable/collapsible content)</h1>
+<h1 id="wb-cont" property="name">Equal height</h1>
 <p>
-<a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Details%2Fsummary%20polyfill%20(expandable%2Fcollapsible%20content):%20">Questions or comments?</a>
+<a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Equal%20height:%20">Questions or comments?</a>
 </p>
 <span class="wb-prettify all-pre hide"></span>
 <section>
 <h2>Purpose</h2>
-<p>The HTML5 <code>details</code> and <code>summary</code> elements allows content to be expanded and collapsed. Because some browsers do not support this functionality natively, this polyfill emulates the same functionality using generic HTML and WAI-ARIA.</p>
+<p>Equalises the height of elements that are on the same baseline.</p>
 </section>
 <section>
-<h2>Working example</h2>
+<h2>Use when</h2>
 <ul>
-<li><a href="../../../demos/details/details-en.html">English examples</a></li>
-<li><a href="../../../demos/details/details-fr.html">French examples</a></li>
+<li>Elements of varying heights are displayed on the same baseline.</li>
 </ul>
 </section>
 <section>
+<h2>Do not use when</h2>
+<p>No known use cases when this plugin should not be used.</p>
+</section>
+<section>
+<h2>Working example</h2>
+<p><a href="../../../demos/equalheight/equalheight-en.html">Working example of the equal height plugin</a></p>
+</section>
+<section>
 <h2>How to implement</h2>
-<p>To use the polyfill, standard <code>details</code> and <code>summary</code> elements must be used. In cases where a browser doesn't support these elements, the polyfill is automatically loaded.</p>
+<ol>
+<li>Add the class <code>wb-eqht</code> to the element that contains the elements for which you want the height to be equal.</li>
+<li>Add the class <code>hght-inhrt</code> to the nested element for which you want the height to be equal.</li>
+<li>Add the class <code>eqht-trgt</code> to the equalize element. It the same as applying <code>hght-inhrt</code> up to the child of <code>wb-eqht</code>.</li>
+</ol>
 </section>
 <section>
 <h2>Configuration options</h2>
-<p><a rel="external" href="https://www.w3.org/TR/html51/interactive-elements.html#the-details-element">Configuration options available for the <code>details</code> and <code>summary</code> elements (HTML5 specification)</a></p>
+<p>There are no configuration options.</p>
 </section>
 <section>
 <h2>Events</h2>
@@ -155,22 +169,28 @@
 </thead>
 <tbody>
 <tr>
-<td>wb-init.wb-details</td>
-<td>Triggered manually (e.g., <code>$elm.trigger( "wb-init.wb-details" );</code>).</td>
-<td>Used to manually initialize the details/summary polyfill on a summary element. <strong>Note:</strong> The details/summary polyfill will be initialized automatically unless the <code>summary</code> element is added after the page has already loaded.</td>
+<td><code>wb-init.wb-eqht</code> (v4.0.5+)</td>
+<td>Triggered manually (e.g., <code>$( ".wb-eqht" ).trigger( "wb-init.wb-eqht" );</code>).</td>
+<td>Used to manually initialize the Equal heights plugin. <strong>Note:</strong> The Equal heights plugin will be initialized automatically unless the required markup is added after the page has already loaded.</td>
 </tr>
 <tr>
-<td><code>wb-init.wb-details</code></td>
-<td>Triggered manually (e.g., <code>$( "summary" ).trigger( "wb-init.wb-details" );</code>).</td>
-<td>Used to manually initialize the details/summary polyfill on a <code>summary</code> element. <strong>Note:</strong> The details/summary polyfill will be initialized automatically unless the <code>summary</code> is added after the page has already loaded.</td>
+<td><code>wb-update.wb-eqht</code> (v4.0.5+)</td>
+<td>Triggered manually (e.g., <code>$( ".wb-eqht" ).trigger( "wb-update.wb-eqht" );</code>).</td>
+<td>Used to manually trigger an update yo the height equalization. <strong>Note:</strong> The Equal heights plugin will be automatically update the height equalization on window, text and zoom resizes as well as DataTable draws.</td>
 </tr>
 <tr>
-<td><code>wb-ready.wb-details</code> (v4.0.5+)</td>
-<td>Triggered automatically after the details/summary polyfill initializes. <strong>Note:</strong> This event will only be triggered if the polyfill is loaded. The polyfill will not load for browsers with native details/summary support.</td>
-<td>Used to identify where the details/summary polyfill initialized (target of the event)
-<pre><code>$( document ).on( "wb-ready.wb-details", "summary", function( event ) {
+<td><code>wb-ready.wb-eqht</code> (v4.0.5+)</td>
+<td>Triggered automatically after the height equalization has been initialized.</td>
+<td>Used to identify when height equalization was initialized
+<pre><code>$( document ).on( "wb-ready.wb-eqht", function( event ) {
 });</code></pre>
-<pre><code>$( "summary" ).on( "wb-ready.wb-details", function( event ) {
+</td>
+</tr>
+<tr>
+<td><code>wb-updated.wb-eqht</code> (v4.0.5+)</td>
+<td>Triggered automatically each time the height equalization is updated.</td>
+<td>Used to identify when height equalization was updated
+<pre><code>$( document ).on( "wb-updated.wb-eqht", function( event ) {
 });</code></pre>
 </td>
 </tr>
@@ -187,11 +207,8 @@
 </section>
 <section>
 <h2>Source code</h2>
-<p><a href="https://github.com/wet-boew/wet-boew/tree/master/src/polyfills/details">Details/summary polyfill source code on GitHub</a></p>
+<p><a href="https://github.com/wet-boew/wet-boew/tree/master/src/plugins/equalheight">Source code for the equal height plugin on GitHub</a></p>
 </section>
-
-
-
 
 
 

@@ -1,0 +1,811 @@
+{
+  "data": [
+    {
+      "id": "F1",
+      "ks": "1.3.2",
+      "nazwa": "Zmiana znaczenia treści poprzez pozycjonowanie informacji za pomocą CSS",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F1\"> Błąd F1</a>",
+      "opis": "Modyfikacja wizualnego układu treści została wykonana za pomocą CSS, a nie znaczników strukturalnych. Korzystając z właściwości pozycjonowania CSS2, można wyświetlić treść w dowolnym miejscu w widoku użytkownika. Kolejność, w jakiej elementy pojawiają się na ekranie, może być inna niż kolejność, w jakiej znajdują się w dokumencie źródłowym. Technologie wspomagające polegają na kodzie źródłowym lub innej kolejności określonej programowo w celu renderowania treści we właściwej kolejności."
+    },
+    {
+      "id": "F2",
+      "ks": "1.3.1",
+      "nazwa": "Zmiana wyglądu tekstu, aby przekazać informacje bez zastosowania odpowiedniego znacznika lub tekstu",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F2\"> Błąd F2</a>",
+      "opis": "Zmiana wyglądu tekstu nadaje znaczenie  bez zastosowania odpowiednich znaczników semantycznych. Dotyczy to również obrazów tekstu, które nie są zawarte w odpowiednich znacznikach semantycznych."
+    },
+    {
+      "id": "F3",
+      "ks": "1.1.1",
+      "nazwa": "Użycie CSS do osadzania obrazów, które przekazują ważne informacje",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F3\">Błąd F3</a>",
+      "opis": "Właściwość CSS background-image umożliwia umieszczanie obrazów w dokumencie za pomocą CSS bez żadnego odniesienia w kodzie HTML. Właściwość ta została zaprojektowana do celów dekoracyjnych. Niemożliwe jest powiązanie alternatywnych tekstów z obrazami osadzonymi za pomocą CSS. Alternatywy tekstowe są niezbędne dla osób, które nie widzą obrazów zawierających ważne informacje. Dlatego nie można używać tej właściwości do dodawania obrazów przekazujących ważne informacje. Ten defekt miałby również miejsce w przypadku, gdyby obraz tła został zadeklarowany w atrybucie stylu HTML."
+    },
+    {
+      "id": "F4",
+      "ks": "2.2.2",
+      "nazwa": "Użycie właściwości text-decoration:blink bez mechanizmu zatrzymującego miganie, które trwa dłużej niż pięć sekund",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F4\">Błąd F4</a>",
+      "opis": "CSS definiuje wartość blink dla właściwości text-decoration. Zastosowanie tej właściwości powoduje, że tekst w elementach z tą właściwością miga z określoną częstotliwością. Nie może to zostać przerwane przez użytkownika ani wyłączone za pomocą ustawień oprogramowania użytkownika. Miganie trwa tak długo, jak długo wyświetlana jest strona. Dlatego treść wykorzystująca dekorację text-decoration: blink nie spełnia kryterium sukcesu, ponieważ miganie może trwać dłużej niż trzy sekundy."
+    },
+    {
+      "id": "F7",
+      "ks": "2.2.2",
+      "nazwa": "Użycie obiektu lub apletu, takiego jak Java lub Flash, który miga, bez mechanizmu zatrzymującego miganie, które trwa dłużej niż pięć sekund",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F7\">Błąd F7</a>",
+      "opis": "Gdy treść renderowana przez wtyczkę lub zawarta w aplecie miga, oprogramownie użytkownika może nie mieć możliwości wstrzymania migania. Jeśli ani wtyczka, ani aplet, ani sama treść nie zapewniają mechanizmu do wstrzymania treści, użytkownik może nie mieć wystarczająco dużo czasu na przeczytanie treści między mrugnięciami albo miganie może być tak rozpraszające, że użytkownik nie będzie mógł przeczytać innych treści na stronie."
+    },
+    {
+      "id": "F8",
+      "ks": "1.2.2",
+      "nazwa": "Napisy rozszerzone pomijają niektóre dialogi lub ważne efekty dźwiękowe",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F8\">Błąd F8</a>",
+      "opis": "Jeśli „napis” nie zawiera całego dialogu (w dosłownym brzmieniu lub jego istoty), a także wszystkich ważnych dźwięków, to nie są rónoważną alternatywą.",
+      "uwagi": [
+        {
+          "uwaga": "Napisy czasami upraszczają mówiony tekst, aby był on łatwiejszy do odczytania i aby uniknąć zmuszania widza do czytania z bardzo dużą prędkością. Ta standardowa procedura nie deprocjonuje równoważności napisów."
+        }
+      ]
+
+    },
+    {
+      "id": "F9",
+      "ks": "3.2.5",
+      "nazwa": "Niespodziewana zmiana kontekstu, gdy użytkownik usuwa fokus z elementu formularza",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F9\">Błąd F9</a>",
+      "opis": "Po przeneisieniu fokusu z elementu formularza na inny element formularza lub strony następuje niespodziewana zmiana kontekstu, np. przesłanie formularza, otwarcie nowej strony."
+    },
+    {
+      "id": "F10",
+      "ks": "2.1.2, wytyczna 5",
+      "nazwa": "Łączenie wielu formatów treści w sposób, który blokuje użytkowników w jednym formacie",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F10\">Błąd F10</a>",
+      "opis": "Gdy treść zawiera wiele formatów, często potrzebny jest jeden lub więcej programów użytkownika albo rozszerzeń, aby skutecznie zaprezentować treść użytkownikom. Na przykład strona zawierająca XHTML, SVG, SMIL i XForms może wymagać od przeglądarki załadowania aż trzech różnych wtyczek, aby użytkownik mógł z powodzeniem korzystać z treści. Niektóre wtyczki powodują typową sytuację, w której fokus klawiatury może „utknąć” we wtyczce, uniemożliwiajac użytkownikowi obsługującego stronę tylko klawiaturą przejście do innej treści (pułapka na klawiaturę)."
+    },
+    {
+      "id": "F12",
+      "ks": "2.2.5",
+      "nazwa": "Ograniczenie czasu sesji bez mechanizmu zapisywania danych użytkownika i ponownego ustanawiania tych informacji po ponownym uwierzytelnieniu",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F12\">Błąd F12</a>",
+      "opis": "Serwery WWW, które wymagają uwierzytelnienia użytkownika, zwykle mają mechanizm sesji, w którym sesja wygasa po okresie bezczynności użytkownika. Czasami odbywa się to ze względów bezpieczeństwa, aby chronić użytkowników, co do których zakłada się, że pozostawili swój komputer w stanie, w którym ktoś mógłby zrobić coś szkodliwego, na przykład przelać środki z banku lub dokonać nieautoryzowanego zakupu. Użytkownik z niepełnosprawnością może nadal pracować nad wypełnieniem formularza, ponieważ wypełnienie formularza może zająć mu więcej czasu niż normalnie oczekiwano. Przy ponownym uwierzytelnieniu, jeśli stan sesji użytkownika nie zostanie przywrócony, w tym wszystkie dane, które zostały wcześniej wprowadzone do formularza, będzie musiał zacząć od nowa. W przypadku tych użytkowników jest prawdopodobne, że sesja ponownie wygaśnie, zanim będą mogli wypełnić formularz. Stwarza to sytuację, w której użytkownik, który potrzebuje więcej czasu na wypełnienie formularza, nigdy nie będzie mógł go wypełnić"
+    },
+    {
+      "id": "F13",
+      "ks": "1.1.1, 1.4.1",
+      "nazwa": "Alternatywa tekstowa nie zawiera informacji przekazywanych przez różnice kolorów w obrazie",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F13\">Błąd F13</a>",
+      "opis": "Obraz wykorzystuje różnicę kolorów do przekazywania informacji, ale tekst alternatywny dla obrazu nie przekazuje tych informacji. Może to powodować problemy dla osób niewidomych lub daltonistów, ponieważ nie będą w stanie dostrzec informacji przekazywanych przez różnice kolorów."
+    },
+    {
+      "id": "F14",
+      "ks": "1.3.3",
+      "nazwa": "Identyfikowanie treści tylko przez jej kształt lub lokalizację",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F14\">Błąd F14</a>",
+      "opis": "Gdy używana jest tylko identyfikacja wizualna lub lokalizacja, użytkownicy z upośledzeniem wzroku mogą mieć trudności ze zlokalizowaniem treści, ponieważ nie widzą ekranu lub mogą jednocześnie dostrzec tylko niewielką część ekranu. Ponadto określenie lokalizacji treści może zmieniać w wyniku zmiany rozmiarru czcionki, rozmiaru okna, orintacji wyświetlacza."
+    },
+    {
+      "id": "F15",
+      "ks": "4.1.2",
+      "nazwa": "Implementacja niestandardowych elementów sterujących, które w ogóle nie korzystają albo nie korzystają w pełni z interfejsu API dostępności dla tej technologii",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F15\">Błąd F15</a>",
+      "opis": "Gdy używane są standardowe kontrolki z dostępnych technologii, zwykle są one programowane w sposób, który wykorzystuje i obsługuje API dostęności. Jeśli jednak tworzone są niestandardowe kontrolki, to do programisty należy upewnienie się, że nowo utworzona kontrolka obsługuje API dostępności. Jeśli tak się nie stanie, wówczas technologie wspomagające nie będą w stanie zrozumieć czym jest dana kontrolka lub jak ją obsługiwać, albo mogą nawet nie wiedzieć o jej istnieniu."
+    },
+    {
+      "id": "F16",
+      "ks": "2.2.2",
+      "nazwa": "Przewijanie treści, w których ruch nie jest niezbędny do działania, bez włączania mechanizmu wstrzymywania i ponownego uruchamiania treści",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F16\">Błąd F16</a>",
+      "opis": "Istnieje ruchoma lub przewijana treść, której użytkownicy nie mogą wstrzymać ani wznowić. W takim przypadku niektórzy użytkownicy z wadami wzroku lub upośledzeniami poznawczymi nie będą w stanie dostrzec treści."
+    },
+    {
+      "id": "F19",
+      "ks": "Wytyczna 1",
+      "nazwa": "Nie można znaleźć zgodnej wersji alternatywnej dla niezgodnej strony internetowej",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F19\">Błąd F19</a>",
+      "opis": "Istnieje alternatywna, zgodna wersja treści, ale nie ma bezpośredniego sposobu, aby użytkownik mógł stwierdzić, że ona istnieje ani gdzie ją znaleźć. Taka treść nie spełnia kryterium sukcesu, ponieważ użytkownik nie może znaleźć zgodnej wersji.",
+      "przykłady": [
+        {
+          "przykład": "Łącze lub wyszukiwanie przenosi użytkownika bezpośrednio do jednej z niezgodnych stron w witrynie internetowej. Nie ma ani wskazania, że ​istnieje ​alternatywna strona, ani ścieżki do alternatywnej strony z niezgodnej strony"
+        },
+        {
+          "przykład": "Niezgodne strony w witrynie internetowej informują użytkownika, że ​​istnieje zgodna wersja i zawierają łącze do strony głównej. Jednak użytkownik musi przeszukać witrynę w celu znalezienia zgodnej wersji strony, więc funkcjonalność nie spełnia wymagań kryterium sukcesu."
+        }
+      ]
+    },
+    {
+      "id": "F20",
+      "ks": "1.1.1, 4.1.2",
+      "nazwa": "Niezaktualizowany tekst alternatywny po zmianie w treści nietekstowej",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F20\">Błąd F20</a>",
+      "opis": "Treść nietekstowa zostala zaktualizowana, ale alternatywa tekstowa nie została w tym samym czasie odpowiednio zaktualizowana. Jeśli tekst w alternatywie tekstowej nie może być nadal wykorzystany zamiast treści nietekstowej bez utraty informacji lub funkcji, to mamy defekt, ponieważ tekst nie jest już tekstową alternatywą dla treści nietekstowej.",
+      "przykłady": [
+        {
+          "przykład": "Wykres sprzedaży został zaktualizowany do wyników z października, ale tekst alternatywny nadal opisuje wyniki z września."
+        },
+        {
+          "przykład": "Obrazy na stronie głównej zmieniają się codziennie, ale tekst alternatywny nie jest aktualizowany w tym samym czasie."
+        },
+        {
+          "przykład": "Atrybut źródła obrazów na stronie jest okresowo aktualizowany przy użyciu skryptu, ale alternatywy tekstowe nie są aktualizowane w tym samym czasie."
+        }
+      ]
+    },
+    {
+      "id": "F22",
+      "ks": "3.2.5",
+      "nazwa": "Otwieranie okien, które nie są wywoływane przez użytkownika",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F22\">Błąd F22</a>",
+      "opis": "Awaria spowodowana otwarciem nowych okien, których użytkownik się nie spodziewa. Nowe okna odwracają uwagę od tego, co użytkownik czyta lub robi. Jest to w porządku, gdy użytkownik wszedł w interakcję z częścią interfejsu użytkownika i oczekuje, że pojawi się nowe okno, na przykład okno dialogowe opcji. Niepowodzenie pojawia się, gdy wyskakujące okienka pojawiają się nieoczekiwanie.",
+      "przykłady": [
+        {
+          "przykład": "Kiedy użytkownik przechodzi do strony, nowe okno pojawia się nad istniejącym oknem klienta użytkownika, a fokus jest przenoszony do nowego okna."
+        },
+        {
+          "przykład": "Użytkownik klika łącze i pojawia się nowe okno. Oryginalne łącze nie ma powiązanego tekstu, który mówi, że otworzy nowe okno."
+        },
+        {
+          "przykład": "Użytkownik klika treść strony i pojawia się nowe okno. Nic nie wskazuje na to, że kliknięty obszar jest funkcjonalny."
+        },
+        {
+          "przykład": "Użytkownik klika nieozdobiony tekst na stronie i pojawia się nowe okno. Strona nie ma widocznych oznak, że obszar jest funkcjonalny."
+        }
+      ]
+    },
+    {
+      "id": "F23",
+      "ks": "1.4.2",
+      "nazwa": "Odtwarzanie dźwięku trwające dłuższej niż 3 sekundy bez mechanizmu wyłączania dźwięku",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F23\">Błąd F23</a>",
+      "opis": "Jeśli dźwięk nie wyłączy się automatycznie w ciągu 3 sekund i nie ma możliwości jego wyłączenia, to kryterium sukcesu 1.4.2 nie jest spełnione. Dźwięki odtwarzane przez ponad 3 sekundy, gdy nie ma mechanizmu wyłączającego dźwięk zawarty w treści, są objęte tym stanem awarii.",
+      "przykłady": [
+        {
+          "przykład": "Witryna, która nieprzerwanie odtwarza muzykę w tle"
+        },
+        {
+          "przykład": "Witryna z narratorem, która mówi dłużej niż 3 sekundy i nie ma mechanizmu, który mógłby go zatrzymać."
+        }
+      ]
+    },
+    {
+      "id": "F24",
+      "ks": "1.4.3, 1.4.6, 1.4.8",
+      "nazwa": "Określanie kolorów pierwszego planu bez określania kolorów tła i odwrotnie",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F24\">Błąd F24</a>",
+      "opis": "Użytkownicy z uszkodzeniami wzroku lub problemami poznawczymi, językowymi i w uczeniu się często preferują określone kombinacje kolorów pierwszego planu i tła. W niektórych przypadkach osobom słabowidzącym znacznie łatwiej będzie zobaczyć stronę internetową z białym tekstem na czarnym tle i mogą ustawić swoje oprogramowanie użytkownika, aby przedstawiało ten kontrast. Wiele programów użytkownika umożliwia ustawienie kolorów pierwszego planu lub tła, bez nadpisywania wszystkich stylów określonych przez autora. Dzięki temu użytkownicy mogą przeglądać strony, na których autor nie określił kolorów w preferowanej przez siebie kombinacji kolorów. O ile autor nie określi zarówno koloru pierwszego planu, jak i tła, to nie może już zagwarantować, że użytkownik otrzyma kontrast spełniający wymagania dotyczące kontrastu. Jeśli, na przykład, autor określi, że tekst powinien być szary, to użytkownik może zastąpić ustawienia programu użytkownika i spowodować, że strona, która ma szary tekst (określony przez autora) na jasnoszarym tle (który został ustawiony przez użytkownika w jego programie użytkownika). Ta zasada działa również w odwrotnej kolejności. Jeśli autor wymusi białe tło, wówczas określone przez niego białe tło może mieć kolor podobny do preferencji koloru tekstu wyrażonych przez użytkownika w ustawieniach programu użytkownika, co spowoduje, że strona stanie się dla użytkownika bezużyteczna. Nie jest konieczne, aby kolory pierwszego planu i tła były zdefiniowane w tej samej regule CSS. Ponieważ właściwości kolorów CSS dziedziczą po elementach przodków, wystarczy, że zarówno kolory pierwszego planu, jak i tła są zdefiniowane bezpośrednio lub przez dziedziczenie do czasu zastosowania tego koloru do danego elementu.",
+      "uwagi": [
+        {
+          "uwaga": "Najlepszą praktyką jest uwzględnienie wszystkich stanów tekstu. Na przykład tekst, tekst łącza, tekst odwiedzonego łącza, tekst łącza z najechaniem kursorem i fokusem klawiatury itp."
+        }
+      ]
+    },
+    {
+      "id": "F25",
+      "ks": "2.4.2",
+      "nazwa": "Tytuł strony internetowej nie określa treści",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F25\">Błąd F25</a>",
+      "opis": "Strona internetowa ma tytuł, ale tytuł nie identyfikuje zawartości ani celu strony internetowej.",
+      "przykłady": [
+        {
+          "przykład": "Przykłady tekstów, które nie są tytułami: Wprowadź tutaj tytuł dokumentu HTML, Nienazwany dokument, Bez tytułu, Strona bez tytułu, Nowa strona 1, a także: nazwy plików, które same w sobie nie są opisowe, na przykład „report.html” lub „spk12.html”, pusty tekst, wypełniacz lub tekst zastępczy."
+        },
+        {
+          "przykład": "Witryna wygenerowana przy użyciu szablonów zawiera ten sam tytuł dla każdej strony w witrynie. Dlatego tytuł nie może służyć do rozróżniania stron."
+        }
+      ]
+    },
+    {
+      "id": "F26",
+      "ks": "1.3.3",
+      "nazwa": "Użycie tylko samego symbolu graficznego do przekazywania informacji",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F26\">Błąd F26</a>",
+      "opis": "Użytkownicy technologii wspomagających mogą mieć trudności z określeniem znaczenia symbolu graficznego. Jeśli do przekazywania informacji używany jest symbol graficzny, należy przedstawić alternatywę wykorzystującą cechy technologii lub zastosować inny mechanizm, który można oznaczyć jako alternatywę reprezentującą symbol graficzny. Na przykład zamiast glifu można użyć obrazu z alternatywnym tekstem. Symbolem graficznym może być obraz, obraz tekstu albo symbol znaku (glif), który przekazuje informacje niewerbalnie. Przykłady symboli graficznych są: obraz czerwonego koła z linią przechodzącą przez niego, „buźkę” lub glif, który przedstawia znacznik wyboru, strzałkę lub inny symbol, ale nie jest znakiem o takim znaczeniu.",
+      "przykłady": [
+        {
+          "przykład": "W koszyku używane są dwa proste glify, aby wskazać, czy produkt jest dostępny do natychmiastowej wysyłki. Okrąg oznacza, że ​​przedmiot jest w magazynie i jest gotowy do wysyłki. Kwadrat oznacza, że ​​przedmiot jest aktualnie zamówiony i nie jest dostępny do natychmiastowej wysyłki. Powyższe instrukcje odnoszą się do koła i kwadratu jako jedynych środków do rozróżnienia, czy dany przedmiot jest dostępny."
+        }
+      ]
+    },
+    {
+      "id": "F30",
+      "ks": "1.1.1, 1.2.1",
+      "nazwa": "Użycie alternatywy tekstowej, która nie jest równoważna treści nietekstowej (np. nazwy plików lub tekstu zastępczego)",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F30\">Błąd F30</a>",
+      "opis": "Jeśli tekst w „alternatywie tekstowej” nie może być użyty zamiast treści nietekstowej bez utraty informacji lub funkcji, to wymagania kryteriów sukcesu nie są spełnione, ponieważ taki tekst w rzeczywistości nie jest równoważny treści nietekstowej.",
+      "przykłady": [
+        {
+          "przykład": "Nie są równoważną alternatywą tekstową teksty typu: „obraz”, „grafika”, „zdjęcie”."
+        },
+        {
+          "przykład": "Nie są równoważną alternatywą tekstową teksty typu: „zdjęcie 1”, „zdjęcie 2”, „zdjęcie 3” lub „0001”, „0002” i podobne."
+        },
+        {
+          "przykład": "Nie są równoważną alternatywą tekstową nazwy plików, które same w sobie nie są prawidłowymi alternatywami tekstowymi, na przykład „wykres.jpg”, „kat1508.jpg”, „DCP1234567.jpg”."
+        }
+      ]
+    },
+    {
+      "id": "F31",
+      "ks": "3.2.4",
+      "nazwa": "Użycie dwóch różnych etykiet dla tej samej funkcji na różnych stronach internetowych w zestawie stron internetowych",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F31\">Błąd F31</a>",
+      "opis": "Komponenty, które na różnych stronach internetowych pełnią tę samą funkcję, są łatwiejsze do rozpoznania, jeśli mają spójne etykiety. Jeśli nazewnictwo nie jest spójne, niektórzy użytkownicy mogą się pomylić.",
+      "uwagi": [
+        {
+          "uwaga": "„Spójne” alternatywy tekstu nie zawsze są „identyczne”. Na przykład, możesz mieć graficzną strzałkę u dołu strony internetowej, która prowadzi do następnej strony internetowej. Alternatywny tekst może brzmieć „Przejdź do strony 4”. Oczywiście nie byłoby właściwe powtarzanie tej dokładnej alternatywy tekstowej na następnej stronie internetowej. Alternatywa będzie brzmieć zapewne „Przejdź do strony 5”. Chociaż te alternatywy tekstowe nie byłyby identyczne, byłyby spójne. To, że nie są identyczne, nie powoduje niespełnienia kryterium sukcesu 3.2.4."
+        }
+      ],
+      "przykłady": [
+        {
+          "przykład": "Jednym z najczęstszych przykładów stosowania niespójnych etykiet dla komponentów o tej samej funkcji jest użycie przycisku „Szukaj” na jednej stronie i przycisku „Znajdź” na innej stronie, choć oba pełnią tę samą funkcję."
+        },
+        {
+          "przykład": "Internetowe narzędzie do tworzenia treści, które używa przycisku „Zapisz stronę” na jednej stronie i „Zapisz” na innej stronie, w obu przypadkach dla tej samej funkcji."
+        }
+      ]
+    },
+    {
+      "id": "F32",
+      "ks": "1.3.2",
+      "nazwa": "Użycie białych znaków do ustalenia odstępów w słowie",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F32\">Błąd F32</a>",
+      "opis": "Używanie znaków odstępu, takich jak spacja, tabulator, znaki podziału wiersza lub powrotu karetki, do wizualnego formatowania poszczególnych słów może prowadzić do nieprawidłowego przedstawienia znaczących sekwencji. Gdy puste znaki są wstawiane w celu kontrolowania odstępów między literami w słowie, mogą zmienić interpretację słowa lub spowodować, że nie zostanie ono programowo rozpoznane jako pojedyncze słowo. Wstawianie znaków odstępu do skrótowców (inicjalizmów) nie jest błędem, ponieważ biały znak nie zmienia interpretacji inicjalizmu i może ułatwić jego zrozumienie. Nie jest również błędem wykorzystanie spacji między słowami do formatowania wizualnego, ponieważ nie zmienia interpretacji słów."
+    },
+    {
+      "id": "F33",
+      "ks": "1.3.1, 1.3.2",
+      "nazwa": "Użycie białych znaków do utworzenia wielu kolumn w treści tekstowej",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F33\">Błąd F33</a>",
+      "opis": "Używanie znaków odstępu, takich jak spacja, tabulator, znaki podziału wiersza lub powrotu karetki do wizualnego formatowania kolumn danych w treści tekstowej, jest nieprawidłowym użyciem struktury. Technologie wspomagające będą interpretować treść w źródłowej kolejności czytania bieżącego języka. Używanie znaków odstępu do tworzenia wielu kolumn nie zapewnia informacji w naturalnej kolejności czytania. W rezultacie użytkownik technologii wspomagających nie otrzyma informacji w zrozumiały sposób. Zwykły tekst nie nadaje się do wyświetlania wielu kolumn tekstu. Należy tak zmodyfikować treść, aby przedstawić dane w innym układzie albo użyj technologii, która zapewnia elementy strukturalne do reprezentacji danych kolumnowych."
+    },
+    {
+      "id": "F34",
+      "ks": "1.3.1, 1.3.2",
+      "nazwa": "Użycie znaków spacji w celu uformowania tabel za pomocą zwykłego tekstu",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F34\">Błąd F34</a>",
+      "opis": "Używanie znaków odstępu, takich jak spacja, tabulator, znaki podziału wiersza lub powrotu karetki do formatowania tabel w treści tekstowej, powoduje nieprawidłowe użycie struktury. Gdy tabele są tworzone w ten sposób, nie ma sposobu, aby wskazać, że komórka ma być komórką nagłówka, nie ma możliwości skojarzenia komórek nagłówka tabeli z komórkami danych tabeli ani bezpośredniego przejścia do określonej komórki w tabeli. Ponadto technologie wspomagające będą interpretować treść w źródłowej kolejności czytania bieżącego języka. Użycie białych znaków do organizowania danych w tabeli wizualnej nie zapewnia informacji w naturalnej kolejności czytania w źródle dokumentu. W rezultacie użytkownik technologii wspomagających nie otrzyma informacji w zrozumiały sposób. Zwykły tekst nie nadaje się do wyświetlania złożonych informacji, takich jak tabele, ponieważ nie można dostrzec struktury tabeli. Zamiast używać formatowania wizualnego do przedstawiania relacji tabelarycznych, informacje tabelaryczne musiałyby być prezentowane przy użyciu innej technologii lub prezentowane liniowo."
+    },
+    {
+      "id": "F36",
+      "ks": "3.2.2",
+      "nazwa": "Automatyczne przesłanie formularza i prezentacja nowej treści bez uprzedniego ostrzeżenia, gdy ostatnie pole formularza otrzymuje wartość",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F36\">Błąd F36</a>",
+      "opis": "Formularze są często projektowane w taki sposób, że są przesyłane automatycznie, gdy użytkownik wypełni wszystkie pola lub gdy fokus opuści ostatnie pole. Z takim podejściem wiążą się dwa problemy. Po pierwsze, niepełnosprawny użytkownik, który potrzebuje więcej kontekstu, może przenieść uwagę z pola na wskazówki dotyczące wypełniania formularza lub na inny tekst, przypadkowo przesyłając formularz. Po drugie, w przypadku niektórych elementów formularza wartość pola zmienia się, gdy poruszamy się po każdym elemencie za pomocą klawiatury, ponownie przypadkowo przesyłając formularz. Lepiej jest polegać na standardowym zachowaniu formularza przycisku przesyłania i klawiszu Enter."
+    },
+    {
+      "id": "F37",
+      "ks": "3.2.2",
+      "nazwa": "Uruchomienie nowego okna bez uprzedniego ostrzeżenia po zmianie wyboru przycisku radiowego, pola wyboru lub listy wyboru",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F37\">Błąd F37</a>",
+      "opis": "Zmiana wyboru przycisku radiowego, pola wyboru lub elementu na liście wyboru powoduje otwarcie nowego okna. Możliwe jest wykorzystanie skryptów do stworzenia elementu wejściowego, który powoduje zmianę kontekstu (przesłanie formularza, otwarcie nowej strony, nowe okno) po wybraniu elementu. Może to powodować dezorientację osóób z niepełnosprawnością poznawczą, wzrokową. Programiści mogą zamiast tego użyć przycisku przesyłania lub otwarcie zapowiedzieć takie działanie."
+    },
+    {
+      "id": "F38",
+      "ks": "1.1.1",
+      "nazwa": "Nieopisanie obrazów dekoracyjnych w HTML w sposób, który pozwala ignorować je w technologii wspomagającej",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F38\">Błąd F38</a>",
+      "opis": "Obraz, który powinien zostać zignorowane przez technologie wspomagające, nie ma pustego atrybutu alt=\"\", ani nie ma atrybutu role=\"presentation\" lub role=\"none\". Jeśli obraz nie ma jednego z tych atrybutów, technologia wspomagająca nie jest w stanie go zignorować. W przypadku obrazów dekoracyjnych, które mają być ignorowane przez technologie wspomagające, należy użyć albo pustego atrybutu alt=\"\", albo atrybutu role=\"presentation\" lub role=\"none\"",
+      "przykłady": [
+        {
+          "przykład": "Obraz dekoracyjny, które nie ma ani atrybutu  alt, ani atrybutu role."
+        }
+      ]
+    },
+    {
+      "id": "F39",
+      "ks": "1.1.1",
+      "nazwa": "Dostarczenie tekstu alternatywnego, który nie jest pusty (np. alt=\"[spacja]\" lub alt=\"obraz\") dla obrazów, które powinny zostać zignorowane przez technologię wspomagającą",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F39\">Błąd F39</a>",
+      "opis": "Obraz służy celom dekoracyjnym lub formatowaniu wyglądu, a ma niepusty atrybut alt. Tekst alternatywny obrazu powinien przekazywać znaczenie obrazu. Obraz, który jest użyty do dekoracji, odstępów lub innego celu, który nie jest częścią znaczącej treści na stronie, nie ma znaczenia i powinien być ignorowany przez technologie wspomagające. Podanie tekstu alternatywnego o wartości zerowej (alt=\"\") umożliwi technologii wspomagającej zignorowanie obrazu i uniknięcie niespełnienia tego kryterium sukcesu."
+    },
+    {
+      "id": "F40",
+      "ks": "2.2.1, 2.2.4",
+      "nazwa": "Użycie przekierowania meta z limitem czasu",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F40\">Błąd F40</a>",
+      "opis": "Znacznik meta http-equiv=\"refresh\" z content=\"[limit-czasu];URL='/'\" jest często używany do automatycznego przekierowywania użytkowników. Gdy dzieje się to po pewnym czasie, jest to nieoczekiwana zmiana kontekstu, która może przeszkadzać użytkownikowi. Dopuszczalne jest użycie elementu meta do utworzenia przekierowania, gdy limit czasu jest ustawiony na zero, ponieważ przekierowanie jest natychmiastowe i nie będzie postrzegane jako zmiana kontekstu. Jednak w tym celu lepiej jest użyć metod po stronie serwera."
+    },
+    {
+      "id": "F41",
+      "ks": "2.2.1, 2.2.4, 3.2.5",
+      "nazwa": "Użycie przekierowania meta w celu przeładowania strony",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F41\">Błąd F41</a>",
+      "opis": "Znacznik meta http-equiv z atrybutem refresh jest często używany do okresowego odświeżania stron lub przekierowywania użytkowników na inną stronę. Jeśli przedział czasu jest zbyt krótki i nie ma możliwości wyłączenia automatycznego odświeżania, osoby niewidome nie będą miały wystarczająco dużo czasu, aby czytniki ekranu przeczytały stronę, zanim strona nieoczekiwanie się odświeży i spowoduje, że czytnik ekranu zacznie czytać na górze. Widzący użytkownicy mogą również być zdezorientowani przez nieoczekiwane odświeżenie."
+    },
+    {
+      "id": "F42",
+      "ks": "1.3.1, 2.1.1, 2.1.3, 4.1.2",
+      "nazwa": "Łącze emulowane za pomocą skryptu nierozpoznawalne jako łącze",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F42\">Błąd F42</a>",
+      "opis": "Łacze utworzone za pomocą niestandardowego znacznika i dołączonego programu obsługi zdarzeń JavaScript. Tak utworzone łącze może być obsłużone za pomocą myszy, ale nie można na nie przenieść fokusu klawiatury i uaktywnić za pomoca klawiatury. Technologie wspomagające mogą nie rozpoznać takich łączy jako łącza i nie  Link utworzony w ten sposób nie może zostać przeniesiony z klawiatury na zakładkę i nie uzyskuje fokusu klawiatury tak jak inne kontrolki i / lub łącza. Jeśli do emulacji odsyłaczy używane są zdarzenia skryptowe, programy klienckie, w tym technologie wspomagające, mogą nie być w stanie zidentyfikować odsyłaczy w treści jako odsyłaczy. Mogą być rozpoznawane jako interaktywne elementy sterujące, ale nadal nie są rozpoznawane jako łącza. Takie elementy nie pojawiają się na liście linków generowanej przez programy użytkownika lub technologie wspomagające."
+    },
+    {
+      "id": "F43",
+      "ks": "1.3.1",
+      "nazwa": "Użycie znaczników strukturalnych w sposób, który nie odzwierciedla relacji w treści",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F43\">Błąd F43</a>",
+      "opis": "Jeśli znaczniki strukturalne są używane do uzyskania efektu prezentacyjnego, ale wskazują relacje, których nie ma w treści, jest to dezorientujące dla użytkowników, którzy polegają na tych relacjach, aby poruszać się po treści lub rozumieć związek między jednym fragmentem treści a innym.",
+      "uwagi": [
+        { "uwaga": " Należy zauważyć, że użycie tabel HTML do układu nie jest przykładem tego błędu, o ile tabela układu nie zawiera niewłaściwych znaczników strukturalnych, takich jak elementy <th> lub <caption>." }
+      ]
+    },
+    {
+      "id": "F44",
+      "ks": "2.4.3",
+      "nazwa": "Użycie tabindex do utworzenia kolejności tabulacji, która nie zachowuje znaczenia i funkcjonalności",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F44\">Błąd F44</a>",
+      "opis": "Elementy, które można aktywować, takie jak łącza i elementy formularzy, mają atrybut tabindex. Elementy otrzymują fokus w kolejności rosnącej według wartości atrybutu tabindex. Gdy wartości atrybutu tabindex są przypisywane w innej kolejności niż relacje i sekwencje w treści, kolejność tabulacji nie jest już zgodna z relacjami i sekwencjami w treści. Jedna z najczęstszych przyczyn tego błędu występuje podczas edytowania strony, na której użyto tabindex. Łatwo jest wypaczyć kolejność tabulacji i kolejność treści, gdy edytowana jest treść, ale atrybuty tabindex nie są aktualizowane, aby odzwierciedlić zmiany w treści."
+    },
+    {
+      "id": "F46",
+      "ks": "1.3.1",
+      "nazwa": "Użycie elementów th, elementów caption lub niepustych atrybutów summary w tabelach formujących układ",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F46\">Błąd F46</a>",
+      "opis": "Tabela formująca układ zawiera elementy th i caption oraz atrybut summary. Jest to błąd, ponieważ znaczniki strukturalne (lub semantyczne) są stosowane tylko w celu prezentacji, a nie w celu przekazania informacji i relacji. Błędem jest również użycie w tabeli układu atrybutów scope i headers. Celem elementów tabeli HTML i XHTML jest prezentacja danych. Technologie wspomagające wykorzystują strukturę tabeli HTML lub XHTML do prezentowania danych użytkownikowi w logiczny sposób. Element th służy do oznaczenia nagłówków kolumn i wierszy tabeli. Czytnik ekranu odczytuje użytkownikowi informacje zawarte w powiązanych elementach th, gdy użytkownik nawiguje po tabeli. Te informcje ani nie nazywają, ani nie opisują danych w komórkach, które służą jedynie prezentacji. Element caption jest częścią tabeli i określa tabelę jako tabelę danych. Atrybut summary w elemencie tabeli zapewnia jej tekstowy, który przekazuje przeznaczenie i funkcję tabeli. Technologie wspomagające udostępniają użytkownikom treść attrybutu summary. Dopuszczalne, ale niezalecane jest użycie pustego atrybutu summary.",
+      "uwagi": [
+        {
+          "uwaga": "Chociaż WCAG 2 nie zabrania używania tabel układów, zaleca się formowanie układów opartych na CSS, aby zachować zdefiniowane znaczenie semantyczne elementów tabeli HTML i zachować zgodność z praktyką kodowania polegającą na oddzielaniu prezentacji od treści. Gdy tabela jest używana do celów układu, nie ma potrzeby oznaczania komórek jako nagłówków kolumn lub wierszy, ponieważ tabela nie przedstawia danych. Podobnie nie ma potrzeby dodatkowego opisu tabeli, która służy jedynie do układu treści. Nie dołączaj atrybutu summary i nie używaj atrybutu summary do opisania tabeli jako na przykład „tabeli układu”. Gdy czytnik ekranu wypowiada te informacje, nie mają one żadnej wartości i jedynie rozpraszają użytkowników poruszających się po treści"
+        }
+      ]
+    },
+    {
+      "id": "F47",
+      "ks": "2.2.2",
+      "nazwa": "Użycie elementu migającego blink",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F47\">Błąd F47</a>",
+      "opis": "Element blink powoduje, że oznaczony nim jakiś tekst wewnątrz elementu treści miga z określoną z góry szybkością. Użytkownik nie może tego przerwać ani nie może wyłączony w ustawieniach preferencji. Miganie trwa tak długo, jak długo wyświetlana jest strona. Dlatego treść korzystająca z migania nie spełnia kryterium sukcesu, ponieważ miganie może trwać dłużej niż trzy sekundy.",
+      "uwagi": [
+        {
+          "uwaga": "Element blink nie jest częścią oficjalnej specyfikacji HTML lub XHTML, ale jest obsługiwany przez wiele programów użytkownika."
+        }
+      ]
+    },
+    {
+      "id": "F48",
+      "ks": "1.3.1",
+      "nazwa": "Użycie elementu pre do markowania informacji tabelarycznych",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F48\">Błąd F48</a>",
+      "opis": "Użyto elementu pre do oznaczania informacji tabelarycznych. Element pre zachowuje tylko formatowanie wizualne, nie oddaje relacji między danymi tabeli. Gdy do oznaczania informacji tabelarycznych zostanie użyty element pre, wizualnie relacje logiczne między komórkami tabeli a nagłówkami, określone tylko wizualnie, są tracone, jeśli użytkownik nie widzi ekranu lub gdy znacznie zmienia się prezentacja wizualna. Dane tabelaryczne mogą być skutecznie prezentowane tylko za pomocą sematycznego oznakowania tabeli. Technologie wspomagające wykorzystują strukturę tabeli HTML do prezentacji danych użytkownikowi w logiczny sposób. Ta struktura nie jest dostępna, gdy używany jest element pre."
+    },
+    {
+      "id": "F49",
+      "ks": "1.3.2",
+      "nazwa": "Użycie do formowania układu tabeli HTML, która nie ma sensu po linearyzacji",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F49\">Błąd F49</a>",
+      "opis": "Do uformowania układu strony zastosowano tabelę, rozmieszczajac w niej treści w sposób, który powoduje utratę sensu po linearyzacji. Tabele przedstawiają treść w dwóch wymiarach wizualnych - poziomym i pionowym. Czytniki ekranu prezentują użytkownikom tę treść, zaczynając od pierwszej komórki w pierwszym wierszu i kończąc na ostatniej komórce w ostatnim wierszu. Czytnik ekranu czyta tabelę od góry do dołu, odczytując całą zawartość każdego wiersza przed przejściem do następnego wiersza. Odczytywana jest przy tym cała treść każdej komórki, także z całą treścią tabel zagnieżdżonych w komórce, jeśli takie istnieją. Nazywa się to linearyzacją. Chociaż WCAG nie zabrania używania tabel układów, zaleca się stosować układy oparte na CSS, aby zachować zdefiniowane znaczenie semantyczne elementów tabeli HTML i zachować zgodność z praktyką kodowania polegającą na oddzielaniu prezentacji od treści. Jeśli jednak używana jest tabela układu, ważne jest, aby treść miała sens po linearyzacji.",
+      "przykłady": [
+        {
+          "przykład": "Załóżmy, że strona internetowa jest ułożona przy użyciu tabeli z 9 kolumnami i 22 wierszami. Czytnik ekranu odczytuje zawartość komórki w kolumnie 1, wierszu 1, po której następują komórki w kolumnach 2, 3, 4 itd. W kolumnie 9. Jeśli jednak jakakolwiek komórka zawiera zagnieżdżoną tabelę, czytnik ekranu odczyta całą zagnieżdżoną tabelę, zanim odczyta następną komórkę w macierzystej (zewnętrznej) tabeli. Na przykład, jeśli komórka w 3 kolumnie, 6 wierszu zawiera tabelę z 6 kolumnami i 5 wierszami, to wszystkie te komórki zostaną odczytane przed kolumną 4 i wierszem 6 macierzystej (zewnętrznej) tabeli. W rezultacie znacząca sekwencja przekazywana za pomocą prezentacji wizualnej może nie być dostrzegalna, gdy treść czytana jest przez czytnik ekranu."
+        }
+      ]
+    },
+    {
+      "id": "F50",
+      "ks": "2.2.2",
+      "nazwa": "Skrypt powoduje efekt migania, ale nie zapewnia mechanizmu zatrzymującego miganie, gdy trwa dłużej niż pięć sekund",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F50\">Błąd F50</a>",
+      "opis": "Skrypt, który włącza miganie treści, nie ma mechanizmmu umożliwiającego zatrzymanie migania po 5 sekundach lub wcześniej."
+    },
+    {
+      "id": "F52",
+      "ks": "3.2.1, 3.2.5",
+      "nazwa": "Otwarcie nowego okna zaraz po załadowaniu nowej strony",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F52\">Błąd F52</a>",
+      "opis": "Strona dezorientuje użytkowników, otwierajac jedno lub więcej nowych okien, które automatycznie uzyskują fokus zaraz po załadowaniu strony."
+    },
+    {
+      "id": "F54",
+      "ks": "2.1.1",
+      "nazwa": "Użycie funkcji obsługi zdarzeń specyficznych tylko dla urządzenia wskazującego (w tym gestów)",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F54\">Błąd F54</a>",
+      "opis": "Zastosowano program obsługi zdarzeń specyficny tylko dla urządzeń wskazujących (w tym gestów). Gdy programy obsługi zdarzeń specyficzne dla urządzenia wskazującego są jedynym dostępnym mechanizmem wywoływania funkcji treści, użytkownicy z deficytami wzroku (którzy nie mogą używać urządzeń takich jak myszy, wymagających koordynacji wzrokowo-ruchowej), a także użytkownicy, którzy muszą używać alternatywnych klawiatur lub urządzeń, które działają jako emulatory klawiatury, nie będą miały dostępu do funkcji treści.",
+      "uwagi": [
+        {
+          "uwaga": "W przypadku kryterium sukcesu 2.1.1 istnieje wyjątek dla funkcji, które wymagają ruchu wskaźnika zależnego od ścieżki."
+        }
+      ]
+    },
+    {
+      "id": "F55",
+      "ks": "2.1.1, 2.4.7, 3.2.1",
+      "nazwa": "Użycie skryptu do usunięcia fokusu z treści, która otrzymała fokus",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F55\">Błąd F55</a>",
+      "opis": "Zastosowano skrypt, który usuwa wizualny wskaźnik fokusu z treści, która optrzymała fokus. Czasami projektant uważa, że wskaźnik fokusu niszczy wizualny efekt projektu graficznego, albo nie rozumie znaczenia widoczności fokusu dla dostępności treści. Ale systemowy wskaźnik fokusu jest ważną częścią dostępności dla użytkowników klawiatury. Ponadto ta praktyka całkowicie usuwa fokus z treści, co oznacza, że ​​treść może być obsługiwana tylko przez urządzenie wskazujące, takie jak mysz.",
+      "przykłady": [
+        {
+          "przykład": "<input type=\"submit\" onFocus=\"this.blur();\">"
+        },
+        {
+          "przykład": "<a onFocus=\"this.blur()\" href=\"strona.html\"><img src=\"mojObraz.gif\"> </a>"
+        },
+        {
+          "przykład": "<a href=\"link.html\" onfocus=\"if(this.blur)this.blur();\">Fraza linku</a>"
+        }
+      ]
+    },
+    {
+      "id": "F58",
+      "ks": "2.2.1",
+      "nazwa": "Stosowanie technik po stronie serwera do automatycznego przekierowania stron po upływie limitu czasu",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F58\">Błąd F58</a>",
+      "opis": "Języki skryptów po stronie serwera umożliwiają programistom ustawienie niestandardowego nagłówka HTTP „refresh” („odśwież”) z limitem czasu (w sekundach) i identyfikatorem URI, do którego przeglądarka jest przekierowywana po określonym czasie. Jeśli przedział czasu jest zbyt krótki, osoby niewidome nie będą miały wystarczająco dużo czasu, aby ich czytniki ekranu przeczytały stronę, zanim strona nieoczekiwanie się odświeży i spowoduje, że czytnik ekranu zacznie czytać od góry. Widzący użytkownicy mogą również być zdezorientowani przez nieoczekiwane odświeżenie. Ustawiony nagłówek HTTP to refresh: {czas w sekundach}; url={URI nowej lokalizacji}. Możliwe jest również pominięcie URI i uzyskanie okresowo odświeżanej strony, co powoduje ten sam problem. Ustawiony nagłówek HTTP to refresh: {czas w sekundach}."
+    },
+    {
+      "id": "F59",
+      "ks": "4.1.2",
+      "nazwa": "Użycie skryptu do utworzenia kontrolki interfejsu użytkownika za pomocą elementu div lub span w HTML bez podania roli tej kontrolki",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F59\">Błąd F59</a>",
+      "opis": "Ta awaria pokazuje, jak używanie ogólnych elementów HTML do tworzenia kontrolek interfejsu użytkownika może sprawić, że kontrolki będą niedostępne dla technologii wspomagającej. Technologie wspomagające polegają na znajomości roli i aktualnego stanu danego komponentu w celu dostarczenia tych informacji użytkownikowi. Wiele elementów HTML ma dobrze zdefiniowane role, takie jak łącza, przyciski, pola tekstowe itp. Elementy ogólne, takie jak div i span, nie mają żadnych zdefiniowanych ról. Kiedy te ogólne elementy są używane do tworzenia kontrolek interfejsu użytkownika w HTML, technologia wspomagająca może nie mieć informacji niezbędnych do opisania kontrolki i interakcji z nią.",
+      "uwagi": [
+        {
+          "uwaga": "Dołączanie programów obsługi zdarzeń do elementów, które normalnie nie są interaktywne, takich jak span i div, może dezorientować użytkowników. Nawet jeśli dołożymy wszelkich starań, aby zapewnić dostęp do takich elementów za pomocą klawiatury, użytkownicy mogą mieć trudności z odkryciem, że w treści znajdują się interaktywne elementy sterujące lub ze zrozumieniem, jakiego rodzaju zachowania mogą się po nich spodziewać. Na przykład, użytkownicy mogą nie wiedzieć, które naciśnięcia klawiszy są obsługiwane przez skrypt w celu aktywacji elementu. Ponadto elementy te nie generują tych samych zdarzeń w systemie operacyjnym, co elementy interaktywne, więc technologia wspomagające mogą nie zostać powiadomiona, gdy użytkownik je aktywuje."
+        }
+      ]
+    },
+    {
+      "id": "F60",
+      "ks": "3.2.5",
+      "nazwa": "Uruchomienie nowego okna, gdy użytkownik wprowadza tekst do pola danych",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F60\">Błąd F60</a>",
+      "opis": "Podczas wprowdzania danych w polu tekstowym formularza wyświetla się nowe okno w celu innym niż raportowanie błędu."
+    },
+    {
+      "id": "F61",
+      "ks": "3.2.5",
+      "nazwa": "Całkowitej zmiany głównej treści przez automatyczną aktualizację, której użytkownik nie może wyłączyć",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F61\">Błąd F61</a>",
+      "opis": "Treść główna w obszarze operacyjnym jest aktualizowana automatycznie, a użytkownik nie ma możliwości wyłączenia tego zachowania."
+    },
+    {
+      "id": "F63",
+      "ks": "2.4.4",
+      "nazwa": "Podanie kontekstu łącza tylko w treści, która nie jest powiązana z łączem",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F63\">Błąd F63</a>",
+      "opis": "Kontekst potrzebny do zrozumienia celu łącza znajduje się w treści, która nie jest kontekstem łącza określonym programowo. Jeśli kontekst łącza nie jest podany w jeden z następujących sposobów: 1) w tym samym zdaniu, akapicie, elemencie listy lub komórce tabeli co łącze, 2) za pośrednictwem odpowiedniej właściwości ARIA, takiej jak aria-label lub aria-labelledby, wtedy użytkownik nie będzie w stanie z łatwością dowiedzieć się, dokąd prowadzi łącze. Jeśli użytkownik musi opuścić łącze, aby wyszukać kontekst, kontekst nie jest kontekstem określonym programowo."
+    },
+    {
+      "id": "F65",
+      "ks": "1.1.1",
+      "nazwa": "Pominięcie atrybutu alt lub tekstu alternatywnego w elementach img, elementach area i polach typu \"image\"",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F65\">Błąd F65</a>",
+      "opis": "Jeśli w znaczniku obrazu nie ma źródła tekstu stanowiącego alternatywę dla obrazu, technologie wspomagające nie są w stanie określić obrazu ani przekazać użytkownikowi jego przeznaczenia. Preferowanym sposobem zapewnienia tekstu alternatywnego dla obrazów jest atrybut alt. Odpowiednie atrybuty WAI-ARIA mogą być używane do dostarczania tekstu alternatywnego, o ile dostępność jest obsługiwana przez technologię prezentujące treści ułatwienia dostępu. Niektóre technologie wspomagające próbują zrekompensować brakujące alternatywy tekstu, odczytując nazwę pliku obrazu. Jednak z wielu powodów poleganie tylko na nazwie pliku jest niewystarczające. Na przykład nazwy plików mogą nie być opisowe (np. obrazy/nav01.gif), a specyfikacje technologiczne nie wymagają opisowych nazw plików. Niektóre technologie wspomagające nie odczytują nazwy pliku, jeśli nie ma alternatywy tekstowej dostarczonej za pośrednictwem atrybutów HTML."
+    },
+    {
+      "id": "F66",
+      "ks": "3.2.3",
+      "nazwa": "Prezentacja łączy nawigacyjnych w innej kolejności na różnych stronach",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F66\">Błąd F66</a>",
+      "opis": "Mechanizm nawigacji, powtarzany na wielu stronach internetowych w zestawie stron internetowych, prezentuje łącza w innej kolejności na dwóch lub więcej stronach."
+    },
+    {
+      "id": "F67",
+      "ks": "1.1.1, 1.2.1",
+      "nazwa": "Długi opis dla treści nietekstowych, który nie służy temu samemu celowi lub nie przedstawia tych samych informacji",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F67\">Błąd F67</a>",
+      "opis": "Długi opis treści nietekstowych nie służy temu samemu celowi lub nie przedstawia tych samych informacji, co treść nietekstowa. Może to powodować problemy dla osób, które nie mogą zinterpretować treści nietekstowych, ponieważ polegają na długim opisie, aby uzyskać niezbędne informacje przekazywane przez treść nietekstową. Bez długiego opisu, który zawiera kompletne informacje, osoba może nie być w stanie zrozumieć lub wejść w interakcję ze stroną internetową.",
+      "przykłady": [
+        {
+          "przykład": "Obraz przedstawiający lokalizacje obiektów na igrzyskach olimpijskich wyświetlany na mapie ulic. Obraz zawiera również ikonę dla każdego rodzaju wydarzenia sportowego odbywającego się w każdym miejscu. Długi opis mówi: „Mapa pokazująca lokalizację każdego obiektu olimpijskiego. Łyżwiarstwo, hokej i curling odbywają się w Winter Park Ice Arena, narciarstwo zjazdowe i skoki w Snow Mountain, gimnastyka w JumpUp Arena, narciarstwo biegowe odbywa się w lesie kilometrowym ”. Chociaż ten opis zawiera przydatne informacje, nie przekazuje tych samych informacji co obraz, ponieważ nie dostarcza żadnych konkretnych informacji o lokalizacji, takich jak adres lub odległość każdej lokalizacji od jakiegoś stałego punktu. Zwróć uwagę, że długie opisy nie zawsze muszą mieć formę prozy; czasami informacje najlepiej przedstawić w tabeli lub w innym alternatywnym formacie."
+        }
+      ]
+    },
+    {
+      "id": "F68",
+      "ks": "4.1.2",
+      "nazwa": "Kontrolka interfejsu użytkownika, która nie ma programowo określonej nazwy",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F68\">Błąd F68/a>",
+      "opis": "Formant formularza nie ma nazwy przekazywanej technologiom wspomagającym. W rezultacie niektórzy użytkownicy nie będą w stanie określić celu kontrolki formularza. Nazwę można podać na wiele sposobów, w tym za pomocą elementu label. Inne opcje obejmują użycie atrybutu title, aria-label używane do bezpośredniego podawania etykiety lub aria-labelledby wskazującego na inny element w treści, który podaje tę etykietę (nazwę kontrolki). Przycisk może mieć nazwę przypisaną w inny sposób, ale w niektórych sytuacjach może wymagać użycia label, title, aria-label, lub aria-labelledby."
+    },
+    {
+      "id": "F69",
+      "ks": "1.4.4",
+      "nazwa": "Zmiana rozmiaru wizualnie renderowanego tekstu do 200 % powoduje przycięcie, obcięcie lub zasłoniecie tekstu, obrazu lub formantów",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F69\">Błąd F69</a>",
+      "opis": "Zmiana rozmiaru tekstu powoduje, że tekst jest przycięcie, obcięcie lub zasłoniecie treści, tak że nie jest ona już dostępna dla użytkownika. Ogólnie rzecz biorąc, ten błąd występuje, gdy mechanizm układu programu użytkownika nie może uwzględniać wszystkich wskazówek dotyczących układu w kodzie HTML przy nowym rozmiarze czcionki. Oto niektóre powody takich sytuacji: 1) Ustawienie właściwości overflow otaczającego elementu na hidden, 2) Korzystanie z treści pozycjonowanych absolutnie, 3) Tworzenie wyskakujących okienek, które nie są wystarczająco duże dla ich treści po zmianie rozmiaru czcionki"
+    },
+    {
+      "id": "F70",
+      "ks": "4.1.1",
+      "nazwa": "Nieprawidłowe użycie znaczników otwierających i zamykających lub atrybutów",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F70\">Błąd F70</a>",
+      "opis": "Błędne użycie znaczników otwierających i zamykających oraz atrybutów, które może spowodować, że technologia wspomagająca nie będzie w stanie wygenerować zadowalającego modelu strony. Różne programy użytkownika mogą implementować różne heurystyki, aby odzyskać dane po błędach, co powoduje niespójne prezentacje strony w prowgramach użytkownika. Niepełna lista typowych problemów obejmuje: 1) Pominięcie nawiasu rozpoczynajacego lub kończącego znacznik, 2) W znaczniku zamykającym brakuje ukośnika / wskazującego, że jest to znacznik zamykający, 3) Wartości atrybutów poprzedzone są cudzysłowem otwierającym, ale nie mają cudzysłowu zamykającego; w niektórych językach i w niektorych przypadkach wartości atrybutów muszą być w całości objęte cudzysłowami (znakami cala), 4) Brak spacji między atrybutami, 5) Nieobjęcie znakami cytowania wartości atrybutów, które mają wewnątrz spacje, 6) Brak znacznika elementu zamykającego dla elementów, które nie akceptują składni elementów pustych."
+    },
+    {
+      "id": "F71",
+      "ks": "1.1.1",
+      "nazwa": "Użycie podobnych znaków w celu prezentacji tekstu bez zapewniania tekstu alternatywnego",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F71\">Błąd F71</a>",
+      "opis": "Do prezentacji tekstu użyto w zastępstwie znaków, których glify wyglądają podobnie do zamierzonego znaku, ale definiują inne znaki, niż wymagane. Zestaw znaków Unicode definiuje tysiące znaków, obejmujących dziesiątki systemów pisma. Chociaż glify niektórych z tych znaków mogą wyglądać jak glify innych znaków w prezentacji wizualnej, nie są one przetwarzane tak samo przez narzędzia zamiany tekstu na mowę. Na przykład znaki U+0063 i U+03F2 wyglądają jak litera „c”, ale pierwsza pochodzi z alfabetu zachodniego, a druga z alfabetu greckiego i nie jest używana w językach zachodnich. Znaki U+0033 i U+04E0 wyglądają jak cyfra „3”, ale druga to w rzeczywistości litera z cyrylicy.",
+      "uwagi": [
+        {
+          "uwaga": "Ten błąd dotyczy również używania znaków jednostek. Nieprawidłowy znak użyty ze względu na podobieństwo jego glifu jest błedem, a nie mechanizmem implementacji tego znaku."
+        }
+      ]
+    },
+    {
+      "id": "F72",
+      "ks": "1.1.1",
+      "nazwa": "Użycie grafiki ASCII bez zapewniania tekstu alternatywnego",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F72\">Błąd F72</a>",
+      "opis": "Chociaż grafika ASCII jest zaimplementowana jako ciąg znaków, to znaczenie tego ciągu pochodzi ze wzoru glifów utworzonego przez wizualną prezentację, a nie z samego tekstu utworzonego przez prezentację wizualną. Dlatego grafika ASCII jest treścią nietekstową i wymaga tekstu alternatywnego. Alternatywy tekstowe lub łącza do nich powinny być umieszczone w pobliżu grafiki ASCII, aby można je było z nią skojarzyć."
+    },
+    {
+      "id": "F73",
+      "ks": "1.4.1",
+      "nazwa": "Tworzenie łączy, które nie są widoczne dla osób niewidzących kolorów",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F73\">Błąd F73</a>",
+      "opis": "Łącza zostały wyróżnione wizualnie tylko odmiennym kolorem. Osoby, które nie dostrzegają różnic kolorystycznych, nie są w stanie rozpoznać, że sa to łącza (osoby widzące kolory rozpocznają takie łącza). Podkreślenia łączy, pogrubienie lub inne wizualne rozróżnienie bez koloru jest niezbędne, aby łącza były dostrzegalne przez osoby z zaburzeniami widzenia kolorów. Wprawdzie niektóre łącza mogą być wizualnie rozpoznawalne na podstawie wyglądu i kontekstu strony, np. łącza nawigacyjne, ale łącza w tekście są często rozpoznawalne wizualnie tylko na podstawie ich własnych atrybutów wyświetlania. Usunięcie podkreślenia i pozostawienie tylko różnicy w kolorze dla takich łączy jest błędem, ponieważ nie mają innej wizualnej wskazówki poza kolorem, że są łączami."
+    },
+    {
+      "id": "F74",
+      "ks": "1.2.2, 1.2.8",
+      "nazwa": "Brak etykietowania zsynchronizowanej alternatywy medialnej z tekstem jako alternatywą",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F74\">Błąd F74</a>",
+      "opis": "Zsynchronizowana alternatywa medialna nie jest oznaczona tekstem, dla którego jest alternatywą. Zsynchronizowane media alternatywne zapewniają lepszy dostęp użytkownikom, dla których zsynchronizowane media są bardziej efektywnym formatem niż tekst. Ponieważ są alternatywami dla tekstu, same nie muszą mieć alternatyw tekstowych, które w tym przypadku byłyby nadmiarowe. Jednak muszą być wyraźnie oznakowane tekstem, który zastępują, aby użytkownicy mogli je znaleźć, a użytkownicy, którzy zwykle oczekują alternatywnych tekstów dla zsynchronizowanych mediów, wiedzieli, że nie musza ich szukać.",
+      "przykłady": [
+        {
+          "przykład": "Zsynchronizowana alternatywa multimedialna podana w innym miejscu na stronie. Strona z instrukcjami wypełniania formularza podatkowego zawiera opis prozą pól do wypełnienia, danych do podania itp. Dodatkowo, zsynchronizowana  alternatywa multimedialna zapewnia instrukcje mówione wraz z wideo osoby, któa wypełnia omawianą sekcję formularza. Mimo że obie wersje znajdują się na stronie, wersja zsynchronizowana jest dostępna w innym miejscu znajduje się w innym miejscu na stronie i nie jest wyraźnie oznaczona tą częścią tekstu, którą zastępuje. Utrudnia to użytkownikom natrafiającym na ten tekst znalezienie go, a użytkownicy napotykający wideo nie wiedzą, gdzie jest jego tekst alternatywny."
+        }
+      ]
+    },
+    {
+      "id": "F75",
+      "ks": "1.2.2",
+      "nazwa": "Zapewnienie zsynchronizowanych multimediów bez napisów, gdy zsynchronizowane medium prezentuje więcej informacji niż podano na stronie",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F75\">Błąd F75</a>",
+      "opis": "Zsynchronizowane alternatywy medialne dostarczają więcej informacji niż tekst, dla którego są alternatywami, ale nie zapewniają własnych tekstów alternatywnych, aby zapewnić dostęp do dodatkowych informacji. Zsynchronizowane media alternatywne zapewniają lepszy dostęp do informacji użytkownikom, dla których zsynchronizowane media są bardziej efektywnym formatem niż tekst. Ponieważ stanowią one alternatywę dla tekstu, nie muszą same mieć nadmiarowych alternatyw tekstowych w postaci naisów, opisów dźwiękowych lub pełnotekstowych rozwiązań alternatywnych. Jeśli jednak zapewniają więcej informacji niż tekst, dla którego są alternatywą, to nie są one tylko alternatywą, ale same w sobie są zsynchronizowanymi treściami medialnymi. W takim przypadku podlegają one pełnym wymogom zawartym w kryterium sukcesu 1.2.2 w oraz kryterium sukcesu 1.2.3 i 1.2.5."
+    },
+    {
+      "id": "F77",
+      "ks": "4.1.1",
+      "nazwa": "Zduplikowane wartości ID",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F76\">Błąd F76</a>",
+      "opis": "Na stronie znajdują się powtórzone atrybuty ID (oznaczenie elementów takimi samymi identyfikatorami). Zduplikowane wartości identyfikatora typu mogą stanowić problem dla programów użytkownika, które polegają na tym atrybucie w celu dokładnego przekazywania użytkownikom relacji między różnymi częściami treści. Na przykład, czytnik ekranu może używać wartości ID do identyfikowania odpowiedniej treści nagłówka dla komórki danych w tabeli danych lub pola formularza, do którego odnosi się dana etykieta. Jeśli te wartości nie są niepowtarzalne, czytnik ekranu nie będzie w stanie programowo określić, które nagłówki są skojarzone z komórką danych lub który formant jest skojarzony z którą etykietą lub nazwą. Sprawdzenie, czy wartości atrybutów identyfikatora są unikalne w dokumencie, można przeprowadzić, badając dokument pod kątem jego specyfikacji, ponieważ specyfikacja określa, które atrybuty zawierają unikalne identyfikatory obejmujące cały dokument."
+    },
+    {
+      "id": "F78",
+      "ks": "2.4.7",
+      "nazwa": "Styl konturów i obramowania elementów, który usuwa lub czyni niewidocznym wizualny wskaźnik fokusa",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F78\">Błąd F78</a>",
+      "opis": "Domyślny wizualny wskaźni fokusu klawiatury w programie użytkownika jest wyłączony lub niewidoczny ze względu na inną stylizację, np. obramowań, i nie ma włąsnego wizualnego wskaźnika fokusu dodanego przez twórcę strony. Wyłączenie wskaźnika fokusu instruuje program użytkownika, aby nie prezentował wskaźnika fokusu użytkownikom. Inna stylizacja może utrudniać zobaczenie wskaźnika fokusu, nawet jeśli on istneje, np. kontury, które wyglądają tak samo jak kontur wskaźnika fokusu, lub grube obramowania, które mają ten sam lub bardzo zbliżony kolor, co wskaźnik fokusu."
+    },
+    {
+      "id": "F79",
+      "ks": "4.1.2",
+      "nazwa": "Nieokreślony programowo stan fokusu na komponencie interfejsu użytkownika lub brak powiadomienia o zmianie stanu fokusu",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F79\">Błąd F79</a>",
+      "opis": "To, czy element interfejsu użytkownika jest aktywny, jest szczególnie ważnym aspektem jego stanu. Wiele rodzajów technologii wspomagających polega na śledzeniu bieżącego fokusu klawiatury. Czytniki ekranu przenoszą punkt uwagi użytkownika do aktywnego komponentu interfejsu użytkownika, a programy do powiększania ekranu zmieniają sposób wyświetlania treści, tak aby zaznaczony komponent był widoczny. Jeśli technologia wspomagająca nie zostanie powiadomiona o przeniesieniu fokusu na nowy komponent, użytkownik będzie zdezorientowany, gdy spróbuje wejść w interakcję z niewłaściwym elementem strony. O ile programy użytkownika zwykle obsługują tę funkcję w przypadku standardowych elementów, takich jak łącza, przyciski, kontrolki formularzy, to za zapewnienie widocznego wskaźnika fokusu i powiadamiannie o zmianach w niestandardowych komponentach interfejsu odpowiadają skrypty implementujące te komponenty.",
+      "przykłady": [
+        {
+          "przykład": "Menu niestandardowe wyświetla elementy menu, renderując je jawnie, obsługując bezpośrednio zdarzenia myszy i klawiszy oraz podświetlając aktualnie wybraną pozycję menu. Ale programista nie ujawnia pozycji menu, która jest aktywna za pośrednictwem interfejsu API dostępności, więc technologia wspomagająca może tylko określić, że fokus znajduje się gdzieś w menu i nie może określić, która pozycja menu jest aktywna."
+        }
+      ]
+    },
+    {
+      "id": "F80",
+      "ks": "1.4.4",
+      "nazwa": "Kontrolki formularza tekstowego nie zmieniają rozmiaru, gdy wizualnie renderowany tekst jest zmieniany do 200%",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F80\">Błąd F80</a>",
+      "opis": "Zmiana rozmiaru tekstu nie powoduje odpowiedniej zmiany rozmiaru kontrolek formularza opartego na tekście. Oznacza to, że użytkownik może mieć trudności z wprowadzaniem tekstu i możliwością odczytania tego, co wprowadził, ponieważ tekst nie jest wyświetlany w rozmiarze wymaganym przez użytkownika. Kontrolki formularzy tekstowych obejmują pola wprowadzania (tekst i obszar tekstowy), a także przyciski."
+    },
+    {
+      "id": "F81",
+      "ks": "1.4.1",
+      "nazwa": "Oznaczanie wymaganych pól lub błędów tylko za pomocą odmiennego koloru",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F81\">Błąd F81</a>",
+      "opis": "Wymagane pole lub pole z błędem jest oznaczone tylko odmiennym kolorem, bez alternatywnego sposobu identyfikacji. Może to powodować problemy dla osób niewidomych lub osób ze ślepotą barwną, ponieważ mogą nie być w stanie dostrzec różnic kolorów wskazujących, które pole jest wymagane lub które powoduje błąd."
+    },
+    {
+      "id": "F82",
+      "ks": "3.3.2",
+      "nazwa": "Wizualne sformatowanie zestawu pól numeru telefonu, ale bez etykiety tekstowej",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F82\">Błąd F82</a>",
+      "opis": "Błąd dotyczy systemów takich, jak w Stanach Zjednoczonych, gdzie numery telefonów sa podzielone na części (numer kierunkowy, prefiks, rozszerzenie). Błąd wystepuje wówczas, gdy pola mają nazw określone programowo, ale nie mają opisującej ich etykiety. Osoby z niepełnosprawnością wzrokową lub poznawczą mogą nie rozumieć, jakie informacje należy podać, aby poprawnie wypełnić pola, bo samo wizualne formatowanie nnie przekazuje informacji, które pozwalają określić znaczenie pól. Nawet jeśli wszystkie pola mają nazwy określone programowo, etykieta tekstowa musi również identyfikować zestaw pól jako numer telefonu."
+    },
+    {
+      "id": "F83",
+      "ks": "1.4.3 i 1.4.6",
+      "nazwa": "Użycie obrazów tła, które nie zapewniają wystarczającego kontrastu z tekstem pierwszego planu (lub obrazami tekstu)",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F83\">Błąd F83</a>",
+      "opis": "Tekst wyświetlany na obrazie tła może być nieczytelny dla osób słabowidzących. Gdy nie ma wystarczającego kontrastu między obrazem tła a tekstem, cechy obrazu tła mogą być mylone z tekstem, co utrudnia dokładne odczytanie tekstu. Aby spełnić kryterium sukcesu 1.4.3 i 1.4.6, musi istnieć wystarczający kontrast między tekstem a tłem. W przypadku obrazów oznacza to, że musiałby istnieć wystarczający kontrast między tekstem a tymi częściami obrazu, które są najbardziej podobne do tekstu i znajdują się za tekstem."
+    },
+    {
+      "id": "F84",
+      "ks": "2.4.9",
+      "nazwa": "Użycia niejasnego łącza, takiego jak  „kliknij tutaj” lub  „więcej”, bez mechanizmu zmiany tekstu łącza na konkretny tekst",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F84\">Błąd F84</a>",
+      "opis": "Jako elementów zakotwiczenia użyto łączy takich jak „kliknij tutaj” lub „więcej”, które nie są zrozumiałe, bez otaczajacego je tekstu lub mechanizmu, który sam z siebie jasno określiłby miejsce docelowe , na przykład przycisk do rozwijania tekstu łącza. Wiele osób niewidomych korzystających z czytników ekranu wywołuje okno dialogowe zawierające listę linków ze strony. Korzystają z tej listy linków, aby zdecydować, gdzie pójdą. Ale jeśli wiele linków na tej liście mówi po prostu „kliknij tutaj” lub „więcej”, nie będzie można użyć tej funkcji w swoim czytniku ekranu, który jest podstawową strategią nawigacji. Dlatego błędem 2.4.9 jest brak możliwości poznania miejsca docelowego na podstawie samego tekstu linku. Dotyczy to również osób, które przeglądają łącza. Jeśli wszystko, co usłyszą podczas przeglądania dokumentu to „kliknij tutaj, kliknij tutaj, kliknij tutaj itd.” będą zdezorientowani."
+    },
+    {
+      "id": "F85",
+      "ks": "2.4.3",
+      "nazwa": "Użycie okna dialogowego lub menu, które nie sąsiaduje z wyzwalającą je kontrolką w sekwencyjnej kolejności nawigacji",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F85\">Błąd F85</a>",
+      "opis": "Strona internetowa otwiera okno dialogowe lub komponent interfejsu menu osadzone na stronie w sposób, który utrudnia użytkownikowi obsługę klawiaturą ze względu na ich położenie w kolejności nawigacji. Gdy użytkownik otwiera okno dialogowe lub menu osadzone na stronie, aktywując przycisk lub łącze, jego następną czynnością będzie interakcja z  tym oknem dialogowym lub menu. Jeśli fokus nie jest przeniesiony na okno dialogowe lub menu i nie sąsiaduje w kolejności nawigacji sekwencyjnej z kontrolką wyzwalającą, użytkownikowi klawiatury trudno będzie obsługiwać okno dialogowe lub menu.",
+      "przykłady": [
+        {
+          "przykład": "1. Dodanie okna dialogowego lub menu osadzonego na stronie na końcu kolejności nawigacji sekwencyjnej. Gdy menu lub okno dialogowe DHTML jest aktywowane, jest tworzone dynamicznie, umieszczane wizualnie w pobliżu wyzwalacza i dołączane na końcu DOM. Ponieważ jest dołączany na końcu DOM, znajduje się na końcu kolejności nawigacji sekwencyjnej. Użytkownik musi przechodzić przez pozostałą część strony internetowej, zanim będzie mógł wejść w interakcję z oknem dialogowym lub menu."
+        },
+        {
+          "przykład": "2. Aktywacja dokumentu po zamknięciu menu osadzonego na stronie. Po odrzuceniu menu jest ono usuwane lub ukrywane na stronie internetowej, a fokus jest ustawiany na dokumencie. Użytkownik musi tabulować od początku sekwencji nawigacji, aby dotrzeć do punktu, z którego zostało otwarte menu."
+        }
+      ]
+    },
+    {
+      "id": "F86",
+      "ks": "4.1.2",
+      "nazwa": "Nie podano nazwy dla każdej części wieloczęściowego pola formularza, takiego jak amerykański numer telefonu",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F86\">Błąd F6</a>",
+      "opis": "Niektóre lub wszystkie części wieloczęściowego pola formularza nie mają nazw. Często istnieje etykieta dla pola wieloczęściowego, które jest albo programowo skojarzone z pierwszą częścią, albo nie jest programowo powiązane z żadną częścią.",
+      "uwagi": [
+        {
+          "uwaga": "Nazwa niekoniecznie musi być widoczna na ekranie, ale musi być widoczna dla technologii wspomagających."
+        }
+      ]
+    },
+    {
+      "id": "F87",
+      "ks": "1.3.1",
+      "nazwa": "Wstawienie treści niedekoracyjnej za pomocą pseudoelementów CSS :before i :after oraz własności \"content\" ",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F87\">Błąd F87</a>",
+      "opis": "Pseudoelementy CSS: before i: after określają położenie danego elementu przed lub po treści w drzewie dokumentu. Właściwość content, w połączeniu z tymi pseudoelementami, określa co jest wstawiane. Użytkownicy, którzy muszą dostosować informacje o stylu, aby wyświetlać treść zgodnie ze swoimi potrzebami, mogą nie mieć dostępu do informacji wstawianych za pomocą CSS. Dlatego nie można wykorzystać tych właściwości do wstawienia treści niedekoracyjnych.",
+      "uwagi": [
+        {
+          "uwaga": "Typowym sposobem testowania tego kryterium jest wyłączenie stylów CSS, aby sprawdzić, czy zawartość dodana za pomocą pseudoelementów pozostaje widoczna."
+        }
+      ]
+    },
+    {
+      "id": "F88",
+      "ks": "1.4.8",
+      "nazwa": "Użycie tekstu wyrównanego do lewego i prawego marginesu",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F88\">Błąd F88</a>",
+      "opis": "Tekst w kolumnie jest wyrównany obustronnie - do lewego i prawego marginesu. Wiele osób z upośledzeniem funkcji poznawczych ma poważne problemy z blokami tekstu, które są wyjustowane (wyrównane do lewego i prawego marginesu). Spacje między słowami tworzą „rzeki bieli” spływające po stronie, co może utrudniać niektórym osobom czytanie tekstu."
+    },
+    {
+      "id": "F89",
+      "ks": "2.4.4, 2.4.9, 4.1.2",
+      "nazwa": "Brak dostępnej nazwy obrazu, który jest jedyną treścią w łączu",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F89\">Błąd F89</a>",
+      "opis": "Łącze graficzne nie ma dostępnej nazwy zdefiniowanej zgodnie z zasadami wyliczania dostępnych nazw i opisów. Dotyczy to również sytuacji, gdy zarówno tekst, jak i obrazy są używane  na stronie osobno jako łącza do tego samego celu. W takim przypadku  zalecanym podejściem jest technika „H2: Łączenie sąsiadujących obrazów i łączy tekstowych do tego samego zasobu” w celu zmniejszenia liczby oddzielnych łączy i niepożądanej nadmiarowości."
+    },
+    {
+      "id": "F90",
+      "ks": "1.3.1",
+      "nazwa": "Niepoprawne powiązanie nagłówków i treści tabeli za pomocą atrybutów nagłówków i identyfikatorów",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F90\">Błąd F90</a>",
+      "opis": "Nie można poprawnie określić programowo relacji między komórkami danych a odpowiadającymi im komórkami nagłówka, ponieważ skojarzenie atrybutów id i headers jest błędne. Może się to zdarzyć na przykład w wyniku kopiowania kodu tabel i zapomnienia o jego aktualizacji. Użycie atrybutów id i headers jest jednym ze sposobów, w jaki autorzy mogą jawnie kojarzyć komórki nagłówka z komórkami danych. Sposób ten umożliwia autorowi skojarzenie wielu komórek nagłówka z określoną komórką danych, co może być konieczne, gdy używane są złożone tabele danych z więcej niż jednym poziomem nagłówka."
+    },
+    {
+      "id": "F91",
+      "ks": "1.3.1",
+      "nazwa": "Nieprawidłowe oznaczenie nagłówków tabeli",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F91\">Błąd F91</a>",
+      "opis": "Tabele danych nie używają elementów nagłówka (th) lub innych odpowiednich znaczników tabeli (atrybutów scope lub headers i id albo ról ARIA  - columnheader i rowheader) w celu programowego określenia nagłówków na podstawie treści tabeli. Tworzenie nagłówków możliwych do określenia programowo jest szczególnie ważne, gdy komórki danych są zrozumiałe tylko razem z informacjami nagłówka. Gdy użytkownicy czytników ekranu nawigują po treści tabeli w poziomie lub w pionie, nagłówki, które się zmieniają, można odczytać, aby zapewnić niezbędny kontekst dla informacji w komórkach danych."
+    },
+    {
+      "id": "F92",
+      "ks": "1.3.1",
+      "nazwa": "Wykorzystanie roli „presentation” na treściach, które przekazują informacje semantyczne",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F92\">Błąd F92</a>",
+      "opis": "Rola „presentation” została zastosowana do elementu, którego celem jest przekazanie informacji lub relacji w treści. Elementy takie jak tabele, mogą przekazywać informacje o zawartych w nich treściach poprzez swoje znaczniki semantyczne. Natomiast rola „presentation” WAI-ARIA ma na celu wyeliminowanie semantycznej informacji o treści z API dostępności i uniemożliwienie programom użytkownika przekazywania tych informacji użytkownikowi. Wykorzystanie roli „presentation” dla treści, które powinny przekazywać znaczące informacje, może uniemożliwić użytkownikowi zrozumienie tej treści."
+    },
+    {
+      "id": "F93",
+      "ks": "1.4.2",
+      "nazwa": "Brak możliwości wstrzymania lub zatrzymania elementu HTML5, który się odtwarza automatycznie",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F93\">Błąd F93</a>",
+      "opis": ""
+    },
+    {
+      "id": "F94",
+      "ks": "1.4.4",
+      "nazwa": "Nieprawidłowe użycie jednostek widoku do zmiany rozmiaru tekstu",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F94\">Błąd F94</a>",
+      "opis": null
+    },
+    {
+      "id": "F95",
+      "ks": "1.4.13",
+      "nazwa": "Braku możliwości najechania na treść wyświetlaną po najechaniu kursorem",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F95\">Błąd F95</a>",
+      "opis": null
+    },
+    {
+      "id": "F96",
+      "ks": "2.5.3",
+      "nazwa": "Dostępna nazwa nie zawiera widocznego tekstu etykiety",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F96\">Błąd F96</a>",
+      "opis": null
+    },
+    {
+      "id": "F97",
+      "ks": "1.3.4",
+      "nazwa": "Zablokowanie orientacji w widoku poziomym lub pionowym",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F97\">Błąd F97</a>",
+      "opis": "Ograniczenie widoku treści do jednej orientacji uniemożliwia wyświetlanie treści w wielu orientacjach. Gdy treść jest prezentowana z ograniczeniem do określonej orientacji, użytkownicy muszą zorientować swoje urządzenia, aby przeglądać zawartość w orientacji narzuconej przez autora. Niektórzy użytkownicy mają swoje urządzenia zamontowane w stałej orientacji (np. na ramieniu wózka inwalidzkiego o napędzie elektrycznym), a jeśli treść nie może być oglądana w tej orientacji, stwarza to problemy dla użytkownika. Błąd nie ma miejsca tylko w przypadku, jeśli określona orientacja jest niezbędną do obsługi i przeglądania treści.",
+      "przykłady": [
+        {
+          "przykład": "Aplikacja z wiadomościami zawsze wyświetla treść w orientacji pionowej. Użytkownicy mogą przeglądać zawartość na urządzeniu obsługującym orientację poziomą i pionową. Po obróceniu urządzenia do orientacji poziomej zawartość jest wyświetlana użytkownikowi z boku obszaru operacyjnego wyświetlacza."
+        }
+      ]
+    },
+    {
+      "id": "F98",
+      "ks": "2.5.6",
+      "nazwa": "Interakcje ograniczone do obsługi wyłącznie dotykowej na urządzeniach z ekranem dotykowym",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F98\">Błąd F98</a>",
+      "opis": "Użytkownicy urządzeń wyposażonych w ekran dotykowy nie mogą korzystać z innych dostępnych im modalności wprowadzania danych (takich jak dodatkowa / zewnętrzna mysz lub klawiatura). Istnieją różne metody i heurystyki dotyczące treści WWW, które pozwalają określić, czy urządzenie użytkownika ma ekran dotykowy. Jednak nawet jeśli obecny jest ekran dotykowy, użytkownicy mogą mieć dostęp do innych metod wprowadzania danych. Niekoniecznie jest tak, że użytkownik będzie wchodził w interakcję z treścią internetową (wyłącznie lub w ogóle) za pomocą ekranu dotykowego. Jeśli po wykryciu ekranu dotykowego treść internetowa jest zaprojektowana do obsługi wyłącznie za pomocą dotyku, użytkownicy ci nie będą mogli obsługiwać treści przy użyciu innych (prawdopodobnie preferowanych) mechanizmów wprowadzania."
+    },
+    {
+      "id": "F99",
+      "ks": "2.1.4",
+      "nazwa": "Implementacja jednoznakowych skrótów klawiszowych, których nie można wyłączyć ani przemapować",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F99\">Błąd F99</a>",
+      "opis": null
+    },
+    {
+      "id": "F100",
+      "ks": "1.3.4",
+      "nazwa": "Wyświetlenie komunikatu z prośbą o zmianę orientacji urządzenia",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F100\">Błąd F100</a>",
+      "opis": "Twórca strony po wykryciu orientacji urządzenia, która jest uważana za niepożądaną, wyświetla komunikat nakazujący użytkownikowi zmianę orientacji urządzenia - zamiast zmienić orientację całej treści. Wykrywanie i reagowanie na orientację urządzenia użytkownika samo w sobie nie stanowi problemu. Ale decyzja tworcy strony o oferowaniu tylko jednej orientacji treści nie spełnia wymagań Kryterium sukcesu 1.3.4 Orientacja. Niewłaściwe jest wyświetlanie tylko komunikatu w wykrytej orientacji, nakazującego użytkownikom obrócenie urządzeń (jeśli nie jest to konieczne dla podstawowej czynności). Całość treści kontrolowanych przez autora musi zostać ponownie zorientowana w celu spełnienia wymogów KS. Istnieją różne metody określania, czy treść ma orientację poziomą, czy pionową. Jedna z tych metod polega na sprawdzeniu proporcji szerokości do wysokości w obszarze operacyjnym. Innymi słowy, sprawdzenie, czy szerokość jest mniejsza czy większa niż wysokość. Właściwość orientation w zapytaniu medialnym jest pionowa, jeśli wartość height zapytania medialnego jest większa lub równa wartości width. W przeciwnym przypadku orientacja jest pozioma (landscape)."
+    },
+    {
+      "id": "F101",
+      "ks": "2.5.2",
+      "nazwa": "Aktywacja kontrolki przy zdarzeniu wyłączenia",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F101\">Błąd F101</a>",
+      "opis": null
+    },
+    {
+      "id": "F102",
+      "ks": "1.4.10",
+      "nazwa": "Zniknięcia treści i niedostępności po ponownym wlaniu treści",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F102\">Błąd F102</a>",
+      "opis": null
+    },
+    {
+      "id": "F103",
+      "ks": "4.1.3",
+      "nazwa": "Dostarczenie komunikat o stanie, którego nie można programowo określić za pomocą roli lub właściwości",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F103\">Błąd F103</a>",
+      "opis": null
+    },
+    {
+      "id": "F104",
+      "ks": "1.4.12",
+      "nazwa": "Obcięta lub nakladajaca się treść po dostosowaniu odstępów w tekście",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F104\">Błąd F104</a>",
+      "opis": null
+    },
+    {
+      "id": "F105",
+      "ks": "2.5.1",
+      "nazwa": "Zapewnienie funkcjonalności za pomocą gestu opartego na ścieżce bez prostego alternatywnego wskaźnika (gestu jednopunkotowego???? )",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F105\">Błąd F105</a>",
+      "opis": null
+    },
+    {
+      "id": "F106",
+      "ks": "????",
+      "nazwa": "Awaria z powodu niemożności dezaktywacji aktywacji ruchu",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F106\">Błąd F106</a>",
+      "opis": null
+    },
+    {
+      "id": "F107",
+      "ks": "1.3.5",
+      "nazwa": "Nieprawidłowe wartości atrybutów autouzupełniania",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F107\">Błąd F107</a>",
+      "opis": null
+    },
+    {
+      "id": "F108",
+      "ks": "2.5.X",
+      "nazwa": "Brak metody pojedynczego wskaźnika dla użytkownika do obsługi funkcji, która nie wymaga ruchu przeciągania",
+      "url": "<a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F108\">Błąd F108</a>",
+      "opis": null
+    }
+  ]
+
+}
